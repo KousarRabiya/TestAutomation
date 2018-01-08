@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Request Caller="Harness" xmlns="http://maxxia.com.au">
+  <CometCreateEmployee>
+    <Employee>
+      <PersonName>
+        <Title>Mrs</Title>
+        <FirstName>8N0SLBN8</FirstName>
+        <Surname>Case1</Surname>
+        <OtherNames>
+        </OtherNames>
+        <PreferredName>
+        </PreferredName>
+      </PersonName>
+      <ContactHome>
+        <Phone>9999994599</Phone>
+        <Mobile>
+        </Mobile>
+        <Fax>
+        </Fax>
+        <Email>
+        </Email>
+      </ContactHome>
+      <AddressHome>
+        <AddressLine1>7 Tremaine Ct</AddressLine1>
+        <AddressLine2>
+        </AddressLine2>
+        <Suburb>Mulgrave</Suburb>
+        <State>VIC</State>
+        <Postcode>3170</Postcode>
+        <BypassAddressValidation>0</BypassAddressValidation>
+      </AddressHome>
+      <AddressPostal>
+        <AddressLine1>2 Somewhere St</AddressLine1>
+        <AddressLine2>
+        </AddressLine2>
+        <Suburb>Somecity</Suburb>
+        <State>VIC</State>
+        <Postcode>3000</Postcode>
+        <BypassAddressValidation>1</BypassAddressValidation>
+      </AddressPostal>
+      <DateOfBirth>1960/02/01</DateOfBirth>
+      <Gender>Female</Gender>
+    </Employee>
+  </CometCreateEmployee>
+</Request>

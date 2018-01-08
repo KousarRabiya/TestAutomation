@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://mslmcopreprod01/SPInterface/CometService.asmx?wsdl" docRef="http://mslmcopreprod01/SPInterface/CometService.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://mslmcopreprod01/SPInterface/CometService.asmx" xmlns:q1="http://maxxia.com.au/CometInterface" binding="q1:CometServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://mslmcopreprod01/SPInterface/CometService.asmx" xmlns:q2="http://maxxia.com.au/CometInterface" binding="q2:CometServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

@@ -1,0 +1,12 @@
+4/01/2018 3:43:44 PM  ***************
+1/4/2018 3:43:45 PM  Scenario :TC1-Create an Employee
+1/4/2018 3:43:45 PM  User opens the browser and launch Comet application
+1/4/2018 3:43:47 PM  User clicks on new button on Comet search screen
+1/4/2018 3:43:47 PM  User enters all new employee creation details
+1/4/2018 3:44:15 PM  User clicks on Save button and EAMS Profile will appear and User closes the EAMS Profile
+1/4/2018 3:44:38 PM--ERROR : ===User clicks on Save button and EAMS Profile will appear and User closes the EAMS ProfileException :OpenQA.Selenium.WebDriverTimeoutException: Timed out after 10 seconds
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   at CometProject.PageObject.EAMSscreen.PageLandedOnEAMSProfilePage() in C:\Code\Source\RexxOnlineTests\CometProject\PageObject\EAMSscreen.cs:line 41
+   at CometProject.StepDefinition.EmployeeProfileCreationSteps.ThenUserClicksOnSaveButtonAndEAMSProfileWillApperaAndUserClosesTheEAMSProfile() in C:\Code\Source\RexxOnlineTests\CometProject\StepDefinition\EmployeeProfileCreationSteps.cs:line 119 ===
+1/4/2018 3:44:48 PM  ****************

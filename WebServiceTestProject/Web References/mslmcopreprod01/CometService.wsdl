@@ -1,0 +1,1103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://maxxia.com.au/CometInterface" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://maxxia.com.au/CometInterface" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://maxxia.com.au/CometInterface">
+      <s:element name="SubmitFleetAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitFleetAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SubmitFleetAccountResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetupFullPackage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetupFullPackageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetupFullPackageResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateEmployee">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateEmployeeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateEmployeeResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreatePackage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreatePackageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreatePackageResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateVehicle">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateVehicleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateVehicleResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateBenefit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateBenefitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateBenefitResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreatePaymentInstruction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreatePaymentInstructionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreatePaymentInstructionResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployerOfferings">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployerOfferingsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployerOfferingsResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployerPayCycles">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployerPayCyclesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployerPayCyclesResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployerCostCentres">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployerCostCentresResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEmployerCostCentresResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SyncLookupData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SyncLookupDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SyncLookupDataResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateEmployer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidateEmployerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValidateEmployerResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmployerCodeByWorkEmail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmployerCodeByWorkEmailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EmployerCodeByWorkEmailResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SectorDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SectorDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SectorDetailsResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FormsEmailToSelf">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FormsEmailToSelfResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FormsEmailToSelfResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreatePayee">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestXml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreatePayeeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreatePayeeResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SubmitFleetAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:SubmitFleetAccount" />
+  </wsdl:message>
+  <wsdl:message name="SubmitFleetAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:SubmitFleetAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetupFullPackageSoapIn">
+    <wsdl:part name="parameters" element="tns:SetupFullPackage" />
+  </wsdl:message>
+  <wsdl:message name="SetupFullPackageSoapOut">
+    <wsdl:part name="parameters" element="tns:SetupFullPackageResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateEmployeeSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateEmployee" />
+  </wsdl:message>
+  <wsdl:message name="CreateEmployeeSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreatePackageSoapIn">
+    <wsdl:part name="parameters" element="tns:CreatePackage" />
+  </wsdl:message>
+  <wsdl:message name="CreatePackageSoapOut">
+    <wsdl:part name="parameters" element="tns:CreatePackageResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateVehicleSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateVehicle" />
+  </wsdl:message>
+  <wsdl:message name="CreateVehicleSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateVehicleResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateBenefitSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateBenefit" />
+  </wsdl:message>
+  <wsdl:message name="CreateBenefitSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateBenefitResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreatePaymentInstructionSoapIn">
+    <wsdl:part name="parameters" element="tns:CreatePaymentInstruction" />
+  </wsdl:message>
+  <wsdl:message name="CreatePaymentInstructionSoapOut">
+    <wsdl:part name="parameters" element="tns:CreatePaymentInstructionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployerOfferingsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployerOfferings" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployerOfferingsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployerOfferingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployerPayCyclesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployerPayCycles" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployerPayCyclesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployerPayCyclesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployerCostCentresSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployerCostCentres" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployerCostCentresSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployerCostCentresResponse" />
+  </wsdl:message>
+  <wsdl:message name="SyncLookupDataSoapIn">
+    <wsdl:part name="parameters" element="tns:SyncLookupData" />
+  </wsdl:message>
+  <wsdl:message name="SyncLookupDataSoapOut">
+    <wsdl:part name="parameters" element="tns:SyncLookupDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValidateEmployerSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidateEmployer" />
+  </wsdl:message>
+  <wsdl:message name="ValidateEmployerSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidateEmployerResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmployerCodeByWorkEmailSoapIn">
+    <wsdl:part name="parameters" element="tns:EmployerCodeByWorkEmail" />
+  </wsdl:message>
+  <wsdl:message name="EmployerCodeByWorkEmailSoapOut">
+    <wsdl:part name="parameters" element="tns:EmployerCodeByWorkEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="SectorDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:SectorDetails" />
+  </wsdl:message>
+  <wsdl:message name="SectorDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:SectorDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="FormsEmailToSelfSoapIn">
+    <wsdl:part name="parameters" element="tns:FormsEmailToSelf" />
+  </wsdl:message>
+  <wsdl:message name="FormsEmailToSelfSoapOut">
+    <wsdl:part name="parameters" element="tns:FormsEmailToSelfResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreatePayeeSoapIn">
+    <wsdl:part name="parameters" element="tns:CreatePayee" />
+  </wsdl:message>
+  <wsdl:message name="CreatePayeeSoapOut">
+    <wsdl:part name="parameters" element="tns:CreatePayeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="SubmitFleetAccountHttpPostIn">
+    <wsdl:part name="requestXml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SubmitFleetAccountHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="SetupFullPackageHttpPostIn">
+    <wsdl:part name="requestXml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetupFullPackageHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="CreateEmployeeHttpPostIn">
+    <wsdl:part name="requestXml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CreateEmployeeHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="CreatePackageHttpPostIn">
+    <wsdl:part name="requestXml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CreatePackageHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="CreateVehicleHttpPostIn">
+    <wsdl:part name="requestXml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CreateVehicleHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="CreateBenefitHttpPostIn">
+    <wsdl:part name="requestXml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CreateBenefitHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="CreatePaymentInstructionHttpPostIn">
+    <wsdl:part name="requestXml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CreatePaymentInstructionHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployerOfferingsHttpPostIn">
+    <wsdl:part name="requestXml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployerOfferingsHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployerPayCyclesHttpPostIn">
+    <wsdl:part name="requestXml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployerPayCyclesHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployerCostCentresHttpPostIn">
+    <wsdl:part name="requestXml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployerCostCentresHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="SyncLookupDataHttpPostIn">
+    <wsdl:part name="requestXml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SyncLookupDataHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="ValidateEmployerHttpPostIn">
+    <wsdl:part name="requestXml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ValidateEmployerHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="EmployerCodeByWorkEmailHttpPostIn">
+    <wsdl:part name="requestXml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EmployerCodeByWorkEmailHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="SectorDetailsHttpPostIn">
+    <wsdl:part name="requestXml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SectorDetailsHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="FormsEmailToSelfHttpPostIn">
+    <wsdl:part name="requestXml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="FormsEmailToSelfHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="CreatePayeeHttpPostIn">
+    <wsdl:part name="requestXml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CreatePayeeHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:portType name="CometServiceSoap">
+    <wsdl:operation name="SubmitFleetAccount">
+      <wsdl:input message="tns:SubmitFleetAccountSoapIn" />
+      <wsdl:output message="tns:SubmitFleetAccountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetupFullPackage">
+      <wsdl:input message="tns:SetupFullPackageSoapIn" />
+      <wsdl:output message="tns:SetupFullPackageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateEmployee">
+      <wsdl:input message="tns:CreateEmployeeSoapIn" />
+      <wsdl:output message="tns:CreateEmployeeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePackage">
+      <wsdl:input message="tns:CreatePackageSoapIn" />
+      <wsdl:output message="tns:CreatePackageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateVehicle">
+      <wsdl:input message="tns:CreateVehicleSoapIn" />
+      <wsdl:output message="tns:CreateVehicleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateBenefit">
+      <wsdl:input message="tns:CreateBenefitSoapIn" />
+      <wsdl:output message="tns:CreateBenefitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePaymentInstruction">
+      <wsdl:input message="tns:CreatePaymentInstructionSoapIn" />
+      <wsdl:output message="tns:CreatePaymentInstructionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployerOfferings">
+      <wsdl:input message="tns:GetEmployerOfferingsSoapIn" />
+      <wsdl:output message="tns:GetEmployerOfferingsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployerPayCycles">
+      <wsdl:input message="tns:GetEmployerPayCyclesSoapIn" />
+      <wsdl:output message="tns:GetEmployerPayCyclesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployerCostCentres">
+      <wsdl:input message="tns:GetEmployerCostCentresSoapIn" />
+      <wsdl:output message="tns:GetEmployerCostCentresSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SyncLookupData">
+      <wsdl:input message="tns:SyncLookupDataSoapIn" />
+      <wsdl:output message="tns:SyncLookupDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateEmployer">
+      <wsdl:input message="tns:ValidateEmployerSoapIn" />
+      <wsdl:output message="tns:ValidateEmployerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EmployerCodeByWorkEmail">
+      <wsdl:input message="tns:EmployerCodeByWorkEmailSoapIn" />
+      <wsdl:output message="tns:EmployerCodeByWorkEmailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SectorDetails">
+      <wsdl:input message="tns:SectorDetailsSoapIn" />
+      <wsdl:output message="tns:SectorDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FormsEmailToSelf">
+      <wsdl:input message="tns:FormsEmailToSelfSoapIn" />
+      <wsdl:output message="tns:FormsEmailToSelfSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePayee">
+      <wsdl:input message="tns:CreatePayeeSoapIn" />
+      <wsdl:output message="tns:CreatePayeeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="CometServiceHttpPost">
+    <wsdl:operation name="SubmitFleetAccount">
+      <wsdl:input message="tns:SubmitFleetAccountHttpPostIn" />
+      <wsdl:output message="tns:SubmitFleetAccountHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetupFullPackage">
+      <wsdl:input message="tns:SetupFullPackageHttpPostIn" />
+      <wsdl:output message="tns:SetupFullPackageHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateEmployee">
+      <wsdl:input message="tns:CreateEmployeeHttpPostIn" />
+      <wsdl:output message="tns:CreateEmployeeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePackage">
+      <wsdl:input message="tns:CreatePackageHttpPostIn" />
+      <wsdl:output message="tns:CreatePackageHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateVehicle">
+      <wsdl:input message="tns:CreateVehicleHttpPostIn" />
+      <wsdl:output message="tns:CreateVehicleHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateBenefit">
+      <wsdl:input message="tns:CreateBenefitHttpPostIn" />
+      <wsdl:output message="tns:CreateBenefitHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePaymentInstruction">
+      <wsdl:input message="tns:CreatePaymentInstructionHttpPostIn" />
+      <wsdl:output message="tns:CreatePaymentInstructionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployerOfferings">
+      <wsdl:input message="tns:GetEmployerOfferingsHttpPostIn" />
+      <wsdl:output message="tns:GetEmployerOfferingsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployerPayCycles">
+      <wsdl:input message="tns:GetEmployerPayCyclesHttpPostIn" />
+      <wsdl:output message="tns:GetEmployerPayCyclesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployerCostCentres">
+      <wsdl:input message="tns:GetEmployerCostCentresHttpPostIn" />
+      <wsdl:output message="tns:GetEmployerCostCentresHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SyncLookupData">
+      <wsdl:input message="tns:SyncLookupDataHttpPostIn" />
+      <wsdl:output message="tns:SyncLookupDataHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateEmployer">
+      <wsdl:input message="tns:ValidateEmployerHttpPostIn" />
+      <wsdl:output message="tns:ValidateEmployerHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EmployerCodeByWorkEmail">
+      <wsdl:input message="tns:EmployerCodeByWorkEmailHttpPostIn" />
+      <wsdl:output message="tns:EmployerCodeByWorkEmailHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SectorDetails">
+      <wsdl:input message="tns:SectorDetailsHttpPostIn" />
+      <wsdl:output message="tns:SectorDetailsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FormsEmailToSelf">
+      <wsdl:input message="tns:FormsEmailToSelfHttpPostIn" />
+      <wsdl:output message="tns:FormsEmailToSelfHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePayee">
+      <wsdl:input message="tns:CreatePayeeHttpPostIn" />
+      <wsdl:output message="tns:CreatePayeeHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CometServiceSoap" type="tns:CometServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SubmitFleetAccount">
+      <soap:operation soapAction="http://maxxia.com.au/CometInterface/SubmitFleetAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetupFullPackage">
+      <soap:operation soapAction="http://maxxia.com.au/CometInterface/SetupFullPackage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateEmployee">
+      <soap:operation soapAction="http://maxxia.com.au/CometInterface/CreateEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePackage">
+      <soap:operation soapAction="http://maxxia.com.au/CometInterface/CreatePackage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateVehicle">
+      <soap:operation soapAction="http://maxxia.com.au/CometInterface/CreateVehicle" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateBenefit">
+      <soap:operation soapAction="http://maxxia.com.au/CometInterface/CreateBenefit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePaymentInstruction">
+      <soap:operation soapAction="http://maxxia.com.au/CometInterface/CreatePaymentInstruction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployerOfferings">
+      <soap:operation soapAction="http://maxxia.com.au/CometInterface/GetEmployerOfferings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployerPayCycles">
+      <soap:operation soapAction="http://maxxia.com.au/CometInterface/GetEmployerPayCycles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployerCostCentres">
+      <soap:operation soapAction="http://maxxia.com.au/CometInterface/GetEmployerCostCentres" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SyncLookupData">
+      <soap:operation soapAction="http://maxxia.com.au/CometInterface/SyncLookupData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateEmployer">
+      <soap:operation soapAction="http://maxxia.com.au/CometInterface/ValidateEmployer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployerCodeByWorkEmail">
+      <soap:operation soapAction="http://maxxia.com.au/CometInterface/EmployerCodeByWorkEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SectorDetails">
+      <soap:operation soapAction="http://maxxia.com.au/CometInterface/SectorDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FormsEmailToSelf">
+      <soap:operation soapAction="http://maxxia.com.au/CometInterface/FormsEmailToSelf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePayee">
+      <soap:operation soapAction="http://maxxia.com.au/CometInterface/CreatePayee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CometServiceSoap12" type="tns:CometServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SubmitFleetAccount">
+      <soap12:operation soapAction="http://maxxia.com.au/CometInterface/SubmitFleetAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetupFullPackage">
+      <soap12:operation soapAction="http://maxxia.com.au/CometInterface/SetupFullPackage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateEmployee">
+      <soap12:operation soapAction="http://maxxia.com.au/CometInterface/CreateEmployee" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePackage">
+      <soap12:operation soapAction="http://maxxia.com.au/CometInterface/CreatePackage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateVehicle">
+      <soap12:operation soapAction="http://maxxia.com.au/CometInterface/CreateVehicle" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateBenefit">
+      <soap12:operation soapAction="http://maxxia.com.au/CometInterface/CreateBenefit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePaymentInstruction">
+      <soap12:operation soapAction="http://maxxia.com.au/CometInterface/CreatePaymentInstruction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployerOfferings">
+      <soap12:operation soapAction="http://maxxia.com.au/CometInterface/GetEmployerOfferings" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployerPayCycles">
+      <soap12:operation soapAction="http://maxxia.com.au/CometInterface/GetEmployerPayCycles" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployerCostCentres">
+      <soap12:operation soapAction="http://maxxia.com.au/CometInterface/GetEmployerCostCentres" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SyncLookupData">
+      <soap12:operation soapAction="http://maxxia.com.au/CometInterface/SyncLookupData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateEmployer">
+      <soap12:operation soapAction="http://maxxia.com.au/CometInterface/ValidateEmployer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployerCodeByWorkEmail">
+      <soap12:operation soapAction="http://maxxia.com.au/CometInterface/EmployerCodeByWorkEmail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SectorDetails">
+      <soap12:operation soapAction="http://maxxia.com.au/CometInterface/SectorDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FormsEmailToSelf">
+      <soap12:operation soapAction="http://maxxia.com.au/CometInterface/FormsEmailToSelf" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePayee">
+      <soap12:operation soapAction="http://maxxia.com.au/CometInterface/CreatePayee" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CometServiceHttpPost" type="tns:CometServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="SubmitFleetAccount">
+      <http:operation location="/SubmitFleetAccount" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetupFullPackage">
+      <http:operation location="/SetupFullPackage" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateEmployee">
+      <http:operation location="/CreateEmployee" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePackage">
+      <http:operation location="/CreatePackage" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateVehicle">
+      <http:operation location="/CreateVehicle" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateBenefit">
+      <http:operation location="/CreateBenefit" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePaymentInstruction">
+      <http:operation location="/CreatePaymentInstruction" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployerOfferings">
+      <http:operation location="/GetEmployerOfferings" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployerPayCycles">
+      <http:operation location="/GetEmployerPayCycles" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployerCostCentres">
+      <http:operation location="/GetEmployerCostCentres" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SyncLookupData">
+      <http:operation location="/SyncLookupData" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateEmployer">
+      <http:operation location="/ValidateEmployer" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmployerCodeByWorkEmail">
+      <http:operation location="/EmployerCodeByWorkEmail" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SectorDetails">
+      <http:operation location="/SectorDetails" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FormsEmailToSelf">
+      <http:operation location="/FormsEmailToSelf" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePayee">
+      <http:operation location="/CreatePayee" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CometService">
+    <wsdl:port name="CometServiceSoap" binding="tns:CometServiceSoap">
+      <soap:address location="http://mslmcopreprod01/SPInterface/CometService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CometServiceSoap12" binding="tns:CometServiceSoap12">
+      <soap12:address location="http://mslmcopreprod01/SPInterface/CometService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CometServiceHttpPost" binding="tns:CometServiceHttpPost">
+      <http:address location="http://mslmcopreprod01/SPInterface/CometService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

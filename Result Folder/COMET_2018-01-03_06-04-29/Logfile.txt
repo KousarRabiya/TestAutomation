@@ -1,0 +1,19 @@
+3/01/2018 6:04:29 PM  ***************
+1/3/2018 6:04:32 PM  Scenario :TC5-1-Adding the benefit from amendment screen
+1/3/2018 6:04:32 PM  User opens the browser and launch Comet application
+1/3/2018 6:04:33 PM  User enters the valid Employee number in text box
+1/3/2018 6:04:34 PM  User clicks on the search button
+1/3/2018 6:04:36 PM  Employee Details are shown
+1/3/2018 6:04:36 PM  Click on Amendments
+1/3/2018 6:04:38 PM  Click on New button
+1/3/2018 6:04:40 PM  User Add Benefits
+1/3/2018 6:05:30 PM--ERROR : ===User Add BenefitsException :OpenQA.Selenium.NoSuchElementException: Could not find element by: By.Id: ddlBenefitName
+   at OpenQA.Selenium.Support.PageObjects.DefaultElementLocator.LocateElement(IEnumerable`1 bys)
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.get_Element()
+   at OpenQA.Selenium.Support.PageObjects.WebElementProxy.Invoke(IMessage msg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.get_TagName()
+   at OpenQA.Selenium.Support.UI.SelectElement..ctor(IWebElement element)
+   at CometProject.PageObject.BenefitCreation.BenefitPage.SelectBenefit() in C:\Code\Source\RexxOnlineTests\CometProject\PageObject\BenefitCreation\BenefitPage.cs:line 28
+   at CometProject.StepDefinition.PackageCreationAndAddingBenifitSteps.ThenUserAddBenifits() in C:\Code\Source\RexxOnlineTests\CometProject\StepDefinition\PackageCreationAndAddingBenifitSteps.cs:line 293 ===
+1/3/2018 6:05:44 PM  ****************

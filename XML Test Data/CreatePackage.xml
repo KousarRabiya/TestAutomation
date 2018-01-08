@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Request Caller="Harness" xmlns="http://maxxia.com.au">
+  <CometCreatePackage>
+    <EmployeeID>405036</EmployeeID>
+    <Package>
+      <PackageEmployment>
+        <EmployerCode>DCNSW</EmployerCode>
+        <EmployerOfferingID>0</EmployerOfferingID>
+        <ContactWork>
+          <Phone>9999999999</Phone>
+          <Mobile>7999999999</Mobile>
+          <Fax>8999999999</Fax>
+          <Email>s@s.com</Email>
+        </ContactWork>
+        <VIP>1</VIP>
+      </PackageEmployment>
+      <PackageReviewDate>
+      </PackageReviewDate>
+      <PackagePayroll>
+        <PayrollID>13820809</PayrollID>
+        <AnnualSalary>100000.0</AnnualSalary>
+        <EmployerPayCycleID>0</EmployerPayCycleID>
+        <EmployerCostCentreID>0</EmployerCostCentreID>
+      </PackagePayroll>
+    </Package>
+  </CometCreatePackage>
+</Request>

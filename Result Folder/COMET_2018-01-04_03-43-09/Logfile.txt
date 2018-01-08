@@ -1,0 +1,6 @@
+4/01/2018 3:43:09 PM  ***************
+1/4/2018 3:43:11 PM  Scenario :Search with Employee Number
+1/4/2018 3:43:11 PM  I open the browser and launch Comet application
+1/4/2018 3:43:13 PM  I enter "EmpNum" in the employee number field
+1/4/2018 3:43:15 PM  I click on Search button
+1/4/2018 3:43:30 PM  ****************

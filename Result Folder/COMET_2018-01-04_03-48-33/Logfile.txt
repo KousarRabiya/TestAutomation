@@ -1,0 +1,10 @@
+4/01/2018 3:48:34 PM  ***************
+1/4/2018 3:48:35 PM  Scenario :TC5-1-Adding the benefit from amendment screen
+1/4/2018 3:48:35 PM  User opens the browser and launch Comet application
+1/4/2018 3:48:37 PM  User enters the valid Employee number in text box
+1/4/2018 3:48:38 PM  User clicks on the search button
+1/4/2018 3:48:40 PM  Employee Details are shown
+1/4/2018 3:48:40 PM  Click on Amendments
+1/4/2018 3:48:50 PM  Click on New button
+1/4/2018 3:48:51 PM  Enter New Benefit details
+1/4/2018 3:48:57 PM  ****************
