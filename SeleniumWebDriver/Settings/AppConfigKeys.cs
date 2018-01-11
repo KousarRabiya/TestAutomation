@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using SeleniumWebdriver.CustomException;
 using SeleniumWebdriver.Settings;
+using SeleniumWebDrivr;
 using System.Configuration;
 
 namespace SeleniumWebDriver.Settings
@@ -22,12 +23,12 @@ namespace SeleniumWebDriver.Settings
             switch (driv)
             {
                 case "Chrome" :
-                    IWebDriver driver=BaseClass.BaseClass.GetChromeDriver();
+                    IWebDriver driver=BaseClass.GetChromeDriver();
                     ObjectRepository.Driver = driver;
                     break;
 
                 case "IE":
-                    IWebDriver driverIE = BaseClass.BaseClass.GetIEDriver();
+                    IWebDriver driverIE = BaseClass.GetIEDriver();
                     ObjectRepository.Driver = driverIE;
                     break;
                 default:

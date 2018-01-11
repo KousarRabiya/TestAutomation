@@ -16,17 +16,17 @@ namespace ROLProject.StepDefinition
     public class ROLNavigateToContactPageSteps
     {
         public IWebDriver driver;
-        private readonly ROLLoginPage loginPage;
-        private readonly ROLDashboard rolDashBoard;
-        private readonly ROLContactPage rolContactPage;
+        private readonly LoginPage loginPage;
+        private readonly DashboardPage rolDashBoard;
+        private readonly ContactPage rolContactPage;
 
         ROLNavigateToContactPageSteps()
         {
             driver = SeleniumWebdriver.Settings.ObjectRepository.Driver;
 
-            loginPage = new ROLLoginPage(driver);
-            rolDashBoard = new ROLDashboard(driver);
-            rolContactPage = new ROLContactPage(driver);
+            loginPage = new LoginPage(driver);
+            rolDashBoard = new DashboardPage(driver);
+            rolContactPage = new ContactPage(driver);
         }
         [Given(@"User able to launch the ROL application")]
         public void GivenUserAbleToLaunchTheROLApplication_()

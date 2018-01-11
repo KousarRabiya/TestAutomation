@@ -23,21 +23,21 @@ namespace CometProject.StepDefinition
         public IWebDriver driverIE;
         private readonly CallCenterEnquirySearch callCenterSearch;
         private readonly CallCenter callCenter;
-        private readonly EmployeeDetails employeeDetails;
+        private readonly EmployeeDetailsPage employeeDetails;
 
         private readonly ProcessMenuPage processsMenuPage;
-        private readonly PackageAdminDetails packageAdminDetails;
-        private readonly PayRollDetails payRoll;
+        private readonly PackageAdminDetailsPage packageAdminDetails;
+        private readonly PayRollDetailsPage payRoll;
         private readonly AdminFeesPage adminFees;
-        private readonly EditPackage editpackage;
+        private readonly EditPackagePage editpackage;
 
-        private readonly PackageAdminDetailsEdit packAdminDetailEdit;
-        private readonly PayRollDetailsEdit payRollDetailEdit;
+        private readonly EditPackageAdminDetailsPage packAdminDetailEdit;
+        private readonly EditPayRollDetailsPage payRollDetailEdit;
         private readonly BenefitPage benefitPage;
-        private readonly BenefitDetails benefitDetails;
+        private readonly BenefitDetailsPage benefitDetails;
 
         private readonly ReviewAndActiveatePage activatePackage;
-        private readonly CardScreen cardScreen;
+        private readonly CardPage cardScreen;
         private readonly BatchProcessTest batchProcessTest;
         private readonly AmendmentsScreen amendments;
 
@@ -47,21 +47,21 @@ namespace CometProject.StepDefinition
             callCenterSearch = new CallCenterEnquirySearch(driverIE);
             callCenter = new CallCenter(driverIE);
 
-            employeeDetails = new EmployeeDetails(driverIE);
+            employeeDetails = new EmployeeDetailsPage(driverIE);
             processsMenuPage = new ProcessMenuPage(driverIE);
-            packageAdminDetails = new PackageAdminDetails(driverIE);
+            packageAdminDetails = new PackageAdminDetailsPage(driverIE);
 
-            payRoll = new PayRollDetails(driverIE);
+            payRoll = new PayRollDetailsPage(driverIE);
             adminFees = new AdminFeesPage(driverIE);
-            editpackage = new EditPackage(driverIE);
+            editpackage = new EditPackagePage(driverIE);
 
-            packAdminDetailEdit = new PackageAdminDetailsEdit(driverIE);
-            payRollDetailEdit = new PayRollDetailsEdit(driverIE);
+            packAdminDetailEdit = new EditPackageAdminDetailsPage(driverIE);
+            payRollDetailEdit = new EditPayRollDetailsPage(driverIE);
             benefitPage = new BenefitPage(driverIE);
 
-            benefitDetails = new BenefitDetails(driverIE);
+            benefitDetails = new BenefitDetailsPage(driverIE);
             activatePackage = new ReviewAndActiveatePage(driverIE);
-            cardScreen = new CardScreen(driverIE);
+            cardScreen = new CardPage(driverIE);
 
             batchProcessTest = new BatchProcessTest();
             amendments = new AmendmentsScreen(driverIE);

@@ -46,12 +46,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\ExtentReports.3.0.2\lib\ExtentReports.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="nunit.framework, Version=3.0.5797.27534, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
-      <HintPath>..\packages\NUnit.3.0.0\lib\net45\nunit.framework.dll</HintPath>
+    <Reference Include="nunit.framework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.9.0\lib\net45\nunit.framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System">
@@ -67,13 +67,11 @@
       <HintPath>..\packages\SpecFlow.2.2.1\lib\net45\TechTalk.SpecFlow.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="WebDriver, Version=3.5.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Selenium.WebDriver.3.5.2\lib\net40\WebDriver.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="WebDriver">
+      <HintPath>G:\Deploy\Testing\Selenium\MMSGProject_9_1_2018\ExternalAssemblies\WebDriver.dll</HintPath>
     </Reference>
-    <Reference Include="WebDriver.Support, Version=3.5.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Selenium.Support.3.5.2\lib\net40\WebDriver.Support.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="WebDriver.Support">
+      <HintPath>G:\Deploy\Testing\Selenium\MMSGProject_9_1_2018\ExternalAssemblies\WebDriver.Support.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Choose>
@@ -94,10 +92,25 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MOL.feature</DependentUpon>
     </Compile>
-    <Compile Include="Page Object\MOLDashBoard.cs" />
-    <Compile Include="Page Object\MOLLoginPage.cs" />
+    <Compile Include="Page Object\DashboardResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DashboardResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Page Object\DashBoardPage.cs" />
+    <Compile Include="Page Object\LoginPage.cs" />
     <Compile Include="Hooks\SpecHooks.cs" />
-    <Compile Include="Page Object\MOLYourTranscation.cs" />
+    <Compile Include="Page Object\LoginResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Page Object\TransactionResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransactionResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Page Object\TranscationPage.cs" />
     <Compile Include="PropertiesFile\Properties.cs" />
     <Compile Include="StepDefinition\ViewBenefitsAndTransactionInMOLApplication_Steps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -121,7 +134,20 @@
       <Name>SeleniumWebDriver</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Page Object\DashboardResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DashboardResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page Object\LoginResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LoginResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page Object\TransactionResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TransactionResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
@@ -148,9 +174,9 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Selenium.Chrome.WebDriver.2.33\build\Selenium.Chrome.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.Chrome.WebDriver.2.33\build\Selenium.Chrome.WebDriver.targets'))" />
-    <Error Condition="!Exists('..\packages\Selenium.WebDriver.ChromeDriver.2.33.0\build\Selenium.WebDriver.ChromeDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.ChromeDriver.2.33.0\build\Selenium.WebDriver.ChromeDriver.targets'))" />
+    <Error Condition="!Exists('..\packages\Selenium.WebDriver.ChromeDriver.2.34.0\build\Selenium.WebDriver.ChromeDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.ChromeDriver.2.34.0\build\Selenium.WebDriver.ChromeDriver.targets'))" />
   </Target>
-  <Import Project="..\packages\Selenium.WebDriver.ChromeDriver.2.33.0\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.ChromeDriver.2.33.0\build\Selenium.WebDriver.ChromeDriver.targets')" />
+  <Import Project="..\packages\Selenium.WebDriver.ChromeDriver.2.34.0\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.ChromeDriver.2.34.0\build\Selenium.WebDriver.ChromeDriver.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

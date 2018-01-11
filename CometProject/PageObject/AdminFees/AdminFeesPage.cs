@@ -29,7 +29,7 @@ namespace CometProject.PageObject.AdminFees
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
 
             // Click to open admin search pop up
-            EmployeeOfferingScreen EmpOff = new EmployeeOfferingScreen(driver);
+            EmployeeOfferingPage EmpOff = new EmployeeOfferingPage(driver);
             EmpOff.ClickOnSearchResult();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
 

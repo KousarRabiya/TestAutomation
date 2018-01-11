@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Data>
+  <!--This is already created users present on the UI to execute the scenarios. This would be change as per data on the UI deleted or refreshed.-->
+  <ArrayOfUser>
+    <!--Hard coded Users data for SMS.-->
+    <User>
+      <Name></Name>
+      <Password></Password>
+      <Email></Email>
+      <FirstName></FirstName>
+      <MiddleName></MiddleName>
+      <LastName></LastName>
+      <UserType></UserType>
+      <IsCreated></IsCreated>
+      <EnrolementStatus>false</EnrolementStatus>
+    </User>
+  </ArrayOfUser>
+</Data>

@@ -14,18 +14,18 @@ namespace MOLProject.StepDefinition
     public class ViewBenefitsAndTransactionInMOLApplication_Steps
     {
         public IWebDriver driver;
-        private readonly MOLLoginPage molLogin;
-        private readonly MOLDashBoard molDashBoard;
-        private readonly MOLYourTranscation molAccount;
+        private readonly LoginPage molLogin;
+        private readonly DashBoardPage molDashBoard;
+        private readonly TranscationPage molAccount;
         ViewBenefitsAndTransactionInMOLApplication_Steps()
         {
             // Getting the driver from the Object repositary  
             driver = ObjectRepository.Driver;
 
             // Passing the driver to constructor of the different page
-            molLogin = new MOLLoginPage(driver);
-            molDashBoard = new MOLDashBoard(driver);
-            molAccount = new MOLYourTranscation(driver);
+            molLogin = new LoginPage(driver);
+            molDashBoard = new DashBoardPage(driver);
+            molAccount = new TranscationPage(driver);
         }
         [Given(@"User able to launch the MOL application")]
         public void GivenUserAbleToLaunchTheMOLApplication()

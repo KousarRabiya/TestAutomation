@@ -96,7 +96,7 @@ namespace CometProject.PageObject.PaymentInstruction
             IJavaScriptExecutor executor = (IJavaScriptExecutor)driver;
             executor.ExecuteScript("var ele=arguments[0];setTimeout(function(){ele.click();},150)", ele);
 
-            PayeePage payeePage = new PayeePage(driver);
+            PayeeSearchPage payeePage = new PayeeSearchPage(driver);
             payeePage.SearchPayee();
         }
         public void PaymentDueDateBox()

@@ -43,25 +43,4 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 6
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://mslmcotfs01:8080/tfs/mcmillan%20shakespeare%20australia
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = ROLProject\\ROLProject.csproj
-		SccProjectName1 = ROLProject
-		SccLocalPath1 = ROLProject
-		SccProjectUniqueName2 = SeleniumWebDriver\\SeleniumWebDriver.csproj
-		SccProjectName2 = SeleniumWebDriver
-		SccLocalPath2 = SeleniumWebDriver
-		SccProjectUniqueName3 = MOLProject\\MOLProject.csproj
-		SccProjectName3 = MOLProject
-		SccLocalPath3 = MOLProject
-		SccProjectUniqueName4 = CometProject\\CometProject.csproj
-		SccProjectName4 = CometProject
-		SccLocalPath4 = CometProject
-		SccProjectUniqueName5 = WebServiceTestProject\\WebServiceTestProject.csproj
-		SccProjectName5 = WebServiceTestProject
-		SccLocalPath5 = WebServiceTestProject
-	EndGlobalSection
 EndGlobal
