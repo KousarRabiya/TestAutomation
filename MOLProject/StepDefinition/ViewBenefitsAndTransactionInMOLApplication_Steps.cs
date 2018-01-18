@@ -2,9 +2,9 @@
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
-using SeleniumWebdriver.ComponentHelper;
-using SeleniumWebdriver.Settings;
-using SeleniumWebDriver.ExcelOperation;
+using MMSG.Automation.ComponentHelper;
+using MMSG.Automation.Settings;
+using MMSG.Automation.ExcelOperation;
 using System;
 using TechTalk.SpecFlow;
 
@@ -174,7 +174,7 @@ namespace MOLProject.StepDefinition
         {
             SpecHooks.extentTest.Fail(ScenarioContext.Current.StepContext.StepInfo.Text);
             GenericHelper.TakeScreenshot("Exception_",driver);
-            SeleniumWebDriver.Reports.LogReport.WriteError(ScenarioContext.Current.StepContext.StepInfo.Text + "Exception :" + ex);
+            MMSG.Automation.Reports.LogReport.WriteError(ScenarioContext.Current.StepContext.StepInfo.Text + "Exception :" + ex);
             driver.Quit();
             Assert.Fail(ScenarioContext.Current.StepContext.StepInfo.Text, ex);
         }

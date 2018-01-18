@@ -2,9 +2,8 @@
 using AventStack.ExtentReports.Reporter;
 using AventStack.ExtentReports.Reporter.Configuration;
 using NUnit.Framework;
-using SeleniumWebdriver.ComponentHelper;
-using SeleniumWebdriver.Settings;
-using SeleniumWebDriver.Settings;
+using MMSG.Automation.ComponentHelper;
+using MMSG.Automation.Settings;
 using System;
 using System.Configuration;
 using TechTalk.SpecFlow;
@@ -41,7 +40,7 @@ namespace MOLProject
             extent.AttachReporter(htmlReporter);
             
             // Creating the Log file
-            SeleniumWebDriver.Reports.LogReport.CreateLogFile();
+            MMSG.Automation.Reports.LogReport.CreateLogFile();
         }
 
         [BeforeScenario]
@@ -61,9 +60,9 @@ namespace MOLProject
             GenericHelper.KillProcess(ObjectRepository.DriverName);
 
             // Getting the data from Excel           
-            SeleniumWebDriver.ExcelOperation.ExcelOperation.FetchDatafromExcel();
+            MMSG.Automation.ExcelOperation.ExcelOperation.FetchDatafromExcel();
             AppConfigKeys.AppSetting();
-            SeleniumWebDriver.Reports.LogReport.WritePass("Scenario :" + ScenarioContext.Current.ScenarioInfo.Title);
+            MMSG.Automation.Reports.LogReport.WritePass("Scenario :" + ScenarioContext.Current.ScenarioInfo.Title);
         }
 
         [AfterScenario]
@@ -72,7 +71,7 @@ namespace MOLProject
             ObjectRepository.Driver.Quit();
             GenericHelper.KillProcess(ObjectRepository.DriverName);
             extent.Flush();
-            SeleniumWebDriver.Reports.LogReport.WritePass("****************");           
+            MMSG.Automation.Reports.LogReport.WritePass("****************");           
         }
 
         [AfterStep]
@@ -89,7 +88,7 @@ namespace MOLProject
         public void BeforeachStep()
         {
             ObjectRepository.TestcasesStep = ScenarioContext.Current.StepContext.StepInfo.Text;
-            SeleniumWebDriver.Reports.LogReport.WritePass(ScenarioContext.Current.StepContext.StepInfo.Text);
+            MMSG.Automation.Reports.LogReport.WritePass(ScenarioContext.Current.StepContext.StepInfo.Text);
         }
     }
 }

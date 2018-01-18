@@ -129,12 +129,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SeleniumWebDriver\SeleniumWebDriver.csproj">
-      <Project>{61A28C3B-47EE-4F4B-A293-69D714D41E0B}</Project>
-      <Name>SeleniumWebDriver</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Page Object\DashboardResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>DashboardResource.Designer.cs</LastGenOutput>
@@ -147,6 +141,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>TransactionResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MMSG.Automation\MMSG.Automation.csproj">
+      <Project>{61a28c3b-47ee-4f4b-a293-69d714d41e0b}</Project>
+      <Name>MMSG.Automation</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

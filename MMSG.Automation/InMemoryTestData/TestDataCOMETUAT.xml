@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Data>
+  <!--This is already created users present on the UI to execute the scenarios. This would be change as per data on the UI deleted or refreshed.-->
+  <ArrayOfUser>
+    <!--Hard coded Users data for COMETUAT.-->
+    <User>
+      <Name>072270859</Name>
+      <Password>MOL1234</Password>
+      <Email>Sherlock_Test@remserv.com.au</Email>
+      <FirstName>Nithya</FirstName>
+      <MiddleName>Nanda</MiddleName>
+      <LastName>Meryl</LastName>
+      <Surname>Boult</Surname>
+      <Phone>04 00000000</Phone>
+      <UserType>ROLUser</UserType>
+      <IsCreated>true</IsCreated>
+      <EnrolementStatus>false</EnrolementStatus>
+    </User>
+  </ArrayOfUser>
+</Data>

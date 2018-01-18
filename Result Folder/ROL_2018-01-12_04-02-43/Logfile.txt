@@ -1,0 +1,4 @@
+12/01/2018 4:02:43 PM  ***************
+1/12/2018 4:04:06 PM  Senario :Login as ROL user
+1/12/2018 4:04:14 PM  I am access URL as "ROLUser"
+1/12/2018 4:04:26 PM  I login as "ROLUser" user

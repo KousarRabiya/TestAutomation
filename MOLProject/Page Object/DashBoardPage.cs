@@ -34,7 +34,7 @@ namespace MOLProject.Page_Object
         {
             if (DashBoardTextExist.Text != "Dashboard")
             {
-                SeleniumWebDriver.Reports.LogReport.WriteError(ScenarioContext.Current.StepContext.StepInfo.Text + "Exception :" + "System is not in Dashbord page");
+                MMSG.Automation.Reports.LogReport.WriteError(ScenarioContext.Current.StepContext.StepInfo.Text + "Exception :" + "System is not in Dashbord page");
                 throw new Exception();
             }
         }

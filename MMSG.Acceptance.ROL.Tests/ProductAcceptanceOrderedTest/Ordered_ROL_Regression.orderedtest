@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="Ordered_ROL_Regression" storage="c:\users\devavratks\source\repos\testautomation\mmsg.acceptance.rol.tests\productacceptanceorderedtest\ordered_rol_regression.orderedtest" id="7643a02d-c049-4f7f-8694-c5b94c1fd5d8" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestLinks>
+    <TestLink id="69c904b2-f1ff-f965-65f9-33e80b804810" name="LoginAsROLUser" storage="..\bin\debug\rolproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="e10bbc25-087a-d59a-4e87-64fd8c60ce06" name="LogoutAsROLUser" storage="..\bin\debug\rolproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>

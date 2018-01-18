@@ -1,0 +1,5 @@
+11/01/2018 7:02:54 PM  ***************
+1/11/2018 7:03:47 PM  Senario :TC1-ROL navigate to Contact Page
+1/11/2018 7:03:59 PM  User able to launch the ROL application
+1/11/2018 7:03:59 PM--ERROR : ===User able to launch the ROL applicationException :System.NullReferenceException: Object reference not set to an instance of an object.
+   at ROLProject.StepDefinition.ROLNavigateToContactPageSteps.GivenUserAbleToLaunchTheROLApplication_() ===

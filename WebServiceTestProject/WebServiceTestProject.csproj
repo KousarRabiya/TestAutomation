@@ -153,9 +153,9 @@
     <None Include="Web References\mslmcopreprod01\CometService.disco" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SeleniumWebDriver\SeleniumWebDriver.csproj">
+    <ProjectReference Include="..\MMSG.Automation\MMSG.Automation.csproj">
       <Project>{61a28c3b-47ee-4f4b-a293-69d714d41e0b}</Project>
-      <Name>SeleniumWebDriver</Name>
+      <Name>MMSG.Automation</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
