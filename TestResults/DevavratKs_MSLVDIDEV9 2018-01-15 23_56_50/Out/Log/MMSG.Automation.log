@@ -1,0 +1,1 @@
+ T: 2018-01-16 00:02:52,672 |L: INFO |TH: Agent: adapter run thread for test 'LoginAsROLUser' with id 'ebfb94a6-d0f3-4a9e-8504-1d786ecd19e8' |L: MMSG.Automation |MSG: ~ClassName = CommonAcceptanceTestDefinitions ~ MethodName = LoginAsUser ~ Message = Exit ~ ScreenShot File = 20181160249 

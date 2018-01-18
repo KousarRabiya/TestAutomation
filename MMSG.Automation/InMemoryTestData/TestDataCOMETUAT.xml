@@ -4,14 +4,20 @@
   <ArrayOfUser>
     <!--Hard coded Users data for COMETUAT.-->
     <User>
-      <Name>072270859</Name>
+      <Name>Cheryl-Anne</Name>
       <Password>MOL1234</Password>
-      <Email>Sherlock_Test@remserv.com.au</Email>
+      <Email>ppcustomer@maxxia.com.au</Email>
+      <EmployeeNumber>11806273</EmployeeNumber>
+      <EmployerCode>PHCN</EmployerCode>
       <FirstName>Nithya</FirstName>
       <MiddleName>Nanda</MiddleName>
       <LastName>Meryl</LastName>
       <Surname>Boult</Surname>
-      <Phone>04 00000000</Phone>
+      <Gender>Female</Gender>
+      <GivenName>Cheryl-Anne</GivenName>
+      <DOB>9/05/1974</DOB>
+      <MemberNumber>190902</MemberNumber>
+      <Phone>03 99730006</Phone>
       <UserType>ROLUser</UserType>
       <IsCreated>true</IsCreated>
       <EnrolementStatus>false</EnrolementStatus>

@@ -62,7 +62,7 @@ namespace MMSG.Pages.UI_Pages
                         base.DeleteAllBrowserCookies();
                         break;
                 }
-                this.GoToLoginUrl(_baseLoginUrl);
+                this.GoToLoginUrl(_baseLoginUrl, userTypeEnum);
             }
             catch (Exception e)
             {
@@ -74,10 +74,65 @@ namespace MMSG.Pages.UI_Pages
         /// <summary>
         ///  Navigates from base Url in browser through WebDriver.
         /// </summary>
-        public void GoToLoginUrl(string baseLoginUrl)
+        public void GoToLoginUrl(string baseLoginUrl,User.UserTypeEnum userTypeEnum)
         {
             Logger.LogMethodEntry("LoginPage", "GoToLoginUrl",
                 base.IsTakeScreenShotDuringEntryExit);
+            try
+            {
+                // Switch based on the user type
+              switch(userTypeEnum)
+                {
+                    case User.UserTypeEnum.ROLUser:
+                        GotoNavigationURl(baseLoginUrl);
+                        break;
+                    // Execute Comet URL
+                    case User.UserTypeEnum.COMETUser:
+                        GotoNavigationURlComet(baseLoginUrl);
+                        break;
+                }
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.HandleException(e);
+            }
+            Logger.LogMethodExit("LoginPage", "GoToLoginUrl",
+                base.IsTakeScreenShotDuringEntryExit);
+        }
+
+        /// <summary>
+        /// Navigate to Comet URL
+        /// </summary>
+        /// <param name="baseLoginUrl">This is login URL</param>
+        private void GotoNavigationURlComet(string baseLoginUrl)
+        {
+            try
+            {
+                //Get Url Successfully Browsed
+                if (IsUrlBrowsedSuccessful())
+                {
+                    //Open Url in Browser
+                    base.NavigateToBrowseUrl(baseLoginUrl);
+                    base.SwitchToPopup();
+                }
+                else
+                {
+                    throw new Exception("Browser cannot display the webpage");
+                }
+            }
+            catch(Exception e)
+            {
+                ExceptionHandler.HandleException(e);
+
+            }
+        }
+
+        /// <summary>
+        /// Navigate to URL
+        /// </summary>
+        /// <param name="baseLoginUrl">This is login URL.</param>
+        private void GotoNavigationURl(string baseLoginUrl)
+        {
             try
             {
                 //Get Url Successfully Browsed
@@ -89,7 +144,6 @@ namespace MMSG.Pages.UI_Pages
                     if (title == "Certificate Error: Navigation Blocked")
                     {
                         base.NavigateToBrowseUrl("javascript:document.getElementById('overridelink').click()");
-
                     }
                 }
                 else
@@ -101,11 +155,7 @@ namespace MMSG.Pages.UI_Pages
             {
                 ExceptionHandler.HandleException(e);
             }
-            Logger.LogMethodExit("LoginPage", "GoToLoginUrl",
-                base.IsTakeScreenShotDuringEntryExit);
         }
-
-
 
         /// <summary>
         /// Check thr Url Browsed Successfully.

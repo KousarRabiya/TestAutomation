@@ -1,6 +1,8 @@
-﻿using MMSG.Automation;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using MMSG.Automation;
 using MMSG.Automation.DataTransferObjects;
 using MMSG.Pages.UI_Pages;
+using MMSG.Pages.UI_Pages.Comet;
 using TechTalk.SpecFlow;
 
 namespace MMSG.Acceptance.Comet.Tests.CommonAcceptanceTestDefinitions
@@ -30,6 +32,18 @@ namespace MMSG.Acceptance.Comet.Tests.CommonAcceptanceTestDefinitions
             Logger.LogMethodExit("CommonDefinition", "LaunchApplicationURL", base.IsTakeScreenShotDuringEntryExit);
         }
 
+        /// <summary>
+        /// Validate the display of Comet logo
+        /// </summary>
+        [Then(@"I should be displayed with Comet logo")]
+        public void ValidateDisplayCometLogo()
+        {
+            // Validate the logo existance status
+            Logger.LogMethodEntry("CommonDefinition", "ValidateDisplayCometLogo", base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogAssertion("ValidateTheUserDetails", ScenarioContext.Current.ScenarioInfo.Title, () =>
+            Assert.IsTrue(new CallCentreEnquiryPage().GetApplicationLogoExistance()));
+            Logger.LogMethodExit("CommonDefinition", "ValidateDisplayCometLogo", base.IsTakeScreenShotDuringEntryExit);
+        }
 
     }
 }

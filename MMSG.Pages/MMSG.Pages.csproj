@@ -58,6 +58,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="UI Pages\Comet\CallCentreEnquiryPage.cs" />
+    <Compile Include="UI Pages\Comet\CallCentreEnquiryResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CallCentreEnquiryResource.resx</DependentUpon>
+    </Compile>
     <Compile Include="UI Pages\Exceptions\ExceptionHandler.cs" />
     <Compile Include="UI Pages\Exceptions\GenericPageException.cs" />
     <Compile Include="UI Pages\Exceptions\LoginFailedException.cs" />
@@ -92,6 +98,10 @@
     <EmbeddedResource Include="UI Pages\ApplicationLoginPageResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ApplicationLoginPageResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\CallCentreEnquiryResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CallCentreEnquiryResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UI Pages\ROL\Home\Dashboard\ContactResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>

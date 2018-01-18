@@ -95,6 +95,8 @@ namespace MMSG.Acceptance.Comet.Tests.CommonAcceptanceTestFeatures
 this.ScenarioSetup(scenarioInfo);
 #line 8
  testRunner.Given("I access application URL as \"COMETUser\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 9
+ testRunner.Then("I should be displayed with Comet logo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

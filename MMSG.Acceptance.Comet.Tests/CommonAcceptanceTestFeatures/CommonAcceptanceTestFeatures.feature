@@ -6,3 +6,4 @@
 @mytag
 Scenario: User launch Comet URL
 	Given  I access application URL as "COMETUser"
+	Then I should be displayed with Comet logo

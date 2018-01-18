@@ -181,12 +181,12 @@ namespace MMSG.Automation
             // get path for save log execution file
             String getExecutingPath = new FileInfo(Assembly.GetExecutingAssembly().Location).DirectoryName;
             if (getExecutingPath != null)
-                ieservice.LogFile = Path.Combine(getExecutingPath, "Log", "IEDriver" + DateTime.Now.Ticks + ".log");
+                ieservice.LogFile = Path.Combine(getIeDriverPath, "Log", "IEDriver" + DateTime.Now.Ticks + ".log");
             // set internet explorer options
             var options = new InternetExplorerOptions
             {
                 IntroduceInstabilityByIgnoringProtectedModeSettings = true,
-                UnexpectedAlertBehavior = InternetExplorerUnexpectedAlertBehavior.Ignore,
+                //UnexpectedAlertBehavior = InternetExplorerUnexpectedAlertBehavior.Ignore,
                 IgnoreZoomLevel = true,
                 EnableNativeEvents = true,
                 BrowserAttachTimeout = TimeSpan.FromMinutes(20),

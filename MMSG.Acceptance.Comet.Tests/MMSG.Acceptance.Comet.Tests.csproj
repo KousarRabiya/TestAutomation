@@ -176,6 +176,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PayeeSearchResource.resx</DependentUpon>
     </Compile>
+    <Compile Include="ProductAcceptanceTestDefinition\CallCentreEnquiryDefinition.cs" />
+    <Compile Include="ProductAcceptanceTestFeatures\CallCentreEnquiryFeature.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CallCentreEnquiryFeature.feature</DependentUpon>
+    </Compile>
     <Compile Include="StepDefinition\CometSearchFeatureSteps.cs" />
     <Compile Include="Hook\SpecHooks.cs" />
     <Compile Include="PageObject\AddressDetails.cs" />
@@ -239,6 +245,10 @@
     </None>
     <None Include="packages.config">
       <SubType>Designer</SubType>
+    </None>
+    <None Include="ProductAcceptanceTestFeatures\CallCentreEnquiryFeature.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>CallCentreEnquiryFeature.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -316,8 +326,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ProductAcceptanceOrderedTest\" />
-    <Folder Include="ProductAcceptanceTestDefinition\" />
-    <Folder Include="ProductAcceptanceTestFeatures\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

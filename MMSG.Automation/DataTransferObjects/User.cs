@@ -49,6 +49,11 @@ namespace MMSG.Automation.DataTransferObjects
         public bool EnrolementStatus { get; set; }
 
         /// <summary>
+        /// This is Given name of the user.
+        /// </summary>
+        public string GivenName { get; set; }
+
+        /// <summary>
         /// This is the Users Profile Date and Time.
         /// </summary>
         public DateTime CurrentProfileDateTime { get; set; }
@@ -57,6 +62,31 @@ namespace MMSG.Automation.DataTransferObjects
         /// This is the email of the user.
         /// </summary>
         public String WorkSpaceName { get; set; }
+
+        /// <summary>
+        /// This is the Gender of the user.
+        /// </summary>
+        public string Gender { get; set;}
+
+        /// <summary>
+        /// This is user date of birth
+        /// </summary>
+        public DateTime DOB { get; set;}
+
+        /// <summary>
+        /// This is Employee Number of the user
+        /// </summary>
+        public string EmployeeNumber{ get; set; }
+
+        /// <summary>
+        /// This is Member number
+        /// </summary>
+        public string MemberNumber { get; set; }
+
+        /// <summary>
+        /// This is employer code for user
+        /// </summary>
+        public string EmployerCode { get; set; }
 
         /// <summary>
         /// This is the type of the user

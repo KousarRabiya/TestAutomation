@@ -16,7 +16,7 @@ namespace MMSG.Automation.ComponentHelper
     public class GenericHelper
     {
         public static int StepNo = ObjectRepository.TestCasesStepNumber;
-        private readonly IWebDriver _webDriver = null;
+        //private readonly IWebDriver _webDriver = null;
         private static readonly ILog Logger = Log4NetHelper.GetXmlLogger(typeof(GenericHelper));
         private static Func<IWebDriver, bool> WaitForWebElementFunc(By locator)
         {
