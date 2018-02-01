@@ -49,15 +49,15 @@ C:\Users\DevavratKs\Source\Repos\TestAutomation\WebServiceTestProject\bin\Debug\
 C:\Users\DevavratKs\Source\Repos\TestAutomation\WebServiceTestProject\bin\Debug\WebServiceTestProject.pdb
 C:\Users\DevavratKs\Source\Repos\TestAutomation\WebServiceTestProject\bin\Debug\ExtentReports.dll
 C:\Users\DevavratKs\Source\Repos\TestAutomation\WebServiceTestProject\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\DevavratKs\Source\Repos\TestAutomation\WebServiceTestProject\bin\Debug\MMSG.Automation.dll
 C:\Users\DevavratKs\Source\Repos\TestAutomation\WebServiceTestProject\bin\Debug\Newtonsoft.Json.dll
 C:\Users\DevavratKs\Source\Repos\TestAutomation\WebServiceTestProject\bin\Debug\nunit.framework.dll
-C:\Users\DevavratKs\Source\Repos\TestAutomation\WebServiceTestProject\bin\Debug\SeleniumWebDriver.dll
 C:\Users\DevavratKs\Source\Repos\TestAutomation\WebServiceTestProject\bin\Debug\TechTalk.SpecFlow.dll
 C:\Users\DevavratKs\Source\Repos\TestAutomation\WebServiceTestProject\bin\Debug\WebDriver.dll
 C:\Users\DevavratKs\Source\Repos\TestAutomation\WebServiceTestProject\bin\Debug\WebDriver.Support.dll
 C:\Users\DevavratKs\Source\Repos\TestAutomation\WebServiceTestProject\bin\Debug\log4net.dll
 C:\Users\DevavratKs\Source\Repos\TestAutomation\WebServiceTestProject\bin\Debug\System.Management.Automation.dll
-C:\Users\DevavratKs\Source\Repos\TestAutomation\WebServiceTestProject\bin\Debug\SeleniumWebDriver.pdb
+C:\Users\DevavratKs\Source\Repos\TestAutomation\WebServiceTestProject\bin\Debug\MMSG.Automation.pdb
 C:\Users\DevavratKs\Source\Repos\TestAutomation\WebServiceTestProject\bin\Debug\Newtonsoft.Json.xml
 C:\Users\DevavratKs\Source\Repos\TestAutomation\WebServiceTestProject\bin\Debug\nunit.framework.xml
 C:\Users\DevavratKs\Source\Repos\TestAutomation\WebServiceTestProject\bin\Debug\WebDriver.xml

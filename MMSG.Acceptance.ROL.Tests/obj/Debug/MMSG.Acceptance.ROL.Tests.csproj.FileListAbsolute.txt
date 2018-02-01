@@ -51,14 +51,14 @@ C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.ROL.Tests\bin\De
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.ROL.Tests\bin\Debug\ExtentReports.dll
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.ROL.Tests\bin\Debug\log4net.dll
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.ROL.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.ROL.Tests\bin\Debug\MMSG.Automation.dll
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.ROL.Tests\bin\Debug\MMSG.Pages.dll
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.ROL.Tests\bin\Debug\Newtonsoft.Json.dll
-C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.ROL.Tests\bin\Debug\SeleniumWebDriver.dll
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.ROL.Tests\bin\Debug\TechTalk.SpecFlow.dll
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.ROL.Tests\bin\Debug\WebDriver.dll
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.ROL.Tests\bin\Debug\WebDriver.Support.dll
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.ROL.Tests\bin\Debug\System.Management.Automation.dll
-C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.ROL.Tests\bin\Debug\SeleniumWebDriver.pdb
+C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.ROL.Tests\bin\Debug\MMSG.Automation.pdb
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.ROL.Tests\bin\Debug\MMSG.Pages.pdb
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.ROL.Tests\bin\Debug\log4net.xml
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.ROL.Tests\bin\Debug\Newtonsoft.Json.xml

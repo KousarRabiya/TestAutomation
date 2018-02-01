@@ -39,7 +39,7 @@ namespace MMSG.Automation {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SeleniumWebDriver.AutomationConfigurationManagerResource", typeof(AutomationConfigurationManagerResource).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MMSG.Automation.AutomationConfigurationManagerResource", typeof(AutomationConfigurationManagerResource).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

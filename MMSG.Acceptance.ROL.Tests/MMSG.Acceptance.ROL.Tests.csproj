@@ -103,12 +103,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ClaimsFeature.feature</DependentUpon>
     </Compile>
+    <Compile Include="Hook\SpecFlowHook.cs" />
     <Compile Include="ProductAcceptanceTestFeatures\ContactFeature.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ContactFeature.feature</DependentUpon>
     </Compile>
-    <Compile Include="Hook\SpecFlowHook.cs" />
     <Compile Include="PropertiesFiles\Properties.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -132,14 +132,14 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ClaimsFeature.feature.cs</LastGenOutput>
     </None>
-    <None Include="ProductAcceptanceTestFeatures\ContactFeature.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>ContactFeature.feature.cs</LastGenOutput>
-    </None>
     <None Include="Input Files\TestData.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
+    <None Include="ProductAcceptanceTestFeatures\ContactFeature.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ContactFeature.feature.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

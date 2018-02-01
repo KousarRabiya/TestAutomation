@@ -1,13 +1,10 @@
 ﻿using System.Collections.Generic;
-using System.Configuration;
-using System.Globalization;
 using System.IO;
 using System.Reflection;
 using System.Xml;
 using System.Xml.Serialization;
 using System;
 using MMSG.Automation.DataTransferObjects;
-using MMSG.Automation;
 
 namespace MMSG.Automation
 {
@@ -38,19 +35,19 @@ namespace MMSG.Automation
             // based on environment deserialize xml data in memory
             switch (AutomationConfigurationManager.ApplicationTestEnvironment.ToUpper())
             {
-                case "COMETDEV":
-                    this.DeserializeTheXmlDataInMemory(GetInMemoryTestDataFilePath
-       (AutomationConfigurationManager.ApplicationTestEnvironment)); break;
-                case "COMETUAT":
-                    this.DeserializeTheXmlDataInMemory(GetInMemoryTestDataFilePath
-       (AutomationConfigurationManager.ApplicationTestEnvironment)); break;
-                case "ROLCERT":
-                    this.DeserializeTheXmlDataInMemory(GetInMemoryTestDataFilePath
-        (AutomationConfigurationManager.ApplicationTestEnvironment)); break;
-                case "MOLUAT":
-                    this.DeserializeTheXmlDataInMemory(GetInMemoryTestDataFilePath
-         (AutomationConfigurationManager.ApplicationTestEnvironment)); break;
-                default: throw new ArgumentException("The suggested environment was not found");
+                        case "COMETDEV":
+                            this.DeserializeTheXmlDataInMemory(GetInMemoryTestDataFilePath
+               (AutomationConfigurationManager.ApplicationTestEnvironment)); break;
+                        case "COMETUAT":
+                            this.DeserializeTheXmlDataInMemory(GetInMemoryTestDataFilePath
+               (AutomationConfigurationManager.ApplicationTestEnvironment)); break;
+                        case "ROLCERT":
+                            this.DeserializeTheXmlDataInMemory(GetInMemoryTestDataFilePath
+                (AutomationConfigurationManager.ApplicationTestEnvironment)); break;
+                        case "MOLUAT":
+                            this.DeserializeTheXmlDataInMemory(GetInMemoryTestDataFilePath
+                 (AutomationConfigurationManager.ApplicationTestEnvironment)); break;
+                        default: throw new ArgumentException("The suggested environment was not found");
             }
         }
 
@@ -68,6 +65,7 @@ namespace MMSG.Automation
 
             // desearlize dat
             DesearlizeUserTestData(xmlDocument, ref xmlNodeList, ref xmlSerializer);
+            //DesearlizePackageTestData(xmlDocument, ref xmlNodeList, ref xmlSerializer);
         }
 
         /// <summary>
@@ -113,6 +111,34 @@ namespace MMSG.Automation
             }
         }
 
+        /// <summary>
+        /// Desearlize User Test Data In Memory.
+        /// </summary>
+        /// <param name="xmlDocument">Represents an XML document.</param>
+        /// <param name="xmlNodeList">Represents an ordered collection of nodes.</param>
+        /// <param name="xmlSerializer">Serializes and deserializes objects into and from XML documents. 
+        /// The XmlSerializer enables you to control how objects are encoded into XML.</param>
+        private void DesearlizePackageTestData(XmlDocument xmlDocument,
+            ref XmlNodeList xmlNodeList, ref XmlSerializer xmlSerializer)
+        {
+            // get xml node list for Package
+            xmlNodeList = xmlDocument.SelectNodes("Data/ArrayOfPackage");
+            // created object xml serializer
+            xmlSerializer = new XmlSerializer(typeof(List<Package>));
+            if (xmlNodeList != null && xmlNodeList.Count > 0)
+            {
+                // created object xml node reader
+                var reader = new XmlNodeReader(xmlNodeList.Item(0));
+                // get users list
+                var getUserList = (List<Package>)
+                 xmlSerializer.Deserialize(reader);
+                foreach (Package packages in getUserList)
+                {
+                    // push in memory
+                    _inMemoryDatabase.Insert(packages);
+                }
+            }
+        }
 
         /// <summary>
         /// This class returns the instance of the in memory database

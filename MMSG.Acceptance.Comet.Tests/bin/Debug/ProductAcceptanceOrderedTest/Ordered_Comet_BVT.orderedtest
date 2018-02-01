@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="ordered_comet_bvt" storage="c:\users\devavratks\source\repos\testautomation\mmsg.acceptance.comet.tests\productacceptanceorderedtest\ordered_comet_bvt.orderedtest" id="47ebadb9-0025-4421-b1ab-76923fae4d1c" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestLinks>
+    <TestLink id="a2cf9368-0d7c-d23b-bfbb-8aab13dd7555" name="UserLaunchCometURL" storage="..\bin\debug\mmsg.acceptance.comet.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="5616af17-9e9d-02c1-75d4-7b10a9dfc75f" name="CommetUserSearchUsingEmployeeNumber" storage="..\bin\debug\mmsg.acceptance.comet.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="578c32af-b5f4-ae01-47a5-741ce5ab3c1e" name="CreateNewEmployeeAsCommetUser" storage="..\bin\debug\mmsg.acceptance.comet.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>

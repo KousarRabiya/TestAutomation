@@ -19,6 +19,11 @@ namespace MMSG.Automation.DataTransferObjects
         public String Email { get; set; }
 
         /// <summary>
+        /// This is the othername of the user.
+        /// </summary>
+        public string OtherName { get; set; }
+
+        /// <summary>
         /// This is the Surname of the user.
         /// </summary>
         public String Surname { get; set; }
@@ -96,6 +101,8 @@ namespace MMSG.Automation.DataTransferObjects
             #region User Types
             ROLUser = 1,
             COMETUser=2,
+            MOLUser=3,
+            NewCOMETUser=4,
             #endregion
         }
 

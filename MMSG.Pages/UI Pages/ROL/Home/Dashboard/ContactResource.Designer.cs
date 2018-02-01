@@ -59,5 +59,230 @@ namespace MMSG.Pages.UI_Pages.ROL.Home.Dashboard {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to //form[@id=&apos;contactForm&apos;]/div[4]/div[3]/div[2]/div/div[1]/button.
+        /// </summary>
+        internal static string ContactPage_AddBenefitButton_Xpath_Locator {
+            get {
+                return ResourceManager.GetString("ContactPage_AddBenefitButton_Xpath_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to //form[@id=&apos;contactForm&apos;]/div[4]/div[2]/div[2]/div/div[1]/button.
+        /// </summary>
+        internal static string ContactPage_ChangeButton_Xpath_Locator {
+            get {
+                return ResourceManager.GetString("ContactPage_ChangeButton_Xpath_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sherlock_Test@remserv.com.au.
+        /// </summary>
+        internal static string ContactPage_EmailId_Email_Value {
+            get {
+                return ResourceManager.GetString("ContactPage_EmailId_Email_Value", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email.
+        /// </summary>
+        internal static string ContactPage_EmailId_ID_Locator {
+            get {
+                return ResourceManager.GetString("ContactPage_EmailId_ID_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sherlock_Test@remserv.com.au.
+        /// </summary>
+        internal static string ContactPage_EmailIdTextBox_EmailIDValue_Value {
+            get {
+                return ResourceManager.GetString("ContactPage_EmailIdTextBox_EmailIDValue_Value", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email.
+        /// </summary>
+        internal static string ContactPage_EmailIdTextBox_ID_Locator {
+            get {
+                return ResourceManager.GetString("ContactPage_EmailIdTextBox_ID_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to //form[@id=&apos;contactForm&apos;]/div[4]/div[1]/div[2]/div/div[1]/button.
+        /// </summary>
+        internal static string ContactPage_IWantToButton_Xpath_Locator {
+            get {
+                return ResourceManager.GetString("ContactPage_IWantToButton_Xpath_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Message.
+        /// </summary>
+        internal static string ContactPage_Messagel_ID_Locator {
+            get {
+                return ResourceManager.GetString("ContactPage_Messagel_ID_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MMSG.
+        /// </summary>
+        internal static string ContactPage_Messagel_Message_Value {
+            get {
+                return ResourceManager.GetString("ContactPage_Messagel_Message_Value", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to change-date-next.
+        /// </summary>
+        internal static string ContactPage_NextPayDateForChange_ID_Locator {
+            get {
+                return ResourceManager.GetString("ContactPage_NextPayDateForChange_ID_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to change-date-next.
+        /// </summary>
+        internal static string ContactPage_PayDateChangeChangeNextDateID_Locator {
+            get {
+                return ResourceManager.GetString("ContactPage_PayDateChangeChangeNextDateID_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to change-date-selected.
+        /// </summary>
+        internal static string ContactPage_PayDateChangeSelectPayDate_ID_Locator {
+            get {
+                return ResourceManager.GetString("ContactPage_PayDateChangeSelectPayDate_ID_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to //form[@id=&apos;contactForm&apos;]/div[4]/div[9]/div[2]/div/div[1]/button.
+        /// </summary>
+        internal static string ContactPage_PayDateForChangesDropDown_Xpath_Locator {
+            get {
+                return ResourceManager.GetString("ContactPage_PayDateForChangesDropDown_Xpath_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to //form[@id=&apos;contactForm&apos;]/div[4]/div[9]/div[2]/div/div[1]/div/ul/li[2]/a/span.
+        /// </summary>
+        internal static string ContactPage_PayDateForChangesDropDownSecondOption_Xpath_Locator {
+            get {
+                return ResourceManager.GetString("ContactPage_PayDateForChangesDropDownSecondOption_Xpath_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to deduction-once.
+        /// </summary>
+        internal static string ContactPage_PayDeductionRadioButtonOncesOffDeduction_ID_Locator {
+            get {
+                return ResourceManager.GetString("ContactPage_PayDeductionRadioButtonOncesOffDeduction_ID_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to deduction-ongoing.
+        /// </summary>
+        internal static string ContactPage_PayDeductionRadioButtonOnGoingDeduction_ID_Locator {
+            get {
+                return ResourceManager.GetString("ContactPage_PayDeductionRadioButtonOnGoingDeduction_ID_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1000.
+        /// </summary>
+        internal static string ContactPage_PayDeductionTextBox_Amount_Value {
+            get {
+                return ResourceManager.GetString("ContactPage_PayDeductionTextBox_Amount_Value", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to //input[@id=&apos;deduction-amount&apos;].
+        /// </summary>
+        internal static string ContactPage_PayDeductionTextBox_Xpath_Locator {
+            get {
+                return ResourceManager.GetString("ContactPage_PayDeductionTextBox_Xpath_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone.
+        /// </summary>
+        internal static string ContactPage_PhoneNumberTextBox_ID_Locator {
+            get {
+                return ResourceManager.GetString("ContactPage_PhoneNumberTextBox_ID_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 04 00000000.
+        /// </summary>
+        internal static string ContactPage_PhoneNumberTextBox_PhoneNumber_Value {
+            get {
+                return ResourceManager.GetString("ContactPage_PhoneNumberTextBox_PhoneNumber_Value", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to preferred-email.
+        /// </summary>
+        internal static string ContactPage_PreferredEmail_ID_Locator {
+            get {
+                return ResourceManager.GetString("ContactPage_PreferredEmail_ID_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to preferred-phone.
+        /// </summary>
+        internal static string ContactPage_PreferredPhone_ID_Locator {
+            get {
+                return ResourceManager.GetString("ContactPage_PreferredPhone_ID_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to contact-submit.
+        /// </summary>
+        internal static string ContactPage_SubmitButtonl_ID_Locator {
+            get {
+                return ResourceManager.GetString("ContactPage_SubmitButtonl_ID_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Thank you for contacting RemServ. We will respond to your request within four working days..
+        /// </summary>
+        internal static string ContactPage_SuccessMessage_Message_Value {
+            get {
+                return ResourceManager.GetString("ContactPage_SuccessMessage_Message_Value", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to //div[@id=&apos;success&apos;]/div/div[2]/div.
+        /// </summary>
+        internal static string ContactPage_SuccessMessage_Xpath_Locator {
+            get {
+                return ResourceManager.GetString("ContactPage_SuccessMessage_Xpath_Locator", resourceCulture);
+            }
+        }
     }
 }

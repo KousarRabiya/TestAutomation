@@ -48,18 +48,12 @@ namespace MMSG.Pages.UI_Pages.Comet
             Logger.LogMethodEntry("CallCentreEnquiryPage", "UserSearch", base.IsTakeScreenShotDuringEntryExit);
             try
             {
-                /*
-                EmployeeNumber
-EmployerCode
-Surname
-GivenName
-DateOfBirth*/
+
                 //Get user details
                 User user = User.Get(userType);
                 string employeeNumber = user.EmployeeNumber.ToString();
                 string surName = user.Name.ToString();
                 string givenName = user.GivenName.ToString();
-                string date = user.DOB.ToString();
                 string employerCode = user.EmployerCode.ToString();
 
                 base.WaitUntilPopUpLoads(base.GetPageTitle);
@@ -78,7 +72,6 @@ DateOfBirth*/
                     case "Surname":
                         base.WaitForElement(By.Id("CCEmployeeSearch_txtSurname"));
                         break;
-
                 }
             }
             catch (Exception e)
@@ -86,7 +79,138 @@ DateOfBirth*/
                 ExceptionHandler.HandleException(e);
             }
             Logger.LogMethodExit("CallCentreEnquiryPage", "UserSearch", base.IsTakeScreenShotDuringEntryExit);
+        }
 
+        /// <summary>
+        /// Click search button
+        /// </summary>
+        public void ClickSearchButton()
+        {
+            try
+            {
+                // Wait untill popup loads
+                base.WaitUntilPopUpLoads(base.GetPageTitle);
+                // Wait for search button to load
+                base.WaitForElement(By.Id("CCEmployeeSearch_cmdSearch"));
+                // Click button by ID
+                IWebElement getSearchButton = base.GetWebElementPropertiesById("CCEmployeeSearch_cmdSearch");
+                base.ClickByJavaScriptExecutor(getSearchButton);
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.HandleException(e);
+            }
+        }
+
+        /// <summary>
+        /// Get element existance details from application
+        /// </summary>
+        /// <param name="userType">This is user type enum.</param>
+        /// <returns>This will return employee existance status.</returns>
+        public bool GetEmployeeDetailsDisplayStatus(User.UserTypeEnum userType)
+        {
+            Logger.LogMethodEntry("CallCentreEnquiryPage", "GetEmployeeDetailsDisplayStatus", base.IsTakeScreenShotDuringEntryExit);
+            bool getEmployeeDetailsStatus = false;
+            try
+            {
+                // Get user details from inmemory
+                User user = User.Get(userType);
+                string employeeNo = user.EmployeeNumber.ToString();
+                string employeeName = user.Name.ToString();
+                string gender = user.Gender.ToString();
+                string email = user.Email.ToString();
+
+                // Get user details from application
+                string getEmployeeNo = base.GetInnerTextAttributeValueById("wucPackageSummary_tdEmployeeNo");
+                string getEmployeeName = base.GetInnerTextAttributeValueById("wucPackageSummary_tdEmployeeName");
+                string getGender = base.GetInnerTextAttributeValueById("wucPackageSummary_tdGender");
+                string getEmail = base.GetInnerTextAttributeValueById("wucPackageSummary_tdEmail");
+
+                if (getEmployeeNo.Equals(employeeNo) &&
+                    getEmployeeName.Contains(employeeName) && getGender.Equals(gender) && getEmail.Equals(email))
+                {
+                    getEmployeeDetailsStatus = true;
+                }
+
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.HandleException(e);
+            }
+            Logger.LogMethodExit("CallCentreEnquiryPage", "GetEmployeeDetailsDisplayStatus", base.IsTakeScreenShotDuringEntryExit);
+            return getEmployeeDetailsStatus;
+        }
+
+        /// <summary>
+        /// Click new button in Call Centre Enquiry page
+        /// </summary>
+        public void ClickOptionOnCCEnquiryPage(string optionName, string pageName)
+        {
+            Logger.LogMethodEntry("Employee_personaldetailsPage", "ClickNewButton",
+                base.IsTakeScreenShotDuringEntryExit);
+            try
+            {
+                switch (optionName)
+                {
+                    case "New":
+                        ClickNewButton(pageName);
+                        break;
+
+                    case "Create New Package":
+                        ClickCreateNewPackageLink(pageName);
+                        break;
+                }
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.HandleException(e);
+            }
+            Logger.LogMethodExit("Employee_personaldetailsPage", "ClickNewButton",
+                base.IsTakeScreenShotDuringEntryExit);
+        }
+
+        /// <summary>
+        /// Click new button in Call Centre Enquiry page
+        /// </summary>
+        public void ClickNewButton(string pageName)
+        {
+            Logger.LogMethodEntry("Employee_personaldetailsPage", "ClickNewButton", base.IsTakeScreenShotDuringEntryExit);
+            try
+            {
+                base.WaitUntilPopUpLoads(pageName);
+                base.WaitForElement(By.Id("CCEmployeeSearch_cmdNew"));
+                IWebElement getNewButton = base.GetWebElementProperties(By.Id("CCEmployeeSearch_cmdNew"));
+                base.ClickByJavaScriptExecutor(getNewButton);
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.HandleException(e);
+            }
+            Logger.LogMethodExit("Employee_personaldetailsPage", "ClickNewButton", base.IsTakeScreenShotDuringEntryExit);
+        }
+
+
+        /// <summary>
+        /// Click new button in Call Centre Enquiry page
+        /// </summary>
+        public void ClickCreateNewPackageLink(string pageName)
+        {
+            Logger.LogMethodEntry("Employee_personaldetailsPage", "ClickCreateNewPackageLink",
+                base.IsTakeScreenShotDuringEntryExit);
+            try
+            {
+                base.WaitUntilPopUpLoads(pageName);
+                bool ewe = base.IsElementPresent(By.LinkText("Create New Package"), 10);
+                base.WaitForElement(By.LinkText("Create New Package"));
+                IWebElement getNewButton = base.GetWebElementProperties(By.Id("CCEmployeeSearch_cmdNew"));
+                base.ClickByJavaScriptExecutor(getNewButton);
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.HandleException(e);
+            }
+            Logger.LogMethodExit("Employee_personaldetailsPage", "ClickCreateNewPackageLink",
+                base.IsTakeScreenShotDuringEntryExit);
         }
     }
 }

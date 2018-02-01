@@ -4,14 +4,14 @@
   <ArrayOfUser>
     <!--Hard coded Users data for SMS.-->
     <User>
-      <Name></Name>
-      <Password></Password>
-      <Email></Email>
-      <FirstName></FirstName>
-      <MiddleName></MiddleName>
-      <LastName></LastName>
-      <UserType></UserType>
-      <IsCreated></IsCreated>
+      <Name>304053384</Name>
+      <Password>MOL1234</Password>
+      <Email>Sherlock_Test@remserv.com.au</Email>
+      <FirstName>Dev</FirstName>
+      <MiddleName>Hegde</MiddleName>
+      <LastName>Ks</LastName>
+      <UserType>MOLUser</UserType>
+      <IsCreated>true</IsCreated>
       <EnrolementStatus>false</EnrolementStatus>
     </User>
   </ArrayOfUser>

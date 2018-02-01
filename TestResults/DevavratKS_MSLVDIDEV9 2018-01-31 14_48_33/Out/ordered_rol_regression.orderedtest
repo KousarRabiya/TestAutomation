@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="ordered_rol_regression" storage="c:\users\devavratks\source\repos\testautomation\mmsg.acceptance.rol.tests\productacceptanceorderedtest\ordered_rol_regression.orderedtest" id="7643a02d-c049-4f7f-8694-c5b94c1fd5d8" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestLinks>
+    <TestLink id="b64af861-afdc-300c-39ab-78243caeed7d" name="LoginAsROLUser" storage="..\bin\debug\mmsg.acceptance.rol.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="928890ab-e777-d0a6-d3fe-de8698c7aeae" name="ROLUserLodgesTheRequest" storage="..\bin\debug\mmsg.acceptance.rol.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="736b3992-a832-8832-3014-b61488bffe55" name="LogoutAsROLUser" storage="..\bin\debug\mmsg.acceptance.rol.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>

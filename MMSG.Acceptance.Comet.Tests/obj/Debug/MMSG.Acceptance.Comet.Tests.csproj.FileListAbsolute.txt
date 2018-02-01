@@ -1,3 +1,4 @@
+C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.Comet.Tests\bin\Debug\ProductAcceptanceOrderedTest\Ordered_Comet_BVT.orderedtest
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.Comet.Tests\bin\Debug\Input Files\DBQueries.xml
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.Comet.Tests\bin\Debug\Input Files\TestData.xlsx
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.Comet.Tests\bin\Debug\MMSG.Acceptance.Comet.Tests.dll.config
@@ -5,15 +6,15 @@ C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.Comet.Tests\bin\
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.Comet.Tests\bin\Debug\MMSG.Acceptance.Comet.Tests.pdb
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.Comet.Tests\bin\Debug\ExtentReports.dll
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.Comet.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.Comet.Tests\bin\Debug\MMSG.Automation.dll
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.Comet.Tests\bin\Debug\MMSG.Pages.dll
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.Comet.Tests\bin\Debug\Newtonsoft.Json.dll
-C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.Comet.Tests\bin\Debug\SeleniumWebDriver.dll
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.Comet.Tests\bin\Debug\TechTalk.SpecFlow.dll
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.Comet.Tests\bin\Debug\WebDriver.dll
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.Comet.Tests\bin\Debug\WebDriver.Support.dll
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.Comet.Tests\bin\Debug\log4net.dll
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.Comet.Tests\bin\Debug\System.Management.Automation.dll
-C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.Comet.Tests\bin\Debug\SeleniumWebDriver.pdb
+C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.Comet.Tests\bin\Debug\MMSG.Automation.pdb
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.Comet.Tests\bin\Debug\MMSG.Pages.pdb
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.Comet.Tests\bin\Debug\Newtonsoft.Json.xml
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Acceptance.Comet.Tests\bin\Debug\WebDriver.xml

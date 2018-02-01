@@ -97,6 +97,8 @@ this.ScenarioSetup(scenarioInfo);
 testRunner.When("I enter \"EmployeeNumber\" of \"COMETUser\" in the search textbox", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 9
 testRunner.And("I click on Search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 10
+testRunner.Then("I should be displayed with employee information of \"COMETUser\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

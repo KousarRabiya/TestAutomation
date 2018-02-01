@@ -6,8 +6,8 @@
     <ProjectGuid>{61A28C3B-47EE-4F4B-A293-69D714D41E0B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SeleniumWebDriver</RootNamespace>
-    <AssemblyName>SeleniumWebDriver</AssemblyName>
+    <RootNamespace>MMSG.Automation</RootNamespace>
+    <AssemblyName>MMSG.Automation</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -145,6 +145,7 @@
     <Compile Include="CustomException\NoSuitableDriverFound.cs" />
     <Compile Include="CustomException\NoSuitableDriverFoundException.cs" />
     <Compile Include="DataTransferObjects\BaseEntityObject.cs" />
+    <Compile Include="DataTransferObjects\Package.cs" />
     <Compile Include="DataTransferObjects\User.cs" />
     <Compile Include="ExcelOperation\ExcelOperation.cs" />
     <Compile Include="Exceptions\ExceptionHandler.cs" />

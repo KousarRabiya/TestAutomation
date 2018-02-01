@@ -58,6 +58,7 @@ namespace MMSG.Pages.UI_Pages
                     // Get URL of workspace admin
                     case User.UserTypeEnum.ROLUser:
                     case User.UserTypeEnum.COMETUser:
+                    case User.UserTypeEnum.MOLUser:
                         _baseLoginUrl = (AutomationConfigurationManager.GetCourseSpaceUrlRoot()).ToString();
                         base.DeleteAllBrowserCookies();
                         break;
@@ -88,6 +89,9 @@ namespace MMSG.Pages.UI_Pages
                         break;
                     // Execute Comet URL
                     case User.UserTypeEnum.COMETUser:
+                        GotoNavigationURlComet(baseLoginUrl);
+                        break;
+                    case User.UserTypeEnum.MOLUser:
                         GotoNavigationURlComet(baseLoginUrl);
                         break;
                 }
@@ -171,7 +175,7 @@ namespace MMSG.Pages.UI_Pages
             stopWatch.Start();
             //Get Image Present On The Page
             String getCurrentPageTitle = base.GetPageTitle;
-            if (getCurrentPageTitle.Equals(ApplicationLoginPageResource.LoginPage_NoConnect_Window_Title
+            if (getCurrentPageTitle.Equals(ApplicationLoginPageResource.ApplicationLoginPage_MOL_LoginButton_Click_XPath_Locator
                 ) || getCurrentPageTitle.Equals
                 (ApplicationLoginPageResource.Login_Page_404Error_Window_Title))
             {
@@ -181,7 +185,7 @@ namespace MMSG.Pages.UI_Pages
                     base.NavigateToBrowseUrl(this._baseLoginUrl);
                     getCurrentPageTitle = base.GetPageTitle;
                     if (!getCurrentPageTitle.Equals(ApplicationLoginPageResource.
-                        LoginPage_NoConnect_Window_Title) && !getCurrentPageTitle.Equals
+                        ApplicationLoginPage_MOL_LoginButton_Click_XPath_Locator) && !getCurrentPageTitle.Equals
                 (ApplicationLoginPageResource.Login_Page_404Error_Window_Title))
                     {
                         stopWatch.Stop();
@@ -215,6 +219,10 @@ namespace MMSG.Pages.UI_Pages
                     case User.UserTypeEnum.ROLUser:
                         // Enter user name and password
                         this.ROLUserLogin(userName, password);
+                        break;
+                    case User.UserTypeEnum.MOLUser:
+                        // Enter user name and password
+                        this.MOLUserLogin(userName, password);
                         break;
                 }
 
@@ -264,8 +272,42 @@ namespace MMSG.Pages.UI_Pages
             {
                 ExceptionHandler.HandleException(e);
             }
+        }
+
+        /// <summary>
+        /// User login as MOL user 
+        /// </summary>
+        /// <param name="userName">This is the user name.</param>
+        /// <param name="password">This is password.</param>
+
+        public void MOLUserLogin(string userName, string password)
+        {
+            try
+            {
+                this.WaitandSelectMOLWindow("Loginpage");
+
+                // Enter username
+                base.WaitForElement(By.Id(ApplicationLoginPageResource.ApplicationLoginPage_MOL_UserNameTextBox_Id_Locator));
+                base.ClearTextById(ApplicationLoginPageResource.ApplicationLoginPage_MOL_UserNameTextBox_Id_Locator);
+                base.FillTextBoxById(ApplicationLoginPageResource.ApplicationLoginPage_MOL_UserNameTextBox_Id_Locator, userName);
+
+                // Enter Password
+                base.WaitForElement(By.Id(ApplicationLoginPageResource.ApplicationLoginPage_MOL_PasswordTextBox_Id_Locator));
+                base.ClearTextById(ApplicationLoginPageResource.ApplicationLoginPage_MOL_PasswordTextBox_Id_Locator);
+                base.FillTextBoxById(ApplicationLoginPageResource.ApplicationLoginPage_MOL_PasswordTextBox_Id_Locator, password);
+
+                // Click 
+                base.WaitForElement(By.XPath(ApplicationLoginPageResource.ApplicationLoginPage_MOL_LoginButton_Click_XPath_Locator));
+                base.ClickButtonByXPath(ApplicationLoginPageResource.ApplicationLoginPage_MOL_LoginButton_Click_XPath_Locator);
+
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.HandleException(e);
+            }
 
         }
+
 
         /// <summary>
         /// Get the home page title from the application.
@@ -301,13 +343,13 @@ namespace MMSG.Pages.UI_Pages
         {
             Logger.LogMethodEntry("ApplicationLoginPage", "ClickLogoutLink", base.IsTakeScreenShotDuringEntryExit);
             try
-            {
-                WaitandSelectROLWindow();
+            {               
 
                 //Wait for logout option t
                 switch(userType)
                 {
                     case User.UserTypeEnum.ROLUser:
+                        
                         //Wait untill window loads and select window
                         WaitandSelectROLWindow();
 
@@ -323,6 +365,24 @@ namespace MMSG.Pages.UI_Pages
                         IWebElement getLogoutLink = base.GetWebElementPropertiesByXPath(ApplicationLoginPageResource.
                             ApplicationLoginPage_ROL_Logout_XPath_Locator);
                         base.PerformMouseClickAction(getLogoutLink);
+                        break;
+
+                    case User.UserTypeEnum.MOLUser:
+                        //Wait untill window loads and select window
+                        WaitandSelectMOLWindow("Dashboard");
+
+                        // Hover the mouse on the username option
+                        base.WaitForElement(By.ClassName(ApplicationLoginPageResource.
+                            ApplicationLoginPage_MOL_loginuser_ClassName_Locator));
+                        IWebElement getUserMOLNameOption = base.GetWebElementPropertiesByClassName("username");
+                        base.PerformMouseHoverAction(getUserMOLNameOption);
+
+                        // Click on logout option link
+                        base.WaitForElement(By.XPath((ApplicationLoginPageResource.
+                            ApplicationLoginPage_MOL_Logout_XPath_Locator)));
+                        IWebElement getMOLLogoutLink = base.GetWebElementPropertiesByXPath(ApplicationLoginPageResource.
+                            ApplicationLoginPage_MOL_Logout_XPath_Locator);
+                        base.PerformMouseClickAction(getMOLLogoutLink);
                         break;
                 }
             }
@@ -345,6 +405,36 @@ namespace MMSG.Pages.UI_Pages
                 base.WaitUntilWindowLoads(ApplicationLoginPageResource.ApplicationLoginPage_ROL_PageTitle_Title);
                 // Select window
                 base.SelectWindow(ApplicationLoginPageResource.ApplicationLoginPage_ROL_PageTitle_Title);
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.HandleException(e);
+            }
+        }
+
+        /// <summary>
+        ///Wait untill window loads and select the window.
+        /// </summary>
+        protected void WaitandSelectMOLWindow(string pageStatus)
+        {
+            try
+            {
+                switch (pageStatus)
+                {
+                    case "Loginpage":
+                        // Wait untill window loads
+                        base.WaitUntilWindowLoads(ApplicationLoginPageResource.ApplicationLoginPage_MOL_LoginPageTitle_Title);
+                        // Select window
+                        base.SelectWindow(ApplicationLoginPageResource.ApplicationLoginPage_MOL_LoginPageTitle_Title);
+                        break;
+                     case  "Dashboard":
+                        // Wait untill window loads
+                        base.WaitUntilWindowLoads(ApplicationLoginPageResource.ApplicationLoginPage_MOL_DashboardPageTitle_Title);
+                        // Select window
+                        base.SelectWindow(ApplicationLoginPageResource.ApplicationLoginPage_MOL_DashboardPageTitle_Title);
+                        break;
+                }
+               
             }
             catch (Exception e)
             {

@@ -61,6 +61,69 @@ namespace MMSG.Pages.UI_Pages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Maxxia Online.
+        /// </summary>
+        internal static string ApplicationLoginPage_MOL_DashboardPageTitle_Title {
+            get {
+                return ResourceManager.GetString("ApplicationLoginPage_MOL_DashboardPageTitle_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to //form[@id=&apos;login&apos;]/div[4]/button.
+        /// </summary>
+        internal static string ApplicationLoginPage_MOL_LoginButton_Click_XPath_Locator {
+            get {
+                return ResourceManager.GetString("ApplicationLoginPage_MOL_LoginButton_Click_XPath_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maxxia Online..
+        /// </summary>
+        internal static string ApplicationLoginPage_MOL_LoginPageTitle_Title {
+            get {
+                return ResourceManager.GetString("ApplicationLoginPage_MOL_LoginPageTitle_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to username.
+        /// </summary>
+        internal static string ApplicationLoginPage_MOL_loginuser_ClassName_Locator {
+            get {
+                return ResourceManager.GetString("ApplicationLoginPage_MOL_loginuser_ClassName_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to //a[@class =  &apos;emp-nav-style emp-last&apos;].
+        /// </summary>
+        internal static string ApplicationLoginPage_MOL_Logout_XPath_Locator {
+            get {
+                return ResourceManager.GetString("ApplicationLoginPage_MOL_Logout_XPath_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        internal static string ApplicationLoginPage_MOL_PasswordTextBox_Id_Locator {
+            get {
+                return ResourceManager.GetString("ApplicationLoginPage_MOL_PasswordTextBox_Id_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Username.
+        /// </summary>
+        internal static string ApplicationLoginPage_MOL_UserNameTextBox_Id_Locator {
+            get {
+                return ResourceManager.GetString("ApplicationLoginPage_MOL_UserNameTextBox_Id_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to //button.
         /// </summary>
         internal static string ApplicationLoginPage_ROL_LoginButton_Click_XPath_Locator {
@@ -129,15 +192,6 @@ namespace MMSG.Pages.UI_Pages {
         internal static string Login_Page_AppSetting_RetryCount_Key {
             get {
                 return ResourceManager.GetString("Login_Page_AppSetting_RetryCount_Key", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to s.
-        /// </summary>
-        internal static string LoginPage_NoConnect_Window_Title {
-            get {
-                return ResourceManager.GetString("LoginPage_NoConnect_Window_Title", resourceCulture);
             }
         }
     }

@@ -1,0 +1,1432 @@
+I 2018-02-01 16:38:17:427 server.cc(86) Starting WebDriver server on port: '53910' on host: ''
+I 2018-02-01 16:38:17:428 IEServer.cpp(33) Driver version: 3.8.0.0 (32-bit)
+W 2018-02-01 16:38:18:042 CommandHandlers\NewSessionCommandHandler.cpp(105) Invalid capability setting: timeouts is type null instead of object. Default value will be used: null
+
+I 2018-02-01 16:38:19:487 IECommandExecutor.cpp(657) Persistent hovering set to: 0
+I 2018-02-01 16:38:19:561 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:19:712 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:38:21:047 IECommandExecutor.cpp(601) Unable to find managed browser with id 3389ce35-b9a7-4088-b23c-e29cb65dfc57
+W 2018-02-01 16:38:21:060 IECommandExecutor.cpp(601) Unable to find managed browser with id 3389ce35-b9a7-4088-b23c-e29cb65dfc57
+W 2018-02-01 16:38:21:060 IECommandExecutor.cpp(506) Unable to find current browser
+I 2018-02-01 16:38:21:060 Browser.cpp(214) Flushing window handle as it is no longer valid
+I 2018-02-01 16:38:21:060 Browser.cpp(219) Restore window handle from tab
+W 2018-02-01 16:38:21:063 IECommandExecutor.cpp(601) Unable to find managed browser with id 3389ce35-b9a7-4088-b23c-e29cb65dfc57
+W 2018-02-01 16:38:21:063 IECommandExecutor.cpp(523) Unable to get current browser
+W 2018-02-01 16:38:21:072 IECommandExecutor.cpp(601) Unable to find managed browser with id 3389ce35-b9a7-4088-b23c-e29cb65dfc57
+W 2018-02-01 16:38:21:072 IECommandExecutor.cpp(506) Unable to find current browser
+W 2018-02-01 16:38:21:174 IECommandExecutor.cpp(601) Unable to find managed browser with id 3389ce35-b9a7-4088-b23c-e29cb65dfc57
+I 2018-02-01 16:38:21:825 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:21:860 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:21:931 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:21:943 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:21:974 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:22:531 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:22:606 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:22:653 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:22:667 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:22:707 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:22:785 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:22:851 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:22:936 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:23:000 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:23:008 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:23:055 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:23:134 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:23:212 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:23:306 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:23:313 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:23:350 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:23:425 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:23:506 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:23:564 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:23:636 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:23:649 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:23:687 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:23:752 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:23:837 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:23:890 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:23:912 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:38:24:016 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:38:24:052 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+I 2018-02-01 16:38:24:580 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:24:658 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:24:729 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:24:741 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:24:778 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:24:851 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:24:901 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:24:972 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:25:015 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:25:019 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:25:054 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:25:113 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:25:166 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:25:217 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:25:227 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:25:288 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:25:360 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:25:616 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:25:733 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:25:779 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:25:792 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:25:829 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:25:908 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:25:965 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:26:013 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:26:026 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:26:070 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:26:149 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:26:199 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:38:26:264 ElementFinder.cpp(208) Found result is not element
+I 2018-02-01 16:38:26:630 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:26:697 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:38:26:740 ElementFinder.cpp(208) Found result is not element
+I 2018-02-01 16:38:27:092 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:27:145 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:38:27:187 ElementFinder.cpp(208) Found result is not element
+I 2018-02-01 16:38:27:541 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:27:781 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:27:955 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:28:035 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:28:114 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:28:261 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:28:323 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:28:403 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:28:461 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:28:466 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:28:512 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:28:568 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:28:613 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:28:678 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:28:690 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:28:721 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:28:777 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:28:856 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:28:919 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:28:931 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:28:974 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:29:061 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:29:131 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:29:216 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:29:287 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:29:294 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:29:330 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:29:396 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:29:461 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:29:535 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:29:546 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:29:589 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:29:622 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:29:700 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:29:756 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:29:768 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:29:812 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:29:885 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:29:939 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:30:008 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:30:086 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:30:096 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:30:129 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:30:219 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:30:309 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:30:374 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:30:383 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:30:422 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:30:465 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:30:526 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:30:583 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:30:588 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:30:627 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:30:716 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:30:778 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:30:870 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:30:934 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:30:943 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:30:981 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:31:054 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:31:111 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:31:189 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:31:195 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:31:240 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:31:540 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:31:597 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:31:668 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:31:678 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:31:707 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:31:785 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:31:837 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:31:882 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:31:953 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:31:960 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:32:007 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:32:075 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:32:106 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:32:167 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:32:178 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:32:201 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:32:277 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:32:329 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:32:366 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:32:436 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:32:447 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:32:476 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:32:530 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:32:587 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:32:645 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:32:669 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:32:700 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:36:134 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:36:217 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:36:324 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:36:337 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:36:384 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:36:499 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:36:565 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:36:658 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:36:719 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:36:724 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:36:758 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:36:824 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:36:897 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:36:964 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:36:978 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:37:013 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:37:107 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:37:186 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:37:265 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:37:331 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:37:339 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:37:381 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:37:448 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:37:528 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:37:587 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:37:606 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:37:627 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:37:649 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:37:700 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:37:795 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:37:808 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:37:865 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:38:024 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:38:058 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:38:086 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:38:120 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:38:202 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:38:292 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:38:389 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:38:434 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:38:451 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:38:494 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:38:533 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:38:605 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:38:617 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:38:658 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:38:720 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:38:758 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:38:809 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:38:857 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:38:918 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:38:958 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:39:014 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:39:067 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:39:098 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:39:158 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:39:211 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:39:255 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:39:335 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:39:415 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:39:455 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:39:630 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:39:714 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:39:794 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:39:801 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:39:845 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:39:937 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:40:011 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:40:106 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:40:177 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:40:189 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:40:223 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:40:331 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:40:402 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:40:470 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:40:483 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:40:514 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:40:622 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:40:685 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:40:796 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:40:872 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:40:877 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:40:908 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:40:996 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:41:060 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:41:122 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:41:140 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:41:275 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:41:387 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:41:446 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:41:548 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:41:561 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:41:585 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:41:659 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:41:713 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:41:753 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:41:823 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:41:833 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:41:851 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:41:920 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:41:955 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:42:041 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:42:053 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:38:42:108 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:38:42:128 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+I 2018-02-01 16:38:42:601 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:42:668 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:42:728 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:42:736 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:42:778 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:42:873 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:42:936 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:43:050 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:43:120 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:43:131 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:43:168 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:43:244 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:43:323 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:43:403 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:43:411 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:43:448 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:43:539 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:43:618 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:43:673 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:43:756 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:43:771 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:43:805 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:43:869 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:43:933 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:44:038 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:44:057 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:44:190 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:44:304 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:44:367 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:44:446 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:44:455 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:44:514 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:44:603 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:44:672 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:44:767 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:44:851 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:44:859 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:44:905 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:44:985 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:45:078 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:45:156 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:45:170 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:38:45:220 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:38:45:232 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+I 2018-02-01 16:38:45:545 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:45:615 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:45:682 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:45:690 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:45:728 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:45:810 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:45:890 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:45:998 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:46:084 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:46:100 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:46:137 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:46:218 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:46:284 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:46:385 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:46:395 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:46:459 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:46:562 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:46:644 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:46:698 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:46:808 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:46:818 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:46:865 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:46:961 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:47:055 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:47:118 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:47:133 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:47:276 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:47:394 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:47:465 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:47:549 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:47:558 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:47:595 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:47:683 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:47:771 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:47:845 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:47:909 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:47:920 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:47:965 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:48:059 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:48:134 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:48:212 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:48:235 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:38:48:290 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:38:48:305 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+I 2018-02-01 16:38:48:961 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:49:039 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:49:123 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:49:152 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:49:194 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:49:287 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:49:359 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:49:464 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:49:544 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:49:555 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:49:596 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:49:691 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:49:757 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:49:824 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:49:835 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:49:877 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:49:967 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:50:079 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:50:148 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:50:214 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:50:226 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:50:286 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:50:377 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:50:472 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:50:538 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:50:551 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:50:664 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:50:770 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:50:824 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:50:916 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:50:924 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:50:956 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:51:048 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:51:148 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:51:241 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:51:325 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:51:340 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:51:385 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:51:469 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:51:537 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:51:652 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:51:668 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:38:51:735 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:38:51:768 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+I 2018-02-01 16:38:52:413 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:52:489 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:52:557 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:52:567 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:52:591 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:52:677 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:52:744 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:52:785 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:52:862 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:52:872 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:52:900 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:52:979 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:53:032 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:53:102 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:53:117 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:53:163 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:53:258 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:53:327 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:53:401 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:53:490 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:53:500 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:53:529 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:53:610 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:53:709 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:53:797 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:53:814 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:53:944 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:54:067 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:54:176 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:54:268 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:54:279 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:54:333 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:54:470 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:54:563 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:54:633 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:54:706 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:54:721 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:54:763 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:54:834 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:54:915 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:54:987 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:54:998 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:38:55:045 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:38:55:061 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+I 2018-02-01 16:38:55:423 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:55:525 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:55:596 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:55:613 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:55:652 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:55:750 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:55:935 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:56:072 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:56:178 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:56:190 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:56:236 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:56:310 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:56:398 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:56:468 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:56:478 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:56:512 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:56:601 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:56:694 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:56:798 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:56:878 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:56:896 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:56:948 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:57:026 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:57:103 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:57:192 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:57:214 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:57:264 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:57:289 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:57:336 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:57:450 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:57:469 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:57:527 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:57:678 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:57:735 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:57:798 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:57:806 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:57:856 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:57:922 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:57:966 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:58:065 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:58:100 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:58:185 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:58:270 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:58:308 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:58:477 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:58:529 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:58:618 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:58:635 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:58:674 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:58:776 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:58:987 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:59:099 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:59:161 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:59:174 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:59:212 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:59:290 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:59:358 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:59:416 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:59:430 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:59:484 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:59:560 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:59:654 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:59:725 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:59:807 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:38:59:819 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:59:854 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:38:59:922 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:00:007 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:00:078 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:00:095 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:00:231 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:00:358 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:00:439 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:00:506 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:00:520 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:00:556 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:00:654 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:00:731 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:00:794 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:00:854 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:00:868 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:00:903 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:00:969 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:01:038 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:01:107 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:01:129 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:39:01:190 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:39:01:205 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+I 2018-02-01 16:39:01:785 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:01:826 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:01:941 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:01:947 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:01:995 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:02:086 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:02:162 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:02:257 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:02:332 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:02:340 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:02:382 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:02:460 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:02:529 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:02:608 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:02:626 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:02:678 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:02:761 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:02:862 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:02:946 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:03:047 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:03:066 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:03:117 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:03:203 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:03:328 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:03:421 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:03:442 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:03:622 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:03:741 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:03:810 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:03:880 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:04:743 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:04:791 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:04:877 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:04:959 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:05:035 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:05:098 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:05:105 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:05:140 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:05:227 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:05:317 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:05:397 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:05:414 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:39:05:478 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:39:05:494 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+I 2018-02-01 16:39:05:932 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:05:999 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:06:071 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:06:077 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:06:151 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:06:254 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:06:322 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:06:398 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:06:467 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:06:478 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:06:520 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:06:590 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:06:652 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:06:710 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:06:723 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:06:757 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:06:834 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:06:932 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:07:016 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:07:091 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:07:101 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:07:142 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:07:249 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:07:319 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:07:405 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:07:425 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:07:590 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:07:693 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:07:759 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:07:830 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:07:844 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:07:892 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:07:997 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:08:073 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:08:151 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:08:215 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:08:227 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:08:279 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:08:369 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:08:438 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:08:503 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:08:520 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:39:08:569 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:39:08:585 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+I 2018-02-01 16:39:08:898 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:08:966 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:09:049 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:09:062 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:09:122 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:09:262 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:09:404 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:09:494 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:09:562 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:09:581 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:09:622 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:09:689 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:09:757 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:09:815 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:09:830 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:39:09:963 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:39:09:981 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:39:10:051 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+I 2018-02-01 16:39:10:949 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:11:025 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:11:129 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:11:136 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:11:176 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:11:289 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:11:358 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:11:445 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:11:538 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:11:551 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:11:593 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:11:683 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:11:764 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:11:834 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:11:850 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:39:12:025 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:39:12:047 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:39:12:142 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+I 2018-02-01 16:39:13:025 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:13:095 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:13:203 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:13:209 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:13:288 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:13:406 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:13:478 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:13:581 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:13:653 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:13:660 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:13:694 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:13:767 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:13:842 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:13:911 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:13:942 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:39:14:133 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:39:14:151 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:39:14:240 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+I 2018-02-01 16:39:15:087 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:15:154 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:15:263 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:15:269 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:15:311 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:15:393 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:15:447 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:15:567 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:15:641 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:15:652 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:15:690 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:15:769 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:15:851 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:15:930 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:15:950 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:39:16:130 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:39:16:146 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:39:16:234 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+I 2018-02-01 16:39:17:065 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:17:149 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:17:276 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:17:286 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:17:332 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:17:436 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:17:545 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:17:628 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:17:697 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:17:710 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:17:749 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:17:823 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:17:893 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:17:964 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:17:986 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:39:18:135 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:39:18:150 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:39:18:233 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+I 2018-02-01 16:39:19:050 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:19:139 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:19:221 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:19:246 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:19:291 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:19:422 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:19:735 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:19:805 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:19:864 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:19:877 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:19:912 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:20:016 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:20:076 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:20:153 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:20:163 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:39:20:297 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:39:20:320 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:39:20:398 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+I 2018-02-01 16:39:21:353 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:21:416 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:21:486 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:21:494 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:21:532 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:21:625 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:21:725 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:21:796 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:21:871 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:21:888 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:21:925 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:22:011 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:22:117 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:22:186 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:22:210 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:22:261 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:22:354 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:22:435 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:22:503 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:22:564 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:22:576 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:22:622 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:22:690 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:22:735 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:22:811 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:22:813 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:22:850 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:24:938 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:25:012 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:25:103 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:25:115 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:25:158 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:25:302 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:25:394 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:25:466 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:25:537 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:25:551 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:25:588 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:25:656 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:25:710 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:25:787 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:25:800 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:25:833 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:25:917 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:26:042 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:26:124 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:26:189 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:26:193 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:26:241 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:26:322 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:26:396 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:26:467 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:26:480 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:26:600 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:26:723 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:26:781 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:26:837 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:26:848 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:26:884 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:26:973 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:27:051 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:27:101 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:27:169 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:27:182 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:27:220 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:27:314 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:27:420 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:27:492 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:27:511 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:39:27:565 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:39:27:585 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+I 2018-02-01 16:39:27:973 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:28:064 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:28:132 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:28:148 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:28:217 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:28:301 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:28:373 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:28:454 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:28:505 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:28:525 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:28:561 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:28:639 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:28:704 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:28:752 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:28:761 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:28:795 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:28:867 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:28:973 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:29:032 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:29:087 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:29:097 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:29:131 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:29:213 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:29:298 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:29:365 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:29:376 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:29:521 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:29:631 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:29:695 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:29:814 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:29:826 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:29:927 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:30:111 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:30:202 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:30:285 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:30:402 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:30:417 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:30:459 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:30:549 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:30:625 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:30:701 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:30:721 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:39:30:771 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:39:30:792 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+I 2018-02-01 16:39:31:099 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:31:161 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:31:268 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:31:276 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:31:331 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:31:408 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:31:489 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:31:616 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:31:676 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:31:689 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:31:723 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:31:793 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:31:861 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:31:947 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:31:972 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:32:047 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:32:216 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:32:321 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:32:392 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:32:463 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:32:473 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:32:524 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:32:583 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:32:642 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:32:692 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:32:702 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:32:747 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:32:777 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:32:828 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:32:931 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:32:951 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:32:998 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:33:122 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:33:154 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:33:187 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:33:264 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:33:300 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:33:331 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:33:352 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:33:389 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:33:444 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:33:453 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:33:494 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:33:531 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:33:586 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:33:645 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:33:714 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:33:763 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:33:822 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:33:882 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:33:919 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:33:986 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:34:042 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:34:089 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:34:144 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:34:196 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:34:256 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:34:322 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:34:397 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:34:442 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:34:610 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:34:651 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:34:729 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:34:737 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:34:763 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:34:847 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:34:899 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:34:944 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:35:012 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:35:023 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:35:046 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:35:114 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:35:168 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:35:226 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:35:233 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:35:261 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:35:334 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:35:397 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:35:430 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:35:496 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:35:501 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:35:527 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:35:595 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:35:631 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:35:715 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:35:728 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:35:897 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:36:064 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:36:158 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:36:305 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:36:321 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:36:381 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:36:532 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:36:653 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:36:760 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:36:843 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:36:856 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:36:900 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:36:988 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:37:045 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:37:113 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:37:138 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:39:37:214 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:39:37:248 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+I 2018-02-01 16:39:37:558 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:37:636 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:37:700 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:37:713 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:37:764 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:37:886 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:37:966 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:38:042 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:38:106 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:38:110 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:38:155 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:38:234 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:38:310 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:38:375 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:38:386 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:38:454 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:38:546 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:38:626 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:38:693 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:38:752 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:38:767 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:38:809 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:38:873 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:38:947 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:39:002 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:39:039 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:39:168 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:39:279 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:39:329 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:39:406 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:39:418 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:39:456 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:39:555 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:39:636 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:39:680 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:39:762 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:39:774 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:39:815 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:39:888 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:39:970 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:40:028 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:40:048 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:39:40:099 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:39:40:131 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+I 2018-02-01 16:39:40:649 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:40:712 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:40:768 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:40:777 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:40:832 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:40:935 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:40:979 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:41:073 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:41:138 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:41:147 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:41:185 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:41:263 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:41:347 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:41:416 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:41:424 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:41:472 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:41:555 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:41:627 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:41:687 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:41:749 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:41:764 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:41:800 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:41:860 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:41:924 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:41:999 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:42:020 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:42:144 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:42:250 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:42:338 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:42:413 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:42:428 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:42:483 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:42:573 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:42:641 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:42:702 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:42:762 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:42:768 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:42:815 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:42:884 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:42:942 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:43:002 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:43:023 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:39:43:065 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:39:43:078 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+I 2018-02-01 16:39:43:458 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:43:606 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:43:810 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:43:823 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:43:923 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:44:108 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:44:213 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:44:289 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:44:342 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:44:352 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:44:392 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:44:453 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:44:522 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:44:578 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:44:587 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:44:619 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:44:716 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:44:794 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:44:899 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:44:954 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:44:971 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:45:015 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:45:098 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:45:161 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:45:276 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:45:296 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:45:329 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:45:352 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:45:408 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:45:519 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:45:535 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:45:594 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:45:749 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:45:795 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:45:816 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:45:849 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:45:880 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:45:925 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:45:941 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:45:974 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:46:023 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:46:039 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:46:065 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:46:120 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:46:143 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:46:190 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:46:227 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:46:276 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:46:307 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:46:354 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:46:382 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:46:429 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:46:455 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:46:508 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:46:531 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:46:583 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:46:605 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:46:666 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:46:738 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:46:762 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:46:911 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:46:992 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:47:060 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:47:075 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:47:111 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:47:180 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:47:245 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:47:323 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:47:391 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:47:403 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:47:433 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:47:509 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:47:563 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:47:622 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:47:630 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:47:668 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:47:755 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:47:832 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:47:892 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:47:961 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:47:975 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:48:008 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:48:095 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:48:160 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:48:227 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:48:261 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:48:383 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:48:491 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:48:546 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:48:621 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:48:635 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:48:673 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:48:791 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:48:886 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:48:959 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:49:030 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:49:042 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:49:087 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:49:188 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:49:265 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:49:351 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:49:359 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:39:49:404 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:39:49:419 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+I 2018-02-01 16:39:49:736 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:49:853 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:49:886 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:49:944 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:50:043 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:50:111 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:50:216 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:50:225 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:50:278 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:50:346 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:50:464 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:50:477 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:50:568 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:52:698 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:52:796 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:52:805 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:52:851 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:52:940 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:53:008 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:53:111 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:53:121 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:53:154 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:53:210 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:53:316 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:53:328 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:53:365 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:53:418 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:53:491 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:53:551 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:53:572 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:53:605 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:53:673 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:53:745 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:53:830 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:53:884 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:53:892 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:53:940 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:54:009 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:54:074 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:54:142 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:54:152 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:54:199 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:54:278 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:54:343 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:54:415 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:54:475 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:54:489 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:54:522 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:54:579 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:54:644 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:54:705 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:54:715 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:54:861 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:54:956 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:55:002 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:55:070 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:55:075 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:55:129 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:55:202 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:55:288 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:55:340 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:55:421 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:55:429 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:55:468 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:55:542 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:55:597 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:55:656 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:55:679 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:39:55:747 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:39:55:762 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+I 2018-02-01 16:39:56:097 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:56:137 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:56:213 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:56:227 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:56:255 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:56:326 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:56:371 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:56:415 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:56:479 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:56:485 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:56:510 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:56:581 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:56:610 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:56:678 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:56:684 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:56:708 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:56:794 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:56:852 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:56:926 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:56:990 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:56:998 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:57:039 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:57:120 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:57:211 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:57:266 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:57:283 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:57:323 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:57:345 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:57:381 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:57:482 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:57:500 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:57:529 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:57:689 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:57:707 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:57:755 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:57:762 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:57:795 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:57:855 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:57:899 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:57:964 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:58:058 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:58:087 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:58:261 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:58:338 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:58:412 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:58:417 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:58:453 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:58:529 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:58:597 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:58:686 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:58:748 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:58:753 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:58:794 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:58:868 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:58:940 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:59:030 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:59:042 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:59:079 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:59:161 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:59:241 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:59:300 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:59:373 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:59:387 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:59:420 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:59:506 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:59:577 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:59:632 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:39:59:649 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:59:797 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:59:899 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:39:59:961 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:00:028 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:00:042 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:00:080 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:00:169 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:00:271 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:00:335 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:00:403 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:00:416 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:00:447 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:00:509 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:00:571 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:00:619 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:00:634 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:40:00:709 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:40:00:741 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+I 2018-02-01 16:40:01:167 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:01:227 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:01:279 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:01:292 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:01:332 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:01:426 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:01:505 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:01:578 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:01:652 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:01:667 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:01:704 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:01:776 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:01:844 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:01:917 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:01:931 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:01:974 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:02:060 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:02:141 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:02:211 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:02:296 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:02:305 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:02:359 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:02:428 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:02:484 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:02:547 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:02:556 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:02:667 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:02:757 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:02:797 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:02:867 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:02:878 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:02:913 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:02:998 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:03:066 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:03:108 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:03:164 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:03:177 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:03:213 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:03:282 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:03:345 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:03:396 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:03:420 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+W 2018-02-01 16:40:03:468 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+W 2018-02-01 16:40:03:495 Element.cpp(877) Document containing element does not contains frames, but getting the documentElement property failed, or the doctype has thrown the browser into pre-IE6 rendering. The view port calculation may be inaccurate
+I 2018-02-01 16:40:03:823 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:03:889 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:03:963 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:03:970 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:04:023 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:04:117 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:04:191 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:04:321 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:04:394 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:04:408 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:04:444 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:04:532 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:04:591 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:04:653 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:04:667 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:04:704 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:04:780 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:04:881 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:04:966 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:05:027 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:05:038 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:05:095 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:05:173 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:05:245 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:05:308 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:05:325 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:05:357 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:05:379 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:05:419 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:05:520 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:05:536 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:05:609 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:05:731 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:05:784 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:05:819 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:05:869 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:05:900 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:05:943 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:05:952 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:05:997 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:06:054 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:06:100 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:06:159 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:06:218 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:06:314 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:06:366 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:06:420 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:06:456 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:06:509 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:06:538 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:06:595 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:06:666 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:06:686 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:06:822 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:06:891 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:06:903 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:06:939 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:07:029 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:07:096 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:07:178 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:07:187 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:07:220 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:07:291 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:07:360 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:07:371 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:07:401 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:09:476 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:09:581 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:09:600 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:09:661 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:09:737 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:09:797 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:09:898 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:09:911 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:09:951 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:10:016 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:10:123 VariantUtilities.cpp(233) Unknown type of dispatch is found in result, assuming IHTMLElement
+I 2018-02-01 16:40:10:132 Browser.cpp(130) No child frame focus. Focus is on top-level frame
+I 2018-02-01 16:40:10:164 Browser.cpp(130) No child frame focus. Focus is on top-level frame
