@@ -1,8 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium.Support.UI;
-using MMSG.Automation.Settings;
-using MMSG.Automation.DBOperation;
 using System;
 
 namespace CometProject.PageObject
@@ -23,40 +21,40 @@ namespace CometProject.PageObject
 
         [FindsBy(How = How.Id, Using = "CCEmployeeSearch_cmdSearch")]
         public IWebElement SearchButton { get; set; }
-        public void SearchEmployee()
-        {
-            string username = ObjectRepository.User;
-            if (username == null)
-            {
-                //EmployeeSearch.SendKeys(ExcelOperation.GetData[1]);
-                EmployeeNumber.SendKeys(DataBaseOperation.ReadData());
-                driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(50);
-            }
-            else
-            {
-                EmployeeNumber.SendKeys(username);
-                driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
-            }
-        }
-        public void CallCenterEnqrySearch(string searchOption)
-        {
-            try
-            {
-                switch (searchOption)
-                {
-                    case "EmpNum":
-                        EmployeeNumber.SendKeys(DataBaseOperation.GetSearchResults(searchOption));
-                        break;
-                    case "EmpCode":
-                        EmployerCode.SendKeys(DataBaseOperation.GetSearchResults(searchOption));
-                        break;
-                }
-            }
-            catch (Exception e)
-            {
-                throw new Exception(e.ToString());
-            }
-        }
+        //public void SearchEmployee()
+        //{
+        //    string username = ObjectRepository.User;
+        //    if (username == null)
+        //    {
+        //        //EmployeeSearch.SendKeys(ExcelOperation.GetData[1]);
+        //        EmployeeNumber.SendKeys(DataBaseOperation.ReadData());
+        //        driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(50);
+        //    }
+        //    else
+        //    {
+        //        EmployeeNumber.SendKeys(username);
+        //        driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+        //    }
+        //}
+        //public void CallCenterEnqrySearch(string searchOption)
+        //{
+        //    try
+        //    {
+        //        switch (searchOption)
+        //        {
+        //            case "EmpNum":
+        //                EmployeeNumber.SendKeys(DataBaseOperation.GetSearchResults(searchOption));
+        //                break;
+        //            case "EmpCode":
+        //                EmployerCode.SendKeys(DataBaseOperation.GetSearchResults(searchOption));
+        //                break;
+        //        }
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        throw new Exception(e.ToString());
+        //    }
+        //}
         public void ClickOnSearchButton()
         {
             SearchButton.Click();

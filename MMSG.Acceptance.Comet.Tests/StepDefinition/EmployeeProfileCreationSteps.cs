@@ -155,7 +155,7 @@ namespace CometProject.StepDefinition
 
                 driverIE.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
                 PageFactory.InitElements(driverIE, callCenterSearch);
-                callCenterSearch.SearchEmployee();
+                //callCenterSearch.SearchEmployee();
 
                 callCenterSearch.ClickOnSearchButton();
                 //SpecHooks.extentTest.Pass(ScenarioContext.Current.StepContext.StepInfo.Text);

@@ -24,11 +24,11 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
         /// Search the user based on the user information search criteria
         /// </summary>
         /// <param name="userType">This is user type enum.</param>
-        [When(@"I enter ""(.*)"" of ""(.*)"" in the search textbox")]
-        public void SearchUserDetails(string optionName, User.UserTypeEnum userType)
+        [When(@"I enter ""(.*)"" of ""(.*)"" in the search textbox from ""(.*)""")]
+        public void SearchUserDetails(string optionName, User.UserTypeEnum userType, string dataFetchType)
         {
             Logger.LogMethodEntry("CallCentreEnquiryDefinition", "SearchUserDetails", base.IsTakeScreenShotDuringEntryExit);
-            new CallCentreEnquiryPage().UserSearch(optionName, userType);
+            new CallCentreEnquiryPage().UserSearch(optionName, userType, dataFetchType);
             Logger.LogMethodExit("CallCentreEnquiryDefinition", "SearchUserDetails", base.IsTakeScreenShotDuringEntryExit);
         }
 

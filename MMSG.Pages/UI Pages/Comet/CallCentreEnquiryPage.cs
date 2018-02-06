@@ -1,4 +1,5 @@
 ﻿using MMSG.Automation;
+using MMSG.Automation.Database_Support.DBDataTransferObjects;
 using MMSG.Automation.DataTransferObjects;
 using MMSG.Automation.Exceptions;
 using OpenQA.Selenium;
@@ -43,42 +44,62 @@ namespace MMSG.Pages.UI_Pages.Comet
         /// Search user based on the input search criteria
         /// </summary>
         /// <param name="userType">This is user type enum.</param>
-        public void UserSearch(string optionName, User.UserTypeEnum userType)
+        public void UserSearch(string optionName, User.UserTypeEnum userType,string dataFetchType)
         {
             Logger.LogMethodEntry("CallCentreEnquiryPage", "UserSearch", base.IsTakeScreenShotDuringEntryExit);
             try
             {
-
-                //Get user details
+                string employeeNumber = string.Empty;
+                string surName = string.Empty;
+                string givenName = string.Empty;
+                string employerCode = string.Empty;
                 User user = User.Get(userType);
-                string employeeNumber = user.EmployeeNumber.ToString();
-                string surName = user.Name.ToString();
-                string givenName = user.GivenName.ToString();
-                string employerCode = user.EmployerCode.ToString();
-
-                base.WaitUntilPopUpLoads(base.GetPageTitle);
-                switch (optionName)
+           
+                switch (dataFetchType)
                 {
-                    case "EmployeeNumber":
-                        base.WaitForElement(By.Id("CCEmployeeSearch_txtEmployeeNumber"));
-                        base.FillTextBoxById("CCEmployeeSearch_txtEmployeeNumber", employeeNumber);
+                    case "DB":
+                        employeeNumber = new DBUserQueries().GetEmployeeNumberBySurName(userType);
                         break;
 
-                    case "EmployerCode":
-                        base.WaitForElement(By.Id("CCEmployeeSearch_txtEmployerCode"));
-                        base.FillTextBoxById("CCEmployeeSearch_txtEmployerCode", employerCode);
-                        break;
-
-                    case "Surname":
-                        base.WaitForElement(By.Id("CCEmployeeSearch_txtSurname"));
+                    case "XML":
+                        //Get user details from XML
+                         employeeNumber = user.EmployeeNumber.ToString();
+                         surName = user.Name.ToString();
+                         givenName = user.GivenName.ToString();
+                         employerCode = user.EmployerCode.ToString();
                         break;
                 }
+                // Enter the data into the search text box based on the data fetch criteria
+                SearchComentUser(optionName, employeeNumber, surName, givenName, employerCode);
             }
             catch (Exception e)
             {
                 ExceptionHandler.HandleException(e);
             }
             Logger.LogMethodExit("CallCentreEnquiryPage", "UserSearch", base.IsTakeScreenShotDuringEntryExit);
+        }
+
+
+        private void SearchComentUser(string optionName, string employeeNumber, string surName,
+            string givenName, string employerCode)
+        {
+            base.WaitUntilPopUpLoads(base.GetPageTitle);
+            switch (optionName)
+            {
+                case "EmployeeNumber":
+                    base.WaitForElement(By.Id("CCEmployeeSearch_txtEmployeeNumber"));
+                    base.FillTextBoxById("CCEmployeeSearch_txtEmployeeNumber", employeeNumber);
+                    break;
+
+                case "EmployerCode":
+                    base.WaitForElement(By.Id("CCEmployeeSearch_txtEmployerCode"));
+                    base.FillTextBoxById("CCEmployeeSearch_txtEmployerCode", employerCode);
+                    break;
+
+                case "Surname":
+                    base.WaitForElement(By.Id("CCEmployeeSearch_txtSurname"));
+                    break;
+            }
         }
 
         /// <summary>

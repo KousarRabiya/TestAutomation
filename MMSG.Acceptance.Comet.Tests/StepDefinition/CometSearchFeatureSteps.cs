@@ -51,7 +51,7 @@ namespace CometProject
             try
             {
                 PageFactory.InitElements(driverIE, callCenterSearch);
-                callCenterSearch.CallCenterEnqrySearch(empNum);
+               // callCenterSearch.CallCenterEnqrySearch(empNum);
             }
             catch (Exception ex)
             {
@@ -65,7 +65,7 @@ namespace CometProject
             try
             {
                 PageFactory.InitElements(driverIE, callCenterSearch);
-                callCenterSearch.CallCenterEnqrySearch(empCode);
+               // callCenterSearch.CallCenterEnqrySearch(empCode);
             }
             catch (Exception ex)
             {

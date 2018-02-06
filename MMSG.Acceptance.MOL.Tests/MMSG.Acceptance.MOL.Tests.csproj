@@ -117,6 +117,18 @@
       <DependentUpon>TransactionResource.resx</DependentUpon>
     </Compile>
     <Compile Include="Page Object\TranscationPage.cs" />
+    <Compile Include="ProductAcceptanceTestDefinition\DashBoardDefinition.cs" />
+    <Compile Include="ProductAcceptanceTestDefinition\YourAccountDefinition.cs" />
+    <Compile Include="ProductAcceptanceTestFeatures\DashBoardFeature.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DashBoardFeature.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ProductAcceptanceTestFeatures\YourAccountFeature.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YourAccountFeature.feature</DependentUpon>
+    </Compile>
     <Compile Include="PropertiesFile\Properties.cs" />
     <Compile Include="StepDefinition\ViewBenefitsAndTransactionInMOLApplication_Steps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -143,6 +155,14 @@
     <None Include="ProductAcceptanceOrderedTest\Ordered_MOL_Regression.orderedtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="ProductAcceptanceTestFeatures\DashBoardFeature.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DashBoardFeature.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ProductAcceptanceTestFeatures\YourAccountFeature.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>YourAccountFeature.feature.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Page Object\DashboardResource.resx">
@@ -168,10 +188,7 @@
       <Name>MMSG.Pages</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ProductAcceptanceTestDefinition\" />
-    <Folder Include="ProductAcceptanceTestFeatures\" />
-  </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

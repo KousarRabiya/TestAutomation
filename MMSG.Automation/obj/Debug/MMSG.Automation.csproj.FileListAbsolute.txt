@@ -52,6 +52,7 @@ C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Automation\bin\Debug\nunit.
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Automation\bin\Debug\WebDriver.xml
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Automation\bin\Debug\WebDriver.Support.xml
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Automation\obj\Debug\MMSG.Automation.AutomationConfigurationManagerResource.resources
+C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Automation\obj\Debug\MMSG.Automation.Database_Support.DBDataTransferObjects.DBUserQueriesResource.resources
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Automation\obj\Debug\MMSG.Automation.csproj.GenerateResource.Cache
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Automation\obj\Debug\MMSG.Automation.dll
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Automation\obj\Debug\MMSG.Automation.pdb

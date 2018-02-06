@@ -77,6 +77,7 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
             Logger.LogMethodEntry("Employee_personaldetailsDefinition", "ClickOnButtonByName",
                 base.IsTakeScreenShotDuringEntryExit);
             new Employee_personaldetailsPage().ClickOnButtonInPopup(buttonName, popupName);
+
             Logger.LogMethodExit("Employee_personaldetailsDefinition", "ClickOnButtonByName",
                 base.IsTakeScreenShotDuringEntryExit);
         }

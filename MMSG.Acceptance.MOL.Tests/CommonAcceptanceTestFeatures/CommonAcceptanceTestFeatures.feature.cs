@@ -111,14 +111,8 @@ testRunner.Then("I should be on \"Maxxia Online\" page", ((string)(null)), ((Tec
 #line 10
 this.ScenarioSetup(scenarioInfo);
 #line 11
-testRunner.Given("I access application URL as \"MOLUser\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 12
-testRunner.When("I login as user \"MOLUser\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 13
-testRunner.Then("I should be on \"Maxxia Online\" page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 14
 testRunner.When("I click on Logout link as \"MOLUser\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 15
+#line 12
 testRunner.Then("I should be on \"Maxxia Online.\" page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

@@ -86,8 +86,18 @@
       <DependentUpon>ApplicationLoginPageResource.resx</DependentUpon>
     </Compile>
     <Compile Include="UI Pages\MOL\Home\Dashboard\ContactPage.cs" />
+    <Compile Include="UI Pages\MOL\Home\Dashboard\DashboardResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DashboardResource.resx</DependentUpon>
+    </Compile>
     <Compile Include="UI Pages\MOL\Home\Dashboard\DashboardPage.cs" />
-    <Compile Include="UI Pages\MOL\Home\Dashboard\PayrollDeductionsAndTransfers.cs" />
+    <Compile Include="UI Pages\MOL\Home\Dashboard\PayrollDeductionsAndTransfersPage.cs" />
+    <Compile Include="UI Pages\MOL\Home\Dashboard\PayrollDeductionsAndTransfersPageResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PayrollDeductionsAndTransfersPageResource.resx</DependentUpon>
+    </Compile>
     <Compile Include="UI Pages\ROL\Home\Dashboard\ContactPage.cs" />
     <Compile Include="UI Pages\ROL\Home\Dashboard\ContactResource.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -125,6 +135,14 @@
     <EmbeddedResource Include="UI Pages\Comet\Package_basedetailsResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Package_basedetailsResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\MOL\Home\Dashboard\DashboardResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DashboardResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\MOL\Home\Dashboard\PayrollDeductionsAndTransfersPageResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PayrollDeductionsAndTransfersPageResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UI Pages\ROL\Home\Dashboard\ContactResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>

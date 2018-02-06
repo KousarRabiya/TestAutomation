@@ -103,7 +103,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ClaimsFeature.feature</DependentUpon>
     </Compile>
-    <Compile Include="Hook\SpecFlowHook.cs" />
     <Compile Include="ProductAcceptanceTestFeatures\ContactFeature.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

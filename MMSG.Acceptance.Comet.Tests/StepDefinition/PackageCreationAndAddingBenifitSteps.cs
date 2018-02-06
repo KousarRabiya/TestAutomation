@@ -72,7 +72,7 @@ namespace CometProject.StepDefinition
             try
             {
                 PageFactory.InitElements(driverIE, callCenterSearch);
-                callCenterSearch.SearchEmployee();
+                //callCenterSearch.SearchEmployee();
                 //SpecHooks.extentTest.Pass(ScenarioContext.Current.StepContext.StepInfo.Text);
             }
             catch (Exception ex)

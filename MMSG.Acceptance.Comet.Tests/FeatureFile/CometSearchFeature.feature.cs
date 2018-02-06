@@ -98,6 +98,10 @@ this.ScenarioSetup(scenarioInfo);
 #line 9
  testRunner.When("I enter \"EmpNum\" in the employee number field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 10
+ testRunner.When("I enter \"EmpNum\" in the employee number field from \"XML\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 11
+ testRunner.When("I enter \"EmpNum\" in the employee number field from \"XML\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 12
  testRunner.Then("I click on Search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -109,13 +113,13 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void SearchWithEmployerCode()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search with Employer Code", ((string[])(null)));
-#line 12
- this.ScenarioSetup(scenarioInfo);
-#line 13
- testRunner.Given("I open the browser and launch Comet application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 14
- testRunner.When("I enter \"EmpCode\" in the employer code field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ this.ScenarioSetup(scenarioInfo);
 #line 15
+ testRunner.Given("I open the browser and launch Comet application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 16
+ testRunner.When("I enter \"EmpCode\" in the employer code field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 17
  testRunner.Then("I click on Search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

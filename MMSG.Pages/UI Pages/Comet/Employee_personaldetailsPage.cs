@@ -83,7 +83,8 @@ namespace MMSG.Pages.UI_Pages.Comet
             IWebElement getNextButton = base.GetWebElementPropertiesById(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_NextButton_ID_Locator);
             base.ClickByJavaScriptExecutor(getNextButton);
-
+            User user = User.Get(userType);
+            string sName = user.Surname.ToString();
             Thread.Sleep(2000);
 
             //Step two form fill for new employee 
@@ -105,6 +106,7 @@ namespace MMSG.Pages.UI_Pages.Comet
             getButtonXpath = base.GetWebElementPropertiesByXPath("//tr[@class='BodyColor']/td[3]/input[2]");
             base.ClickByJavaScriptExecutor(getButtonXpath);
             Thread.Sleep(2000);
+
         }
 
         /// <summary>
@@ -386,9 +388,9 @@ namespace MMSG.Pages.UI_Pages.Comet
                 , base.IsTakeScreenShotDuringEntryExit);
             //Store User Details in Memory
             this.StoreUserDetailsInMemory(userTypeEnum, givenNameGUID,
-    surnameGUID, otherNameGUID, tenDigitMobileRandomNumbers,
-    preferredEmail, gESBMenberNumber);
-
+                surnameGUID, otherNameGUID, tenDigitMobileRandomNumbers,
+                preferredEmail, gESBMenberNumber);
+            string sname = User.Get(userTypeEnum).Surname.ToString();
             Logger.LogMethodExit("AddUserPage", "StoreUserDetails"
                 , base.IsTakeScreenShotDuringEntryExit);
         }
@@ -439,14 +441,16 @@ namespace MMSG.Pages.UI_Pages.Comet
             {
                 Email = preferredEmail,
                 OtherName = otherNameGUID,
-                Surname = surnameGUID,
+                Surname = surnameGUID.ToString(),
                 GivenName = givenNameGUID,
                 MemberNumber = gESBMenberNumber,
                 UserType = userTypeEnum,
                 IsCreated = true,
             };
+            
             //Save The User In Memory
             newUser.StoreUserInMemory();
+            string sn = User.Get(userTypeEnum).Surname.ToString();
             Logger.LogMethodExit("AddUserPage", "SaveUserInMemory",
               base.IsTakeScreenShotDuringEntryExit);
         }

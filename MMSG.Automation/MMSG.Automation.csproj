@@ -144,6 +144,13 @@
     <Compile Include="CustomException\NoSuchKeywordFoundException.cs" />
     <Compile Include="CustomException\NoSuitableDriverFound.cs" />
     <Compile Include="CustomException\NoSuitableDriverFoundException.cs" />
+    <Compile Include="Database_Support\DatabaseTools.cs" />
+    <Compile Include="Database_Support\DBDataTransferObjects\DBUserQueries.cs" />
+    <Compile Include="Database_Support\DBDataTransferObjects\DBUserQueriesResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBUserQueriesResource.resx</DependentUpon>
+    </Compile>
     <Compile Include="DataTransferObjects\BaseEntityObject.cs" />
     <Compile Include="DataTransferObjects\Package.cs" />
     <Compile Include="DataTransferObjects\User.cs" />
@@ -185,6 +192,10 @@
     <EmbeddedResource Include="AutomationConfigurationManagerResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>AutomationConfigurationManagerResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Database_Support\DBDataTransferObjects\DBUserQueriesResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DBUserQueriesResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <Choose>

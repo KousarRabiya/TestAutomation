@@ -84,7 +84,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CommonAcceptanceTestFeatures.feature</DependentUpon>
     </Compile>
-    <Compile Include="DBOperation\DataBaseOperation.cs" />
     <Compile Include="FeatureFile\CometSearchFeature.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -194,7 +193,6 @@
       <DependentUpon>Package_basedetailsFeature.feature</DependentUpon>
     </Compile>
     <Compile Include="StepDefinition\CometSearchFeatureSteps.cs" />
-    <Compile Include="Hook\SpecHooks.cs" />
     <Compile Include="PageObject\AddressDetails.cs" />
     <Compile Include="PageObject\AdminFees\AdminFeesPage.cs" />
     <Compile Include="PageObject\AdminFees\EmployeeOffering\EmployeeOfferingPage.cs" />
