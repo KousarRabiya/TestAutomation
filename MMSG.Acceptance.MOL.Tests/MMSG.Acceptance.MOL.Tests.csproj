@@ -98,6 +98,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MOL.feature</DependentUpon>
     </Compile>
+    <Compile Include="ProductAcceptanceTestDefinition\TransactionDefination.cs" />
+    <Compile Include="ProductAcceptanceTestFeatures\TransactionFeature.feature.cs">
+      <DependentUpon>TransactionFeature.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Page Object\DashboardResource.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -144,6 +150,10 @@
     <None Include="FeatureFiles\MOL.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>MOL.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ProductAcceptanceTestFeatures\TransactionFeature.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>TransactionFeature.feature.cs</LastGenOutput>
     </None>
     <None Include="Input Files\TestData.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

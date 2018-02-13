@@ -17,14 +17,15 @@ namespace MMSG.Pages.UI_Pages.ROL.Home.Dashboard
         /// Navigate to tab
         /// </summary>
         /// <param name="tabName">This is tab name.</param>
-        public void NavigateToTab(string tabName)
+        public void NavigateToTab(string applicationName, string tabName)
         {
             // Navigate to tab
-            Logger.LogMethodEntry("DashboardPage", "NavigateToTab",base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogMethodEntry("DashboardPage", "NavigateToTab", base.IsTakeScreenShotDuringEntryExit);
             try
             {
-                //Wait forwindowload and select the window
-                WaitandSelectROLWindow();
+                //Wait for window load and select the window
+                WaitandSelectWindow(applicationName);
+
                 bool getTabExistance = base.IsElementPresent(By.LinkText(tabName), 10);
                 int getItemCount = base.GetElementCountByLinkText(tabName);
                 if (getItemCount == Convert.ToInt32(1) && getTabExistance == true)
@@ -58,12 +59,12 @@ namespace MMSG.Pages.UI_Pages.ROL.Home.Dashboard
                 getTabNameCount = base.GetElementCountByXPath(DashboardResource.
                     DashboardPage_GetTabCount_Xpath_Locator);
 
-                for(int i = Convert.ToInt32(1); i<=getTabNameCount; i++)
+                for (int i = Convert.ToInt32(1); i <= getTabNameCount; i++)
                 {
                     // Get tab name
                     string getTabName = base.GetElementInnerTextByXPath(string.Format(DashboardResource.
                         DashboardPage_GetTabName_Xpath_Locator, i));
-                    if(getTabName.Equals(tabName))
+                    if (getTabName.Equals(tabName))
                     {
                         // Click on the tab name based on the title comparision
                         IWebElement getTab = base.GetWebElementPropertiesByXPath(string.Format(DashboardResource.
@@ -80,18 +81,25 @@ namespace MMSG.Pages.UI_Pages.ROL.Home.Dashboard
 
         }
 
-
         /// <summary>
         ///Wait untill window loads and select the window.
         /// </summary>
-        private void WaitandSelectROLWindow()
+        private void WaitandSelectWindow(string applicationName)
         {
             try
             {
-                // Wait untill window loads
-                base.WaitUntilWindowLoads(ApplicationLoginPageResource.ApplicationLoginPage_ROL_PageTitle_Title);
-                // Select window
-                base.SelectWindow(ApplicationLoginPageResource.ApplicationLoginPage_ROL_PageTitle_Title);
+                //Wait for window load and select the window
+                switch (applicationName)
+                {
+                    case "Maxxia Online":
+                        WaitUntilWindowLoads(ApplicationLoginPageResource.ApplicationLoginPage_MOL_DashboardPageTitle_Title);
+                        SelectWindow(ApplicationLoginPageResource.ApplicationLoginPage_MOL_DashboardPageTitle_Title);
+                        break;
+                    case "RemServ Online":
+                        WaitUntilWindowLoads(ApplicationLoginPageResource.ApplicationLoginPage_ROL_PageTitle_Title);
+                        SelectWindow(ApplicationLoginPageResource.ApplicationLoginPage_ROL_PageTitle_Title);
+                        break;
+                }
             }
             catch (Exception e)
             {

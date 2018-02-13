@@ -117,40 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AUTOMATION_BROWSER_KEY" xml:space="preserve">
-    <value>AUTOMATION_BROWSER</value>
+  <data name="TransactionsPage_AvailableBalanceValue_Xpath_Locator" xml:space="preserve">
+    <value>//div[@id='balance']/div/b</value>
   </data>
-  <data name="AUTOMATION_TEST_ENVIRONMENT_KEY" xml:space="preserve">
-    <value>AUTOMATION_TEST_ENVIRONMENT</value>
+  <data name="TransactionsPage_FromDropDown_Xpath_Locator" xml:space="preserve">
+    <value>//div[@id='title']/div/form/div[2]/button</value>
   </data>
-  <data name="BrowserName_Key" xml:space="preserve">
-    <value>Browser</value>
+  <data name="TransactionsPage_FromLabel_Xpath_Locator" xml:space="preserve">
+    <value>//div[@id='title']/div/form/label[2]</value>
   </data>
-  <data name="DOWNLOAD_PATH_Key" xml:space="preserve">
-    <value>DOWNLOAD_PATH</value>
+  <data name="TransactionsPage_ViewAccountDropDown_Xpath_Locator" xml:space="preserve">
+    <value>//div[@id='title']/div/form/div[1]/button</value>
   </data>
-  <data name="TestEnvironment_Key" xml:space="preserve">
-    <value>Website</value>
-  </data>
-  <data name="URLRootCometDev_Key" xml:space="preserve">
-    <value>CometDev</value>
-  </data>
-  <data name="URLRootCOMETTST05_Key" xml:space="preserve">
-    <value>COMETTST05</value>
-  </data>
-  <data name="URLRootCOMETTST08_Key" xml:space="preserve">
-    <value>COMETTST08</value>
-  </data>
-  <data name="URLRootCometUAT_Key" xml:space="preserve">
-    <value>CometUAT</value>
-  </data>
-  <data name="URLRootMOLAPP15_Key" xml:space="preserve">
-    <value>MOLAPP15</value>
-  </data>
-  <data name="URLRootMOLUAT_Key" xml:space="preserve">
-    <value>MOLUAT</value>
-  </data>
-  <data name="URLRootROLCert_Key" xml:space="preserve">
-    <value>ROLCert</value>
+  <data name="TransactionsPage_ViewAccountLabel_Xpath_Locator" xml:space="preserve">
+    <value>//div[@id='title']/div/form/label[1]</value>
   </data>
 </root>

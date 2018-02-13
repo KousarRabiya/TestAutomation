@@ -112,6 +112,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PayrollDeductionsAndTransfersPageResource.resx</DependentUpon>
     </Compile>
+    <Compile Include="UI Pages\MOL\Your Account\TransactionResource.Designer.cs">
+      <DependentUpon>TransactionResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="UI Pages\MOL\Your Account\TransactionsPage.cs" />
     <Compile Include="UI Pages\ROL\Home\Dashboard\ContactPage.cs" />
     <Compile Include="UI Pages\ROL\Home\Dashboard\ContactResource.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -165,6 +171,10 @@
     <EmbeddedResource Include="UI Pages\MOL\Home\Dashboard\PayrollDeductionsAndTransfersPageResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>PayrollDeductionsAndTransfersPageResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\MOL\Your Account\TransactionResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TransactionResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UI Pages\ROL\Home\Dashboard\ContactResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>

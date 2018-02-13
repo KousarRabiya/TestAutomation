@@ -1,13 +1,13 @@
 ﻿Feature: DashBoardFeature
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+
+Scenario: Navigate the Dashboard - "Show more benefits.." link is available in Account Summary Dashboard (Home Page)
+	Then I should be display with the benefit "Show me more benefits ..."
 
 @mytag
 Scenario: MOL user verifies the Benefits are displayed
-Then I should be display with the benefit "Meal Entertainment"
-Then I should be display with the benefit "Superannuation"
-Then I should be display with the benefit "Prof Indemnity Insurance"
+	Then I should be display with the benefit "Meal Entertainment"
+	Then I should be display with the benefit "Superannuation"
+	Then I should be display with the benefit "Prof Indemnity Insurance"
 
 
 

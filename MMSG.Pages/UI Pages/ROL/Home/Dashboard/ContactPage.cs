@@ -171,7 +171,7 @@ namespace MMSG.Pages.UI_Pages.ROL.Home.Dashboard
         /// <param name="dropDownOption"></param>
         public void SelectTheDropDown(string dropDownOption)
         {
-            Logger.LogMethodEntry("ContactPage", "ValidateUserDetailsinYourDetails", base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogMethodEntry("ContactPage", "SelectTheDropDown", base.IsTakeScreenShotDuringEntryExit);
             base.ClickLinkByPartialLinkText(dropDownOption);
         }
 

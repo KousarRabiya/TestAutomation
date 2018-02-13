@@ -142,6 +142,15 @@ namespace MMSG.Automation {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to MOLAPP15.
+        /// </summary>
+        internal static string URLRootMOLAPP15_Key {
+            get {
+                return ResourceManager.GetString("URLRootMOLAPP15_Key", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MOLUAT.
         /// </summary>
         internal static string URLRootMOLUAT_Key {

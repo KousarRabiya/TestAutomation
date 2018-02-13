@@ -24,7 +24,7 @@ namespace MMSG.Acceptance.ROL.Tests.ProductAcceptanceTestDefinition
         {
             Logger.LogMethodEntry("ContactDefinition", "NavigateToTab",base.IsTakeScreenShotDuringEntryExit);
             // Navigate to tab based on the tab name
-            new DashboardPage().NavigateToTab(tabName);
+            new DashboardPage().NavigateToTab("RemServ Online",tabName);
             Logger.LogMethodExit("ContactDefinition", "NavigateToTab", base.IsTakeScreenShotDuringEntryExit);
         }
 
@@ -41,9 +41,9 @@ namespace MMSG.Acceptance.ROL.Tests.ProductAcceptanceTestDefinition
         [When(@"I select ""(.*)"" in the dropdown ""(.*)""")]
         public void SelelctingTheDropDownInContactPage(string dropDownOption, string dropDownName)
         {
-            Logger.LogMethodEntry("ContactDefinition", "SelelctingTheDropDownInContactPage", base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogMethodEntry("ContactDefinition", "SelectingTheDropDownInContactPage", base.IsTakeScreenShotDuringEntryExit);
             new ContactPage().ClickOnDropDown(dropDownOption, dropDownName);
-            Logger.LogMethodExit("ContactDefinition", "SelelctingTheDropDownInContactPage", base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogMethodExit("ContactDefinition", "SelectingTheDropDownInContactPage", base.IsTakeScreenShotDuringEntryExit);
         }
 
         [Then(@"I should be display ""(.*)"" dropdown")]

@@ -50,7 +50,7 @@ namespace MMSG.Acceptance.MOL.Tests.CommonAcceptanceTestDefinitions
         /// </summary>
         /// <param name="pageTitle"></param>
         [Then(@"I should be on ""(.*)"" page")]
-        public void LogoutAsUser(string pageTitle)
+        public void ValidatePageName(string pageTitle)
         {
             Logger.LogMethodEntry("CommonAcceptanceTestDefinitions", "ValidatePageName", base.IsTakeScreenShotDuringEntryExit);
             // Assert the expected value with the actual value
@@ -64,7 +64,7 @@ namespace MMSG.Acceptance.MOL.Tests.CommonAcceptanceTestDefinitions
         /// </summary>
         /// <param name="userType">This is user type enum.</param>
         [When(@"I click on Logout link as ""(.*)""")]
-        public void ValidatePageName(User.UserTypeEnum userType)
+        public void LogoutAsUser(User.UserTypeEnum userType)
         {
             Logger.LogMethodEntry("CommonAcceptanceTestDefinitions", "LogoutAsUser", base.IsTakeScreenShotDuringEntryExit);
             ApplicationLoginPage loginPage = new ApplicationLoginPage();

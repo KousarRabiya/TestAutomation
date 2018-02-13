@@ -35,22 +35,14 @@ namespace MMSG.Automation
             // based on environment deserialize xml data in memory
             switch (AutomationConfigurationManager.ApplicationTestEnvironment.ToUpper())
             {
-                        case "COMETDEV":
-                            this.DeserializeTheXmlDataInMemory(GetInMemoryTestDataFilePath
-               (AutomationConfigurationManager.ApplicationTestEnvironment)); break;
-                        case "COMETUAT":
-                            this.DeserializeTheXmlDataInMemory(GetInMemoryTestDataFilePath
-               (AutomationConfigurationManager.ApplicationTestEnvironment)); break;
-                        case "ROLCERT":
-                            this.DeserializeTheXmlDataInMemory(GetInMemoryTestDataFilePath
-                (AutomationConfigurationManager.ApplicationTestEnvironment)); break;
-                        case "MOLUAT":
-                            this.DeserializeTheXmlDataInMemory(GetInMemoryTestDataFilePath
-                 (AutomationConfigurationManager.ApplicationTestEnvironment)); break;
-                        case "COMETTST05":
+                case "COMETDEV":
+                case "COMETUAT":
+                case "ROLCERT":
+                case "MOLUAT":
+                case "MOLAPP15":
                     this.DeserializeTheXmlDataInMemory(GetInMemoryTestDataFilePath
-                (AutomationConfigurationManager.ApplicationTestEnvironment)); break;
-                        default: throw new ArgumentException("The suggested environment was not found");
+         (AutomationConfigurationManager.ApplicationTestEnvironment)); break;
+                default: throw new ArgumentException("The suggested environment was not found");
             }
         }
 

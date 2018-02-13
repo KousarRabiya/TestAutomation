@@ -92,6 +92,7 @@
     <Compile Include="ProductAcceptanceTestDefinition\ClaimsDefinition.cs" />
     <Compile Include="ProductAcceptanceTestDefinition\ContactDefinition.cs" />
     <Compile Include="ProductAcceptanceTestDefinition\DashboardDefinition.cs" />
+    <Compile Include="ProductAcceptanceTestDefinition\TransactionDefination.cs" />
     <Compile Include="ProductAcceptanceTestDefinition\YourAccountDefinition.cs" />
     <Compile Include="ProductAcceptanceTestFeatures\BusBenefitFeature.feature.cs">
       <AutoGen>True</AutoGen>
@@ -108,6 +109,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ContactFeature.feature</DependentUpon>
     </Compile>
+    <Compile Include="ProductAcceptanceTestFeatures\TransactionFeature.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransactionFeature.feature</DependentUpon>
+    </Compile>
     <Compile Include="PropertiesFiles\Properties.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -117,10 +123,10 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>CommonAcceptanceTestFeatures.feature.cs</LastGenOutput>
     </None>
-    <None Include="ProductAcceptanceOrderedTest\Ordered_ROL_Regression.orderedtest">
+    <None Include="ProductAcceptanceOrderedTest\OrderedTest1.orderedtest">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="ProductAcceptanceOrderedTest\Ordered_ROL_BVT.orderedtest">
+    <None Include="ProductAcceptanceOrderedTest\Ordered_ROL_Regression.orderedtest">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="ProductAcceptanceTestFeatures\BusBenefitFeature.feature">
@@ -138,6 +144,10 @@
     <None Include="ProductAcceptanceTestFeatures\ContactFeature.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ContactFeature.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ProductAcceptanceTestFeatures\TransactionFeature.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>TransactionFeature.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

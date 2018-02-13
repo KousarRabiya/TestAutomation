@@ -19,14 +19,14 @@ namespace MMSG.Pages.UI_Pages.MOL.Home.Dashboard
         /// <summary>
         /// Verifying the page landed on the Dashbord 
         /// </summary>
-        /// <param name="benefitNane"></param>
+        /// <param name="benefitName"></param>
         /// <returns></returns>
-        public bool VerifyTheBenefitIsPresent(string benefitNane)
+        public bool VerifyTheBenefitIsPresent(string benefitName)
         {
-            Logger.LogMethodEntry("DashboardPage", "VerifyTheBenefitIsPresent", base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogMethodEntry("DashboardPage", "VerifyTheBenefitIsPresent", IsTakeScreenShotDuringEntryExit);
             try
             {               
-                if (base.IsElementDisplayedByPartialLinkText(benefitNane))
+                if (IsElementDisplayedByPartialLinkText(benefitName))
                 {
                     return true;                         
                 }
@@ -35,7 +35,7 @@ namespace MMSG.Pages.UI_Pages.MOL.Home.Dashboard
             {
                 ExceptionHandler.HandleException(e);
             }
-            Logger.LogMethodEntry("DashboardPage", "VerifyTheBenefitIsPresent", base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogMethodEntry("DashboardPage", "VerifyTheBenefitIsPresent", IsTakeScreenShotDuringEntryExit);
             return false;
         }
 
@@ -43,7 +43,6 @@ namespace MMSG.Pages.UI_Pages.MOL.Home.Dashboard
         /// clicking on the link present in the dashbord
         /// </summary>
         /// <param name="linkName"></param>
-
         public void ClickOnTheLink(string linkName)
         {
             Logger.LogMethodEntry("DashboardPage", "ClickOnTheLink", base.IsTakeScreenShotDuringEntryExit);

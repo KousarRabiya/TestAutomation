@@ -59,6 +59,7 @@ namespace MMSG.Pages.UI_Pages
                     case User.UserTypeEnum.ROLUser:
                     case User.UserTypeEnum.COMETUser:
                     case User.UserTypeEnum.MOLUser:
+                    case User.UserTypeEnum.MOLWalletTransactionUser:
                         _baseLoginUrl = (AutomationConfigurationManager.GetCourseSpaceUrlRoot()).ToString();
                         base.DeleteAllBrowserCookies();
                         break;
@@ -85,13 +86,14 @@ namespace MMSG.Pages.UI_Pages
               switch(userTypeEnum)
                 {
                     case User.UserTypeEnum.ROLUser:
+                    case User.UserTypeEnum.ROLWalletTransactionUser:
+                    case User.UserTypeEnum.ROLNonWalletTransactionUser:
+                    case User.UserTypeEnum.MOLUser:
+                    case User.UserTypeEnum.MOLWalletTransactionUser:
                         GotoNavigationURl(baseLoginUrl);
                         break;
                     // Execute Comet URL
                     case User.UserTypeEnum.COMETUser:
-                        GotoNavigationURlComet(baseLoginUrl);
-                        break;
-                    case User.UserTypeEnum.MOLUser:
                         GotoNavigationURlComet(baseLoginUrl);
                         break;
                 }
@@ -221,6 +223,8 @@ namespace MMSG.Pages.UI_Pages
                         this.ROLUserLogin(userName, password);
                         break;
                     case User.UserTypeEnum.MOLUser:
+                    case User.UserTypeEnum.MOLWalletTransactionUser:
+                    case User.UserTypeEnum.MOLNonWalletTransactionUser:
                         // Enter user name and password
                         this.MOLUserLogin(userName, password);
                         break;
@@ -413,7 +417,7 @@ namespace MMSG.Pages.UI_Pages
         }
 
         /// <summary>
-        ///Wait untill window loads and select the window.
+        ///Wait until window loads and select the window.
         /// </summary>
         protected void WaitandSelectMOLWindow(string pageStatus)
         {
@@ -422,13 +426,13 @@ namespace MMSG.Pages.UI_Pages
                 switch (pageStatus)
                 {
                     case "Loginpage":
-                        // Wait untill window loads
+                        // Wait until window loads
                         base.WaitUntilWindowLoads(ApplicationLoginPageResource.ApplicationLoginPage_MOL_LoginPageTitle_Title);
                         // Select window
                         base.SelectWindow(ApplicationLoginPageResource.ApplicationLoginPage_MOL_LoginPageTitle_Title);
                         break;
                      case  "Dashboard":
-                        // Wait untill window loads
+                        // Wait until window loads
                         base.WaitUntilWindowLoads(ApplicationLoginPageResource.ApplicationLoginPage_MOL_DashboardPageTitle_Title);
                         // Select window
                         base.SelectWindow(ApplicationLoginPageResource.ApplicationLoginPage_MOL_DashboardPageTitle_Title);

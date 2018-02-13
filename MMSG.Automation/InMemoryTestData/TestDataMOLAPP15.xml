@@ -4,7 +4,8 @@
   <ArrayOfUser>
     <!--Hard coded Users data for SMS.-->
     <User>
-      <Name>452280245</Name><!--682106775-->
+      <Name>682106775</Name>
+      <!--682106775-->
       <Password>MOL1234</Password>
       <Email>Sherlock_Test@remserv.com.au</Email>
       <FirstName>Dev</FirstName>
@@ -25,6 +26,6 @@
       <IsCreated>true</IsCreated>
       <EnrolementStatus>false</EnrolementStatus>
     </User>
-    
+
   </ArrayOfUser>
 </Data>

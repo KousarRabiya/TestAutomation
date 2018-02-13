@@ -88,6 +88,10 @@ namespace MMSG.Automation
                 case "MOLUAT":
                     applicationUrl = ConfigurationManager.AppSettings[AutomationConfigurationManagerResource.URLRootMOLUAT_Key];
                     break;
+                case "MOLAPP15":
+                    applicationUrl = ConfigurationManager.AppSettings[AutomationConfigurationManagerResource.URLRootMOLAPP15_Key];
+                    break;
+
                 case "ROLCERT":
                     applicationUrl = ConfigurationManager.AppSettings[AutomationConfigurationManagerResource.URLRootROLCert_Key];
                     break;

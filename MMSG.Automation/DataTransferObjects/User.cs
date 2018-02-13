@@ -102,7 +102,11 @@ namespace MMSG.Automation.DataTransferObjects
             ROLUser = 1,
             COMETUser=2,
             MOLUser=3,
-            NewCOMETUser=4,            
+            NewCOMETUser=4,
+            ROLWalletTransactionUser =5,
+            ROLNonWalletTransactionUser = 6,
+            MOLWalletTransactionUser = 7,
+            MOLNonWalletTransactionUser = 8,
             #endregion
         }
 
