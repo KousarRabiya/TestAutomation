@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace MMSG.Pages.UI_Pages.Comet
@@ -44,7 +45,7 @@ namespace MMSG.Pages.UI_Pages.Comet
         /// Search user based on the input search criteria
         /// </summary>
         /// <param name="userType">This is user type enum.</param>
-        public void UserSearch(string optionName, User.UserTypeEnum userType,string dataFetchType)
+        public void UserSearch(string optionName, User.UserTypeEnum userType, string dataFetchType)
         {
             Logger.LogMethodEntry("CallCentreEnquiryPage", "UserSearch", base.IsTakeScreenShotDuringEntryExit);
             try
@@ -54,7 +55,7 @@ namespace MMSG.Pages.UI_Pages.Comet
                 string givenName = string.Empty;
                 string employerCode = string.Empty;
                 User user = User.Get(userType);
-           
+
                 switch (dataFetchType)
                 {
                     case "DB":
@@ -63,10 +64,10 @@ namespace MMSG.Pages.UI_Pages.Comet
 
                     case "XML":
                         //Get user details from XML
-                         employeeNumber = user.EmployeeNumber.ToString();
-                         surName = user.Name.ToString();
-                         givenName = user.GivenName.ToString();
-                         employerCode = user.EmployerCode.ToString();
+                        employeeNumber = user.EmployeeNumber.ToString();
+                        surName = user.Name.ToString();
+                        givenName = user.GivenName.ToString();
+                        employerCode = user.EmployerCode.ToString();
                         break;
                 }
                 // Enter the data into the search text box based on the data fetch criteria
@@ -167,7 +168,7 @@ namespace MMSG.Pages.UI_Pages.Comet
         /// </summary>
         public void ClickOptionOnCCEnquiryPage(string optionName, string pageName)
         {
-            Logger.LogMethodEntry("Employee_personaldetailsPage", "ClickNewButton",
+            Logger.LogMethodEntry("CallCentreEnquiryPage", "ClickNewButton",
                 base.IsTakeScreenShotDuringEntryExit);
             try
             {
@@ -180,13 +181,16 @@ namespace MMSG.Pages.UI_Pages.Comet
                     case "Create New Package":
                         ClickCreateNewPackageLink(pageName);
                         break;
+                    case "Amendment":
+                        ClickOnTheAmendmentOptionInTreeView();
+                        break;
                 }
             }
             catch (Exception e)
             {
                 ExceptionHandler.HandleException(e);
             }
-            Logger.LogMethodExit("Employee_personaldetailsPage", "ClickNewButton",
+            Logger.LogMethodExit("CallCentreEnquiryPage", "ClickNewButton",
                 base.IsTakeScreenShotDuringEntryExit);
         }
 
@@ -195,7 +199,7 @@ namespace MMSG.Pages.UI_Pages.Comet
         /// </summary>
         public void ClickNewButton(string pageName)
         {
-            Logger.LogMethodEntry("Employee_personaldetailsPage", "ClickNewButton", base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogMethodEntry("CallCentreEnquiryPage", "ClickNewButton", base.IsTakeScreenShotDuringEntryExit);
             try
             {
                 base.WaitUntilPopUpLoads(pageName);
@@ -207,7 +211,7 @@ namespace MMSG.Pages.UI_Pages.Comet
             {
                 ExceptionHandler.HandleException(e);
             }
-            Logger.LogMethodExit("Employee_personaldetailsPage", "ClickNewButton", base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogMethodExit("CallCentreEnquiryPage", "ClickNewButton", base.IsTakeScreenShotDuringEntryExit);
         }
 
 
@@ -216,22 +220,135 @@ namespace MMSG.Pages.UI_Pages.Comet
         /// </summary>
         public void ClickCreateNewPackageLink(string pageName)
         {
-            Logger.LogMethodEntry("Employee_personaldetailsPage", "ClickCreateNewPackageLink",
+            Logger.LogMethodEntry("CallCentreEnquiryPage", "ClickCreateNewPackageLink",
                 base.IsTakeScreenShotDuringEntryExit);
             try
             {
+                base.SwitchToDefaultWindow();
                 base.WaitUntilPopUpLoads(pageName);
+                base.SelectWindow(pageName);
                 bool ewe = base.IsElementPresent(By.LinkText("Create New Package"), 10);
                 base.WaitForElement(By.LinkText("Create New Package"));
-                IWebElement getNewButton = base.GetWebElementProperties(By.Id("CCEmployeeSearch_cmdNew"));
+                IWebElement getNewButton = base.GetWebElementProperties(By.LinkText("Create New Package"));
                 base.ClickByJavaScriptExecutor(getNewButton);
+                Thread.Sleep(1000);
             }
             catch (Exception e)
             {
                 ExceptionHandler.HandleException(e);
             }
-            Logger.LogMethodExit("Employee_personaldetailsPage", "ClickCreateNewPackageLink",
+            Logger.LogMethodExit("CallCentreEnquiryPage", "ClickCreateNewPackageLink",
                 base.IsTakeScreenShotDuringEntryExit);
+        }
+
+        /// <summary>
+        /// Verify the created package display in call center enquiry screen
+        /// </summary>
+        /// <param name="packageType">This is package type enum.</param>
+        /// <param name="userType">This is user type enum.</param>
+        /// <returns>Return package existance status.</returns>
+        public bool VeriFyPackageName(Package.PackageTypeEnum packageType, User.UserTypeEnum userType)
+        {
+            Logger.LogMethodEntry("CallCentreEnquiryPage", "VeriFyPackageName",
+                base.IsTakeScreenShotDuringEntryExit);
+            bool packageIsPresent = false;
+            try
+            {
+                base.WaitForElement(By.Id("wucPackageSummary_tdEmployeeNo"));
+                // Employee Nuber from screen
+                string employeeNo = base.GetElementInnerTextById("wucPackageSummary_tdEmployeeNo");
+                this.StoreUserDetails(userType, employeeNo);
+                Package package = Package.Get(packageType);
+                //Package Name From menery
+                string getEmployerCode = package.EmployerCode.ToString();
+                string toBeCompared = getEmployerCode + " " + "(" + employeeNo;
+                //Package name and employee name 
+                string employeeNumebrWithPackage = base.GetElementInnerTextById("LeftMenuTreet2");
+                string text= employeeNumebrWithPackage.Remove(employeeNumebrWithPackage.Length - 7);
+                // compare the value with trhye screen value
+                if (text== toBeCompared)
+                {
+                    return true;
+                }
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.HandleException(e);
+            }
+            Logger.LogMethodExit("CallCentreEnquiryPage", "VeriFyPackageName",
+                base.IsTakeScreenShotDuringEntryExit);
+            return packageIsPresent;
+        }
+
+        /// <summary>
+        /// Click new button in Call Amendment page
+        /// </summary>
+        public void ClickOnTheAmendmentOptionInTreeView()
+        {           
+            base.WaitForElement(By.LinkText("Amendments"));
+            IWebElement amendmentProperty = base.GetWebElementProperties(By.LinkText("Amendments"));
+            base.ClickByJavaScriptExecutor(amendmentProperty);
+        }
+
+
+        /// <summary>
+        /// Stores User Details in Memory.
+        /// </summary>
+        /// <param name="userTypeEnum">This is User by Type.</param>
+        /// <param name="userInformation">This is User Information Guid.</param>        
+        public void StoreUserDetails(User.UserTypeEnum userTypeEnum, string employeeNumber)
+        {
+            //Stores User Details in Memory
+
+            Logger.LogMethodEntry("AddUserPage", "StoreUserDetails"
+                , base.IsTakeScreenShotDuringEntryExit);
+            //Store User Details in Memory
+            this.StoreUserDetailsInMemory(userTypeEnum, employeeNumber);
+            string sname = User.Get(userTypeEnum).Surname.ToString();
+            Logger.LogMethodExit("AddUserPage", "StoreUserDetails"
+                , base.IsTakeScreenShotDuringEntryExit);
+        }
+
+        /// <summary>
+        /// Saving the User Details in Memory
+        /// </summary>
+        /// <param name="userTypeEnum">This is User Type Enum</param>
+        /// <param name="userName">This is Username guid</param>
+        /// <param name="userPassword">This is Password</param>
+        /// <param name="firstName">This Is First Name</param>
+        /// <param name="lastName">This Is Last Name</param>
+        private void StoreUserDetailsInMemory(User.UserTypeEnum userTypeEnum, string employeeNumber)
+        {
+            //Save user in Memory
+            Logger.LogMethodEntry("AddUserPage", "StoreUserDetailsInMemory",
+                base.IsTakeScreenShotDuringEntryExit);
+            //Save User Properties in Memory
+            //Save user Details
+            this.SaveUserInMemory
+             (userTypeEnum, employeeNumber);
+
+            Logger.LogMethodExit("AddUserPage", "StoreUserDetailsInMemory",
+                base.IsTakeScreenShotDuringEntryExit);
+        }
+
+
+        /// <summary>
+        /// Save User In Memory
+        /// </summary>
+        /// <param name="userTypeEnum">This is User Type Enum</param>
+        /// <param name="userName">This is UserName Guid</param>
+        /// <param name="userPassword">This is Password</param>
+        /// <param name="firstName">This is First Name</param>
+        /// <param name="lastName">This is Last Name</param> 
+        private void SaveUserInMemory(User.UserTypeEnum userTypeEnum, string employeeNumber)
+        {
+            //Save The User In Memory
+            Logger.LogMethodEntry("AddUserPage", "SaveUserInMemory",
+              base.IsTakeScreenShotDuringEntryExit);
+            User newUser = new User
+            {
+                EmployeeNumber = employeeNumber,
+            };
         }
     }
 }

@@ -184,6 +184,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="InMemoryTestData\TestDataCOMETDEV.xml" />
+    <Content Include="InMemoryTestData\TestDataCOMETTST05.xml" />
     <Content Include="InMemoryTestData\TestDataCOMETUAT.xml" />
     <Content Include="InMemoryTestData\TestDataMOLUAT.xml" />
     <Content Include="InMemoryTestData\TestDataROLCERT.xml" />

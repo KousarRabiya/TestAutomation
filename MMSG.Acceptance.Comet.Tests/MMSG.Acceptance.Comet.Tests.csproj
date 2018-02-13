@@ -84,99 +84,15 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CommonAcceptanceTestFeatures.feature</DependentUpon>
     </Compile>
-    <Compile Include="FeatureFile\CometSearchFeature.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CometSearchFeature.feature</DependentUpon>
-    </Compile>
-    <Compile Include="FeatureFile\EmployeeProfileCreation.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EmployeeProfileCreation.feature</DependentUpon>
-    </Compile>
-    <Compile Include="FeatureFile\PackageCreationAndAddingBenifit.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PackageCreationAndAddingBenifit.feature</DependentUpon>
-    </Compile>
-    <Compile Include="FeatureFile\Payment InstructionsCreation.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Payment InstructionsCreation.feature</DependentUpon>
-    </Compile>
-    <Compile Include="PageObject\AdminFees\AdminFeesResource.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AdminFeesResource.resx</DependentUpon>
-    </Compile>
-    <Compile Include="PageObject\AdminFees\EmployeeOffering\EmployeeOfferingResource.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EmployeeOfferingResource.resx</DependentUpon>
-    </Compile>
-    <Compile Include="PageObject\AmendmentsScreen.cs" />
-    <Compile Include="PageObject\BenefitCreation\BenefitDetailsResource.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BenefitDetailsResource.resx</DependentUpon>
-    </Compile>
-    <Compile Include="PageObject\BenefitCreation\BenefitResource.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BenefitResource.resx</DependentUpon>
-    </Compile>
-    <Compile Include="PageObject\CardScreen\CardResource.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CardResource.resx</DependentUpon>
-    </Compile>
-    <Compile Include="PageObject\EmployeeCreation\AddressPopUp\AddressPopupResource.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AddressPopupResource.resx</DependentUpon>
-    </Compile>
-    <Compile Include="PageObject\Package\EditPackage\EditPackageAdminDetailsResource.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EditPackageAdminDetailsResource.resx</DependentUpon>
-    </Compile>
-    <Compile Include="PageObject\Package\EditPackage\EditPackageResource.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EditPackageResource.resx</DependentUpon>
-    </Compile>
-    <Compile Include="PageObject\Package\EditPackage\EditPayRollDetailsResource.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EditPayRollDetailsResource.resx</DependentUpon>
-    </Compile>
-    <Compile Include="PageObject\Package\EmployeeDetailsResource.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EmployeeDetailsResource.resx</DependentUpon>
-    </Compile>
-    <Compile Include="PageObject\Package\EmployeeSearch\EmployerSearchPopupResource.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EmployerSearchPopupResource.resx</DependentUpon>
-    </Compile>
-    <Compile Include="PageObject\Package\PackageAdminDetailsResource.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PackageAdminDetailsResource.resx</DependentUpon>
-    </Compile>
-    <Compile Include="PageObject\Package\PayRollDetailsResource.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PayRollDetailsResource.resx</DependentUpon>
-    </Compile>
-    <Compile Include="PageObject\PaymentInstruction\PayeeSearch\PayeeSearchResource.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PayeeSearchResource.resx</DependentUpon>
-    </Compile>
+    <Compile Include="ProductAcceptanceTestDefinition\AmendmentsDefinition.cs" />
     <Compile Include="ProductAcceptanceTestDefinition\CallCentreEnquiryDefinition.cs" />
     <Compile Include="ProductAcceptanceTestDefinition\Employee_personaldetailsDefinition.cs" />
+    <Compile Include="ProductAcceptanceTestDefinition\Package_basedetailsDefinition.cs" />
+    <Compile Include="ProductAcceptanceTestFeatures\AmendmentsFeature.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AmendmentsFeature.feature</DependentUpon>
+    </Compile>
     <Compile Include="ProductAcceptanceTestFeatures\CallCentreEnquiryFeature.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -192,37 +108,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Package_basedetailsFeature.feature</DependentUpon>
     </Compile>
-    <Compile Include="StepDefinition\CometSearchFeatureSteps.cs" />
-    <Compile Include="PageObject\AddressDetails.cs" />
-    <Compile Include="PageObject\AdminFees\AdminFeesPage.cs" />
-    <Compile Include="PageObject\AdminFees\EmployeeOffering\EmployeeOfferingPage.cs" />
-    <Compile Include="PageObject\BenefitCreation\BenefitDetailsPage.cs" />
-    <Compile Include="PageObject\BenefitCreation\BenefitPage.cs" />
-    <Compile Include="PageObject\CallCenter.cs" />
-    <Compile Include="PageObject\CallCenterEnquirySearch.cs" />
-    <Compile Include="PageObject\CardScreen\CardPage.cs" />
-    <Compile Include="PageObject\EAMSscreen.cs" />
-    <Compile Include="PageObject\EmployeeCreation\AddressPopUp\AddressPopupPage.cs" />
-    <Compile Include="PageObject\Package\EditPackage\EditPackagePage.cs" />
-    <Compile Include="PageObject\Package\EditPackage\EditPackageAdminDetailsPage.cs" />
-    <Compile Include="PageObject\Package\EditPackage\EditPayRollDetailsPage.cs" />
-    <Compile Include="PageObject\Package\EmployeeDetailsPage.cs" />
-    <Compile Include="PageObject\Package\EmployeeSearch\EmployerSearchPopupPage.cs" />
-    <Compile Include="PageObject\Package\PackageAdminDetailsPage.cs" />
-    <Compile Include="PageObject\Package\PayRollDetailsPage.cs" />
-    <Compile Include="PageObject\PaymentInstruction\PayeeSearch\PayeeSearchPage.cs" />
-    <Compile Include="PageObject\PaymentInstruction\PaymentInstructionPage.cs" />
-    <Compile Include="PageObject\PersonalDetails.cs" />
-    <Compile Include="PageObject\ProcessMenuBenefit\BenefitProcessMenu.cs" />
-    <Compile Include="PageObject\ProcessMenuEmployee\EmployeeProcessMenu.cs" />
-    <Compile Include="PageObject\ProcessMenuPage.cs" />
-    <Compile Include="PageObject\ReimbursementDetails.cs" />
-    <Compile Include="PageObject\ReviewAndActivate\ReviewAndActiveatePage.cs" />
-    <Compile Include="PageObject\ThirdPartyAccess.cs" />
     <Compile Include="PropertiesFile\Properties.cs" />
-    <Compile Include="StepDefinition\EmployeeProfileCreationSteps.cs" />
-    <Compile Include="StepDefinition\PackageCreationAndAddingBenifitSteps.cs" />
-    <Compile Include="StepDefinition\PaymentInstructionsCreationSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -233,22 +119,6 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>CommonAcceptanceTestFeatures.feature.cs</LastGenOutput>
     </None>
-    <None Include="FeatureFile\CometSearchFeature.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>CometSearchFeature.feature.cs</LastGenOutput>
-    </None>
-    <None Include="FeatureFile\EmployeeProfileCreation.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>EmployeeProfileCreation.feature.cs</LastGenOutput>
-    </None>
-    <None Include="FeatureFile\PackageCreationAndAddingBenifit.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>PackageCreationAndAddingBenifit.feature.cs</LastGenOutput>
-    </None>
-    <None Include="FeatureFile\Payment InstructionsCreation.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>Payment InstructionsCreation.feature.cs</LastGenOutput>
-    </None>
     <None Include="Input Files\TestData.xlsx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -257,6 +127,10 @@
     </None>
     <None Include="ProductAcceptanceOrderedTest\Ordered_Comet_BVT.orderedtest">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ProductAcceptanceTestFeatures\AmendmentsFeature.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AmendmentsFeature.feature.cs</LastGenOutput>
     </None>
     <None Include="ProductAcceptanceTestFeatures\CallCentreEnquiryFeature.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
@@ -270,64 +144,6 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Package_basedetailsFeature.feature.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="PageObject\AdminFees\AdminFeesResource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>AdminFeesResource.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageObject\AdminFees\EmployeeOffering\EmployeeOfferingResource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>EmployeeOfferingResource.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageObject\BenefitCreation\BenefitDetailsResource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>BenefitDetailsResource.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageObject\BenefitCreation\BenefitResource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>BenefitResource.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageObject\CardScreen\CardResource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>CardResource.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageObject\EmployeeCreation\AddressPopUp\AddressPopupResource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>AddressPopupResource.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageObject\Package\EditPackage\EditPackageAdminDetailsResource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>EditPackageAdminDetailsResource.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageObject\Package\EditPackage\EditPackageResource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>EditPackageResource.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageObject\Package\EditPackage\EditPayRollDetailsResource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>EditPayRollDetailsResource.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageObject\Package\EmployeeDetailsResource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>EmployeeDetailsResource.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageObject\Package\EmployeeSearch\EmployerSearchPopupResource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>EmployerSearchPopupResource.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageObject\Package\PackageAdminDetailsResource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>PackageAdminDetailsResource.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageObject\Package\PayRollDetailsResource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>PayRollDetailsResource.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageObject\PaymentInstruction\PayeeSearch\PayeeSearchResource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>PayeeSearchResource.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Input Files\DBQueries.xml">

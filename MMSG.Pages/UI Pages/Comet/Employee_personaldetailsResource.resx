@@ -240,4 +240,13 @@
   <data name="EmployeepersonaldetailsPage_Title_Dropdown_OptionName" xml:space="preserve">
     <value>Mr</value>
   </data>
+  <data name="EmployeepersonaldetailsPage_SaveButton_Xpath" xml:space="preserve">
+    <value>//tr[@class='BodyColor']/td[3]/input[2]</value>
+  </data>
+  <data name="EmployeepersonaldetailsPage_Title_EffectiveDate_Xpath" xml:space="preserve">
+    <value>html/body/form/table/tbody/tr[1]/td/table/tbody/tr[1]/td[2]/font</value>
+  </data>
+  <data name="EmployeepersonaldetailsPage_Title_NextButton_Xpath" xml:space="preserve">
+    <value>//tr[@class='BodyColor']/td[3]/input[4]</value>
+  </data>
 </root>

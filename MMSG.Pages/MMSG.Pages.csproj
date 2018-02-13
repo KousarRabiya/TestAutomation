@@ -58,6 +58,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="UI Pages\Comet\AmendmentPage.cs" />
+    <Compile Include="UI Pages\Comet\Amendment_BenefitPage.cs" />
     <Compile Include="UI Pages\Comet\CallCentreEnquiryPage.cs" />
     <Compile Include="UI Pages\Comet\CallCentreEnquiryResource.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -75,6 +77,18 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Package_basedetailsResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\Comet\Package_packageadmindetailsPage.cs" />
+    <Compile Include="UI Pages\Comet\Package_packageadmindetailsResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Package_packageadmindetailsResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\Comet\Package_payrolldetailsPage.cs" />
+    <Compile Include="UI Pages\Comet\Package_payrolldetailsResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Package_payrolldetailsResource.resx</DependentUpon>
     </Compile>
     <Compile Include="UI Pages\Exceptions\ExceptionHandler.cs" />
     <Compile Include="UI Pages\Exceptions\GenericPageException.cs" />
@@ -135,6 +149,14 @@
     <EmbeddedResource Include="UI Pages\Comet\Package_basedetailsResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Package_basedetailsResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\Package_packageadmindetailsResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Package_packageadmindetailsResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\Package_payrolldetailsResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Package_payrolldetailsResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UI Pages\MOL\Home\Dashboard\DashboardResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>

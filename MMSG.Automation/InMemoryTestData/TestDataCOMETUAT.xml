@@ -42,12 +42,19 @@
       <EnrolementStatus>false</EnrolementStatus>
     </User>
   </ArrayOfUser>
-    <ArrayOfPackage>
+  <ArrayOfPackage>
     <Package>
       <EmployerShortName>Peninsula Health</EmployerShortName>
       <Offering>Peninsula Health</Offering>
       <EmployerCode>PHCN</EmployerCode>
+      <BusinessEmail>ppcustomer@maxxia.com.au</BusinessEmail>
+      <BusinessPhone>03 99730006</BusinessPhone>
+      <SetUpReason>Initial Setup</SetUpReason>
       <OfferingName>Peninsula Health</OfferingName>
+      <PackageType>NewPHCNPackage</PackageType>
+      <LivingExpenseCap>10</LivingExpenseCap>
+      <EntertainmentCap>10</EntertainmentCap>
+      <IsCreated>true</IsCreated>
       <FinancialAdviser>Janesse Woodman</FinancialAdviser>
     </Package>
   </ArrayOfPackage>

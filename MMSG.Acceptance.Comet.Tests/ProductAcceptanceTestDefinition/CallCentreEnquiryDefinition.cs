@@ -82,7 +82,7 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
         [When(@"I click on ""(.*)"" in ""(.*)"" page")]
         public void ClickOption(string optionName, string pageName)
         {
-            Logger.LogMethodEntry("CallCentreEnquiryDefinition", "ValidatePageName", base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogMethodEntry("CallCentreEnquiryDefinition", "ClickOption", base.IsTakeScreenShotDuringEntryExit);
             string url = AutomationConfigurationManager.CourseSpaceUrlRoot;
 
             //Get Domain name from the URL
@@ -93,8 +93,24 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
 
             new CallCentreEnquiryPage().ClickOptionOnCCEnquiryPage(optionName, PageTitle);
 
-            Logger.LogMethodExit("CallCentreEnquiryDefinition", "ValidatePageName", base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogMethodExit("CallCentreEnquiryDefinition", "ClickOption", base.IsTakeScreenShotDuringEntryExit);
         }
+
+
+        /// <summary>
+        /// Verify the Package is  created successfully
+        /// </summary>
+        /// <param name="packageTypeEnum"></param>
+        [Then(@"I should be displayed with ""(.*)"" for ""(.*)""")]
+        public void ValidateDisplayOfPackage(Package.PackageTypeEnum packageTypeEnum, User.UserTypeEnum userType)
+        {
+            Logger.LogMethodEntry("CallCentreEnquiryDefinition", "ValidateDisplayOfPackage", base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogAssertion("ValidateTheUserDetails", ScenarioContext.Current.ScenarioInfo.Title, () =>
+           Assert.IsTrue(new CallCentreEnquiryPage().VeriFyPackageName(packageTypeEnum, userType)));
+            Logger.LogMethodExit("CallCentreEnquiryDefinition", "ValidateDisplayOfPackage", base.IsTakeScreenShotDuringEntryExit);
+
+        }
+
 
     }
 }

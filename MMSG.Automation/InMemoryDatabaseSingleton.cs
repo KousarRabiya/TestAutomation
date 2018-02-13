@@ -47,6 +47,9 @@ namespace MMSG.Automation
                         case "MOLUAT":
                             this.DeserializeTheXmlDataInMemory(GetInMemoryTestDataFilePath
                  (AutomationConfigurationManager.ApplicationTestEnvironment)); break;
+                        case "COMETTST05":
+                    this.DeserializeTheXmlDataInMemory(GetInMemoryTestDataFilePath
+                (AutomationConfigurationManager.ApplicationTestEnvironment)); break;
                         default: throw new ArgumentException("The suggested environment was not found");
             }
         }
@@ -65,7 +68,8 @@ namespace MMSG.Automation
 
             // desearlize dat
             DesearlizeUserTestData(xmlDocument, ref xmlNodeList, ref xmlSerializer);
-            //DesearlizePackageTestData(xmlDocument, ref xmlNodeList, ref xmlSerializer);
+            DesearlizePackageTestData(xmlDocument, ref xmlNodeList, ref xmlSerializer);
+
         }
 
         /// <summary>
@@ -112,7 +116,7 @@ namespace MMSG.Automation
         }
 
         /// <summary>
-        /// Desearlize User Test Data In Memory.
+        /// Desearlize Package Test Data In Memory.
         /// </summary>
         /// <param name="xmlDocument">Represents an XML document.</param>
         /// <param name="xmlNodeList">Represents an ordered collection of nodes.</param>
@@ -121,18 +125,18 @@ namespace MMSG.Automation
         private void DesearlizePackageTestData(XmlDocument xmlDocument,
             ref XmlNodeList xmlNodeList, ref XmlSerializer xmlSerializer)
         {
-            // get xml node list for Package
+            // get xml data based on file path
             xmlNodeList = xmlDocument.SelectNodes("Data/ArrayOfPackage");
-            // created object xml serializer
+            // created Object xml serializer
             xmlSerializer = new XmlSerializer(typeof(List<Package>));
             if (xmlNodeList != null && xmlNodeList.Count > 0)
             {
-                // created object xml node reader
+                // created Object xml node reader
                 var reader = new XmlNodeReader(xmlNodeList.Item(0));
-                // get users list
-                var getUserList = (List<Package>)
+                // get package list
+                var getPackageList = (List<Package>)
                  xmlSerializer.Deserialize(reader);
-                foreach (Package packages in getUserList)
+                foreach (Package packages in getPackageList)
                 {
                     // push in memory
                     _inMemoryDatabase.Insert(packages);

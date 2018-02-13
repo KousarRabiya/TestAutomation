@@ -135,6 +135,12 @@
   <data name="URLRootCometDev_Key" xml:space="preserve">
     <value>CometDev</value>
   </data>
+  <data name="URLRootCOMETTST05_Key" xml:space="preserve">
+    <value>COMETTST05</value>
+  </data>
+  <data name="URLRootCOMETTST08_Key" xml:space="preserve">
+    <value>COMETTST08</value>
+  </data>
   <data name="URLRootCometUAT_Key" xml:space="preserve">
     <value>CometUAT</value>
   </data>

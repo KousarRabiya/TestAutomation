@@ -59,5 +59,104 @@ namespace MMSG.Pages.UI_Pages.Comet {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to txtBusinessEmail.
+        /// </summary>
+        internal static string Package_basedetailsPage_BusinesEmail_ID {
+            get {
+                return ResourceManager.GetString("Package_basedetailsPage_BusinesEmail_ID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to txtBusinessTelephone.
+        /// </summary>
+        internal static string Package_basedetailsPage_NewPackage_BusinessTelephone_ID {
+            get {
+                return ResourceManager.GetString("Package_basedetailsPage_NewPackage_BusinessTelephone_ID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to imgEmployerLookup.
+        /// </summary>
+        internal static string Package_basedetailsPage_NewPackage_EmployerLookup_ID {
+            get {
+                return ResourceManager.GetString("Package_basedetailsPage_NewPackage_EmployerLookup_ID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to wucButtons_cmdNextEnabled.
+        /// </summary>
+        internal static string Package_basedetailsPage_NewPackage_NextButton_ID {
+            get {
+                return ResourceManager.GetString("Package_basedetailsPage_NewPackage_NextButton_ID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ddmEmployerOfferingID_txtDisplay.
+        /// </summary>
+        internal static string Package_basedetailsPage_NewPackage_OfferingTextbox_ID {
+            get {
+                return ResourceManager.GetString("Package_basedetailsPage_NewPackage_OfferingTextbox_ID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Peninsula Health.
+        /// </summary>
+        internal static string Package_basedetailsPage_NewPackage_OfferingTextbox_Text {
+            get {
+                return ResourceManager.GetString("Package_basedetailsPage_NewPackage_OfferingTextbox_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to //table [@id=&apos;ResultsGrid&apos;]/tbody/tr[2]/td[1]/a.
+        /// </summary>
+        internal static string Package_basedetailsPage_NewPackage_SearchEmployer_EmployeerLink_Xpath {
+            get {
+                return ResourceManager.GetString("Package_basedetailsPage_NewPackage_SearchEmployer_EmployeerLink_Xpath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SearchButton.
+        /// </summary>
+        internal static string Package_basedetailsPage_NewPackage_SearchEmployer_SearchButton_ID {
+            get {
+                return ResourceManager.GetString("Package_basedetailsPage_NewPackage_SearchEmployer_SearchButton_ID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to EmployerCodeText.
+        /// </summary>
+        internal static string Package_basedetailsPage_NewPackage_SearchEmployer_Textbox_ID {
+            get {
+                return ResourceManager.GetString("Package_basedetailsPage_NewPackage_SearchEmployer_Textbox_ID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search.
+        /// </summary>
+        internal static string Package_basedetailsPage_NewPackage_SearchEmployer_Title {
+            get {
+                return ResourceManager.GetString("Package_basedetailsPage_NewPackage_SearchEmployer_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to cboSetUpReason.
+        /// </summary>
+        internal static string Package_basedetailsPage_NewPackage_SetupReason_Dropdown_ID {
+            get {
+                return ResourceManager.GetString("Package_basedetailsPage_NewPackage_SetupReason_Dropdown_ID", resourceCulture);
+            }
+        }
     }
 }

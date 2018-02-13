@@ -17,6 +17,8 @@ C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Pages\obj\Debug\MMSG.Pages.
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Pages\obj\Debug\MMSG.Pages.UI_Pages.Comet.CallCentreEnquiryResource.resources
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Pages\obj\Debug\MMSG.Pages.UI_Pages.Comet.Employee_personaldetailsResource.resources
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Pages\obj\Debug\MMSG.Pages.UI_Pages.Comet.Package_basedetailsResource.resources
+C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Pages\obj\Debug\MMSG.Pages.UI_Pages.Comet.Package_packageadmindetailsResource.resources
+C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Pages\obj\Debug\MMSG.Pages.UI_Pages.Comet.Package_payrolldetailsResource.resources
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Pages\obj\Debug\MMSG.Pages.UI_Pages.MOL.Home.Dashboard.DashboardResource.resources
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Pages\obj\Debug\MMSG.Pages.UI_Pages.MOL.Home.Dashboard.PayrollDeductionsAndTransfersPageResource.resources
 C:\Users\DevavratKs\Source\Repos\TestAutomation\MMSG.Pages\obj\Debug\MMSG.Pages.UI_Pages.ROL.Home.Dashboard.ContactResource.resources

@@ -51,6 +51,7 @@ namespace MMSG.Pages.UI_Pages.Comet
             string returnPopupTitle = null;
             try
             {
+                Thread.Sleep(8000);
                 // Get page title 
                 base.SwitchToDefaultWindow();
                 base.SwitchToLastOpenedWindow();
@@ -78,10 +79,8 @@ namespace MMSG.Pages.UI_Pages.Comet
             this.NewEmployeeCreationFirstStep(userType);
 
             // Click next button
-            base.WaitForElement(By.Id(Employee_personaldetailsResource.
-                EmployeepersonaldetailsPage_NextButton_ID_Locator));
-            IWebElement getNextButton = base.GetWebElementPropertiesById(Employee_personaldetailsResource.
-                EmployeepersonaldetailsPage_NextButton_ID_Locator);
+            base.WaitForElement(By.XPath("//tr[@class='BodyColor']/td[3]/input[3]"));
+            IWebElement getNextButton = base.GetWebElementPropertiesByXPath("//tr[@class='BodyColor']/td[3]/input[3]");
             base.ClickByJavaScriptExecutor(getNextButton);
             User user = User.Get(userType);
             string sName = user.Surname.ToString();
@@ -91,7 +90,7 @@ namespace MMSG.Pages.UI_Pages.Comet
             this.NewEmployeeCreationSecondStep(userType);
 
             // Click next button
-            IWebElement getButtonXpath = base.GetWebElementPropertiesByXPath("//tr[@class='BodyColor']/td[3]/input[4]");
+            IWebElement getButtonXpath = base.GetWebElementPropertiesByXPath(Employee_personaldetailsResource.EmployeepersonaldetailsPage_Title_NextButton_Xpath);
             base.ClickByJavaScriptExecutor(getButtonXpath);
             Thread.Sleep(2000);
 
@@ -99,11 +98,11 @@ namespace MMSG.Pages.UI_Pages.Comet
             this.NewEmployeeCreationThirdStep(userType);
 
             // Click next button
-            getButtonXpath = base.GetWebElementPropertiesByXPath("//tr[@class='BodyColor']/td[3]/input[4]");
+            getButtonXpath = base.GetWebElementPropertiesByXPath(Employee_personaldetailsResource.EmployeepersonaldetailsPage_Title_NextButton_Xpath);
             base.ClickByJavaScriptExecutor(getButtonXpath);
             Thread.Sleep(2000);
 
-            getButtonXpath = base.GetWebElementPropertiesByXPath("//tr[@class='BodyColor']/td[3]/input[2]");
+            getButtonXpath = base.GetWebElementPropertiesByXPath(Employee_personaldetailsResource.EmployeepersonaldetailsPage_SaveButton_Xpath);
             base.ClickByJavaScriptExecutor(getButtonXpath);
             Thread.Sleep(2000);
 
@@ -327,7 +326,8 @@ namespace MMSG.Pages.UI_Pages.Comet
         {
             try
             {
-                string getDateText = base.GetInnerTextAttributeValueByXPath("html/body/form/table/tbody/tr[1]/td/table/tbody/tr[1]/td[2]/font");
+                base.WaitForElement(By.XPath(Employee_personaldetailsResource.EmployeepersonaldetailsPage_Title_EffectiveDate_Xpath));
+                string getDateText = base.GetInnerTextAttributeValueByXPath(Employee_personaldetailsResource.EmployeepersonaldetailsPage_Title_EffectiveDate_Xpath);
                 string getDate = getDateText.Substring(17);
                 string effectiveDateText = getDate.Replace(")", "").Trim();
 
@@ -366,6 +366,10 @@ namespace MMSG.Pages.UI_Pages.Comet
 
                 base.WaitForElement(By.Id("EFTRemittanceMethodCombo"));
                 base.SelectDropDownValueThroughIndexById("EFTRemittanceMethodCombo", 5);
+
+                base.WaitForElement(By.Id("IQueueNumberText"));
+                base.ClearTextById("IQueueNumberText");
+                base.FillTextBoxById("IQueueNumberText","123456");
             }
             catch (Exception e)
             {

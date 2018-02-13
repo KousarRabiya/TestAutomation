@@ -102,7 +102,7 @@ namespace MMSG.Automation.DataTransferObjects
             ROLUser = 1,
             COMETUser=2,
             MOLUser=3,
-            NewCOMETUser=4,
+            NewCOMETUser=4,            
             #endregion
         }
 

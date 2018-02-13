@@ -79,6 +79,12 @@ namespace MMSG.Automation
                 case "COMETUAT":
                     applicationUrl = ConfigurationManager.AppSettings[AutomationConfigurationManagerResource.URLRootCometUAT_Key];
                     break;
+                case "COMETTST05":
+                    applicationUrl = ConfigurationManager.AppSettings[AutomationConfigurationManagerResource.URLRootCOMETTST05_Key];
+                    break;
+                case "COMETTST08":
+                    applicationUrl = ConfigurationManager.AppSettings[AutomationConfigurationManagerResource.URLRootCOMETTST08_Key];
+                    break;
                 case "MOLUAT":
                     applicationUrl = ConfigurationManager.AppSettings[AutomationConfigurationManagerResource.URLRootMOLUAT_Key];
                     break;

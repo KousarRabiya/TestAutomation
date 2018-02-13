@@ -115,6 +115,24 @@ namespace MMSG.Automation {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to COMETTST05.
+        /// </summary>
+        internal static string URLRootCOMETTST05_Key {
+            get {
+                return ResourceManager.GetString("URLRootCOMETTST05_Key", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to COMETTST08.
+        /// </summary>
+        internal static string URLRootCOMETTST08_Key {
+            get {
+                return ResourceManager.GetString("URLRootCOMETTST08_Key", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CometUAT.
         /// </summary>
         internal static string URLRootCometUAT_Key {
