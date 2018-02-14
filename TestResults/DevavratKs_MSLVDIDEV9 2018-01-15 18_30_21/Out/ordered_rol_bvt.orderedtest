@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<OrderedTest name="Ordered_ROL_BVT" storage="c:\users\devavratks\source\repos\testautomation\mmsg.acceptance.rol.tests\productacceptanceorderedtest\ordered_rol_bvt.orderedtest" id="d1855490-fa5a-4e92-98b8-895e9ae2505f" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
-  <TestLinks>
-    <TestLink id="69c904b2-f1ff-f965-65f9-33e80b804810" name="LoginAsROLUser" storage="..\bin\debug\rolproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-    <TestLink id="e10bbc25-087a-d59a-4e87-64fd8c60ce06" name="LogoutAsROLUser" storage="..\bin\debug\rolproject.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  </TestLinks>
-</OrderedTest>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="ordered_mol_bvt" storage="c:\users\rabiyak\source\repos\testautomation\mmsg.acceptance.mol.tests\productacceptanceorderedtest\ordered_mol_bvt.orderedtest" id="30491994-c4d4-4192-881b-ed4b63b07758" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestLinks>
+    <TestLink id="3398122e-2159-e9e2-06e8-27ef588d5efa" name="LoginAsMOLUser" storage="..\bin\debug\mmsg.acceptance.mol.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="97ce11d7-41c1-030c-cccf-c979d61bb5a6" name="ShowMoreBenefits_LinkIsAvailableInAccountSummaryDashboardHomePageOfMaxxiaSecureDesktopPortal" storage="..\bin\debug\mmsg.acceptance.mol.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="d1276327-60cc-0d1b-4244-a74020a257be" name="LogoutAsMOLUser" storage="..\bin\debug\mmsg.acceptance.mol.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>
