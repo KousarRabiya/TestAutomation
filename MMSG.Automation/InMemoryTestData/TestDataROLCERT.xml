@@ -16,5 +16,18 @@
       <IsCreated>true</IsCreated>
       <EnrolementStatus>false</EnrolementStatus>
     </User>
+    <User>
+      <Name>dmzpmxx9914490</Name>
+      <Password>MOL1234</Password>
+      <Email>Sherlock_Test@remserv.com.au</Email>
+      <FirstName>Nithya</FirstName>
+      <MiddleName>Nanda</MiddleName>
+      <LastName>Meryl</LastName>
+      <Surname>Boult</Surname>
+      <Phone>04 00000000</Phone>
+      <UserType>ROLWalletTransactionUser</UserType>
+      <IsCreated>true</IsCreated>
+      <EnrolementStatus>false</EnrolementStatus>
+    </User>
   </ArrayOfUser>
 </Data>
