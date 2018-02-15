@@ -57,6 +57,8 @@ namespace MMSG.Pages.UI_Pages
                 {
                     // Get URL of workspace admin
                     case User.UserTypeEnum.ROLUser:
+                    case User.UserTypeEnum.ROLWalletTransactionUser:
+                    case User.UserTypeEnum.ROLNonWalletTransactionUser:
                     case User.UserTypeEnum.COMETUser:
                     case User.UserTypeEnum.MOLUser:
                     case User.UserTypeEnum.MOLWalletTransactionUser:

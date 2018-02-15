@@ -130,6 +130,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DashboardResource.resx</DependentUpon>
     </Compile>
+    <Compile Include="UI Pages\ROL\Your Account\TransactionResource.Designer.cs" />
+    <Compile Include="UI Pages\ROL\Your Account\TransactionsPage.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -184,6 +186,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>DashboardResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\ROL\Your Account\TransactionResource.resx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

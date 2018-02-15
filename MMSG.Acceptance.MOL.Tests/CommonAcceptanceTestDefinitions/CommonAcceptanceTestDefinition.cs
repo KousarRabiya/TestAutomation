@@ -55,7 +55,7 @@ namespace MMSG.Acceptance.MOL.Tests.CommonAcceptanceTestDefinitions
             Logger.LogMethodEntry("CommonAcceptanceTestDefinitions", "ValidatePageName", base.IsTakeScreenShotDuringEntryExit);
             // Assert the expected value with the actual value
             Logger.LogAssertion("ValidatePageName", ScenarioContext.Current.ScenarioInfo.Title, () =>
-            Assert.AreEqual(pageTitle, new ApplicationLoginPage().GetUserHomePageName()));
+            Assert.AreEqual(pageTitle.Contains("Maxxia Online"), new ApplicationLoginPage().GetUserHomePageName().Contains("Maxxia Online")));
             Logger.LogMethodExit("CommonAcceptanceTestDefinitions", "ValidatePageName", base.IsTakeScreenShotDuringEntryExit);
         }
 
