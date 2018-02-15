@@ -84,10 +84,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CommonAcceptanceTestFeatures.feature</DependentUpon>
     </Compile>
+    <Compile Include="ProductAcceptanceTestDefinition\ActivateEmployeeDefinition.cs" />
     <Compile Include="ProductAcceptanceTestDefinition\AmendmentsDefinition.cs" />
     <Compile Include="ProductAcceptanceTestDefinition\CallCentreEnquiryDefinition.cs" />
     <Compile Include="ProductAcceptanceTestDefinition\Employee_personaldetailsDefinition.cs" />
     <Compile Include="ProductAcceptanceTestDefinition\Package_basedetailsDefinition.cs" />
+    <Compile Include="ProductAcceptanceTestFeatures\ActivateEmployeeFeatures.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ActivateEmployeeFeatures.feature</DependentUpon>
+    </Compile>
     <Compile Include="ProductAcceptanceTestFeatures\AmendmentsFeature.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -127,6 +133,10 @@
     </None>
     <None Include="ProductAcceptanceOrderedTest\Ordered_Comet_BVT.orderedtest">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ProductAcceptanceTestFeatures\ActivateEmployeeFeatures.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ActivateEmployeeFeatures.feature.cs</LastGenOutput>
     </None>
     <None Include="ProductAcceptanceTestFeatures\AmendmentsFeature.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

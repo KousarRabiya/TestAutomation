@@ -81,14 +81,17 @@ namespace MMSG.Pages.UI_Pages.Comet
                 base.IsTakeScreenShotDuringEntryExit);
         }
 
-        public void NextPayDate(string payDate)
+        /// <summary>
+        /// Selecting the next Pay in the drop down
+        /// </summary>
+        public void NextPayDate()
         {
             Logger.LogMethodEntry("Amendment_BenefitPage", "NextPayDate",
              base.IsTakeScreenShotDuringEntryExit);
             try
             {
-                base.WaitForElement(By.Id("ddlBenefits_0"));
-                base.SelectDropDownValueThroughTextById("ddlBenefits_0", payDate);
+                base.WaitForElement(By.Id(Amendment_BenefitResource.Amendment_BenefitPage_NextPayDateDropDown_ID_Locator));
+                base.SelectDropDownValueThroughIndexById(Amendment_BenefitResource.Amendment_BenefitPage_NextPayDateDropDown_ID_Locator, 2);
             }
             catch (Exception e)
             {
@@ -98,5 +101,70 @@ namespace MMSG.Pages.UI_Pages.Comet
                  base.IsTakeScreenShotDuringEntryExit);
         }
 
+        /// <summary>
+        /// Selecting the Budget caluction menthod 
+        /// </summary>
+        /// <param name="payDateType"></param>
+
+        public void BudgetCalculationMethod(string payDateType)
+        {
+            Logger.LogMethodEntry("Amendment_BenefitPage", "BudgetCalculationMethod",
+             base.IsTakeScreenShotDuringEntryExit);
+            try
+            {
+                base.WaitForElement(By.Id(Amendment_BenefitResource.Amendment_BenefitPage_BudgetCalculationMenthodDropDown_ID_Locator));
+                base.SelectDropDownValueThroughTextById(Amendment_BenefitResource.Amendment_BenefitPage_BudgetCalculationMenthodDropDown_ID_Locator, payDateType);
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.HandleException(e);
+            }
+            Logger.LogMethodEntry("Amendment_BenefitPage", "BudgetCalculationMethod",
+                 base.IsTakeScreenShotDuringEntryExit);
+        }
+
+        /// <summary>
+        /// Entering the budget amount in the text box
+        /// </summary>
+        /// <param name="BudgetAmount">Budget Amount</param>
+
+        public void BudgetAmount(string BudgetAmount)
+        {
+            Logger.LogMethodEntry("Amendment_BenefitPage", "BudgetAmount",
+             base.IsTakeScreenShotDuringEntryExit);
+            try
+            {
+                base.ClearTextById(Amendment_BenefitResource.Amendment_BenefitPage_BudgetAmountTextBox_ID_Locator);
+                base.FillTextBoxById(Amendment_BenefitResource.Amendment_BenefitPage_BudgetAmountTextBox_ID_Locator, BudgetAmount);
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.HandleException(e);
+            }
+            Logger.LogMethodEntry("Amendment_BenefitPage", "BudgetAmount",
+                 base.IsTakeScreenShotDuringEntryExit);
+        }
+
+        /// <summary>
+        /// Clicking on the Save Button 
+        /// </summary>
+
+        public void ClickOnSaveButton()
+        {
+            Logger.LogMethodEntry("Amendment_BenefitPage", "ClickOnSaveButton",
+             base.IsTakeScreenShotDuringEntryExit);
+            try
+            {
+                base.WaitForElement(By.Id(Amendment_BenefitResource.Amendment_BenefitPage_SaveButton_ID_Locator));
+                IWebElement saveButtonProperty = base.GetWebElementProperties(By.Id(Amendment_BenefitResource.Amendment_BenefitPage_SaveButton_ID_Locator));
+                base.ClickByJavaScriptExecutor(saveButtonProperty);
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.HandleException(e);
+            }
+            Logger.LogMethodEntry("Amendment_BenefitPage", "ClickOnSaveButton",
+                 base.IsTakeScreenShotDuringEntryExit);
+        }
     }
 }

@@ -60,7 +60,10 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
                 base.IsTakeScreenShotDuringEntryExit);
         }
 
-
+        /// <summary>
+        /// Validate page Landed 
+        /// </summary>
+        /// <param name="pageName">Page Name</param>
         [Then(@"I should be on the ""(.*)"" page")]
         public void ValidatePageName(string pageName)
         {
@@ -78,7 +81,11 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
             Logger.LogMethodExit("CallCentreEnquiryDefinition", "ValidatePageName", base.IsTakeScreenShotDuringEntryExit);
         }
 
-
+        /// <summary>
+        /// Click on the option
+        /// </summary>
+        /// <param name="optionName">Option Name</param>
+        /// <param name="pageName">Page Name</param>
         [When(@"I click on ""(.*)"" in ""(.*)"" page")]
         public void ClickOption(string optionName, string pageName)
         {
@@ -100,7 +107,7 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
         /// <summary>
         /// Verify the Package is  created successfully
         /// </summary>
-        /// <param name="packageTypeEnum"></param>
+        /// <param name="packageTypeEnum">This is package type enum.</param>
         [Then(@"I should be displayed with ""(.*)"" for ""(.*)""")]
         public void ValidateDisplayOfPackage(Package.PackageTypeEnum packageTypeEnum, User.UserTypeEnum userType)
         {
@@ -109,6 +116,18 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
            Assert.IsTrue(new CallCentreEnquiryPage().VeriFyPackageName(packageTypeEnum, userType)));
             Logger.LogMethodExit("CallCentreEnquiryDefinition", "ValidateDisplayOfPackage", base.IsTakeScreenShotDuringEntryExit);
 
+        }
+
+        /// <summary>
+        /// Enter the Employee nuber and search
+        /// </summary>
+        /// <param name="employeeNo"> Employee numner is been send</param>
+        [When(@"I enter Employee number as ""(.*)"" and search in Call centre Enquiry")]
+        public void EnterIngTheEmployeeValueAndSearchtheEmployee(string employeeNo)
+        {
+            Logger.LogMethodEntry("CallCentreEnquiryDefinition", "EnterIngTheEmployeeValueAndSearchtheEmployee", base.IsTakeScreenShotDuringEntryExit);
+            new CallCentreEnquiryPage().EnterTheEmployeeNumberAndSearch(employeeNo);
+            Logger.LogMethodExit("CallCentreEnquiryDefinition", "EnterIngTheEmployeeValueAndSearchtheEmployee", base.IsTakeScreenShotDuringEntryExit);
         }
 
 

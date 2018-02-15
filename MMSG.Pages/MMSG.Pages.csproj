@@ -59,7 +59,17 @@
   </Choose>
   <ItemGroup>
     <Compile Include="UI Pages\Comet\AmendmentPage.cs" />
+    <Compile Include="UI Pages\Comet\AmendmentResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AmendmentResource.resx</DependentUpon>
+    </Compile>
     <Compile Include="UI Pages\Comet\Amendment_BenefitPage.cs" />
+    <Compile Include="UI Pages\Comet\Amendment_BenefitResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Amendment_BenefitResource.resx</DependentUpon>
+    </Compile>
     <Compile Include="UI Pages\Comet\CallCentreEnquiryPage.cs" />
     <Compile Include="UI Pages\Comet\CallCentreEnquiryResource.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -145,6 +155,14 @@
     <EmbeddedResource Include="UI Pages\ApplicationLoginPageResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ApplicationLoginPageResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\AmendmentResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AmendmentResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\Amendment_BenefitResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Amendment_BenefitResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UI Pages\Comet\CallCentreEnquiryResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
