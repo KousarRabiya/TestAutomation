@@ -221,6 +221,8 @@ namespace MMSG.Pages.UI_Pages
                 {
 
                     case User.UserTypeEnum.ROLUser:
+                    case User.UserTypeEnum.ROLWalletTransactionUser:
+                    case User.UserTypeEnum.ROLNonWalletTransactionUser:
                         // Enter user name and password
                         this.ROLUserLogin(userName, password);
                         break;
