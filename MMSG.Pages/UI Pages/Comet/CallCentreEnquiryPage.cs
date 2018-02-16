@@ -350,5 +350,78 @@ namespace MMSG.Pages.UI_Pages.Comet
                 EmployeeNumber = employeeNumber,
             };
         }
+
+
+        /// <summary>
+        /// Clicking on the elelmentin the process menu
+        /// </summary>
+        public void ProcessMenuPopUpClickOnElement(string optionName)
+        {
+            Logger.LogMethodEntry("CallCentreEnquiryPage", "ProcessMenuPopUpClickOnElemet",
+               base.IsTakeScreenShotDuringEntryExit);
+            try
+            {
+                switch (optionName)
+                {
+                    case "Admin Fees":
+                        base.SwitchToPopup();
+                        string a1 = base.GetPageTitle;
+                        bool a = base.IsElementPresent(By.Id("PopUpMenu_cmdMenu10"));
+                        IWebElement adminProperties = base.GetWebElementPropertiesById("PopUpMenu_cmdMenu10");
+                        base.ClickByJavaScriptExecutor(adminProperties);
+                        break;
+
+                }
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.HandleException(e);
+            }
+            Logger.LogMethodExit("CallCentreEnquiryPage", "ProcessMenuPopUpClickOnElemet",
+                base.IsTakeScreenShotDuringEntryExit);
+        }
+
+        public string GetTheTitleOfpopUp()
+        {
+            Logger.LogMethodEntry("CallCentreEnquiryPage", "GetTheTitleOfpopUp",
+                          base.IsTakeScreenShotDuringEntryExit);
+            string titleOfPage = "";
+            try
+            {
+                base.SwitchToDefaultWindow();
+                base.SwitchToPopup();
+                titleOfPage = base.GetPageTitle;
+                Thread.Sleep(1000);
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.HandleException(e);
+            }
+            Logger.LogMethodExit("CallCentreEnquiryPage", "GetTheTitleOfpopUp",
+                base.IsTakeScreenShotDuringEntryExit);
+            return titleOfPage;
+        }
+
+        public void EnterTheEmployeeNumberAndSearch(string employeeNumner)
+        {
+            Logger.LogMethodEntry("CallCentreEnquiryPage", "EnterTheEmployeeNumberAndSearch",
+                         base.IsTakeScreenShotDuringEntryExit);
+
+            try
+            {
+                base.WaitForElement(By.Id("CCEmployeeSearch_txtEmployeeNumber"));
+                base.FillTextBoxById("CCEmployeeSearch_txtEmployeeNumber", employeeNumner);
+                base.WaitForElement(By.Id("CCEmployeeSearch_cmdSearch"));
+                // Click button by ID
+                IWebElement getSearchButton = base.GetWebElementPropertiesById("CCEmployeeSearch_cmdSearch");
+                base.ClickByJavaScriptExecutor(getSearchButton);
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.HandleException(e);
+            }
+            Logger.LogMethodExit("CallCentreEnquiryPage", "EnterTheEmployeeNumberAndSearch",
+                base.IsTakeScreenShotDuringEntryExit);
+        }
     }
 }

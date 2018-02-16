@@ -55,23 +55,14 @@ namespace MMSG.Pages.UI_Pages.Comet
                 switch (optionName)
                 {
                     case "New":
-                        bool asd= base.IsElementPresent(By.Id("btnNew"));
-                        base.WaitForElement(By.Id("btnNew"));
-                        IWebElement newButtonProperty = base.GetWebElementProperties(By.Id("btnNew"));
-                        base.ClickByJavaScriptExecutor(newButtonProperty);                  
-                        
-                      
-                        ////
-                       
-                       
-                        //base.FillTextBoxById("txtActivationDate_0", "03/12/2017");
-                       // base.SelectDropDownOptionById("ddlNextPayDateForChange_0", "04/01/2018");
-
-
-                        //////base.SelectDropDownOptionById("ddlBudgetCalcMethod_0", "Per Annum");
-                        //////base.ClearTextById("txtBudgetAmount_0");
-                        //////base.FillTextBoxById("txtBudgetAmount_0", "10");
-                        //////base.ClickButtonById("btnSave");
+                        base.WaitForElement(By.Id(AmendmentResource.AmendmentPage_NewButton_Id_Locator));
+                        IWebElement newButtonProperty = base.GetWebElementProperties(By.Id(AmendmentResource.AmendmentPage_NewButton_Id_Locator));
+                        base.ClickByJavaScriptExecutor(newButtonProperty);
+                        break;
+                    case "Cancel":
+                        base.WaitForElement(By.Id(AmendmentResource.AmendmentPage_CancelButton_ID_Locator));
+                        IWebElement newSaveProperty = base.GetWebElementProperties(By.Id(AmendmentResource.AmendmentPage_CancelButton_ID_Locator));
+                        base.ClickByJavaScriptExecutor(newSaveProperty);
                         break;
                 }
             }
@@ -81,6 +72,34 @@ namespace MMSG.Pages.UI_Pages.Comet
             }
             Logger.LogMethodEntry("AmendmentPage", "ClickOnOption",
                     base.IsTakeScreenShotDuringEntryExit);
+        }
+
+        /// <summary>
+        /// Checking the Benefit is been added 
+        /// </summary>
+        /// <param name="benefitName"></param>
+        /// <returns></returns>
+        public bool BenefitIsAdded(string benefitName)
+        {
+            Logger.LogMethodEntry("AmendmentPage", "BenefitIsAdded",
+              base.IsTakeScreenShotDuringEntryExit);
+            bool benefitIsPresent = false;
+            try
+            {
+                int numberOfBenefit = base.GetElementCountByXPath(AmendmentResource.AmendmentPage_BenefitDetailsTableRow_Xpath_Locator);
+                string textFromBenefit = base.GetInnerTextAttributeValueByXPath(AmendmentResource.AmendmentPage_BenefitDetailsTableRow_Xpath_Locator + "[" + numberOfBenefit + "]/td[3]");
+                if (benefitName == textFromBenefit)
+                {
+                    return true;
+                }
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.HandleException(e);
+            }
+            Logger.LogMethodEntry("AmendmentPage", "BenefitIsAdded",
+                    base.IsTakeScreenShotDuringEntryExit);
+            return benefitIsPresent;
         }
     }
 }
