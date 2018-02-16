@@ -35,6 +35,8 @@ namespace MMSG.Automation
             // based on environment deserialize xml data in memory
             switch (AutomationConfigurationManager.ApplicationTestEnvironment.ToUpper())
             {
+                case "COMETTST08":
+                case "COMETTST05":
                 case "COMETDEV":
                 case "COMETUAT":
                 case "ROLCERT":
