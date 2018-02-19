@@ -17,6 +17,6 @@ Scenario: Add Benefit to the package through Amendment screen
 	When I enter save Button in Amendments_NewBenefits Page
 	Then I should be on the Amendment page
 	Then I should see the New benefit Name "Airport Lounge Membership" in Benefit details of Amendment page
-	When I click on "Cancel" in Amendment page
+	#When I click on "Cancel" in Amendment page
 
 

@@ -118,8 +118,6 @@ this.ScenarioSetup(scenarioInfo);
 #line 19
  testRunner.Then("I should see the New benefit Name \"Airport Lounge Membership\" in Benefit details " +
                     "of Amendment page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 20
- testRunner.When("I click on \"Cancel\" in Amendment page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             this.ScenarioCleanup();
         }

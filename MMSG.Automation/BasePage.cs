@@ -1825,7 +1825,7 @@ namespace MMSG.Automation
         /// If this element is a text entry element, this will clear the value by element Xpath value.
         /// </summary>
         /// <param name="xPathValue">This is XPath value.</param>
-        protected void ClearTextByXPath(String xPathValue)
+        public void ClearTextByXPath(String xPathValue)
         {
             ClearText(By.XPath(xPathValue));
         }

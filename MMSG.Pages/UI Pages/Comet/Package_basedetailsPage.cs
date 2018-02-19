@@ -65,17 +65,17 @@ namespace MMSG.Pages.UI_Pages.Comet
                 // Fill Business Email text box
                 base.WaitForElement(By.Id(Package_basedetailsResource.
                     Package_basedetailsPage_BusinesEmail_ID));
-                base.ClearTextByXpath(Package_basedetailsResource.
+                base.ClearTextById(Package_basedetailsResource.
                     Package_basedetailsPage_BusinesEmail_ID);
-                base.FillTextBoxByXpath(Package_basedetailsResource.
+                base.FillTextBoxById(Package_basedetailsResource.
                     Package_basedetailsPage_BusinesEmail_ID, getEmail);
 
                 // Fill Business Telephone textbox
                 base.WaitForElement(By.Id(Package_basedetailsResource.
                     Package_basedetailsPage_NewPackage_BusinessTelephone_ID), 10);
-                base.ClearTextByXpath(Package_basedetailsResource.
+                base.ClearTextById(Package_basedetailsResource.
                     Package_basedetailsPage_NewPackage_BusinessTelephone_ID);
-                base.FillTextBoxByXpath(Package_basedetailsResource.
+                base.FillTextBoxById(Package_basedetailsResource.
                     Package_basedetailsPage_NewPackage_BusinessTelephone_ID, getPhone);
 
                 // Select Setup Reason from dropdown
@@ -151,9 +151,9 @@ namespace MMSG.Pages.UI_Pages.Comet
                 // Fill employer code in search employer textbox
                 base.WaitForElement(By.Id(Package_basedetailsResource.
                     Package_basedetailsPage_NewPackage_SearchEmployer_Textbox_ID));
-                base.ClearTextByXpath(Package_basedetailsResource.
+                base.ClearTextById(Package_basedetailsResource.
                     Package_basedetailsPage_NewPackage_SearchEmployer_Textbox_ID);
-                base.FillTextBoxByXpath(Package_basedetailsResource.
+                base.FillTextBoxById(Package_basedetailsResource.
                     Package_basedetailsPage_NewPackage_SearchEmployer_Textbox_ID, getEmployerCode);
 
                 //Click Search button

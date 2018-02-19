@@ -123,7 +123,7 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>CommonAcceptanceTestFeatures.feature.cs</LastGenOutput>
     </None>
-    <None Include="ProductAcceptanceOrderedTest\OrderedTest1.orderedtest">
+    <None Include="ProductAcceptanceOrderedTest\Ordered_BVT_ROL.orderedtest">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="ProductAcceptanceOrderedTest\Ordered_ROL_Regression.orderedtest">

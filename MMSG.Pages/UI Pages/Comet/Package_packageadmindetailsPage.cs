@@ -33,17 +33,17 @@ namespace MMSG.Pages.UI_Pages.Comet
                 // Fill Living Expense Cap textbox
                 base.WaitForElement(By.Id(Package_packageadmindetailsResource.
                     Package_packageadmindetailsPage_NewPackage_LivingExpenseCap_Textbox_ID));
-                base.ClearTextByXpath(Package_packageadmindetailsResource.
+                base.ClearTextById(Package_packageadmindetailsResource.
                     Package_packageadmindetailsPage_NewPackage_LivingExpenseCap_Textbox_ID);
-                base.FillTextBoxByXpath(Package_packageadmindetailsResource.
+                base.FillTextBoxById(Package_packageadmindetailsResource.
                     Package_packageadmindetailsPage_NewPackage_LivingExpenseCap_Textbox_ID, getLivingExpenseCap);
 
                 // Fill Living EntertainmentCap textbox               
                 base.WaitForElement(By.Id(Package_packageadmindetailsResource.
                     Package_packageadmindetailsPage_NewPackage_EntertainmentCap_Textbox_ID));
-                base.ClearTextByXpath(Package_packageadmindetailsResource.
+                base.ClearTextById(Package_packageadmindetailsResource.
                     Package_packageadmindetailsPage_NewPackage_EntertainmentCap_Textbox_ID);
-                base.FillTextBoxByXpath(Package_packageadmindetailsResource.
+                base.FillTextBoxById(Package_packageadmindetailsResource.
                     Package_packageadmindetailsPage_NewPackage_EntertainmentCap_Textbox_ID, getEntertainmentCap);
 
 

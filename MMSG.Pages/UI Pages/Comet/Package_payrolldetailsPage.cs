@@ -33,9 +33,9 @@ namespace MMSG.Pages.UI_Pages.Comet
                 // Enter payroll details
                 base.WaitForElement(By.Id(Package_payrolldetailsResource.
                     Package_payrolldetailsPage_Payroll_Textbox_ID));
-                base.ClearTextByXpath(Package_payrolldetailsResource.
+                base.ClearTextById(Package_payrolldetailsResource.
                     Package_payrolldetailsPage_Payroll_Textbox_ID);
-                base.FillTextBoxByXpath(Package_payrolldetailsResource.
+                base.FillTextBoxById(Package_payrolldetailsResource.
                     Package_payrolldetailsPage_Payroll_Textbox_ID, sixDigitNumber);
 
                 bool getDropdownOptionStatus = base.IsElementPresent(By.XPath("//div[@id='divMenuddmPayCycleID']/table/tbody/tr[2]/td[1]"),10);

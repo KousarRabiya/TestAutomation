@@ -166,7 +166,7 @@
       <Name>MMSG.Automation</Name>
     </ProjectReference>
     <ProjectReference Include="..\MMSG.Pages\MMSG.Pages.csproj">
-      <Project>{FDE1A89C-4FCF-45C6-8B12-D43AF6119FE3}</Project>
+      <Project>{fde1a89c-4fcf-45c6-8b12-d43af6119fe3}</Project>
       <Name>MMSG.Pages</Name>
     </ProjectReference>
   </ItemGroup>

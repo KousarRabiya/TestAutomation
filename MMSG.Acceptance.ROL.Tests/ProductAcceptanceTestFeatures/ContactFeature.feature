@@ -20,7 +20,7 @@ When I Enter the "Amount"
 When I select the Radio Button "Once off deduction"
 When I select the Radio Button "Select a pay date"
 Then I should be display "Pay date for change" dropdown
-When I select "22/02/2018" in the dropdown "Pay date for change"
+When I select "22/03/2018" in the dropdown "Pay date for change"
 When I Enter the "Phone"
 When I Enter the "Email"
 When I select the Radio Button "Phone"

@@ -89,12 +89,12 @@ namespace MMSG.Pages.UI_Pages.Comet
             {
                 case "EmployeeNumber":
                     base.WaitForElement(By.Id("CCEmployeeSearch_txtEmployeeNumber"));
-                    base.FillTextBoxByXpath("CCEmployeeSearch_txtEmployeeNumber", employeeNumber);
+                    base.FillTextBoxByXPath("CCEmployeeSearch_txtEmployeeNumber", employeeNumber);
                     break;
 
                 case "EmployerCode":
                     base.WaitForElement(By.Id("CCEmployeeSearch_txtEmployerCode"));
-                    base.FillTextBoxByXpath("CCEmployeeSearch_txtEmployerCode", employerCode);
+                    base.FillTextBoxByXPath("CCEmployeeSearch_txtEmployerCode", employerCode);
                     break;
 
                 case "Surname":
@@ -435,7 +435,7 @@ namespace MMSG.Pages.UI_Pages.Comet
             try
             {
                 base.WaitForElement(By.Id("CCEmployeeSearch_txtEmployeeNumber"));
-                base.FillTextBoxByXpath("CCEmployeeSearch_txtEmployeeNumber", employeeNumner);
+                base.FillTextBoxByXPath("CCEmployeeSearch_txtEmployeeNumber", employeeNumner);
                 base.WaitForElement(By.Id("CCEmployeeSearch_cmdSearch"));
                 // Click button by ID
                 IWebElement getSearchButton = base.GetWebElementPropertiesById("CCEmployeeSearch_cmdSearch");

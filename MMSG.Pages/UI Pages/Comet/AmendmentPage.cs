@@ -57,11 +57,13 @@ namespace MMSG.Pages.UI_Pages.Comet
                     case "New":
                         base.WaitForElement(By.Id(AmendmentResource.AmendmentPage_NewButton_Id_Locator));
                         IWebElement newButtonProperty = base.GetWebElementProperties(By.Id(AmendmentResource.AmendmentPage_NewButton_Id_Locator));
-                        base.PerformClickAction(newButtonProperty);
+                        base.PerformMouseClickAction(newButtonProperty);
                         break;
                     case "Cancel":
-                        base.WaitForElement(By.Id(AmendmentResource.AmendmentPage_CancelButton_ID_Locator));
-                        IWebElement newSaveProperty = base.GetWebElementProperties(By.Id(AmendmentResource.AmendmentPage_CancelButton_ID_Locator));                       
+                        bool a = base.IsElementPresent(By.XPath("//input[@id='wucBenefitDetailsCancelNSave_cmdCancelEnabled']"),10);
+                        base.WaitForElement(By.XPath("//input[@id='wucBenefitDetailsCancelNSave_cmdCancelEnabled']"));
+                        IWebElement newSaveProperty = base.GetWebElementProperties(By.XPath("//input[@id='wucBenefitDetailsCancelNSave_cmdCancelEnabled']"));
+                        base.DoubleClickByJavaScriptExecuter(newSaveProperty);                  
                         base.PerformMouseClickAction(newSaveProperty);
                         break;
                 }

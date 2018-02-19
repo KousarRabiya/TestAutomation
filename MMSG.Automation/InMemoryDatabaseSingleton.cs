@@ -39,8 +39,6 @@ namespace MMSG.Automation
                 case "COMETTST05":
                 case "COMETDEV":
                 case "COMETUAT":
-                case "COMETTST05":
-                case "COMETTST08":
                 case "ROLCERT":
                 case "MOLUAT":
                 case "MOLAPP15":
