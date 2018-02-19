@@ -47,20 +47,33 @@ namespace MMSG.Pages.UI_Pages.Comet
                     Package_packageadmindetailsPage_NewPackage_EntertainmentCap_Textbox_ID, getEntertainmentCap);
 
 
-                // Clicking on the FinancialAdvisor Tex Box
-                base.WaitForElement(By.CssSelector("tr#ddmFinancialAdvisor_trMain > td > input"));
-                IWebElement getFinancialAdvisor = base.GetWebElementPropertiesByCssSelector("tr#ddmFinancialAdvisor_trMain > td > input");
-                base.ClickByJavaScriptExecutor(getFinancialAdvisor);
+                bool getOptionStatus = base.IsElementPresent(By.XPath(".//*[@id='divMenuddmFinancialAdvisor']/table/tbody/tr[3]/td[1]"),10);
+                if (getOptionStatus == false)
+                {
+                    // Clicking on the FinancialAdvisor Tex Box
+                    base.WaitForElement(By.CssSelector("tr#ddmFinancialAdvisor_trMain > td > input"));
+                    IWebElement getFinancialAdvisor = base.GetWebElementPropertiesByCssSelector("tr#ddmFinancialAdvisor_trMain > td > input");
+                    base.ClickByJavaScriptExecutor(getFinancialAdvisor);
 
-                // Clicking on the DropDown of FinancialAdvisor
-                IWebElement getFinancialAdvisioOption = base.GetWebElementPropertiesByXPath
-                    (".//*[@id='divMenuddmFinancialAdvisor']/table/tbody/tr[3]/td[1]");
-                base.ClickByJavaScriptExecutor(getFinancialAdvisioOption);
-                Thread.Sleep(3000);
+                    // Clicking on the DropDown of FinancialAdvisor
+                    IWebElement getFinancialAdvisioOption = base.GetWebElementPropertiesByXPath
+                        (".//*[@id='divMenuddmFinancialAdvisor']/table/tbody/tr[3]/td[1]");
+                    base.ClickByJavaScriptExecutor(getFinancialAdvisioOption);
+                    Thread.Sleep(3000);
+                }
+                else
+                {
+                    // Clicking on the DropDown of FinancialAdvisor
+                    IWebElement getFinancialAdvisioOption = base.GetWebElementPropertiesByXPath
+                        (".//*[@id='divMenuddmFinancialAdvisor']/table/tbody/tr[3]/td[1]");
+                    base.ClickByJavaScriptExecutor(getFinancialAdvisioOption);
+                    Thread.Sleep(3000);
+                }
 
                 // Click next button               
                 base.WaitForElement(By.XPath(Package_packageadmindetailsResource.Package_packageadmindetailsPage_NewPackage_NextButton_Textbox_Xpath));
-                IWebElement getNextButton = base.GetWebElementPropertiesByXPath(Package_packageadmindetailsResource.Package_packageadmindetailsPage_NewPackage_NextButton_Textbox_Xpath);
+                IWebElement getNextButton = base.GetWebElementPropertiesByXPath(Package_packageadmindetailsResource.
+                    Package_packageadmindetailsPage_NewPackage_NextButton_Textbox_Xpath);
                 base.ClickByJavaScriptExecutor(getNextButton);
             }
             catch (Exception e)

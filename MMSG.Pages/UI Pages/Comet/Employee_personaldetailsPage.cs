@@ -51,10 +51,11 @@ namespace MMSG.Pages.UI_Pages.Comet
             string returnPopupTitle = null;
             try
             {
-                Thread.Sleep(8000);
+                Thread.Sleep(2000);
                 // Get page title 
                 base.SwitchToDefaultWindow();
                 base.SwitchToLastOpenedWindow();
+                string ti = base.GetPageTitle;
                 base.WaitUntilPopUpLoads(base.GetPageTitle);
                 returnPopupTitle = base.GetPageTitle;
             }
@@ -582,6 +583,7 @@ namespace MMSG.Pages.UI_Pages.Comet
             try
             {
                 base.WaitUntilPopUpLoads(popupName);
+                base.MaximizeWindow();
                 base.SwitchToIFrameByName("frmMain");
                 base.WaitForElement(By.Name("cancel"));
                 IWebElement getCancelButton = base.GetWebElementProperties(By.Name("cancel"));

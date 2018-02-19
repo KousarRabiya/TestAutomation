@@ -97,14 +97,25 @@ namespace MMSG.Pages.UI_Pages.Comet
                 base.SwitchToDefaultWindow();
 
                 // Fill Offering textbox
-                
-               base.WaitForElement(By.XPath(".//*[@id='ddmEmployerOfferingID_trMain']/td[2]/img"));
-                IWebElement getDropdown = base.GetWebElementPropertiesByCssSelector("tr#ddmEmployerOfferingID_trMain > td > input");
-                base.ClickByJavaScriptExecutor(getDropdown);
-                IWebElement clickOnTheDropDownOption = base.GetWebElementPropertiesByXPath
-                    (".//*[@id='divMenuddmEmployerOfferingID']/table/tbody/tr[2]/td[1]");
-                base.ClickByJavaScriptExecutor(clickOnTheDropDownOption);
+                bool getDropdownOptionStatus = base.IsElementPresent(By.XPath(".//*[@id='divMenuddmEmployerOfferingID']/table/tbody/tr[2]/td[1]"), 10);
+                if (getDropdownOptionStatus == false)
+                {
+                    base.WaitForElement(By.XPath(".//*[@id='ddmEmployerOfferingID_trMain']/td[2]/img"));
+                    IWebElement getDropdownOption = base.GetWebElementPropertiesByCssSelector("tr#ddmEmployerOfferingID_trMain > td > input");
+                    base.ClickByJavaScriptExecutor(getDropdownOption);
 
+
+                    IWebElement clickTheDropDownOption = base.GetWebElementPropertiesByXPath
+                        (".//*[@id='divMenuddmEmployerOfferingID']/table/tbody/tr[2]/td[1]");
+                    base.ClickByJavaScriptExecutor(clickTheDropDownOption);
+                }
+                else
+                {
+                    IWebElement clickOnTheDropDownOption = base.GetWebElementPropertiesByXPath
+                    (".//*[@id='divMenuddmEmployerOfferingID']/table/tbody/tr[2]/td[1]");
+                    base.ClickByJavaScriptExecutor(clickOnTheDropDownOption);
+                }
+              
                 // Click next button
                 base.WaitForElement(By.XPath("//tr[@class='BodyColor']/td[3]/input[3]"));
                 IWebElement getNextButton = base.GetWebElementPropertiesByXPath("//tr[@class='BodyColor']/td[3]/input[3]");                

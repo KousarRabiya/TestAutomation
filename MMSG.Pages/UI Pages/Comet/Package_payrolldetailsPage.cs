@@ -38,29 +38,34 @@ namespace MMSG.Pages.UI_Pages.Comet
                 base.FillTextBoxById(Package_payrolldetailsResource.
                     Package_payrolldetailsPage_Payroll_Textbox_ID, sixDigitNumber);
 
-                base.WaitForElement(By.XPath("//tr[@id='ddmPayCycleID_trMain']/td/input"));
-                IWebElement getDropdown = base.GetWebElementPropertiesByXPath("//tr[@id='ddmPayCycleID_trMain']/td/input");
-                base.ClickByJavaScriptExecutor(getDropdown);
-               //// IWebElement getPayCycleDropdown = base.GetWebElementPropertiesByXPath("//tr[@id='ddmPayCycleID_trMain']/td[2]/img");
-               // base.ClickByJavaScriptExecutor(getPayCycleDropdown);
+                bool getDropdownOptionStatus = base.IsElementPresent(By.XPath("//div[@id='divMenuddmPayCycleID']/table/tbody/tr[2]/td[1]"),10);
+                if(getDropdownOptionStatus==false)
+                {
+                    base.WaitForElement(By.XPath("//tr[@id='ddmPayCycleID_trMain']/td/input"));
+                    IWebElement getDropdown = base.GetWebElementPropertiesByXPath("//tr[@id='ddmPayCycleID_trMain']/td/input");
+                    base.ClickByJavaScriptExecutor(getDropdown);
 
-                IWebElement getPayCycleOption = base.GetWebElementPropertiesByXPath("//div[@id='divMenuddmPayCycleID']/table/tbody/tr[2]/td[1]");
-                base.ClickByJavaScriptExecutor(getPayCycleOption);
-                Thread.Sleep(3000);
+                    IWebElement getPayCycleOption = base.GetWebElementPropertiesByXPath("//div[@id='divMenuddmPayCycleID']/table/tbody/tr[2]/td[1]");
+                    base.ClickByJavaScriptExecutor(getPayCycleOption);
+                }
+                else
+                {
+                    IWebElement getPayCycleOption = base.GetWebElementPropertiesByXPath("//div[@id='divMenuddmPayCycleID']/table/tbody/tr[2]/td[1]");
+                    base.ClickByJavaScriptExecutor(getPayCycleOption);
+                }
 
                 // Click Add button
-                bool sad = base.IsElementPresent(By.XPath("//tr[@class='BodyColor']/td/p/input"),10);
-                base.WaitForElement(By.XPath("//tr[@class='BodyColor']/td/p/input"));
-                IWebElement getAddButton = base.GetWebElementPropertiesByXPath("//tr[@class='BodyColor']/td/p/input");
+                bool df = base.IsElementPresent(By.Id("wucButtons_cmdAddEnabled"),10);
+                base.WaitForElement(By.Id("wucButtons_cmdAddEnabled"));
+                IWebElement getAddButton = base.GetWebElementPropertiesById("wucButtons_cmdAddEnabled");
                 base.ClickByJavaScriptExecutor(getAddButton);
                 Thread.Sleep(3000);
 
                 // Click Save Button
                 base.WaitForElement(By.XPath("//tr[@class='BodyColor']/td[3]/input[2]"));
                 IWebElement getSaveButton = base.GetWebElementPropertiesByXPath("//tr[@class='BodyColor']/td[3]/input[2]");
-                base.ClickByJavaScriptExecutor(getSaveButton);
+                base.PerformMouseClickAction(getSaveButton);
 
-              
             }
             catch (Exception e)
             {

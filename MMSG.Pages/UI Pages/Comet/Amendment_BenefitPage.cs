@@ -29,6 +29,15 @@ namespace MMSG.Pages.UI_Pages.Comet
             try
             {
                 //geting the page name and compereing 
+                string url = AutomationConfigurationManager.CourseSpaceUrlRoot;
+
+                //Get Domain name from the URL
+                string getDomain = url.Substring(7);
+                int indexValue = getDomain.IndexOf('/');
+                string getDomainString = getDomain.Substring(0, indexValue);
+                base.WaitUntilWindowLoads(getDomainString);
+                base.SelectWindow(getDomainString);
+
                 base.WaitForElement(By.Id("lblPageTitle"));
                 string AmendmentPageBenefitPage = base.GetInnerTextAttributeValueById("lblPageTitle");
                 if (AmendmentPageBenefitPage== "Amendments - New Benefits")
@@ -44,6 +53,11 @@ namespace MMSG.Pages.UI_Pages.Comet
                   base.IsTakeScreenShotDuringEntryExit);
             return statusofPage;
         }
+
+        /// <summary>
+        /// Select benefit dropdown
+        /// </summary>
+        /// <param name="benefitName">This is benefit name.</param>
         public void SelectTheBenefitDropDown(string benefitName)
         {
             Logger.LogMethodEntry("Amendment_BenefitPage", "SelectTheBenefitDropDown",
@@ -60,13 +74,18 @@ namespace MMSG.Pages.UI_Pages.Comet
             Logger.LogMethodEntry("Amendment_BenefitPage", "VerifyPageLandedOnAmendmentBenefitPage",
                  base.IsTakeScreenShotDuringEntryExit);
         }
+
+        /// <summary>
+        /// Select effective date
+        /// </summary>
         public void EffectiveDate()
         {
             Logger.LogMethodEntry("Amendment_BenefitPage", "SelectTheBenefitDropDown",
               base.IsTakeScreenShotDuringEntryExit);
             try
             {
-                string getDateText = base.GetInnerTextAttributeValueByXPath(Employee_personaldetailsResource.EmployeepersonaldetailsPage_Title_EffectiveDate_Xpath);
+                string getDateText = base.GetInnerTextAttributeValueByXPath(
+                    Employee_personaldetailsResource.EmployeepersonaldetailsPage_Title_EffectiveDate_Xpath);
                 string getDate = getDateText.Substring(17);
                 string effectiveDateText = getDate.Replace(")", "").Trim();
                 base.WaitForElement(By.Id("txtActivationDate_0"));
@@ -90,8 +109,10 @@ namespace MMSG.Pages.UI_Pages.Comet
              base.IsTakeScreenShotDuringEntryExit);
             try
             {
-                base.WaitForElement(By.Id(Amendment_BenefitResource.Amendment_BenefitPage_NextPayDateDropDown_ID_Locator));
-                base.SelectDropDownValueThroughIndexById(Amendment_BenefitResource.Amendment_BenefitPage_NextPayDateDropDown_ID_Locator, 2);
+                base.WaitForElement(By.Id(Amendment_BenefitResource.
+                    Amendment_BenefitPage_NextPayDateDropDown_ID_Locator));
+                base.SelectDropDownValueThroughIndexById(Amendment_BenefitResource.
+                    Amendment_BenefitPage_NextPayDateDropDown_ID_Locator, 2);
             }
             catch (Exception e)
             {
@@ -105,15 +126,16 @@ namespace MMSG.Pages.UI_Pages.Comet
         /// Selecting the Budget caluction menthod 
         /// </summary>
         /// <param name="payDateType"></param>
-
         public void BudgetCalculationMethod(string payDateType)
         {
             Logger.LogMethodEntry("Amendment_BenefitPage", "BudgetCalculationMethod",
              base.IsTakeScreenShotDuringEntryExit);
             try
             {
-                base.WaitForElement(By.Id(Amendment_BenefitResource.Amendment_BenefitPage_BudgetCalculationMenthodDropDown_ID_Locator));
-                base.SelectDropDownValueThroughTextById(Amendment_BenefitResource.Amendment_BenefitPage_BudgetCalculationMenthodDropDown_ID_Locator, payDateType);
+                base.WaitForElement(By.Id(Amendment_BenefitResource.
+                    Amendment_BenefitPage_BudgetCalculationMenthodDropDown_ID_Locator));
+                base.SelectDropDownValueThroughTextById(Amendment_BenefitResource.
+                    Amendment_BenefitPage_BudgetCalculationMenthodDropDown_ID_Locator, payDateType);
             }
             catch (Exception e)
             {
@@ -127,15 +149,16 @@ namespace MMSG.Pages.UI_Pages.Comet
         /// Entering the budget amount in the text box
         /// </summary>
         /// <param name="BudgetAmount">Budget Amount</param>
-
         public void BudgetAmount(string BudgetAmount)
         {
             Logger.LogMethodEntry("Amendment_BenefitPage", "BudgetAmount",
              base.IsTakeScreenShotDuringEntryExit);
             try
             {
-                base.ClearTextById(Amendment_BenefitResource.Amendment_BenefitPage_BudgetAmountTextBox_ID_Locator);
-                base.FillTextBoxById(Amendment_BenefitResource.Amendment_BenefitPage_BudgetAmountTextBox_ID_Locator, BudgetAmount);
+                base.ClearTextById(Amendment_BenefitResource.
+                    Amendment_BenefitPage_BudgetAmountTextBox_ID_Locator);
+                base.FillTextBoxById(Amendment_BenefitResource.
+                    Amendment_BenefitPage_BudgetAmountTextBox_ID_Locator, BudgetAmount);
             }
             catch (Exception e)
             {
@@ -148,15 +171,16 @@ namespace MMSG.Pages.UI_Pages.Comet
         /// <summary>
         /// Clicking on the Save Button 
         /// </summary>
-
         public void ClickOnSaveButton()
         {
             Logger.LogMethodEntry("Amendment_BenefitPage", "ClickOnSaveButton",
              base.IsTakeScreenShotDuringEntryExit);
             try
             {
-                base.WaitForElement(By.Id(Amendment_BenefitResource.Amendment_BenefitPage_SaveButton_ID_Locator));
-                IWebElement saveButtonProperty = base.GetWebElementProperties(By.Id(Amendment_BenefitResource.Amendment_BenefitPage_SaveButton_ID_Locator));
+                base.WaitForElement(By.Id(Amendment_BenefitResource.
+                    Amendment_BenefitPage_SaveButton_ID_Locator));
+                IWebElement saveButtonProperty = base.GetWebElementProperties(
+                    By.Id(Amendment_BenefitResource.Amendment_BenefitPage_SaveButton_ID_Locator));
                 base.ClickByJavaScriptExecutor(saveButtonProperty);
             }
             catch (Exception e)
