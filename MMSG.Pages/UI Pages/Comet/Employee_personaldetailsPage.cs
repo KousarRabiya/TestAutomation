@@ -135,41 +135,41 @@ namespace MMSG.Pages.UI_Pages.Comet
             // Fill Given Name textbox
             base.WaitForElement(By.Id(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_GivenName_Textbox_ID_Locator));
-            base.ClearTextById(Employee_personaldetailsResource.
+            base.ClearTextByXpath(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_GivenName_Textbox_ID_Locator);
-            base.FillTextBoxById(Employee_personaldetailsResource.
+            base.FillTextBoxByXpath(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_GivenName_Textbox_ID_Locator, givenNameGUID);
 
             // Fill Home Telephone textbox
             base.WaitForElement(By.Id(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_PhoneNumberHomeText_Textbox_ID_Locator));
-            base.ClearTextById(Employee_personaldetailsResource.
+            base.ClearTextByXpath(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_PhoneNumberHomeText_Textbox_ID_Locator);
-            base.FillTextBoxById(Employee_personaldetailsResource.
+            base.FillTextBoxByXpath(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_PhoneNumberHomeText_Textbox_ID_Locator, homeTelephone);
 
             // Fill OtherNames Textbox
             base.WaitForElement(By.Id(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_OtherNamesText_Textbox_ID_Locator));
-            base.ClearTextById(Employee_personaldetailsResource.
+            base.ClearTextByXpath(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_OtherNamesText_Textbox_ID_Locator);
-            base.FillTextBoxById(Employee_personaldetailsResource.
+            base.FillTextBoxByXpath(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_OtherNamesText_Textbox_ID_Locator, otherNameGUID);
 
             // Fill Surname textbox
             base.WaitForElement(By.Id(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_SurnameText_Textbox_ID_Locator));
-            base.ClearTextById(Employee_personaldetailsResource.
+            base.ClearTextByXpath(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_SurnameText_Textbox_ID_Locator);
-            base.FillTextBoxById(Employee_personaldetailsResource.
+            base.FillTextBoxByXpath(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_SurnameText_Textbox_ID_Locator, surnameGUID);
 
             // Fill data of birth text box
             base.WaitForElement(By.Id(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_DateOfBirthText_Textbox_ID_Locator));
-            base.ClearTextById(Employee_personaldetailsResource.
+            base.ClearTextByXpath(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_DateOfBirthText_Textbox_ID_Locator);
-            base.FillTextBoxById(Employee_personaldetailsResource.
+            base.FillTextBoxByXpath(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_DateOfBirthText_Textbox_ID_Locator, dOB);
 
             // Select Gender option from the dropdown
@@ -181,25 +181,25 @@ namespace MMSG.Pages.UI_Pages.Comet
             // Fill Preferred Name text box 
             base.WaitForElement(By.Id(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_PreferredNameText_Textbox_ID_Locator));
-            base.ClearTextById(Employee_personaldetailsResource.
+            base.ClearTextByXpath(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_PreferredNameText_Textbox_ID_Locator);
-            base.FillTextBoxById(Employee_personaldetailsResource.
+            base.FillTextBoxByXpath(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_PreferredNameText_Textbox_ID_Locator, preferredName);
 
             // Fill textbox by email id
             base.WaitForElement(By.Id(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_EmailAddressText_Textbox_ID_Locator));
-            base.ClearTextById(Employee_personaldetailsResource.
+            base.ClearTextByXpath(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_EmailAddressText_Textbox_ID_Locator);
-            base.FillTextBoxById(Employee_personaldetailsResource.
+            base.FillTextBoxByXpath(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_EmailAddressText_Textbox_ID_Locator, preferredEmail);
 
             // Fill GESB Member Number Text
             base.WaitForElement(By.Id(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_GESBMemberNumberText_Textbox_ID_Locator));
-            base.ClearTextById(Employee_personaldetailsResource.
+            base.ClearTextByXpath(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_GESBMemberNumberText_Textbox_ID_Locator);
-            base.FillTextBoxById(Employee_personaldetailsResource.
+            base.FillTextBoxByXpath(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_GESBMemberNumberText_Textbox_ID_Locator, gESBMenberNumber);
 
             // Select Employee Asked Marketing No Radio
@@ -244,9 +244,9 @@ namespace MMSG.Pages.UI_Pages.Comet
                 // Fill Home adress in adress text box
                 base.WaitForElement(By.Id(Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_HomeAddressLine1Text_Textbox_ID_Locator));
-                base.ClearTextById(Employee_personaldetailsResource.
+                base.ClearTextByXpath(Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_HomeAddressLine1Text_Textbox_ID_Locator);
-                base.FillTextBoxById(Employee_personaldetailsResource.
+                base.FillTextBoxByXpath(Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_HomeAddressLine1Text_Textbox_ID_Locator,
                     Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_HomeAddressLine1Text_Textbox_Text);
@@ -254,9 +254,9 @@ namespace MMSG.Pages.UI_Pages.Comet
                 // Fill Home Suburb text box
                 base.WaitForElement(By.Id(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_HomeSuburbText_Textbox_ID_Locator));
-                base.ClearTextById(Employee_personaldetailsResource.
+                base.ClearTextByXpath(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_HomeSuburbText_Textbox_ID_Locator);
-                base.FillTextBoxById(Employee_personaldetailsResource.
+                base.FillTextBoxByXpath(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_HomeSuburbText_Textbox_ID_Locator,
                 Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_HomeSuburbText_Textbox_Text);
@@ -270,9 +270,9 @@ namespace MMSG.Pages.UI_Pages.Comet
                 // Fill Postcode in the home Postcode textbox
                 base.WaitForElement(By.Id(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_HomePostCodeText_Textbox_ID_Locator));
-                base.ClearTextById(Employee_personaldetailsResource.
+                base.ClearTextByXpath(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_HomePostCodeText_Textbox_ID_Locator);
-                base.FillTextBoxById(Employee_personaldetailsResource.
+                base.FillTextBoxByXpath(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_HomePostCodeText_Textbox_ID_Locator,
                 Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_HomePostCodeText_Textbox_Text);
@@ -280,9 +280,9 @@ namespace MMSG.Pages.UI_Pages.Comet
                 // Fill Postal Address
                 base.WaitForElement(By.Id(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_PostalAddressLine1Text_Textbox_ID_Locator));
-                base.ClearTextById(Employee_personaldetailsResource.
+                base.ClearTextByXpath(Employee_personaldetailsResource.
                  EmployeepersonaldetailsPage_PostalAddressLine1Text_Textbox_ID_Locator);
-                base.FillTextBoxById(Employee_personaldetailsResource.
+                base.FillTextBoxByXpath(Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_PostalAddressLine1Text_Textbox_ID_Locator,
                     Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_HomeAddressLine1Text_Textbox_Text);
@@ -290,9 +290,9 @@ namespace MMSG.Pages.UI_Pages.Comet
                 //Fill Postal Suburb Text
                 base.WaitForElement(By.Id(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_PostalSuburbText_Textbox_ID_Locator));
-                base.ClearTextById(Employee_personaldetailsResource.
+                base.ClearTextByXpath(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_PostalSuburbText_Textbox_ID_Locator);
-                base.FillTextBoxById(Employee_personaldetailsResource.
+                base.FillTextBoxByXpath(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_PostalSuburbText_Textbox_ID_Locator,
                 Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_HomeSuburbText_Textbox_Text);
@@ -306,9 +306,9 @@ namespace MMSG.Pages.UI_Pages.Comet
                 // Select Postal Post Code Text
                 base.WaitForElement(By.Id(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_PostalPostCodeText_Textbox_ID_Locator));
-                base.ClearTextById(Employee_personaldetailsResource.
+                base.ClearTextByXpath(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_PostalPostCodeText_Textbox_ID_Locator);
-                base.FillTextBoxById(Employee_personaldetailsResource.
+                base.FillTextBoxByXpath(Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_PostalPostCodeText_Textbox_ID_Locator,
                 Employee_personaldetailsResource.
                 EmployeepersonaldetailsPage_HomePostCodeText_Textbox_Text);
@@ -335,9 +335,9 @@ namespace MMSG.Pages.UI_Pages.Comet
                 // Fill Effective Date Text
                 base.WaitForElement(By.Id(Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_EffectiveDateText_Textbox_ID_Locator));
-                base.ClearTextById(Employee_personaldetailsResource.
+                base.ClearTextByXpath(Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_EffectiveDateText_Textbox_ID_Locator);
-                base.FillTextBoxById(Employee_personaldetailsResource.
+                base.FillTextBoxByXpath(Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_EffectiveDateText_Textbox_ID_Locator, effectiveDateText);
 
                 base.WaitForElement(By.Id(Employee_personaldetailsResource.
@@ -348,9 +348,9 @@ namespace MMSG.Pages.UI_Pages.Comet
 
                 base.WaitForElement(By.Id(Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_BankAccountNumberText_Textbox_ID_Locator));
-                base.ClearTextById(Employee_personaldetailsResource.
+                base.ClearTextByXpath(Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_BankAccountNumberText_Textbox_ID_Locator);
-                base.FillTextBoxById(Employee_personaldetailsResource.
+                base.FillTextBoxByXpath(Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_BankAccountNumberText_Textbox_ID_Locator,
                     Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_BankAccountNumberText_Textbox_Text);
@@ -358,9 +358,9 @@ namespace MMSG.Pages.UI_Pages.Comet
 
                 base.WaitForElement(By.Id(Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_BSBNumberText_Textbox_ID_Locator));
-                base.ClearTextById(Employee_personaldetailsResource.
+                base.ClearTextByXpath(Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_BSBNumberText_Textbox_ID_Locator);
-                base.FillTextBoxById(Employee_personaldetailsResource.
+                base.FillTextBoxByXpath(Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_BSBNumberText_Textbox_ID_Locator,
                     Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_BSBNumberText_Textbox_Text);
@@ -369,8 +369,8 @@ namespace MMSG.Pages.UI_Pages.Comet
                 base.SelectDropDownValueThroughIndexById("EFTRemittanceMethodCombo", 5);
 
                 base.WaitForElement(By.Id("IQueueNumberText"));
-                base.ClearTextById("IQueueNumberText");
-                base.FillTextBoxById("IQueueNumberText","123456");
+                base.ClearTextByXpath("IQueueNumberText");
+                base.FillTextBoxByXpath("IQueueNumberText","123456");
             }
             catch (Exception e)
             {

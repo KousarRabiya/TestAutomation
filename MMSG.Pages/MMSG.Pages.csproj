@@ -58,6 +58,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="UI Pages\Comet\AdminFeesForPackagePage.cs" />
+    <Compile Include="UI Pages\Comet\AdminFeesForPackageResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdminFeesForPackageResource.resx</DependentUpon>
+    </Compile>
     <Compile Include="UI Pages\Comet\AmendmentPage.cs" />
     <Compile Include="UI Pages\Comet\AmendmentResource.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -155,6 +161,10 @@
     <EmbeddedResource Include="UI Pages\ApplicationLoginPageResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ApplicationLoginPageResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\AdminFeesForPackageResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AdminFeesForPackageResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UI Pages\Comet\AmendmentResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>

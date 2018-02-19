@@ -63,6 +63,15 @@ namespace MMSG.Pages.UI_Pages.Comet {
         /// <summary>
         ///   Looks up a localized string similar to txtActivationDate_0.
         /// </summary>
+        internal static string Amendment_BenefitPage_ActiavateDate_Id_Loctor {
+            get {
+                return ResourceManager.GetString("Amendment_BenefitPage_ActiavateDate_Id_Loctor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to txtActivationDate_0.
+        /// </summary>
         internal static string Amendment_BenefitPage_ActivationDateTextBox_ID_Locator {
             get {
                 return ResourceManager.GetString("Amendment_BenefitPage_ActivationDateTextBox_ID_Locator", resourceCulture);
