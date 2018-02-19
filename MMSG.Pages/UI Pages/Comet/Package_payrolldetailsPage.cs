@@ -33,9 +33,9 @@ namespace MMSG.Pages.UI_Pages.Comet
                 // Enter payroll details
                 base.WaitForElement(By.Id(Package_payrolldetailsResource.
                     Package_payrolldetailsPage_Payroll_Textbox_ID));
-                base.ClearTextById(Package_payrolldetailsResource.
+                base.ClearTextByXpath(Package_payrolldetailsResource.
                     Package_payrolldetailsPage_Payroll_Textbox_ID);
-                base.FillTextBoxById(Package_payrolldetailsResource.
+                base.FillTextBoxByXpath(Package_payrolldetailsResource.
                     Package_payrolldetailsPage_Payroll_Textbox_ID, sixDigitNumber);
 
                 base.WaitForElement(By.XPath("//tr[@id='ddmPayCycleID_trMain']/td/input"));

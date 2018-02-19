@@ -18,7 +18,7 @@ namespace MMSG.Pages.UI_Pages.Comet
         /// The static instance of the logger for the class.
         /// </summary>
         private static readonly Logger Logger =
-            Logger.GetInstance(typeof(ApplicationLoginPage));
+            Logger.GetInstance(typeof(CallCentreEnquiryPage));
 
         /// <summary>
         /// Get the application logo existance status
@@ -89,12 +89,12 @@ namespace MMSG.Pages.UI_Pages.Comet
             {
                 case "EmployeeNumber":
                     base.WaitForElement(By.Id("CCEmployeeSearch_txtEmployeeNumber"));
-                    base.FillTextBoxById("CCEmployeeSearch_txtEmployeeNumber", employeeNumber);
+                    base.FillTextBoxByXpath("CCEmployeeSearch_txtEmployeeNumber", employeeNumber);
                     break;
 
                 case "EmployerCode":
                     base.WaitForElement(By.Id("CCEmployeeSearch_txtEmployerCode"));
-                    base.FillTextBoxById("CCEmployeeSearch_txtEmployerCode", employerCode);
+                    base.FillTextBoxByXpath("CCEmployeeSearch_txtEmployerCode", employerCode);
                     break;
 
                 case "Surname":
@@ -168,7 +168,7 @@ namespace MMSG.Pages.UI_Pages.Comet
         /// </summary>
         public void ClickOptionOnCCEnquiryPage(string optionName, string pageName)
         {
-            Logger.LogMethodEntry("CallCentreEnquiryPage", "ClickNewButton",
+            Logger.LogMethodEntry("CallCentreEnquiryPage", "ClickOptionOnCCEnquiryPage",
                 base.IsTakeScreenShotDuringEntryExit);
             try
             {
@@ -184,14 +184,39 @@ namespace MMSG.Pages.UI_Pages.Comet
                     case "Amendment":
                         ClickOnTheAmendmentOptionInTreeView();
                         break;
+                    case "Process Menu":
+                        ClickOnProcessMenu();
+                        break;
                 }
             }
             catch (Exception e)
             {
                 ExceptionHandler.HandleException(e);
             }
-            Logger.LogMethodExit("CallCentreEnquiryPage", "ClickNewButton",
+            Logger.LogMethodExit("CallCentreEnquiryPage", "ClickOptionOnCCEnquiryPage",
                 base.IsTakeScreenShotDuringEntryExit);
+        }
+
+        /// <summary>
+        /// Clickon the processmenu of the Call cenetre Enquiry Screen
+        /// </summary>
+        public void ClickOnProcessMenu()
+        {
+            Logger.LogMethodEntry("CallCentreEnquiryPage", "ClickOnProcessMenu",
+               base.IsTakeScreenShotDuringEntryExit);
+            try
+            {
+                IWebElement processMenuProp = base.GetWebElementProperties(By.Id("LeftMenuTreet3"));
+                base.ClickButtonById("LeftMenuTreet3");
+                base.SwitchToPopup();
+
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.HandleException(e);
+            }
+            Logger.LogMethodExit("CallCentreEnquiryPage", "ClickOnProcessMenu",
+               base.IsTakeScreenShotDuringEntryExit);
         }
 
         /// <summary>
@@ -353,7 +378,7 @@ namespace MMSG.Pages.UI_Pages.Comet
 
 
         /// <summary>
-        /// Clicking on the elelmentin the process menu
+        /// Clicking on the elelment in the process menu
         /// </summary>
         public void ProcessMenuPopUpClickOnElement(string optionName)
         {
@@ -410,7 +435,7 @@ namespace MMSG.Pages.UI_Pages.Comet
             try
             {
                 base.WaitForElement(By.Id("CCEmployeeSearch_txtEmployeeNumber"));
-                base.FillTextBoxById("CCEmployeeSearch_txtEmployeeNumber", employeeNumner);
+                base.FillTextBoxByXpath("CCEmployeeSearch_txtEmployeeNumber", employeeNumner);
                 base.WaitForElement(By.Id("CCEmployeeSearch_cmdSearch"));
                 // Click button by ID
                 IWebElement getSearchButton = base.GetWebElementPropertiesById("CCEmployeeSearch_cmdSearch");

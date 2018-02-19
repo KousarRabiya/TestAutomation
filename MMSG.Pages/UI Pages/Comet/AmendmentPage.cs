@@ -57,12 +57,12 @@ namespace MMSG.Pages.UI_Pages.Comet
                     case "New":
                         base.WaitForElement(By.Id(AmendmentResource.AmendmentPage_NewButton_Id_Locator));
                         IWebElement newButtonProperty = base.GetWebElementProperties(By.Id(AmendmentResource.AmendmentPage_NewButton_Id_Locator));
-                        base.ClickByJavaScriptExecutor(newButtonProperty);
+                        base.PerformClickAction(newButtonProperty);
                         break;
                     case "Cancel":
                         base.WaitForElement(By.Id(AmendmentResource.AmendmentPage_CancelButton_ID_Locator));
-                        IWebElement newSaveProperty = base.GetWebElementProperties(By.Id(AmendmentResource.AmendmentPage_CancelButton_ID_Locator));
-                        base.ClickByJavaScriptExecutor(newSaveProperty);
+                        IWebElement newSaveProperty = base.GetWebElementProperties(By.Id(AmendmentResource.AmendmentPage_CancelButton_ID_Locator));                       
+                        base.PerformMouseClickAction(newSaveProperty);
                         break;
                 }
             }

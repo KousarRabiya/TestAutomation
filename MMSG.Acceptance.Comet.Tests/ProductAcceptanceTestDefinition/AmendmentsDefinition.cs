@@ -13,7 +13,7 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
         /// The static instance of the logger for the class.
         /// </summary>
         private static readonly Logger Logger =
-        Logger.GetInstance(typeof(Employee_personaldetailsDefinition));
+        Logger.GetInstance(typeof(AmendmentsDefinition));
 
         [Then(@"I should be on the Amendment page")]
         public void VerifyAmendmentPage()
@@ -29,7 +29,7 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
         /// <summary>
         /// Clicking on the New Button in Amendment Screen
         /// </summary>
-        /// <param name="p0"></param>
+        /// <param name="clickOption">Button Name</param>
         [When(@"I click on ""(.*)"" in Amendment page")]
         public void WhenIClickOnInAmendmentPage(string clickOption)
         {

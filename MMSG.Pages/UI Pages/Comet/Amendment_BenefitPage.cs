@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace MMSG.Pages.UI_Pages.Comet
@@ -28,6 +29,7 @@ namespace MMSG.Pages.UI_Pages.Comet
             bool statusofPage = false;
             try
             {
+                Thread.Sleep(3000);
                 //geting the page name and compereing 
                 base.WaitForElement(By.Id("lblPageTitle"));
                 string AmendmentPageBenefitPage = base.GetInnerTextAttributeValueById("lblPageTitle");
@@ -69,9 +71,9 @@ namespace MMSG.Pages.UI_Pages.Comet
                 string getDateText = base.GetInnerTextAttributeValueByXPath(Employee_personaldetailsResource.EmployeepersonaldetailsPage_Title_EffectiveDate_Xpath);
                 string getDate = getDateText.Substring(17);
                 string effectiveDateText = getDate.Replace(")", "").Trim();
-                base.WaitForElement(By.Id("txtActivationDate_0"));
-                base.ClearTextById("txtActivationDate_0");
-                base.FillTextBoxById("txtActivationDate_0", effectiveDateText);
+                base.WaitForElement(By.Id(Amendment_BenefitResource.Amendment_BenefitPage_ActiavateDate_Id_Loctor));
+                base.ClearTextByXpath((Amendment_BenefitResource.Amendment_BenefitPage_ActiavateDate_Id_Loctor));
+                base.FillTextBoxByXpath(Amendment_BenefitResource.Amendment_BenefitPage_ActiavateDate_Id_Loctor, effectiveDateText);
             }
             catch (Exception e)
             {
@@ -134,8 +136,8 @@ namespace MMSG.Pages.UI_Pages.Comet
              base.IsTakeScreenShotDuringEntryExit);
             try
             {
-                base.ClearTextById(Amendment_BenefitResource.Amendment_BenefitPage_BudgetAmountTextBox_ID_Locator);
-                base.FillTextBoxById(Amendment_BenefitResource.Amendment_BenefitPage_BudgetAmountTextBox_ID_Locator, BudgetAmount);
+                base.ClearTextByXpath(Amendment_BenefitResource.Amendment_BenefitPage_BudgetAmountTextBox_ID_Locator);
+                base.FillTextBoxByXpath(Amendment_BenefitResource.Amendment_BenefitPage_BudgetAmountTextBox_ID_Locator, BudgetAmount);
             }
             catch (Exception e)
             {

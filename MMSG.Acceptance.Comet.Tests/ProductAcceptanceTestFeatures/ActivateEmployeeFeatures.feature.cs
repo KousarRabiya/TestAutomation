@@ -107,6 +107,16 @@ testRunner.When("I click on \"Process Menu\" in \"CCEnquiry\" page", ((string)(n
 testRunner.Then("I should be display with \"PROCESSES\" Pop up in Call Centre Enqiury screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 14
 testRunner.When("I click on \"Admin Fees\" option in Pop up", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 15
+testRunner.Then("I should be display with  \"Admin Fees for Package\" in title", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 16
+testRunner.When("I enter Effective Date in Admin Fees for Package", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 17
+testRunner.When("I should Click on the lookup button and select Fees Name from PopUp", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 18
+testRunner.When("I click on Add button and Save the Fees", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 19
+testRunner.Then("I should be on the \"CCEnquiry\" page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

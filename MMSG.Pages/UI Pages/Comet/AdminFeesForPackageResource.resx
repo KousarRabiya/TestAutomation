@@ -117,34 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Amendment_BenefitPage_ActiavateDate_Id_Loctor" xml:space="preserve">
-    <value>txtActivationDate_0</value>
+  <data name="AdminFeesForPackage_AddButton_ID_Locator" xml:space="preserve">
+    <value>CommandButtons_cmdAddEnabled</value>
   </data>
-  <data name="Amendment_BenefitPage_ActivationDateTextBox_ID_Locator" xml:space="preserve">
-    <value>txtActivationDate_0</value>
+  <data name="AdminFeesForPackage_EffectiveDate_ID_Locator" xml:space="preserve">
+    <value>EffectiveDateText</value>
   </data>
-  <data name="Amendment_BenefitPage_BenefitDropDown_ID_Locator" xml:space="preserve">
-    <value>ddlBenefits_0</value>
+  <data name="AdminFeesForPackage_LookUpImg_ID_Locator" xml:space="preserve">
+    <value>imgItemLookup</value>
   </data>
-  <data name="Amendment_BenefitPage_BudgetAmountTextBox_ID_Locator" xml:space="preserve">
-    <value>txtBudgetAmount_0</value>
+  <data name="AdminFeesForPackage_PageTitle_Xpath_Locator" xml:space="preserve">
+    <value>//div/span[@id='PageTitle']</value>
   </data>
-  <data name="Amendment_BenefitPage_BudgetCalculationMenthodDropDown_ID_Locator" xml:space="preserve">
-    <value>ddlBudgetCalcMethod_0</value>
+  <data name="AdminFeesForPackage_PopUpGrid_IframeTagName_Locator" xml:space="preserve">
+    <value>iframe</value>
   </data>
-  <data name="Amendment_BenefitPage_NextPayDateDropDown_ID_Locator" xml:space="preserve">
-    <value>ddlNextPayDateForChange_0</value>
+  <data name="AdminFeesForPackage_PopUpGrid_Xpath_Locator" xml:space="preserve">
+    <value>//table[@id='ResultsGrid']/tbody/tr[2]/td[1]/a</value>
   </data>
-  <data name="Amendment_BenefitPage_PageTitle_ID_Locator" xml:space="preserve">
-    <value>lblPageTitle</value>
-  </data>
-  <data name="Amendment_BenefitPage_PageTitle_Value_Value" xml:space="preserve">
-    <value>Amendments - New Benefits</value>
-  </data>
-  <data name="Amendment_BenefitPage_SaveButton_ID_Locator" xml:space="preserve">
-    <value>btnSave</value>
-  </data>
-  <data name="Amnedmen" xml:space="preserve">
-    <value>12</value>
+  <data name="AdminFeesForPackage_SaveButton_ID_Locator" xml:space="preserve">
+    <value>CommandButtons_cmdSaveEnabled</value>
   </data>
 </root>
