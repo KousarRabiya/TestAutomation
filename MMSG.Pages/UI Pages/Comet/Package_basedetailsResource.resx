@@ -120,6 +120,12 @@
   <data name="Package_basedetailsPage_BusinesEmail_ID" xml:space="preserve">
     <value>txtBusinessEmail</value>
   </data>
+  <data name="Package_basedetailsPage_EditPackage_NextButton_Id" xml:space="preserve">
+    <value>wucButtons_cmdNextEnabled</value>
+  </data>
+  <data name="Package_basedetailsPage_EditPackage_PageHeading_Xpath" xml:space="preserve">
+    <value>//td/span[@id='lblPageTitle']</value>
+  </data>
   <data name="Package_basedetailsPage_NewPackage_BusinessTelephone_ID" xml:space="preserve">
     <value>txtBusinessTelephone</value>
   </data>

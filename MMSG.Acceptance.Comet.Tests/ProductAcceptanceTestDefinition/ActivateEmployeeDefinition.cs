@@ -60,7 +60,7 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
            base.IsTakeScreenShotDuringEntryExit);
         }
         /// <summary>
-        /// 
+        /// Entering the effective Date in to the text box
         /// </summary>
         [When(@"I enter Effective Date in Admin Fees for Package")]
         public void EnteringTheEffectiveDate()

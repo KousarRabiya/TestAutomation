@@ -87,6 +87,9 @@ namespace MMSG.Pages.UI_Pages.Comet
             Logger.LogMethodExit("AdminFeesForPackagePage", "ClickOnLookUpImgAndSelelctFeesName", base.IsTakeScreenShotDuringEntryExit);
         }
 
+        /// <summary>
+        /// Selelcting the fees type from the pop up
+        /// </summary>
         public void SelelctTheFeesTypeFromPopUp()
         {
             Logger.LogMethodEntry("AdminFeesForPackagePage", "SelelctTheFeesTypeFromPopUp", base.IsTakeScreenShotDuringEntryExit);
@@ -124,10 +127,12 @@ namespace MMSG.Pages.UI_Pages.Comet
                 base.WaitForElement(By.Id(AdminFeesForPackageResource.AdminFeesForPackage_AddButton_ID_Locator));
                 IWebElement addButton = base.GetWebElementProperties(By.Id(AdminFeesForPackageResource.AdminFeesForPackage_AddButton_ID_Locator));
                 base.ClickByJavaScriptExecutor(addButton);
-                bool a = base.IsElementPresent(By.XPath("//table[@id='ResultsGrid']/tbody/tr[2]/td[1]/a"));
-                base.WaitForElement(By.XPath("//table[@id='ResultsGrid']/tbody/tr[2]/td[1]/a"));
+
+                // Witing for the grid to appeare
+                bool a = base.IsElementPresent(By.XPath(AdminFeesForPackageResource.AdminFeesForPackage_Grid_Xpath_Locator));
+                base.WaitForElement(By.XPath(AdminFeesForPackageResource.AdminFeesForPackage_Grid_Xpath_Locator));
                
-                // Cliockingf on the save button
+                // Clickingf on the save button
                 base.WaitForElement(By.Id(AdminFeesForPackageResource.AdminFeesForPackage_SaveButton_ID_Locator));
                 IWebElement SaveButton = base.GetWebElementProperties(By.Id(AdminFeesForPackageResource.AdminFeesForPackage_SaveButton_ID_Locator));
                 base.ClickByJavaScriptExecutor(SaveButton);

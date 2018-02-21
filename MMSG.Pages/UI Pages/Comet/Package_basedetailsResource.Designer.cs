@@ -70,6 +70,24 @@ namespace MMSG.Pages.UI_Pages.Comet {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to wucButtons_cmdNextEnabled.
+        /// </summary>
+        internal static string Package_basedetailsPage_EditPackage_NextButton_Id {
+            get {
+                return ResourceManager.GetString("Package_basedetailsPage_EditPackage_NextButton_Id", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to //td/span[@id=&apos;lblPageTitle&apos;].
+        /// </summary>
+        internal static string Package_basedetailsPage_EditPackage_PageHeading_Xpath {
+            get {
+                return ResourceManager.GetString("Package_basedetailsPage_EditPackage_PageHeading_Xpath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to txtBusinessTelephone.
         /// </summary>
         internal static string Package_basedetailsPage_NewPackage_BusinessTelephone_ID {

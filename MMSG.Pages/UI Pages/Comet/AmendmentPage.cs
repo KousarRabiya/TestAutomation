@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace MMSG.Pages.UI_Pages.Comet
@@ -28,10 +29,10 @@ namespace MMSG.Pages.UI_Pages.Comet
             bool pageLandedOnAmendment = false;
             try
             {
-                base.WaitForElement(By.XPath("//span[@id='lblPageTitle']"));
+                base.WaitForElement(By.XPath(AmendmentResource.AmendmentPage_Title_Value_Xpath_Locator));
                 //geting the amendment Page heading
-                string amendmentPage = base.GetElementInnerTextByXPath("//span[@id='lblPageTitle']");
-                if (amendmentPage== "Amendments")
+                string amendmentPage = base.GetElementInnerTextByXPath(AmendmentResource.AmendmentPage_Title_Value_Xpath_Locator);
+                if (amendmentPage== AmendmentResource.AmendmentPage_Title_Value)
                 {
                     return true;
                 }
@@ -52,19 +53,19 @@ namespace MMSG.Pages.UI_Pages.Comet
                 base.IsTakeScreenShotDuringEntryExit);
             try
             {
+                Thread.Sleep(1000);
                 switch (optionName)
                 {
                     case "New":
-                        base.WaitForElement(By.Id(AmendmentResource.AmendmentPage_NewButton_Id_Locator));
-                        IWebElement newButtonProperty = base.GetWebElementProperties(By.Id(AmendmentResource.AmendmentPage_NewButton_Id_Locator));
+                        base.WaitForElement(By.CssSelector("input#btnNew"));
+                        IWebElement newButtonProperty = base.GetWebElementProperties(By.CssSelector("input#btnNew"));
                         base.PerformMouseClickAction(newButtonProperty);
                         break;
                     case "Cancel":
-                        bool a = base.IsElementPresent(By.XPath("//input[@id='wucBenefitDetailsCancelNSave_cmdCancelEnabled']"),10);
-                        base.WaitForElement(By.XPath("//input[@id='wucBenefitDetailsCancelNSave_cmdCancelEnabled']"));
-                        IWebElement newSaveProperty = base.GetWebElementProperties(By.XPath("//input[@id='wucBenefitDetailsCancelNSave_cmdCancelEnabled']"));
-                        base.DoubleClickByJavaScriptExecuter(newSaveProperty);                  
-                        base.PerformMouseClickAction(newSaveProperty);
+                        bool a = base.IsElementPresent(By.CssSelector("input#wucBenefitDetailsCancelNSave_cmdCancelEnabled"),10);
+                        base.WaitForElement(By.CssSelector("input#wucBenefitDetailsCancelNSave_cmdCancelEnabled"),10);
+                        IWebElement newSaveProperty = base.GetWebElementProperties(By.CssSelector("input#wucBenefitDetailsCancelNSave_cmdCancelEnabled"));                                       
+                        base.ClickButtonByCssSelector("input#wucBenefitDetailsCancelNSave_cmdCancelEnabled");
                         break;
                 }
             }

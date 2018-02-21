@@ -74,5 +74,24 @@ namespace MMSG.Pages.UI_Pages.Comet
             Logger.LogMethodExit("Package_payrolldetailsPage", "PackageCreationThirdStep",
             base.IsTakeScreenShotDuringEntryExit);
         }
+
+        public void ClikingOnSaveInEdit()
+        {
+            Logger.LogMethodEntry("Package_payrolldetailsPage", "ClikingOnSaveInEdit",
+          base.IsTakeScreenShotDuringEntryExit);
+            Thread.Sleep(2000);
+            try
+            {
+                base.WaitForElement(By.Id("wucButtons_cmdSaveEnabled"));
+                IWebElement getSaveButton = base.GetWebElementPropertiesById("wucButtons_cmdSaveEnabled");
+                base.PerformMouseClickAction(getSaveButton);
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.HandleException(e);
+            }
+            Logger.LogMethodExit("Package_payrolldetailsPage", "ClikingOnSaveInEdit",
+            base.IsTakeScreenShotDuringEntryExit);
+        }
     }
 }

@@ -396,6 +396,14 @@ namespace MMSG.Pages.UI_Pages.Comet
                         base.ClickByJavaScriptExecutor(adminProperties);
                         break;
 
+                    case "Edit":
+                        base.SwitchToPopup();
+                        string a2 = base.GetPageTitle;
+                        bool a3 = base.IsElementPresent(By.Id("PopUpMenu_cmdMenu2"));
+                        IWebElement editProperties = base.GetWebElementPropertiesById("PopUpMenu_cmdMenu2");
+                        base.ClickByJavaScriptExecutor(editProperties);
+                        break;
+
                 }
             }
             catch (Exception e)
@@ -413,7 +421,7 @@ namespace MMSG.Pages.UI_Pages.Comet
             string titleOfPage = "";
             try
             {
-                base.SwitchToDefaultWindow();
+                Thread.Sleep(2000);               
                 base.SwitchToPopup();
                 titleOfPage = base.GetPageTitle;
                 Thread.Sleep(1000);

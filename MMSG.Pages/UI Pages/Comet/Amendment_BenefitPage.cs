@@ -182,6 +182,7 @@ namespace MMSG.Pages.UI_Pages.Comet
                 IWebElement saveButtonProperty = base.GetWebElementProperties(
                     By.Id(Amendment_BenefitResource.Amendment_BenefitPage_SaveButton_ID_Locator));
                 base.ClickByJavaScriptExecutor(saveButtonProperty);
+                base.CloseBrowserWindow();              
             }
             catch (Exception e)
             {

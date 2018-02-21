@@ -113,11 +113,6 @@ this.ScenarioSetup(scenarioInfo);
  testRunner.When("I enter the Budget Amount as \"10\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 17
  testRunner.When("I enter save Button in Amendments_NewBenefits Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 18
- testRunner.Then("I should be on the Amendment page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 19
- testRunner.Then("I should see the New benefit Name \"Airport Lounge Membership\" in Benefit details " +
-                    "of Amendment page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

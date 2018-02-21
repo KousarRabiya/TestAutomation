@@ -79,6 +79,15 @@ namespace MMSG.Pages.UI_Pages.Comet {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to //table[@id=&apos;ResultsGrid&apos;]/tbody/tr[2]/td[1]/a.
+        /// </summary>
+        internal static string AdminFeesForPackage_Grid_Xpath_Locator {
+            get {
+                return ResourceManager.GetString("AdminFeesForPackage_Grid_Xpath_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to imgItemLookup.
         /// </summary>
         internal static string AdminFeesForPackage_LookUpImg_ID_Locator {
