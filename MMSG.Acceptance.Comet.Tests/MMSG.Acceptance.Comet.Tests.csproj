@@ -89,6 +89,7 @@
     <Compile Include="ProductAcceptanceTestDefinition\CallCentreEnquiryDefinition.cs" />
     <Compile Include="ProductAcceptanceTestDefinition\Employee_personaldetailsDefinition.cs" />
     <Compile Include="ProductAcceptanceTestDefinition\Package_basedetailsDefinition.cs" />
+    <Compile Include="ProductAcceptanceTestDefinition\VerifyBudgetAmountTransactionsDefination.cs" />
     <Compile Include="ProductAcceptanceTestFeatures\ActivateEmployeeFeatures.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -108,6 +109,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Employee_personaldetailsFeature.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ProductAcceptanceTestFeatures\VerifyBudgetAmountTransactionsFeature.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VerifyBudgetAmountTransactionsFeature.feature</DependentUpon>
     </Compile>
     <Compile Include="ProductAcceptanceTestFeatures\Package_basedetailsFeature.feature.cs">
       <AutoGen>True</AutoGen>
@@ -149,6 +155,10 @@
     <None Include="ProductAcceptanceTestFeatures\Employee_personaldetailsFeature.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Employee_personaldetailsFeature.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ProductAcceptanceTestFeatures\VerifyBudgetAmountTransactionsFeature.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>VerifyBudgetAmountTransactionsFeature.feature.cs</LastGenOutput>
     </None>
     <None Include="ProductAcceptanceTestFeatures\Package_basedetailsFeature.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
