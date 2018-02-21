@@ -42,7 +42,7 @@ namespace MMSG.Pages.UI_Pages.Comet
         /// <returns></returns>
         public string SwitchAndGetPageTitle(string pageTitle)
         {
-            Logger.LogMethodEntry("VerifyBudgetAmountTransactionPage", "GetPageTitle",
+            Logger.LogMethodEntry("VerifyBudgetAmountTransactionPage", "SwitchAndGetPageTitle",
                 base.IsTakeScreenShotDuringEntryExit);
             string popupTitle = null;
             try
@@ -56,7 +56,7 @@ namespace MMSG.Pages.UI_Pages.Comet
             {
                 ExceptionHandler.HandleException(e);
             }
-            Logger.LogMethodEntry("VerifyBudgetAmountTransactionPage", "GetPageTitle",
+            Logger.LogMethodEntry("VerifyBudgetAmountTransactionPage", "SwitchAndGetPageTitle",
                 base.IsTakeScreenShotDuringEntryExit);
             return popupTitle;
         }
@@ -85,7 +85,6 @@ namespace MMSG.Pages.UI_Pages.Comet
             try
             {
                 IWebElement getMOLUserName = base.GetWebElementPropertiesById(VerifyBudgetAmountTransactionResource.VerifyBudgetAmountTransactionPage_MOLUserName_XPath_Locator);
-
             }
             catch (Exception e)
             {

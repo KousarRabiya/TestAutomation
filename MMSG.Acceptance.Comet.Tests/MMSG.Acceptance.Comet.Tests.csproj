@@ -95,6 +95,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ActivateEmployeeFeatures.feature</DependentUpon>
     </Compile>
+    <Compile Include="ProductAcceptanceTestFeatures\AddBenefitFeature.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddBenefitFeature.feature</DependentUpon>
+    </Compile>
     <Compile Include="ProductAcceptanceTestFeatures\AmendmentsFeature.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -143,6 +148,10 @@
     <None Include="ProductAcceptanceTestFeatures\ActivateEmployeeFeatures.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ActivateEmployeeFeatures.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ProductAcceptanceTestFeatures\AddBenefitFeature.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AddBenefitFeature.feature.cs</LastGenOutput>
     </None>
     <None Include="ProductAcceptanceTestFeatures\AmendmentsFeature.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

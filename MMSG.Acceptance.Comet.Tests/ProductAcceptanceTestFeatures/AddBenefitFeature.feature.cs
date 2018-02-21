@@ -18,14 +18,14 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestFeatures
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.2.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
-    public partial class VerifyBudgetAmountTransactionsFeatureFeature
+    public partial class AddBenefitFeatureFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
         private Microsoft.VisualStudio.TestTools.UnitTesting.TestContext _testContext;
         
-#line 1 "VerifyBudgetAmountTransactionsFeature.feature"
+#line 1 "AddBenefitFeature.feature"
 #line hidden
         
         public virtual Microsoft.VisualStudio.TestTools.UnitTesting.TestContext TestContext
@@ -44,7 +44,7 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestFeatures
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(null, 0);
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "VerifyBudgetAmountTransactionsFeature", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "AddBenefitFeature", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -59,9 +59,9 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestFeatures
         public virtual void TestInitialize()
         {
             if (((testRunner.FeatureContext != null) 
-                        && (testRunner.FeatureContext.FeatureInfo.Title != "VerifyBudgetAmountTransactionsFeature")))
+                        && (testRunner.FeatureContext.FeatureInfo.Title != "AddBenefitFeature")))
             {
-                global::MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestFeatures.VerifyBudgetAmountTransactionsFeatureFeature.FeatureSetup(null);
+                global::MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestFeatures.AddBenefitFeatureFeature.FeatureSetup(null);
             }
         }
         
@@ -83,23 +83,15 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestFeatures
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Verify Budget amount for employee who is packaging multiple leases with Employer " +
-            "TELSTRA.")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "VerifyBudgetAmountTransactionsFeature")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Add two numbers")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "AddBenefitFeature")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("mytag")]
-        public virtual void VerifyBudgetAmountForEmployeeWhoIsPackagingMultipleLeasesWithEmployerTELSTRA_()
+        public virtual void AddTwoNumbers()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify Budget amount for employee who is packaging multiple leases with Employer " +
-                    "TELSTRA.", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add two numbers", new string[] {
                         "mytag"});
 #line 4
 this.ScenarioSetup(scenarioInfo);
-#line 5
- testRunner.Given("I click on employee number", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 6
- testRunner.When("I Select EAMS option", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 7
- testRunner.Then("I will land on EAMS screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

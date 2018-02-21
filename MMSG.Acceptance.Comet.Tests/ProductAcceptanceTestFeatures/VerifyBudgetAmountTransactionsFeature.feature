@@ -1,4 +1,4 @@
-﻿Feature: Employee_VerifyBudgetAmountTransactionsFeature
+﻿Feature: VerifyBudgetAmountTransactionsFeature
 	
 @mytag
 Scenario: Verify Budget amount for employee who is packaging multiple leases with Employer TELSTRA.
