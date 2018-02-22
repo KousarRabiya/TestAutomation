@@ -75,6 +75,9 @@ namespace MMSG.Pages.UI_Pages.Comet
             base.IsTakeScreenShotDuringEntryExit);
         }
 
+        /// <summary>
+        /// Clicking on he save button in Edit package in Package Enroll ment Details
+        /// </summary>
         public void ClikingOnSaveInEdit()
         {
             Logger.LogMethodEntry("Package_payrolldetailsPage", "ClikingOnSaveInEdit",

@@ -123,6 +123,9 @@
   <data name="AdminFeesForPackage_EffectiveDate_ID_Locator" xml:space="preserve">
     <value>EffectiveDateText</value>
   </data>
+  <data name="AdminFeesForPackage_EffectiveDate_Name_Locator" xml:space="preserve">
+    <value>EffectiveDateText</value>
+  </data>
   <data name="AdminFeesForPackage_Grid_Xpath_Locator" xml:space="preserve">
     <value>//table[@id='ResultsGrid']/tbody/tr[2]/td[1]/a</value>
   </data>

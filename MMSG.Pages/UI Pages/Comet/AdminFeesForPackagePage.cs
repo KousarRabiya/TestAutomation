@@ -52,7 +52,7 @@ namespace MMSG.Pages.UI_Pages.Comet
                 string EffectiveDateText = getDate.Replace(")", "").Trim();
                 base.WaitForElement(By.Name(AdminFeesForPackageResource.AdminFeesForPackage_EffectiveDate_ID_Locator));
                 bool a = base.IsElementPresent((By.Name(AdminFeesForPackageResource.AdminFeesForPackage_EffectiveDate_ID_Locator)));
-                base.FillTextBoxByName("EffectiveDateText", EffectiveDateText);             
+                base.FillTextBoxByName(AdminFeesForPackageResource.AdminFeesForPackage_EffectiveDate_Name_Locator, EffectiveDateText);             
 
             }
             catch (Exception e)
@@ -95,13 +95,16 @@ namespace MMSG.Pages.UI_Pages.Comet
             Logger.LogMethodEntry("AdminFeesForPackagePage", "SelelctTheFeesTypeFromPopUp", base.IsTakeScreenShotDuringEntryExit);
             try
             {
+                // switch to pop up window
                 base.SwitchToPopup();
-               
-                IWebElement ifreamElement = base.GetWebElementProperties(By.TagName(AdminFeesForPackageResource.AdminFeesForPackage_PopUpGrid_IframeTagName_Locator));
+               //switch to fream 
+                IWebElement ifreamElement = base.GetWebElementProperties(By.TagName(AdminFeesForPackageResource.
+                    AdminFeesForPackage_PopUpGrid_IframeTagName_Locator));
                 base.SwitchToIFrameByWebElement(ifreamElement);
                
-                base.WaitForElement(By.XPath(AdminFeesForPackageResource.AdminFeesForPackage_PopUpGrid_Xpath_Locator));
-                bool a2 = base.IsElementPresent(By.XPath(AdminFeesForPackageResource.AdminFeesForPackage_PopUpGrid_Xpath_Locator));
+                //wait for the git to appeare
+                base.WaitForElement(By.XPath(AdminFeesForPackageResource.AdminFeesForPackage_PopUpGrid_Xpath_Locator)); 
+                // click on the Git option              
                 IWebElement feesTypeGrid = base.GetWebElementProperties(By.XPath(AdminFeesForPackageResource.AdminFeesForPackage_PopUpGrid_Xpath_Locator));
                 base.ClickByJavaScriptExecutor(feesTypeGrid);
                 base.SwitchToPopup();

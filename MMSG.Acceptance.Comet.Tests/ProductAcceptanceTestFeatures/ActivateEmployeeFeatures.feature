@@ -13,3 +13,17 @@ When I enter Effective Date in Admin Fees for Package
 When I should Click on the lookup button and select Fees Name from PopUp
 When I click on Add button and Save the Fees
 Then I should be on the "CCEnquiry" page
+
+
+Scenario: Activating the employee
+When I click on "Process Menu" in "CCEnquiry" page
+Then I should be display with "PROCESSES" Pop up in Call Centre Enqiury screen
+When I click on "Review And Activate" option in Pop up
+Then I should Display the Review And Activate Package 
+When I click on Save button in Review and Activate Page
+Then I should be on the "CCEnquiry" page
+Then I should display the package status as Active
+ 
+
+
+

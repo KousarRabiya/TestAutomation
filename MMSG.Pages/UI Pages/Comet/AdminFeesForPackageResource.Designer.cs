@@ -79,6 +79,15 @@ namespace MMSG.Pages.UI_Pages.Comet {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to EffectiveDateText.
+        /// </summary>
+        internal static string AdminFeesForPackage_EffectiveDate_Name_Locator {
+            get {
+                return ResourceManager.GetString("AdminFeesForPackage_EffectiveDate_Name_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to //table[@id=&apos;ResultsGrid&apos;]/tbody/tr[2]/td[1]/a.
         /// </summary>
         internal static string AdminFeesForPackage_Grid_Xpath_Locator {

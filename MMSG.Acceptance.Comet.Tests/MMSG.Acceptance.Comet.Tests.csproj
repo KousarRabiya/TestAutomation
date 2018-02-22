@@ -89,6 +89,7 @@
     <Compile Include="ProductAcceptanceTestDefinition\CallCentreEnquiryDefinition.cs" />
     <Compile Include="ProductAcceptanceTestDefinition\Employee_personaldetailsDefinition.cs" />
     <Compile Include="ProductAcceptanceTestDefinition\Package_basedetailsDefinition.cs" />
+    <Compile Include="ProductAcceptanceTestDefinition\PaymentInstructionDefinition.cs" />
     <Compile Include="ProductAcceptanceTestFeatures\ActivateEmployeeFeatures.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -113,6 +114,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Package_basedetailsFeature.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ProductAcceptanceTestFeatures\PaymentInstructionFeatures.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PaymentInstructionFeatures.feature</DependentUpon>
     </Compile>
     <Compile Include="PropertiesFile\Properties.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -153,6 +159,10 @@
     <None Include="ProductAcceptanceTestFeatures\Package_basedetailsFeature.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Package_basedetailsFeature.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ProductAcceptanceTestFeatures\PaymentInstructionFeatures.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PaymentInstructionFeatures.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

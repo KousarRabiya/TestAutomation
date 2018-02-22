@@ -65,7 +65,7 @@ namespace MMSG.Pages.UI_Pages.Comet
                         bool a = base.IsElementPresent(By.CssSelector("input#wucBenefitDetailsCancelNSave_cmdCancelEnabled"),10);
                         base.WaitForElement(By.CssSelector("input#wucBenefitDetailsCancelNSave_cmdCancelEnabled"),10);
                         IWebElement newSaveProperty = base.GetWebElementProperties(By.CssSelector("input#wucBenefitDetailsCancelNSave_cmdCancelEnabled"));                                       
-                        base.ClickButtonByCssSelector("input#wucBenefitDetailsCancelNSave_cmdCancelEnabled");
+                        base.PerformMouseClickAction(newSaveProperty);
                         break;
                 }
             }

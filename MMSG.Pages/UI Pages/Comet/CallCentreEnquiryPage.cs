@@ -26,7 +26,8 @@ namespace MMSG.Pages.UI_Pages.Comet
         /// <returns>Return logo existance status.</returns>
         public bool GetApplicationLogoExistance()
         {
-            Logger.LogMethodEntry("CallCentreEnquiryPage", "GetApplicationLogoExistance", base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogMethodEntry("CallCentreEnquiryPage", "GetApplicationLogoExistance", 
+                base.IsTakeScreenShotDuringEntryExit);
             bool getApplicationLogoExistance = false;
             try
             {
@@ -37,7 +38,8 @@ namespace MMSG.Pages.UI_Pages.Comet
             {
                 ExceptionHandler.HandleException(e);
             }
-            Logger.LogMethodExit("CallCentreEnquiryPage", "GetApplicationLogoExistance", base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogMethodExit("CallCentreEnquiryPage", "GetApplicationLogoExistance",
+                base.IsTakeScreenShotDuringEntryExit);
             return getApplicationLogoExistance;
         }
 
@@ -89,12 +91,12 @@ namespace MMSG.Pages.UI_Pages.Comet
             {
                 case "EmployeeNumber":
                     base.WaitForElement(By.Id("CCEmployeeSearch_txtEmployeeNumber"));
-                    base.FillTextBoxByXPath("CCEmployeeSearch_txtEmployeeNumber", employeeNumber);
+                    base.FillTextBoxById("CCEmployeeSearch_txtEmployeeNumber", employeeNumber);
                     break;
 
                 case "EmployerCode":
                     base.WaitForElement(By.Id("CCEmployeeSearch_txtEmployerCode"));
-                    base.FillTextBoxByXPath("CCEmployeeSearch_txtEmployerCode", employerCode);
+                    base.FillTextBoxById("CCEmployeeSearch_txtEmployerCode", employerCode);
                     break;
 
                 case "Surname":
@@ -177,7 +179,6 @@ namespace MMSG.Pages.UI_Pages.Comet
                     case "New":
                         ClickNewButton(pageName);
                         break;
-
                     case "Create New Package":
                         ClickCreateNewPackageLink(pageName);
                         break;
@@ -187,6 +188,10 @@ namespace MMSG.Pages.UI_Pages.Comet
                     case "Process Menu":
                         ClickOnProcessMenu();
                         break;
+                    case "Benefit":
+                        ClickOnBenefit();
+                        break;
+
                 }
             }
             catch (Exception e)
@@ -220,6 +225,25 @@ namespace MMSG.Pages.UI_Pages.Comet
         }
 
         /// <summary>
+        /// Click On The Benefit
+        /// </summary>
+        public void ClickOnBenefit()
+        {
+            Logger.LogMethodEntry("CallCentreEnquiryPage", "ClickOnBenefit",
+              base.IsTakeScreenShotDuringEntryExit);
+            try
+            {
+                base.ClickButtonByLinkText("Benefits");
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.HandleException(e);
+            }
+            Logger.LogMethodExit("CallCentreEnquiryPage", "ClickOnBenefit",
+              base.IsTakeScreenShotDuringEntryExit);
+        }
+
+        /// <summary>
         /// Click new button in Call Centre Enquiry page
         /// </summary>
         public void ClickNewButton(string pageName)
@@ -238,7 +262,6 @@ namespace MMSG.Pages.UI_Pages.Comet
             }
             Logger.LogMethodExit("CallCentreEnquiryPage", "ClickNewButton", base.IsTakeScreenShotDuringEntryExit);
         }
-
 
         /// <summary>
         /// Click new button in Call Centre Enquiry page
@@ -280,7 +303,7 @@ namespace MMSG.Pages.UI_Pages.Comet
             try
             {
                 base.WaitForElement(By.Id("wucPackageSummary_tdEmployeeNo"));
-                // Employee Nuber from screen
+                // Employee Number from screen
                 string employeeNo = base.GetElementInnerTextById("wucPackageSummary_tdEmployeeNo");
                 this.StoreUserDetails(userType, employeeNo);
                 Package package = Package.Get(packageType);
@@ -309,10 +332,22 @@ namespace MMSG.Pages.UI_Pages.Comet
         /// Click new button in Call Amendment page
         /// </summary>
         public void ClickOnTheAmendmentOptionInTreeView()
-        {           
-            base.WaitForElement(By.LinkText("Amendments"));
-            IWebElement amendmentProperty = base.GetWebElementProperties(By.LinkText("Amendments"));
-            base.ClickByJavaScriptExecutor(amendmentProperty);
+        {
+            Logger.LogMethodEntry("CallCentreEnquiryPage", "ClickOnTheAmendmentOptionInTreeView",
+               base.IsTakeScreenShotDuringEntryExit);
+         
+            try
+            {
+                base.WaitForElement(By.LinkText("Amendments"));
+                IWebElement amendmentProperty = base.GetWebElementProperties(By.LinkText("Amendments"));
+                base.ClickByJavaScriptExecutor(amendmentProperty);
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.HandleException(e);
+            }
+            Logger.LogMethodExit("CallCentreEnquiryPage", "ClickOnTheAmendmentOptionInTreeView",
+                base.IsTakeScreenShotDuringEntryExit);
         }
 
 
@@ -390,20 +425,19 @@ namespace MMSG.Pages.UI_Pages.Comet
                 {
                     case "Admin Fees":
                         base.SwitchToPopup();
-                        string a1 = base.GetPageTitle;
-                        bool a = base.IsElementPresent(By.Id("PopUpMenu_cmdMenu10"));
                         IWebElement adminProperties = base.GetWebElementPropertiesById("PopUpMenu_cmdMenu10");
                         base.ClickByJavaScriptExecutor(adminProperties);
                         break;
-
                     case "Edit":
                         base.SwitchToPopup();
-                        string a2 = base.GetPageTitle;
-                        bool a3 = base.IsElementPresent(By.Id("PopUpMenu_cmdMenu2"));
                         IWebElement editProperties = base.GetWebElementPropertiesById("PopUpMenu_cmdMenu2");
                         base.ClickByJavaScriptExecutor(editProperties);
                         break;
-
+                    case "Review And Activate":
+                        base.SwitchToPopup();
+                        IWebElement reviewAndActivateProperties = base.GetWebElementPropertiesById("PopUpMenu_cmdMenu5");
+                        base.ClickByJavaScriptExecutor(reviewAndActivateProperties);
+                        break;
                 }
             }
             catch (Exception e)
@@ -414,6 +448,10 @@ namespace MMSG.Pages.UI_Pages.Comet
                 base.IsTakeScreenShotDuringEntryExit);
         }
 
+        /// <summary>
+        /// Getting the title of Popup menu Process Menu
+        /// </summary>
+        /// <returns></returns>
         public string GetTheTitleOfpopUp()
         {
             Logger.LogMethodEntry("CallCentreEnquiryPage", "GetTheTitleOfpopUp",
@@ -421,7 +459,8 @@ namespace MMSG.Pages.UI_Pages.Comet
             string titleOfPage = "";
             try
             {
-                Thread.Sleep(2000);               
+                Thread.Sleep(1000);                
+                base.WaitUntilPopUpLoads("PROCESSES");
                 base.SwitchToPopup();
                 titleOfPage = base.GetPageTitle;
                 Thread.Sleep(1000);
@@ -435,6 +474,10 @@ namespace MMSG.Pages.UI_Pages.Comet
             return titleOfPage;
         }
 
+        /// <summary>
+        /// Enter the Employee Number 
+        /// </summary>
+        /// <param name="employeeNumner">Employee number</param>
         public void EnterTheEmployeeNumberAndSearch(string employeeNumner)
         {
             Logger.LogMethodEntry("CallCentreEnquiryPage", "EnterTheEmployeeNumberAndSearch",
@@ -443,7 +486,7 @@ namespace MMSG.Pages.UI_Pages.Comet
             try
             {
                 base.WaitForElement(By.Id("CCEmployeeSearch_txtEmployeeNumber"));
-                base.FillTextBoxByXPath("CCEmployeeSearch_txtEmployeeNumber", employeeNumner);
+                base.FillTextBoxById("CCEmployeeSearch_txtEmployeeNumber", employeeNumner);
                 base.WaitForElement(By.Id("CCEmployeeSearch_cmdSearch"));
                 // Click button by ID
                 IWebElement getSearchButton = base.GetWebElementPropertiesById("CCEmployeeSearch_cmdSearch");
@@ -456,5 +499,76 @@ namespace MMSG.Pages.UI_Pages.Comet
             Logger.LogMethodExit("CallCentreEnquiryPage", "EnterTheEmployeeNumberAndSearch",
                 base.IsTakeScreenShotDuringEntryExit);
         }
+
+        /// <summary>
+        /// Verify the package is active
+        /// </summary>
+        /// <returns></returns>
+        public bool VerifyThePackageStatusAsActive()
+        {
+            Logger.LogMethodEntry("CallCentreEnquiryPage", "VerifyThePackageStatusAsActive",
+                         base.IsTakeScreenShotDuringEntryExit);
+            try
+            {               
+                string employeeNumebrWithPackage = base.GetElementInnerTextById("LeftMenuTreet2");
+                var result = employeeNumebrWithPackage.Substring(employeeNumebrWithPackage.Length - 3);
+                string text = employeeNumebrWithPackage.Remove(employeeNumebrWithPackage.Length - 7);
+                // compare the value with screen value is status is active
+                if (result == "(A)")
+                {
+                    return true;
+                }
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.HandleException(e);
+            }
+            Logger.LogMethodExit("CallCentreEnquiryPage", "VerifyThePackageStatusAsActive",
+                base.IsTakeScreenShotDuringEntryExit);
+            return false;
+        }
+       
+        /// <summary>
+        /// Verify the page BenefitGrid has been appeared
+        /// </summary>
+        /// <returns></returns>
+        public bool VerifyTheBenefitGridHasAppeared()
+        {
+            Logger.LogMethodEntry("CallCentreEnquiryPage", "VerifyThePackageStatusAsActive",
+                                    base.IsTakeScreenShotDuringEntryExit);
+            try
+            {
+                IWebElement gridElemnet = base.GetWebElementProperties(By.TagName("iframe"));
+                base.SwitchToIFrameByWebElement(gridElemnet);
+                return base.IsElementPresent(By.Id("grdBenefits"));
+             }
+            catch (Exception e)
+            {
+                ExceptionHandler.HandleException(e);
+            }
+            Logger.LogMethodExit("CallCentreEnquiryPage", "VerifyThePackageStatusAsActive",
+              base.IsTakeScreenShotDuringEntryExit);
+            return false;
+        }
+
+        /// <summary>
+        /// Clicking on the Benefit Grid 
+        /// </summary>
+        public void ClickingOnTheBenefitOfGrid()
+        {
+            Logger.LogMethodEntry("CallCentreEnquiryPage", "ClickingOnTheBenefitOfGrid",
+                                                base.IsTakeScreenShotDuringEntryExit);
+            try
+            {
+                IWebElement benifitType = base.GetWebElementProperties(By.TagName("iframe"));
+                base.SwitchToIFrameByWebElement(benifitType);
+            }
+            catch (Exception e)
+            {
+                ExceptionHandler.HandleException(e);
+            }
+            Logger.LogMethodExit("CallCentreEnquiryPage", "ClickingOnTheBenefitOfGrid",
+              base.IsTakeScreenShotDuringEntryExit);
+        } 
     }
-}
+    }

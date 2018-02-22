@@ -54,7 +54,7 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
         {
             Logger.LogMethodEntry("ActivateEmployeeDefinition", "VerifyThePageHeader",
              base.IsTakeScreenShotDuringEntryExit);
-            Logger.LogAssertion("ValidateTheUserDetails", ScenarioContext.Current.ScenarioInfo.Title, () =>
+            Logger.LogAssertion("VerifyThePageHeader", ScenarioContext.Current.ScenarioInfo.Title, () =>
             Assert.AreEqual(pageTitle, new AdminFeesForPackagePage().VerifyPageLandedOnAdminFeesForPackagePackage()));
             Logger.LogMethodExit("AmendmentsDefinition", "VerifyThePageHeader",
            base.IsTakeScreenShotDuringEntryExit);
@@ -96,10 +96,49 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
             Logger.LogMethodEntry("ActivateEmployeeDefinition", "ClickingOnLookupImgAndsectingTheFees",
               base.IsTakeScreenShotDuringEntryExit);
             new AdminFeesForPackagePage().ClickOnAddAndSaveTheFees();
-            Logger.LogMethodExit("AmendmentsDefinition", "ClickingOnLookupImgAndsectingTheFees",
+            Logger.LogMethodExit("ActivateEmployeeDefinition", "ClickingOnLookupImgAndsectingTheFees",
         base.IsTakeScreenShotDuringEntryExit);
         }
 
+        /// <summary>
+        /// Verify the page landed on the review and Activate Page 
+        /// </summary>
+        [Then(@"I should Display the Review And Activate Package")]
+        public void VerifyThePageLandedOnTheReviewAndActivatePage()
+        {
+            Logger.LogMethodEntry("ActivateEmployeeDefinition", "VerifyThePageLandedOnTheReviewAndActivatePage",
+             base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogAssertion("VerifyThePageHeader", ScenarioContext.Current.ScenarioInfo.Title, () =>
+           Assert.IsTrue(new ReviewAndActivatePage().VerifyThePageLandedOnReviewAndActivatePage()));
+            Logger.LogMethodExit("ActivateEmployeeDefinition", "VerifyThePageLandedOnTheReviewAndActivatePage",
+             base.IsTakeScreenShotDuringEntryExit);
+        }
+
+        /// <summary>
+        /// Clicking on the Save button in Review and Activate button
+        /// </summary>
+        [When(@"I click on Save button in Review and Activate Page")]
+        public void ClickingOnTheSaveButton()
+        {
+            Logger.LogMethodEntry("ActivateEmployeeDefinition", "ClickingOnTheSaveButton",
+              base.IsTakeScreenShotDuringEntryExit);
+            new ReviewAndActivatePage().ClickOnSaveButtonOnReviwAndActivatePage();
+            Logger.LogMethodExit("ActivateEmployeeDefinition", "ClickingOnTheSaveButton",
+             base.IsTakeScreenShotDuringEntryExit);
+        }
+
+        /// <summary>
+        /// Verify the status of Employee
+        /// </summary>
+        [Then(@"I should display the package status as Active")]
+        public void VerifytheStatusOfThePage()
+        {
+            Logger.LogMethodEntry("ActivateEmployeeDefinition", "VerifytheStatusOfThePage",
+              base.IsTakeScreenShotDuringEntryExit);
+            new CallCentreEnquiryPage().VerifyThePackageStatusAsActive();
+            Logger.LogMethodExit("ActivateEmployeeDefinition", "VerifytheStatusOfThePage",
+             base.IsTakeScreenShotDuringEntryExit);
+        }
 
     }
 }

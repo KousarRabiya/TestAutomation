@@ -27,9 +27,11 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
         [When(@"I enter ""(.*)"" of ""(.*)"" in the search textbox from ""(.*)""")]
         public void SearchUserDetails(string optionName, User.UserTypeEnum userType, string dataFetchType)
         {
-            Logger.LogMethodEntry("CallCentreEnquiryDefinition", "SearchUserDetails", base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogMethodEntry("CallCentreEnquiryDefinition", "SearchUserDetails", 
+                base.IsTakeScreenShotDuringEntryExit);
             new CallCentreEnquiryPage().UserSearch(optionName, userType, dataFetchType);
-            Logger.LogMethodExit("CallCentreEnquiryDefinition", "SearchUserDetails", base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogMethodExit("CallCentreEnquiryDefinition", "SearchUserDetails",
+                base.IsTakeScreenShotDuringEntryExit);
         }
 
         /// <summary>
@@ -39,9 +41,11 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
         public void ClickSearchButton()
         {
             //Click search button
-            Logger.LogMethodEntry("CallCentreEnquiryDefinition", "ClickSearchButton", base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogMethodEntry("CallCentreEnquiryDefinition", "ClickSearchButton",
+                base.IsTakeScreenShotDuringEntryExit);
             new CallCentreEnquiryPage().ClickSearchButton();
-            Logger.LogMethodExit("CallCentreEnquiryDefinition", "ClickSearchButton", base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogMethodExit("CallCentreEnquiryDefinition", "ClickSearchButton", 
+                base.IsTakeScreenShotDuringEntryExit);
         }
 
 
@@ -67,7 +71,8 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
         [Then(@"I should be on the ""(.*)"" page")]
         public void ValidatePageName(string pageName)
         {
-            Logger.LogMethodEntry("CallCentreEnquiryDefinition", "ValidatePageName", base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogMethodEntry("CallCentreEnquiryDefinition", "ValidatePageName", 
+                base.IsTakeScreenShotDuringEntryExit);
             string url = AutomationConfigurationManager.CourseSpaceUrlRoot;
 
             //Get Domain name from the URL
@@ -78,7 +83,8 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
 
             Logger.LogAssertion("ValidateTheUserDetails", ScenarioContext.Current.ScenarioInfo.Title, () =>
             Assert.AreEqual(expectedPageTitle, new Employee_personaldetailsPage().GetCommetNewEmoplyeePageTitle()));
-            Logger.LogMethodExit("CallCentreEnquiryDefinition", "ValidatePageName", base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogMethodExit("CallCentreEnquiryDefinition", "ValidatePageName",
+                base.IsTakeScreenShotDuringEntryExit);
         }
 
         /// <summary>
@@ -89,7 +95,8 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
         [When(@"I click on ""(.*)"" in ""(.*)"" page")]
         public void ClickOption(string optionName, string pageName)
         {
-            Logger.LogMethodEntry("CallCentreEnquiryDefinition", "ClickOption", base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogMethodEntry("CallCentreEnquiryDefinition", "ClickOption",
+                base.IsTakeScreenShotDuringEntryExit);
             string url = AutomationConfigurationManager.CourseSpaceUrlRoot;
 
             //Get Domain name from the URL
@@ -100,7 +107,8 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
 
             new CallCentreEnquiryPage().ClickOptionOnCCEnquiryPage(optionName, PageTitle);
 
-            Logger.LogMethodExit("CallCentreEnquiryDefinition", "ClickOption", base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogMethodExit("CallCentreEnquiryDefinition", "ClickOption", 
+                base.IsTakeScreenShotDuringEntryExit);
         }
 
 
@@ -111,10 +119,12 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
         [Then(@"I should be displayed with ""(.*)"" for ""(.*)""")]
         public void ValidateDisplayOfPackage(Package.PackageTypeEnum packageTypeEnum, User.UserTypeEnum userType)
         {
-            Logger.LogMethodEntry("CallCentreEnquiryDefinition", "ValidateDisplayOfPackage", base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogMethodEntry("CallCentreEnquiryDefinition", "ValidateDisplayOfPackage",
+                base.IsTakeScreenShotDuringEntryExit);
             Logger.LogAssertion("ValidateTheUserDetails", ScenarioContext.Current.ScenarioInfo.Title, () =>
            Assert.IsTrue(new CallCentreEnquiryPage().VeriFyPackageName(packageTypeEnum, userType)));
-            Logger.LogMethodExit("CallCentreEnquiryDefinition", "ValidateDisplayOfPackage", base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogMethodExit("CallCentreEnquiryDefinition", "ValidateDisplayOfPackage",
+                base.IsTakeScreenShotDuringEntryExit);
 
         }
 
@@ -125,9 +135,11 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
         [When(@"I enter Employee number as ""(.*)"" and search in Call centre Enquiry")]
         public void EnterIngTheEmployeeValueAndSearchtheEmployee(string employeeNo)
         {
-            Logger.LogMethodEntry("CallCentreEnquiryDefinition", "EnterIngTheEmployeeValueAndSearchtheEmployee", base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogMethodEntry("CallCentreEnquiryDefinition", "EnterIngTheEmployeeValueAndSearchtheEmployee", 
+                base.IsTakeScreenShotDuringEntryExit);
             new CallCentreEnquiryPage().EnterTheEmployeeNumberAndSearch(employeeNo);
-            Logger.LogMethodExit("CallCentreEnquiryDefinition", "EnterIngTheEmployeeValueAndSearchtheEmployee", base.IsTakeScreenShotDuringEntryExit);
+            Logger.LogMethodExit("CallCentreEnquiryDefinition", "EnterIngTheEmployeeValueAndSearchtheEmployee",
+                base.IsTakeScreenShotDuringEntryExit);
         }
 
 
