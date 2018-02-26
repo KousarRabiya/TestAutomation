@@ -106,6 +106,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Package_payrolldetailsResource.resx</DependentUpon>
     </Compile>
+    <Compile Include="UI Pages\Comet\ReviewActivatePage.cs" />
+    <Compile Include="UI Pages\Comet\ReviewActivateResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReviewActivateResource.resx</DependentUpon>
+    </Compile>
     <Compile Include="UI Pages\Comet\VerifyBudgetAmountTransactionPage.cs" />
     <Compile Include="UI Pages\Comet\VerifyBudgetAmountTransactionResource.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -198,6 +204,10 @@
     <EmbeddedResource Include="UI Pages\Comet\Package_payrolldetailsResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Package_payrolldetailsResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\ReviewActivateResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ReviewActivateResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UI Pages\Comet\VerifyBudgetAmountTransactionResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>

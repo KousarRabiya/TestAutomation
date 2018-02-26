@@ -109,7 +109,7 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
             Logger.LogMethodEntry("ActivateEmployeeDefinition", "VerifyThePageLandedOnTheReviewAndActivatePage",
              base.IsTakeScreenShotDuringEntryExit);
             Logger.LogAssertion("VerifyThePageHeader", ScenarioContext.Current.ScenarioInfo.Title, () =>
-           Assert.IsTrue(new ReviewAndActivatePage().VerifyThePageLandedOnReviewAndActivatePage()));
+           Assert.IsTrue(new ReviewActivatePage().VerifyThePageLandedOnReviewAndActivatePage()));
             Logger.LogMethodExit("ActivateEmployeeDefinition", "VerifyThePageLandedOnTheReviewAndActivatePage",
              base.IsTakeScreenShotDuringEntryExit);
         }
@@ -122,7 +122,7 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
         {
             Logger.LogMethodEntry("ActivateEmployeeDefinition", "ClickingOnTheSaveButton",
               base.IsTakeScreenShotDuringEntryExit);
-            new ReviewAndActivatePage().ClickOnSaveButtonOnReviwAndActivatePage();
+            new ReviewActivatePage().ClickOnSaveButtonOnReviwAndActivatePage();
             Logger.LogMethodExit("ActivateEmployeeDefinition", "ClickingOnTheSaveButton",
              base.IsTakeScreenShotDuringEntryExit);
         }
