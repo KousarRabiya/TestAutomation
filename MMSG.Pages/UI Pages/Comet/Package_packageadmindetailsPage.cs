@@ -47,17 +47,21 @@ namespace MMSG.Pages.UI_Pages.Comet
                     Package_packageadmindetailsPage_NewPackage_EntertainmentCap_Textbox_ID, getEntertainmentCap);
 
 
-                bool getOptionStatus = base.IsElementPresent(By.XPath(".//*[@id='divMenuddmFinancialAdvisor']/table/tbody/tr[3]/td[1]"),10);
+                bool getOptionStatus = base.IsElementPresent(By.XPath(Package_packageadmindetailsResource.
+                    Package_packageadmindetailsPage_NewPackage_FinancialAdvisorTable_Textbox_Xpath),10);
                 if (getOptionStatus == false)
                 {
                     // Clicking on the FinancialAdvisor Tex Box
-                    base.WaitForElement(By.CssSelector("tr#ddmFinancialAdvisor_trMain > td > input"));
-                    IWebElement getFinancialAdvisor = base.GetWebElementPropertiesByCssSelector("tr#ddmFinancialAdvisor_trMain > td > input");
+                    base.WaitForElement(By.CssSelector(Package_packageadmindetailsResource.
+                        Package_packageadmindetailsPage_NewPackage_FinancialAdvisorTable_Textbox_CssSelelctor));
+                    IWebElement getFinancialAdvisor = base.GetWebElementPropertiesByCssSelector(Package_packageadmindetailsResource.
+                        Package_packageadmindetailsPage_NewPackage_FinancialAdvisorTable_Textbox_CssSelelctor);
                     base.ClickByJavaScriptExecutor(getFinancialAdvisor);
 
                     // Clicking on the DropDown of FinancialAdvisor
                     IWebElement getFinancialAdvisioOption = base.GetWebElementPropertiesByXPath
-                        (".//*[@id='divMenuddmFinancialAdvisor']/table/tbody/tr[3]/td[1]");
+                        (Package_packageadmindetailsResource.
+                    Package_packageadmindetailsPage_NewPackage_FinancialAdvisorTable_Textbox_Xpath);
                     base.ClickByJavaScriptExecutor(getFinancialAdvisioOption);
                     Thread.Sleep(3000);
                 }
@@ -65,7 +69,8 @@ namespace MMSG.Pages.UI_Pages.Comet
                 {
                     // Clicking on the DropDown of FinancialAdvisor
                     IWebElement getFinancialAdvisioOption = base.GetWebElementPropertiesByXPath
-                        (".//*[@id='divMenuddmFinancialAdvisor']/table/tbody/tr[3]/td[1]");
+                        (Package_packageadmindetailsResource.
+                    Package_packageadmindetailsPage_NewPackage_FinancialAdvisorTable_Textbox_Xpath);
                     base.ClickByJavaScriptExecutor(getFinancialAdvisioOption);
                     Thread.Sleep(3000);
                 }

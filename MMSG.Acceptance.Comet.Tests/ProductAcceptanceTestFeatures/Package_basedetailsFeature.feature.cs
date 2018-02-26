@@ -44,8 +44,8 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestFeatures
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(null, 0);
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Package_basedetailsFeature", "\tIn order to avoid silly mistakes\r\n\tAs a math idiot\r\n\tI want to be told the sum o" +
-                    "f two numbers", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Package_basedetailsFeature", "\t\tCreating the package to the newly created employee and package related test cas" +
+                    "es are handled. ", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -91,13 +91,13 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestFeatures
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create new package for COMET user", new string[] {
                         "mytag"});
-#line 7
-this.ScenarioSetup(scenarioInfo);
-#line 8
- testRunner.When("I click on \"Create New Package\" in \"CCEnquiry\" page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 9
- testRunner.And("I enter new \"NewPHCNPackage\" package details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+this.ScenarioSetup(scenarioInfo);
 #line 10
+ testRunner.When("I click on \"Create New Package\" in \"CCEnquiry\" page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 11
+ testRunner.And("I enter new \"NewPHCNPackage\" package details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 12
  testRunner.Then("I should be displayed with \"NewPHCNPackage\" for \"NewCOMETUser\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -109,25 +109,25 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void NavigateToThePacakageEditPageAndSaveTheDetails()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate to the Pacakage Edit page and Save the details", ((string[])(null)));
-#line 12
-this.ScenarioSetup(scenarioInfo);
-#line 13
-testRunner.When("I click on \"Process Menu\" in \"CCEnquiry\" page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 14
-testRunner.Then("I should be display with \"PROCESSES\" Pop up in Call Centre Enqiury screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 15
-testRunner.When("I click on \"Edit\" option in Pop up", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 16
-testRunner.Then("I should display \"Edit Package\" Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 17
-testRunner.When("I change \"Email\" with  \"testAutomation@mmsg.com.au\" in Edit package Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 18
-testRunner.When("I click on the Next button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 19
-testRunner.When("I click on the Next button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+this.ScenarioSetup(scenarioInfo);
 #line 20
-testRunner.When("I click on the Save Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.When("I click on \"Process Menu\" in \"CCEnquiry\" page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 21
+testRunner.Then("I should be display with \"PROCESSES\" Pop up in Call Centre Enqiury screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 22
+testRunner.When("I click on \"Edit\" option in Pop up", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 23
+testRunner.Then("I should display \"Edit Package\" Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 24
+testRunner.When("I change \"Email\" with  \"testAutomation@mmsg.com.au\" in Edit package Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 25
+testRunner.When("I click on the Next button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 26
+testRunner.When("I click on the Next button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 27
+testRunner.When("I click on the Save Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 28
 testRunner.Then("I should be on the \"CCEnquiry\" page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

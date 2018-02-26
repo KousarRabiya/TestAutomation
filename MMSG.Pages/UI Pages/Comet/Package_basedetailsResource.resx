@@ -135,11 +135,23 @@
   <data name="Package_basedetailsPage_NewPackage_NextButton_ID" xml:space="preserve">
     <value>wucButtons_cmdNextEnabled</value>
   </data>
+  <data name="Package_basedetailsPage_NewPackage_NextButton_Xpath" xml:space="preserve">
+    <value>//tr[@class='BodyColor']/td[3]/input[3]</value>
+  </data>
   <data name="Package_basedetailsPage_NewPackage_OfferingTextbox_ID" xml:space="preserve">
     <value>ddmEmployerOfferingID_txtDisplay</value>
   </data>
   <data name="Package_basedetailsPage_NewPackage_OfferingTextbox_Text" xml:space="preserve">
     <value>Peninsula Health</value>
+  </data>
+  <data name="Package_basedetailsPage_NewPackage_OffreingImage_Dropdown_CssSelelctor" xml:space="preserve">
+    <value>tr#ddmEmployerOfferingID_trMain &gt; td &gt; input</value>
+  </data>
+  <data name="Package_basedetailsPage_NewPackage_OffreingImage_Dropdown_XPath" xml:space="preserve">
+    <value>.//*[@id='ddmEmployerOfferingID_trMain']/td[2]/img</value>
+  </data>
+  <data name="Package_basedetailsPage_NewPackage_OffreingTable_Dropdown_XPath" xml:space="preserve">
+    <value>.//*[@id='divMenuddmEmployerOfferingID']/table/tbody/tr[2]/td[1]</value>
   </data>
   <data name="Package_basedetailsPage_NewPackage_SearchEmployer_EmployeerLink_Xpath" xml:space="preserve">
     <value>//table [@id='ResultsGrid']/tbody/tr[2]/td[1]/a</value>

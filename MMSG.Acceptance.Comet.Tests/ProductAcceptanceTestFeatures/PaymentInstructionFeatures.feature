@@ -1,7 +1,11 @@
 ﻿Feature: PaymentInstructionFeatures
-	
+		Payment instruction is be created to the Benifit by adding the Payee type 
 
 @mytag
+#Purpose:Creating the Package to new employee
+#Testcase ID:86086
+#Product:Comet
+#UserStory: Add a package to the employee
 Scenario: Create Payment Instruction to the benefit
 Given  I access application URL as "COMETUser"
 Then I should be displayed with Comet logo

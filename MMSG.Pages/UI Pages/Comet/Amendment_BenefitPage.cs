@@ -1,4 +1,5 @@
 ﻿using MMSG.Automation;
+using MMSG.Automation.DataTransferObjects;
 using MMSG.Automation.Exceptions;
 using OpenQA.Selenium;
 using System;
@@ -55,15 +56,20 @@ namespace MMSG.Pages.UI_Pages.Comet
         }
 
         /// <summary>
-        /// Select benefit dropdown
+        /// Select benifit from dropdown
         /// </summary>
-        /// <param name="benefitName">This is benefit name.</param>
-        public void SelectTheBenefitDropDown(string benefitName)
+        /// <param name="benifitType">This is Benefit type.</param>
+        public void SelectTheBenefitDropDown(Benefit.BenefitTypeEnum benifitType)
         {
             Logger.LogMethodEntry("Amendment_BenefitPage", "SelectTheBenefitDropDown",
               base.IsTakeScreenShotDuringEntryExit);
             try
             {
+                // Get the benefit name from in memory
+                Benefit benefit = Benefit.Get(benifitType);
+                string benefitName = benefit.Benefit1.ToString();
+
+                // Wait and select benefit type from dropdown
                 base.WaitForElement(By.Id("ddlBenefits_0"));               
                base.SelectDropDownValueThroughTextById("ddlBenefits_0", benefitName);
             }
@@ -71,7 +77,7 @@ namespace MMSG.Pages.UI_Pages.Comet
             {
                 ExceptionHandler.HandleException(e);
             }           
-            Logger.LogMethodEntry("Amendment_BenefitPage", "VerifyPageLandedOnAmendmentBenefitPage",
+            Logger.LogMethodEntry("Amendment_BenefitPage", "SelectTheBenefitDropDown",
                  base.IsTakeScreenShotDuringEntryExit);
         }
 
@@ -84,19 +90,23 @@ namespace MMSG.Pages.UI_Pages.Comet
               base.IsTakeScreenShotDuringEntryExit);
             try
             {
+                // geting the effective from the screen
                 string getDateText = base.GetInnerTextAttributeValueByXPath(
-                    Employee_personaldetailsResource.EmployeepersonaldetailsPage_Title_EffectiveDate_Xpath);
+                Employee_personaldetailsResource.EmployeepersonaldetailsPage__EffectiveDate_Xpath);
                 string getDate = getDateText.Substring(17);
                 string effectiveDateText = getDate.Replace(")", "").Trim();
-                base.WaitForElement(By.Id("txtActivationDate_0"));
-                base.ClearTextById("txtActivationDate_0");
-                base.FillTextBoxById("txtActivationDate_0", effectiveDateText);
+                // waiting for the Element
+                base.WaitForElement(By.Id(Amendment_BenefitResource.Amendment_BenefitPage_ActivationDateTextBox_ID_Locator));
+                // clearing the text box 
+                base.ClearTextById(Amendment_BenefitResource.Amendment_BenefitPage_ActivationDateTextBox_ID_Locator);
+                // entering the Effective date in text box
+                base.FillTextBoxById(Amendment_BenefitResource.Amendment_BenefitPage_ActivationDateTextBox_ID_Locator, effectiveDateText);
             }
             catch (Exception e)
             {
                 ExceptionHandler.HandleException(e);
             }
-            Logger.LogMethodEntry("Amendment_BenefitPage", "VerifyPageLandedOnAmendmentBenefitPage",
+            Logger.LogMethodEntry("Amendment_BenefitPage", "EffectiveDate",
                 base.IsTakeScreenShotDuringEntryExit);
         }
 
@@ -109,6 +119,7 @@ namespace MMSG.Pages.UI_Pages.Comet
              base.IsTakeScreenShotDuringEntryExit);
             try
             {
+                // waiting for the Next date drop 
                 base.WaitForElement(By.Id(Amendment_BenefitResource.
                     Amendment_BenefitPage_NextPayDateDropDown_ID_Locator));
                 base.SelectDropDownValueThroughIndexById(Amendment_BenefitResource.
@@ -125,13 +136,16 @@ namespace MMSG.Pages.UI_Pages.Comet
         /// <summary>
         /// Selecting the Budget caluction menthod 
         /// </summary>
-        /// <param name="payDateType"></param>
-        public void BudgetCalculationMethod(string payDateType)
+        /// <param name="benefitType">This is benefit type enum.</param>
+        public void BudgetCalculationMethod(Benefit.BenefitTypeEnum benefitType)
         {
             Logger.LogMethodEntry("Amendment_BenefitPage", "BudgetCalculationMethod",
              base.IsTakeScreenShotDuringEntryExit);
             try
             {
+                //Get the BudgetCalculationMethod type from inmemory
+                Benefit benefit = Benefit.Get(benefitType);
+                string payDateType = benefit.BudgetCalculationMethod.ToString();
                 base.WaitForElement(By.Id(Amendment_BenefitResource.
                     Amendment_BenefitPage_BudgetCalculationMenthodDropDown_ID_Locator));
                 base.SelectDropDownValueThroughTextById(Amendment_BenefitResource.
@@ -149,12 +163,16 @@ namespace MMSG.Pages.UI_Pages.Comet
         /// Entering the budget amount in the text box
         /// </summary>
         /// <param name="BudgetAmount">Budget Amount</param>
-        public void BudgetAmount(string BudgetAmount)
+        public void BudgetAmount(Benefit.BenefitTypeEnum benefitType)
         {
             Logger.LogMethodEntry("Amendment_BenefitPage", "BudgetAmount",
              base.IsTakeScreenShotDuringEntryExit);
             try
             {
+                // Get the BudgetAmount from inmemory
+                Benefit benefit = Benefit.Get(benefitType);
+                string BudgetAmount = benefit.BudgetAmount.ToString();
+                // Clear Budget Amount text box an fill the Budget Amount
                 base.ClearTextById(Amendment_BenefitResource.
                     Amendment_BenefitPage_BudgetAmountTextBox_ID_Locator);
                 base.FillTextBoxById(Amendment_BenefitResource.

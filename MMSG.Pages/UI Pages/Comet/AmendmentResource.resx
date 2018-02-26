@@ -120,8 +120,14 @@
   <data name="AmendmentPage_BenefitDetailsTableRow_Xpath_Locator" xml:space="preserve">
     <value>//table[@id='grdBenefitDetail']/tbody/tr</value>
   </data>
+  <data name="AmendmentPage_CancelButton_CssSelelctor_Locator" xml:space="preserve">
+    <value>input#wucBenefitDetailsCancelNSave_cmdCancelEnabled</value>
+  </data>
   <data name="AmendmentPage_CancelButton_ID_Locator" xml:space="preserve">
     <value>wucBenefitDetailsCancelNSave_cmdCancelEnabled</value>
+  </data>
+  <data name="AmendmentPage_NewButton_CsSelelctor_Locator" xml:space="preserve">
+    <value>input#btnNew</value>
   </data>
   <data name="AmendmentPage_NewButton_Id_Locator" xml:space="preserve">
     <value>btnNew</value>

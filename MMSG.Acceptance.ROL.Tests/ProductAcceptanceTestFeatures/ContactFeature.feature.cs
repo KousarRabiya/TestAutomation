@@ -44,8 +44,7 @@ namespace MMSG.Acceptance.ROL.Tests.ProductAcceptanceTestFeatures
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(null, 0);
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "ContactFeature", "\tIn order to avoid silly mistakes\r\n\tAs a math idiot\r\n\tI want to be told the sum o" +
-                    "f two numbers", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "ContactFeature", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -91,11 +90,11 @@ namespace MMSG.Acceptance.ROL.Tests.ProductAcceptanceTestFeatures
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("ROL user validate data in default view of Contact us page", new string[] {
                         "mytag"});
-#line 7
+#line 5
 this.ScenarioSetup(scenarioInfo);
-#line 8
+#line 6
 testRunner.When("I navigate to \"Contact\" tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 9
+#line 7
 testRunner.Then("I should be displayed with \"ROLUser\" details", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -107,43 +106,43 @@ testRunner.Then("I should be displayed with \"ROLUser\" details", ((string)(null
         public virtual void ROLUserLodgesTheRequest()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("ROL user Lodges the Request", ((string[])(null)));
-#line 11
+#line 9
 this.ScenarioSetup(scenarioInfo);
-#line 12
+#line 10
 testRunner.Then("I should be display \"I want to\" dropdown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 13
+#line 11
 testRunner.When("I select \"Make a change to my package\" in the dropdown \"I want to\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 14
+#line 12
 testRunner.Then("I should be display \"Change\" dropdown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 15
+#line 13
 testRunner.When("I select \"Add a new benefit to my package\" in the dropdown \"Change\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 16
+#line 14
 testRunner.Then("I should be display \"Add benefit\" dropdown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 17
+#line 15
 testRunner.When("I select \"Adjustment\" in the dropdown \"Add benefit\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 18
+#line 16
 testRunner.Then("I should be display \"Deduction per pay\" dropdown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 19
+#line 17
 testRunner.When("I Enter the \"Amount\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 20
+#line 18
 testRunner.When("I select the Radio Button \"Once off deduction\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 21
+#line 19
 testRunner.When("I select the Radio Button \"Select a pay date\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 22
+#line 20
 testRunner.Then("I should be display \"Pay date for change\" dropdown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 23
+#line 21
 testRunner.When("I select \"22/03/2018\" in the dropdown \"Pay date for change\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 24
+#line 22
 testRunner.When("I Enter the \"Phone\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 25
+#line 23
 testRunner.When("I Enter the \"Email\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 26
+#line 24
 testRunner.When("I select the Radio Button \"Phone\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 27
+#line 25
 testRunner.When("I Enter the \"Message\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 28
+#line 26
 testRunner.When("I click on \"Submit\" Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 29
+#line 27
 testRunner.Then("I should be displayed with \"Thank you for contacting RemServ. We will respond to " +
                     "your request within four working days.\" message", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden

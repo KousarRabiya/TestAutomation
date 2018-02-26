@@ -97,28 +97,33 @@ namespace MMSG.Pages.UI_Pages.Comet
                 base.SwitchToDefaultWindow();
 
                 // Fill Offering textbox
-                bool getDropdownOptionStatus = base.IsElementPresent(By.XPath(".//*[@id='divMenuddmEmployerOfferingID']/table/tbody/tr[2]/td[1]"), 10);
+                bool getDropdownOptionStatus = base.IsElementPresent(By.XPath(Package_basedetailsResource.
+                    Package_basedetailsPage_NewPackage_OffreingTable_Dropdown_XPath), 10);
                 if (getDropdownOptionStatus == false)
                 {
-                    base.WaitForElement(By.XPath(".//*[@id='ddmEmployerOfferingID_trMain']/td[2]/img"));
-                    IWebElement getDropdownOption = base.GetWebElementPropertiesByCssSelector("tr#ddmEmployerOfferingID_trMain > td > input");
+                    base.WaitForElement(By.XPath(Package_basedetailsResource.
+                        Package_basedetailsPage_NewPackage_OffreingImage_Dropdown_XPath));
+                    IWebElement getDropdownOption = base.GetWebElementPropertiesByCssSelector(Package_basedetailsResource.
+                        Package_basedetailsPage_NewPackage_OffreingImage_Dropdown_CssSelelctor);
                     base.ClickByJavaScriptExecutor(getDropdownOption);
 
 
-                    IWebElement clickTheDropDownOption = base.GetWebElementPropertiesByXPath
-                        (".//*[@id='divMenuddmEmployerOfferingID']/table/tbody/tr[2]/td[1]");
+                    IWebElement clickTheDropDownOption = base.GetWebElementPropertiesByXPath(Package_basedetailsResource.
+                    Package_basedetailsPage_NewPackage_OffreingTable_Dropdown_XPath);
                     base.ClickByJavaScriptExecutor(clickTheDropDownOption);
                 }
                 else
                 {
-                    IWebElement clickOnTheDropDownOption = base.GetWebElementPropertiesByXPath
-                    (".//*[@id='divMenuddmEmployerOfferingID']/table/tbody/tr[2]/td[1]");
+                    IWebElement clickOnTheDropDownOption = base.GetWebElementPropertiesByXPath(Package_basedetailsResource.
+                    Package_basedetailsPage_NewPackage_OffreingTable_Dropdown_XPath);
                     base.ClickByJavaScriptExecutor(clickOnTheDropDownOption);
                 }
 
                 // Click next button
-                base.WaitForElement(By.XPath("//tr[@class='BodyColor']/td[3]/input[3]"));
-                IWebElement getNextButton = base.GetWebElementPropertiesByXPath("//tr[@class='BodyColor']/td[3]/input[3]");
+                base.WaitForElement(By.XPath(Package_basedetailsResource.
+                    Package_basedetailsPage_NewPackage_NextButton_Xpath));
+                IWebElement getNextButton = base.GetWebElementPropertiesByXPath(Package_basedetailsResource.
+                    Package_basedetailsPage_NewPackage_NextButton_Xpath);
                 base.ClickByJavaScriptExecutor(getNextButton);
 
             }
@@ -233,9 +238,12 @@ namespace MMSG.Pages.UI_Pages.Comet
                 switch (changeType)
                 {
                     case "Email":
-                        base.WaitForElement(By.Id("txtBusinessEmail"));
-                        base.ClearTextById("txtBusinessEmail");
-                        base.FillTextBoxById("txtBusinessEmail", changeValue);
+                        base.WaitForElement(By.Id(Package_basedetailsResource.
+                            Package_basedetailsPage_BusinesEmail_ID));
+                        base.ClearTextById(Package_basedetailsResource.
+                            Package_basedetailsPage_BusinesEmail_ID);
+                        base.FillTextBoxById(Package_basedetailsResource.
+                            Package_basedetailsPage_BusinesEmail_ID, changeValue);
                         break;
 
                 }

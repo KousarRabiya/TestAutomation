@@ -92,19 +92,19 @@ namespace MMSG.Acceptance.MOL.Tests.ProductAcceptanceTestFeatures
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Display Wallet Transactions - Verify that Transactions is displayed in the MOL My" +
                     " Account for SP Card Only", new string[] {
                         "mytag"});
-#line 4
-this.ScenarioSetup(scenarioInfo);
-#line 5
- testRunner.When("I navigate to \"Your Account\" tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 6
- testRunner.Then("I should be displayed with \"Select benefit:\" dropdown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 7
- testRunner.When("I select \"Maxxia Wallet\" in the dropdown \"Select benefit:\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 8
- testRunner.Then("I should be displayed with \"From:\" dropdown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 9
- testRunner.When("I select \"Living Expense Wallet\" in the dropdown \"From:\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+this.ScenarioSetup(scenarioInfo);
 #line 10
+ testRunner.When("I navigate to \"Your Account\" tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 11
+ testRunner.Then("I should be displayed with \"Select benefit:\" dropdown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 12
+ testRunner.When("I select \"Maxxia Wallet\" in the dropdown \"Select benefit:\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 13
+ testRunner.Then("I should be displayed with \"From:\" dropdown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 14
+ testRunner.When("I select \"Living Expense Wallet\" in the dropdown \"From:\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 15
  testRunner.Then("I should be displayed with Available Balance", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

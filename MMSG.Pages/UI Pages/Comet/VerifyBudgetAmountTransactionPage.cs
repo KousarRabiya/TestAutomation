@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace MMSG.Pages.UI_Pages.Comet
 {
-   public class VerifyBudgetAmountTransactionPage : BasePage
+    public class VerifyBudgetAmountTransactionPage : BasePage
     {
         /// <summary>
         /// The static instance of the logger for the class.
@@ -26,8 +26,9 @@ namespace MMSG.Pages.UI_Pages.Comet
         public void ClickEmployeeNumber()
         {
             try
-            {              
-                IWebElement getEmployeeNum = base.GetWebElementPropertiesByXPath(VerifyBudgetAmountTransactionResource.VerifyBudgetAmountTransactionPage_EmployeeNum_XPath_Locator);
+            {
+                IWebElement getEmployeeNum = base.GetWebElementPropertiesByXPath(VerifyBudgetAmountTransactionResource.
+                    VerifyBudgetAmountTransactionPage_EmployeeNum_XPath_Locator);
                 base.PerformMouseClickAction(getEmployeeNum);
             }
             catch (Exception e)
@@ -50,7 +51,7 @@ namespace MMSG.Pages.UI_Pages.Comet
                 base.SwitchToDefaultWindow();
                 base.SwitchToLastOpenedWindow();
                 popupTitle = base.GetPageTitle;
-                base.WaitUntilPopUpLoads(pageTitle);               
+                base.WaitUntilPopUpLoads(pageTitle);
             }
             catch (Exception e)
             {
@@ -68,7 +69,8 @@ namespace MMSG.Pages.UI_Pages.Comet
         {
             try
             {
-                IWebElement getEAMSOption = base.GetWebElementPropertiesById(VerifyBudgetAmountTransactionResource.VerifyBudgetAmountTransactionPage_EAMS_Id_Locator);
+                IWebElement getEAMSOption = base.GetWebElementPropertiesById(VerifyBudgetAmountTransactionResource.
+                    VerifyBudgetAmountTransactionPage_EAMS_Id_Locator);
                 base.PerformMouseClickAction(getEAMSOption);
             }
             catch (Exception e)
@@ -84,7 +86,8 @@ namespace MMSG.Pages.UI_Pages.Comet
         {
             try
             {
-                IWebElement getMOLUserName = base.GetWebElementPropertiesById(VerifyBudgetAmountTransactionResource.VerifyBudgetAmountTransactionPage_MOLUserName_XPath_Locator);
+                IWebElement getMOLUserName = base.GetWebElementPropertiesById(VerifyBudgetAmountTransactionResource.
+                    VerifyBudgetAmountTransactionPage_MOLUserName_XPath_Locator);
             }
             catch (Exception e)
             {

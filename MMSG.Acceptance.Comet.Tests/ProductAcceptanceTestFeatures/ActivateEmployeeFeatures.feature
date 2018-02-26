@@ -1,9 +1,11 @@
 ﻿Feature: ActivateEmployeeFeatures
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+	 Admin fees is been added to the package and the Package is made active in Review and active Page
 
 @mytag
+#Purpose:Adding the admin fees to the package
+#Testcase ID:86026
+#Product:Comet
+#UserStory:Add the administration fee
 Scenario:Adding Admin fees to the Employee
 When I click on "Process Menu" in "CCEnquiry" page
 Then I should be display with "PROCESSES" Pop up in Call Centre Enqiury screen
@@ -15,7 +17,11 @@ When I click on Add button and Save the Fees
 Then I should be on the "CCEnquiry" page
 
 
-Scenario: Activating the employee
+#Purpose:Activating the package from Review and activate page
+#Testcase ID:86041
+#Product:Comet
+#UserStory: Activate the employee
+Scenario: Activating the Employee
 When I click on "Process Menu" in "CCEnquiry" page
 Then I should be display with "PROCESSES" Pop up in Call Centre Enqiury screen
 When I click on "Review And Activate" option in Pop up

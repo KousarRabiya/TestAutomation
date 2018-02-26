@@ -45,6 +45,36 @@ namespace MMSG.Automation.DataTransferObjects
         public string BusinessEmail { get; set; }
 
         /// <summary>
+        /// This is package benifit type
+        /// </summary>
+        public string Benefit1 { get; set; }
+
+        /// <summary>
+        /// This is package benifit type
+        /// </summary>
+        public string Benefit2 { get; set; }
+
+        /// <summary>
+        /// This is package benifit type
+        /// </summary>
+        public string Benefit3 { get; set; }
+
+        /// <summary>
+        /// This is package benifit type
+        /// </summary>
+        public string Benefit4 { get; set; }
+
+        /// <summary>
+        /// This is budget calculation method
+        /// </summary>
+        public string BudgetCalculationMethod { get; set; }
+
+        /// <summary>
+        /// This is BudgetAmount
+        /// </summary>
+        public string BudgetAmount { get; set; } 
+
+        /// <summary>
         /// This is Employee Phone Nmumber
         /// </summary>
         public string BusinessPhone { get; set; }

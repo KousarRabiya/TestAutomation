@@ -61,11 +61,56 @@ namespace MMSG.Pages.UI_Pages.Comet {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to wucButtons_cmdAddEnabled.
+        /// </summary>
+        internal static string Package_payrolldetailsPage__AddButton_ID {
+            get {
+                return ResourceManager.GetString("Package_payrolldetailsPage__AddButton_ID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to wucButtons_cmdSaveEnabled.
+        /// </summary>
+        internal static string Package_payrolldetailsPage_Edit_SaveButton_ID {
+            get {
+                return ResourceManager.GetString("Package_payrolldetailsPage_Edit_SaveButton_ID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to //tr[@id=&apos;ddmPayCycleID_trMain&apos;]/td/input.
+        /// </summary>
+        internal static string Package_payrolldetailsPage_PayCycle_Textbox_Xpath {
+            get {
+                return ResourceManager.GetString("Package_payrolldetailsPage_PayCycle_Textbox_Xpath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to //div[@id=&apos;divMenuddmPayCycleID&apos;]/table/tbody/tr[2]/td[1].
+        /// </summary>
+        internal static string Package_payrolldetailsPage_PayCycleTable_Textbox_Xpath {
+            get {
+                return ResourceManager.GetString("Package_payrolldetailsPage_PayCycleTable_Textbox_Xpath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to txtPayrollID.
         /// </summary>
         internal static string Package_payrolldetailsPage_Payroll_Textbox_ID {
             get {
                 return ResourceManager.GetString("Package_payrolldetailsPage_Payroll_Textbox_ID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to //tr[@class=&apos;BodyColor&apos;]/td[3]/input[2].
+        /// </summary>
+        internal static string Package_payrolldetailsPage_SaveButton_Xpath {
+            get {
+                return ResourceManager.GetString("Package_payrolldetailsPage_SaveButton_Xpath", resourceCulture);
             }
         }
     }

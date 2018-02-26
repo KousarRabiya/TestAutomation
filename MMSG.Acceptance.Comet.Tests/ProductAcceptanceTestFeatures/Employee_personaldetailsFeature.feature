@@ -1,9 +1,12 @@
 ﻿Feature: Employee_personaldetailsFeature
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+		In this feature file we are creating the employee and Other employee related test cases are added 
 
 @mytag
+
+#Purpose:Creating the employee 
+#Testcase ID:86010
+#Product:Comet
+#UserStory: Create an employee 
 Scenario: Create New Employee as commet user
 	When I click on "New" in "CCEnquiry" page
 	Then I should be on "Employee" page

@@ -106,6 +106,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Package_payrolldetailsResource.resx</DependentUpon>
     </Compile>
+    <Compile Include="UI Pages\Comet\ReviewAndActivatePage.cs" />
+    <Compile Include="UI Pages\Comet\ReviewAndActivateResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReviewAndActivateResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\Comet\VerifyBudgetAmountTransactionPage.cs" />
+    <Compile Include="UI Pages\Comet\VerifyBudgetAmountTransactionResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VerifyBudgetAmountTransactionResource.resx</DependentUpon>
+    </Compile>
     <Compile Include="UI Pages\Exceptions\ExceptionHandler.cs" />
     <Compile Include="UI Pages\Exceptions\GenericPageException.cs" />
     <Compile Include="UI Pages\Exceptions\LoginFailedException.cs" />
@@ -193,6 +205,14 @@
     <EmbeddedResource Include="UI Pages\Comet\Package_payrolldetailsResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Package_payrolldetailsResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\ReviewAndActivateResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ReviewAndActivateResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\VerifyBudgetAmountTransactionResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>VerifyBudgetAmountTransactionResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="UI Pages\MOL\Home\Dashboard\DashboardResource.resx">
       <Generator>ResXFileCodeGenerator</Generator>

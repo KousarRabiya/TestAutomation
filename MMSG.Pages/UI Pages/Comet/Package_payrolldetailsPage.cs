@@ -38,32 +38,42 @@ namespace MMSG.Pages.UI_Pages.Comet
                 base.FillTextBoxById(Package_payrolldetailsResource.
                     Package_payrolldetailsPage_Payroll_Textbox_ID, sixDigitNumber);
 
-                bool getDropdownOptionStatus = base.IsElementPresent(By.XPath("//div[@id='divMenuddmPayCycleID']/table/tbody/tr[2]/td[1]"),10);
+                bool getDropdownOptionStatus = base.IsElementPresent(By.XPath(Package_payrolldetailsResource.
+                    Package_payrolldetailsPage_PayCycleTable_Textbox_Xpath),10);
                 if(getDropdownOptionStatus==false)
                 {
-                    base.WaitForElement(By.XPath("//tr[@id='ddmPayCycleID_trMain']/td/input"));
-                    IWebElement getDropdown = base.GetWebElementPropertiesByXPath("//tr[@id='ddmPayCycleID_trMain']/td/input");
+                    base.WaitForElement(By.XPath(Package_payrolldetailsResource.
+                        Package_payrolldetailsPage_PayCycle_Textbox_Xpath));
+                    IWebElement getDropdown = base.GetWebElementPropertiesByXPath(Package_payrolldetailsResource.
+                        Package_payrolldetailsPage_PayCycle_Textbox_Xpath);
                     base.ClickByJavaScriptExecutor(getDropdown);
 
-                    IWebElement getPayCycleOption = base.GetWebElementPropertiesByXPath("//div[@id='divMenuddmPayCycleID']/table/tbody/tr[2]/td[1]");
+                    IWebElement getPayCycleOption = base.GetWebElementPropertiesByXPath(Package_payrolldetailsResource.
+                    Package_payrolldetailsPage_PayCycleTable_Textbox_Xpath);
                     base.ClickByJavaScriptExecutor(getPayCycleOption);
                 }
                 else
                 {
-                    IWebElement getPayCycleOption = base.GetWebElementPropertiesByXPath("//div[@id='divMenuddmPayCycleID']/table/tbody/tr[2]/td[1]");
+                    IWebElement getPayCycleOption = base.GetWebElementPropertiesByXPath(Package_payrolldetailsResource.
+                    Package_payrolldetailsPage_PayCycleTable_Textbox_Xpath);
                     base.ClickByJavaScriptExecutor(getPayCycleOption);
                 }
 
                 // Click Add button
-                bool df = base.IsElementPresent(By.Id("wucButtons_cmdAddEnabled"),10);
-                base.WaitForElement(By.Id("wucButtons_cmdAddEnabled"));
-                IWebElement getAddButton = base.GetWebElementPropertiesById("wucButtons_cmdAddEnabled");
+                bool df = base.IsElementPresent(By.Id(Package_payrolldetailsResource.
+                    Package_payrolldetailsPage__AddButton_ID),10);
+                base.WaitForElement(By.Id((Package_payrolldetailsResource.
+                    Package_payrolldetailsPage__AddButton_ID)));
+                IWebElement getAddButton = base.GetWebElementPropertiesById((Package_payrolldetailsResource.
+                    Package_payrolldetailsPage__AddButton_ID));
                 base.ClickByJavaScriptExecutor(getAddButton);
                 Thread.Sleep(3000);
 
                 // Click Save Button
-                base.WaitForElement(By.XPath("//tr[@class='BodyColor']/td[3]/input[2]"));
-                IWebElement getSaveButton = base.GetWebElementPropertiesByXPath("//tr[@class='BodyColor']/td[3]/input[2]");
+                base.WaitForElement(By.XPath(Package_payrolldetailsResource.
+                    Package_payrolldetailsPage_SaveButton_Xpath));
+                IWebElement getSaveButton = base.GetWebElementPropertiesByXPath(Package_payrolldetailsResource.
+                    Package_payrolldetailsPage_SaveButton_Xpath);
                 base.PerformMouseClickAction(getSaveButton);
 
             }
@@ -85,8 +95,10 @@ namespace MMSG.Pages.UI_Pages.Comet
             Thread.Sleep(2000);
             try
             {
-                base.WaitForElement(By.Id("wucButtons_cmdSaveEnabled"));
-                IWebElement getSaveButton = base.GetWebElementPropertiesById("wucButtons_cmdSaveEnabled");
+                base.WaitForElement(By.Id(Package_payrolldetailsResource.
+                    Package_payrolldetailsPage_Edit_SaveButton_ID));
+                IWebElement getSaveButton = base.GetWebElementPropertiesById(Package_payrolldetailsResource.
+                    Package_payrolldetailsPage_Edit_SaveButton_ID);
                 base.PerformMouseClickAction(getSaveButton);
             }
             catch (Exception e)

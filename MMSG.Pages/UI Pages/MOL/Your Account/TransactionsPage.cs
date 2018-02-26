@@ -27,9 +27,11 @@ namespace MMSG.Pages.UI_Pages.MOL.Your_Account
                 switch (dropDownName)
                 {
                     case "Select benefit:":
-                        return IsElementPresent(By.XPath(TransactionResource.TransactionsPage_SelectBenefitLabel_Xpath_Locator));
+                        return IsElementPresent(By.XPath(TransactionResource.
+                            TransactionsPage_SelectBenefitLabel_Xpath_Locator));
                     case "From:":
-                        return IsElementPresent(By.XPath(TransactionResource.TransactionsPage_FromLabel_Xpath_Locator));
+                        return IsElementPresent(By.XPath(TransactionResource.
+                            TransactionsPage_FromLabel_Xpath_Locator));
                 }
             }
             catch (Exception e)
@@ -48,7 +50,8 @@ namespace MMSG.Pages.UI_Pages.MOL.Your_Account
             Logger.LogMethodEntry("TransactionsPage", "ValidateAvailableBalance", base.IsTakeScreenShotDuringEntryExit);
             try
             {
-                string valueOnWebPage = base.GetElementInnerTextByXPath(TransactionResource.TransactionsPage_AvailableBalanceValue_Xpath_Locator);
+                string valueOnWebPage = base.GetElementInnerTextByXPath(TransactionResource.
+                    TransactionsPage_AvailableBalanceValue_Xpath_Locator);
                 if (valueOnWebPage != "$0.00")
                 {
                     return true;
@@ -74,12 +77,14 @@ namespace MMSG.Pages.UI_Pages.MOL.Your_Account
                 switch (dropDownName)
                 {
                     case "Select benefit:":
-                        base.ClickButtonByXPath(TransactionResource.TransactionPage_SelectBenefitButton_Xpath_Locator);
+                        base.ClickButtonByXPath(TransactionResource.
+                            TransactionPage_SelectBenefitButton_Xpath_Locator);
                         SelectTheDropDown(dropDownOption);
                         break;
 
                     case "From:":
-                        base.ClickButtonByXPath(TransactionResource.TransactionPage_FromButton_Xpath_Locator);
+                        base.ClickButtonByXPath(TransactionResource.
+                            TransactionPage_FromButton_Xpath_Locator);
                         SelectTheDropDown(dropDownOption);
                         break;
                 }

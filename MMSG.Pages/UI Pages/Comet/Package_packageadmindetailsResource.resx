@@ -120,6 +120,12 @@
   <data name="Package_packageadmindetailsPage_NewPackage_EntertainmentCap_Textbox_ID" xml:space="preserve">
     <value>txtECGUTVBroughtForward</value>
   </data>
+  <data name="Package_packageadmindetailsPage_NewPackage_FinancialAdvisorTable_Textbox_CssSelelctor" xml:space="preserve">
+    <value>tr#ddmFinancialAdvisor_trMain &gt; td &gt; input</value>
+  </data>
+  <data name="Package_packageadmindetailsPage_NewPackage_FinancialAdvisorTable_Textbox_Xpath" xml:space="preserve">
+    <value>.//*[@id='divMenuddmFinancialAdvisor']/table/tbody/tr[3]/td[1]</value>
+  </data>
   <data name="Package_packageadmindetailsPage_NewPackage_LivingExpenseCap_Textbox_ID" xml:space="preserve">
     <value>txtExistingGUTVBroughtForward</value>
   </data>

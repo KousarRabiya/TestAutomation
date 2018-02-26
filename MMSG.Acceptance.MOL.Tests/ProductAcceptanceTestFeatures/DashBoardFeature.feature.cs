@@ -44,7 +44,7 @@ namespace MMSG.Acceptance.MOL.Tests.ProductAcceptanceTestFeatures
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(null, 0);
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "DashBoardFeature", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "DashBoardFeature", "\t\tThe dashboard fuctionality is been checked like amount,benifit", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -90,9 +90,9 @@ namespace MMSG.Acceptance.MOL.Tests.ProductAcceptanceTestFeatures
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigate the Dashboard - \"Show more benefits..\" link is available in Account Summ" +
                     "ary Dashboard (Home Page)", ((string[])(null)));
-#line 3
+#line 9
 this.ScenarioSetup(scenarioInfo);
-#line 4
+#line 10
  testRunner.Then("I should be display with the benefit \"Show me more benefits ...\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -106,13 +106,13 @@ this.ScenarioSetup(scenarioInfo);
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("MOL user verifies the Benefits are displayed", new string[] {
                         "mytag"});
-#line 7
+#line 14
 this.ScenarioSetup(scenarioInfo);
-#line 8
+#line 15
  testRunner.Then("I should be display with the benefit \"Meal Entertainment\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 9
+#line 16
  testRunner.Then("I should be display with the benefit \"Superannuation\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 10
+#line 17
  testRunner.Then("I should be display with the benefit \"Prof Indemnity Insurance\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

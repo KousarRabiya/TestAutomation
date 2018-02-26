@@ -187,7 +187,7 @@
     <value>IQueueNumberText</value>
   </data>
   <data name="EmployeepersonaldetailsPage_IQueueNumberText_Textbox_Value" xml:space="preserve">
-    <value>0</value>
+    <value>123456</value>
   </data>
   <data name="EmployeepersonaldetailsPage_NextButton_ID_Locator" xml:space="preserve">
     <value>CommandButtons_cmdNextEnabled</value>
@@ -234,19 +234,31 @@
   <data name="EmployeepersonaldetailsPage_SurnameText_Textbox_ID_Locator" xml:space="preserve">
     <value>SurnameText</value>
   </data>
-  <data name="EmployeepersonaldetailsPage_Title_Dropdown_ID_Locator" xml:space="preserve">
+  <data name="EmployeepersonaldetailsPage_Dropdown_ID_Locator" xml:space="preserve">
     <value>TitleCombo</value>
   </data>
-  <data name="EmployeepersonaldetailsPage_Title_Dropdown_OptionName" xml:space="preserve">
+  <data name="EmployeepersonaldetailsPage_Dropdown_OptionName" xml:space="preserve">
     <value>Mr</value>
   </data>
   <data name="EmployeepersonaldetailsPage_SaveButton_Xpath" xml:space="preserve">
     <value>//tr[@class='BodyColor']/td[3]/input[2]</value>
   </data>
-  <data name="EmployeepersonaldetailsPage_Title_EffectiveDate_Xpath" xml:space="preserve">
+  <data name="EmployeepersonaldetailsPage__EffectiveDate_Xpath" xml:space="preserve">
     <value>html/body/form/table/tbody/tr[1]/td/table/tbody/tr[1]/td[2]/font</value>
   </data>
-  <data name="EmployeepersonaldetailsPage_Title_NextButton_Xpath" xml:space="preserve">
+  <data name="EmployeepersonaldetailsPage__NextButton2_Xpath" xml:space="preserve">
     <value>//tr[@class='BodyColor']/td[3]/input[4]</value>
+  </data>
+  <data name="EmployeepersonaldetailsPage_EAMS_CancelButton_Name_Locator" xml:space="preserve">
+    <value>cancel</value>
+  </data>
+  <data name="EmployeepersonaldetailsPage_EAMS_Frame_Locator" xml:space="preserve">
+    <value>frmMain</value>
+  </data>
+  <data name="EmployeepersonaldetailsPage_NextButton1_Xpath" xml:space="preserve">
+    <value>//tr[@class='BodyColor']/td[3]/input[3]</value>
+  </data>
+  <data name="EmployeepersonaldetailsPage_RemittanceDropDown_ID_Locator" xml:space="preserve">
+    <value>EFTRemittanceMethodCombo</value>
   </data>
 </root>

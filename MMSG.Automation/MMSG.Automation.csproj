@@ -152,6 +152,7 @@
       <DependentUpon>DBUserQueriesResource.resx</DependentUpon>
     </Compile>
     <Compile Include="DataTransferObjects\BaseEntityObject.cs" />
+    <Compile Include="DataTransferObjects\Benefit.cs" />
     <Compile Include="DataTransferObjects\Package.cs" />
     <Compile Include="DataTransferObjects\User.cs" />
     <Compile Include="ExcelOperation\ExcelOperation.cs" />

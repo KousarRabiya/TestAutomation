@@ -70,6 +70,25 @@ namespace MMSG.Pages.UI_Pages.Comet {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to tr#ddmFinancialAdvisor_trMain &gt; td &gt; input.
+        /// </summary>
+        internal static string Package_packageadmindetailsPage_NewPackage_FinancialAdvisorTable_Textbox_CssSelelctor {
+            get {
+                return ResourceManager.GetString("Package_packageadmindetailsPage_NewPackage_FinancialAdvisorTable_Textbox_CssSelel" +
+                        "ctor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .//*[@id=&apos;divMenuddmFinancialAdvisor&apos;]/table/tbody/tr[3]/td[1].
+        /// </summary>
+        internal static string Package_packageadmindetailsPage_NewPackage_FinancialAdvisorTable_Textbox_Xpath {
+            get {
+                return ResourceManager.GetString("Package_packageadmindetailsPage_NewPackage_FinancialAdvisorTable_Textbox_Xpath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to txtExistingGUTVBroughtForward.
         /// </summary>
         internal static string Package_packageadmindetailsPage_NewPackage_LivingExpenseCap_Textbox_ID {

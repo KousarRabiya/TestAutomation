@@ -89,6 +89,8 @@
     <Compile Include="ProductAcceptanceTestDefinition\CallCentreEnquiryDefinition.cs" />
     <Compile Include="ProductAcceptanceTestDefinition\Employee_personaldetailsDefinition.cs" />
     <Compile Include="ProductAcceptanceTestDefinition\Package_basedetailsDefinition.cs" />
+    <Compile Include="ProductAcceptanceTestDefinition\PaymentInstructionDefinition.cs" />
+    <Compile Include="ProductAcceptanceTestDefinition\VerifyBudgetAmountTransactionsDefination.cs" />
     <Compile Include="ProductAcceptanceTestFeatures\ActivateEmployeeFeatures.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

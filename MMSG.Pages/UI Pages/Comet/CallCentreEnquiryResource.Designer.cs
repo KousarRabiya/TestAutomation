@@ -59,5 +59,167 @@ namespace MMSG.Pages.UI_Pages.Comet {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Amendments.
+        /// </summary>
+        internal static string CallCentreEnquiry_Amendment_LinkText_Locator {
+            get {
+                return ResourceManager.GetString("CallCentreEnquiry_Amendment_LinkText_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to imgBanner.
+        /// </summary>
+        internal static string CallCentreEnquiry_ApplictionLogo_Id_Locator {
+            get {
+                return ResourceManager.GetString("CallCentreEnquiry_ApplictionLogo_Id_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Benefits.
+        /// </summary>
+        internal static string CallCentreEnquiry_Benifit_LinkText_Locator {
+            get {
+                return ResourceManager.GetString("CallCentreEnquiry_Benifit_LinkText_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create New Package.
+        /// </summary>
+        internal static string CallCentreEnquiry_CreatePackage_LinkText_Locator {
+            get {
+                return ResourceManager.GetString("CallCentreEnquiry_CreatePackage_LinkText_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to wucPackageSummary_tdEmail.
+        /// </summary>
+        internal static string CallCentreEnquiry_EmployeeEmail_Id_Locator {
+            get {
+                return ResourceManager.GetString("CallCentreEnquiry_EmployeeEmail_Id_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to wucPackageSummary_tdGender.
+        /// </summary>
+        internal static string CallCentreEnquiry_EmployeeGender_Id_Locator {
+            get {
+                return ResourceManager.GetString("CallCentreEnquiry_EmployeeGender_Id_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to wucPackageSummary_tdEmployeeName.
+        /// </summary>
+        internal static string CallCentreEnquiry_EmployeeName_Id_Locator {
+            get {
+                return ResourceManager.GetString("CallCentreEnquiry_EmployeeName_Id_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to wucPackageSummary_tdEmployeeNo.
+        /// </summary>
+        internal static string CallCentreEnquiry_EmployeeNumber_Id_Locator {
+            get {
+                return ResourceManager.GetString("CallCentreEnquiry_EmployeeNumber_Id_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CCEmployeeSearch_txtEmployeeNumber.
+        /// </summary>
+        internal static string CallCentreEnquiry_EmployeeNumberTextBox_Id_Locator {
+            get {
+                return ResourceManager.GetString("CallCentreEnquiry_EmployeeNumberTextBox_Id_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CCEmployeeSearch_txtEmployerCode.
+        /// </summary>
+        internal static string CallCentreEnquiry_EmployerCodeTextBox_Id_Locator {
+            get {
+                return ResourceManager.GetString("CallCentreEnquiry_EmployerCodeTextBox_Id_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CCEmployeeSearch_cmdNew.
+        /// </summary>
+        internal static string CallCentreEnquiry_NewButton_Id_Locator {
+            get {
+                return ResourceManager.GetString("CallCentreEnquiry_NewButton_Id_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LeftMenuTreet2.
+        /// </summary>
+        internal static string CallCentreEnquiry_PackageNameWithEmployeeNumber_Id_Locator {
+            get {
+                return ResourceManager.GetString("CallCentreEnquiry_PackageNameWithEmployeeNumber_Id_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LeftMenuTreet3.
+        /// </summary>
+        internal static string CallCentreEnquiry_ProcessMenu_Id_Locator {
+            get {
+                return ResourceManager.GetString("CallCentreEnquiry_ProcessMenu_Id_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PopUpMenu_cmdMenu10.
+        /// </summary>
+        internal static string CallCentreEnquiry_ProcessMenuPopUp_AdminFrees_Id_Locator {
+            get {
+                return ResourceManager.GetString("CallCentreEnquiry_ProcessMenuPopUp_AdminFrees_Id_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PopUpMenu_cmdMenu2.
+        /// </summary>
+        internal static string CallCentreEnquiry_ProcessMenuPopUp_Edit_Id_Locator {
+            get {
+                return ResourceManager.GetString("CallCentreEnquiry_ProcessMenuPopUp_Edit_Id_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PopUpMenu_cmdMenu5.
+        /// </summary>
+        internal static string CallCentreEnquiry_ProcessMenuPopUp_ReviewAndActivate_Locator1 {
+            get {
+                return ResourceManager.GetString("CallCentreEnquiry_ProcessMenuPopUp_ReviewAndActivate_Locator1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CCEmployeeSearch_cmdSearch.
+        /// </summary>
+        internal static string CallCentreEnquiry_SearchButton_Id_Locator {
+            get {
+                return ResourceManager.GetString("CallCentreEnquiry_SearchButton_Id_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CCEmployeeSearch_txtSurname.
+        /// </summary>
+        internal static string CallCentreEnquiry_SurnametextBox_Id_Locator {
+            get {
+                return ResourceManager.GetString("CallCentreEnquiry_SurnametextBox_Id_Locator", resourceCulture);
+            }
+        }
     }
 }

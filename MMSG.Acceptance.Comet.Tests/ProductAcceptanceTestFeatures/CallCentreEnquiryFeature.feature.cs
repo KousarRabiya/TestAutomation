@@ -44,8 +44,8 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestFeatures
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(null, 0);
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "CallCentreEnquiryFeature", "\tIn order to avoid silly mistakes\r\n\tAs a math idiot\r\n\tI want to be told the sum o" +
-                    "f two numbers", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "CallCentreEnquiryFeature", "\tThis is the page where the we will search the employee using the diffrent fields" +
+                    "", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -91,11 +91,11 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestFeatures
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Commet user search using Employee Number from DB", new string[] {
                         "mytag"});
-#line 7
-this.ScenarioSetup(scenarioInfo);
-#line 8
-testRunner.When("I enter \"EmployeeNumber\" of \"NewCOMETUser\" in the search textbox from \"DB\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 9
+this.ScenarioSetup(scenarioInfo);
+#line 10
+testRunner.When("I enter \"EmployeeNumber\" of \"NewCOMETUser\" in the search textbox from \"DB\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 11
 testRunner.And("I click on Search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
@@ -107,13 +107,13 @@ testRunner.And("I click on Search button", ((string)(null)), ((TechTalk.SpecFlow
         public virtual void CommentUserSearchUsingEmployeeNumberFromXML()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Comment user search using Employee number from XML", ((string[])(null)));
-#line 12
+#line 18
 this.ScenarioSetup(scenarioInfo);
-#line 13
+#line 19
 testRunner.When("I enter \"EmployeeNumber\" of \"NewCOMETUser\" in the search textbox from \"XML\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 14
+#line 20
 testRunner.And("I click on Search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 15
+#line 21
 testRunner.Then("I should be displayed with employee information of \"NewCOMETUser\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

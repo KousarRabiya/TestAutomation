@@ -47,7 +47,7 @@ namespace MMSG.Pages.UI_Pages.Comet
             Logger.LogMethodEntry("AdminFeesForPackagePage", "enterTheEffectiveDate", base.IsTakeScreenShotDuringEntryExit);
             try
             {
-                string getDateText = base.GetInnerTextAttributeValueByXPath(Employee_personaldetailsResource.EmployeepersonaldetailsPage_Title_EffectiveDate_Xpath);
+                string getDateText = base.GetInnerTextAttributeValueByXPath(Employee_personaldetailsResource.EmployeepersonaldetailsPage__EffectiveDate_Xpath);
                 string getDate = getDateText.Substring(17);
                 string EffectiveDateText = getDate.Replace(")", "").Trim();
                 base.WaitForElement(By.Name(AdminFeesForPackageResource.AdminFeesForPackage_EffectiveDate_ID_Locator));
@@ -70,15 +70,15 @@ namespace MMSG.Pages.UI_Pages.Comet
             Logger.LogMethodEntry("AdminFeesForPackagePage", "ClickOnLookUpImgAndSelelctFeesName", base.IsTakeScreenShotDuringEntryExit);
             try
             {
+                // switching on the pop up
                 base.SwitchToPopup();
+                // waiting for the admin look up image 
                 base.WaitForElement(By.Id(AdminFeesForPackageResource.AdminFeesForPackage_LookUpImg_ID_Locator));
                 IWebElement lookUpImg = base.GetWebElementProperties(By.Id(AdminFeesForPackageResource.AdminFeesForPackage_LookUpImg_ID_Locator));                
                 base.ClickButtonById(AdminFeesForPackageResource.AdminFeesForPackage_LookUpImg_ID_Locator);
                 base.SwitchToPopup();
                 //Selelcting the fees from Pop Up
                 SelelctTheFeesTypeFromPopUp();
-
-
             }
             catch (Exception e)
             {
@@ -97,7 +97,7 @@ namespace MMSG.Pages.UI_Pages.Comet
             {
                 // switch to pop up window
                 base.SwitchToPopup();
-               //switch to fream 
+               //switch to freame
                 IWebElement ifreamElement = base.GetWebElementProperties(By.TagName(AdminFeesForPackageResource.
                     AdminFeesForPackage_PopUpGrid_IframeTagName_Locator));
                 base.SwitchToIFrameByWebElement(ifreamElement);
@@ -105,7 +105,8 @@ namespace MMSG.Pages.UI_Pages.Comet
                 //wait for the git to appeare
                 base.WaitForElement(By.XPath(AdminFeesForPackageResource.AdminFeesForPackage_PopUpGrid_Xpath_Locator)); 
                 // click on the Git option              
-                IWebElement feesTypeGrid = base.GetWebElementProperties(By.XPath(AdminFeesForPackageResource.AdminFeesForPackage_PopUpGrid_Xpath_Locator));
+                IWebElement feesTypeGrid = base.GetWebElementProperties(By.XPath(AdminFeesForPackageResource.
+                    AdminFeesForPackage_PopUpGrid_Xpath_Locator));
                 base.ClickByJavaScriptExecutor(feesTypeGrid);
                 base.SwitchToPopup();
 

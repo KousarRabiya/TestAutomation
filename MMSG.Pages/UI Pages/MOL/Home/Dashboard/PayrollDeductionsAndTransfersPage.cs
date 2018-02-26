@@ -27,7 +27,8 @@ namespace MMSG.Pages.UI_Pages.MOL.Home.Dashboard
             Logger.LogMethodEntry("PayrollDeductionsAndTransfersPage", "VerifiThepageLandedOnPayrollDeductionsAndTransfers", base.IsTakeScreenShotDuringEntryExit);
             try
             {
-                string a = PayrollDeductionsAndTransfersPageResource.PayrollDeductionsAndTransfers_PayrollDeductionsAndTransfersTitle_Xpath_Locator;
+                string a = PayrollDeductionsAndTransfersPageResource.
+                    PayrollDeductionsAndTransfers_PayrollDeductionsAndTransfersTitle_Xpath_Locator;
               if (base.GetElementInnerTextByXPath(a)== pageName)
                 {
                     return true;
@@ -53,7 +54,8 @@ namespace MMSG.Pages.UI_Pages.MOL.Home.Dashboard
                switch (tabName)
                 {
                     case "Advanced Filter":
-                        base.ClickButtonByXPath(PayrollDeductionsAndTransfersPageResource.PayrollDeductionsAndTransfers_AdvanceFilterTab_Xpath_Locator);
+                        base.ClickButtonByXPath(PayrollDeductionsAndTransfersPageResource.
+                            PayrollDeductionsAndTransfers_AdvanceFilterTab_Xpath_Locator);
                         break;                  
                 }                  
 

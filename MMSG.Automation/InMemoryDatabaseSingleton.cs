@@ -63,7 +63,7 @@ namespace MMSG.Automation
             // desearlize dat
             DesearlizeUserTestData(xmlDocument, ref xmlNodeList, ref xmlSerializer);
             DesearlizePackageTestData(xmlDocument, ref xmlNodeList, ref xmlSerializer);
-
+            DesearlizeBenefitTestData(xmlDocument, ref xmlNodeList, ref xmlSerializer);
         }
 
         /// <summary>
@@ -134,6 +134,36 @@ namespace MMSG.Automation
                 {
                     // push in memory
                     _inMemoryDatabase.Insert(packages);
+                }
+            }
+        }
+
+
+        /// <summary>
+        /// Desearlize Benefit Test Data In Memory.
+        /// </summary>
+        /// <param name="xmlDocument">Represents an XML document.</param>
+        /// <param name="xmlNodeList">Represents an ordered collection of nodes.</param>
+        /// <param name="xmlSerializer">Serializes and deserializes objects into and from XML documents. 
+        /// The XmlSerializer enables you to control how objects are encoded into XML.</param>
+        private void DesearlizeBenefitTestData(XmlDocument xmlDocument,
+            ref XmlNodeList xmlNodeList, ref XmlSerializer xmlSerializer)
+        {
+            // get xml data based on file path
+            xmlNodeList = xmlDocument.SelectNodes("Data/ArrayOfBenefit");
+            // created Object xml serializer
+            xmlSerializer = new XmlSerializer(typeof(List<Benefit>));
+            if (xmlNodeList != null && xmlNodeList.Count > 0)
+            {
+                // created Object xml node reader
+                var reader = new XmlNodeReader(xmlNodeList.Item(0));
+                // get package list
+                var getBenefitList = (List<Benefit>)
+                 xmlSerializer.Deserialize(reader);
+                foreach (Benefit benefit in getBenefitList)
+                {
+                    // push in memory
+                    _inMemoryDatabase.Insert(benefit);
                 }
             }
         }

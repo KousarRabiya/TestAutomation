@@ -117,7 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Package_payrolldetailsPage_Edit_SaveButton_ID" xml:space="preserve">
+    <value>wucButtons_cmdSaveEnabled</value>
+  </data>
+  <data name="Package_payrolldetailsPage_PayCycleTable_Textbox_Xpath" xml:space="preserve">
+    <value>//div[@id='divMenuddmPayCycleID']/table/tbody/tr[2]/td[1]</value>
+  </data>
+  <data name="Package_payrolldetailsPage_PayCycle_Textbox_Xpath" xml:space="preserve">
+    <value>//tr[@id='ddmPayCycleID_trMain']/td/input</value>
+  </data>
   <data name="Package_payrolldetailsPage_Payroll_Textbox_ID" xml:space="preserve">
     <value>txtPayrollID</value>
+  </data>
+  <data name="Package_payrolldetailsPage_SaveButton_Xpath" xml:space="preserve">
+    <value>//tr[@class='BodyColor']/td[3]/input[2]</value>
+  </data>
+  <data name="Package_payrolldetailsPage__AddButton_ID" xml:space="preserve">
+    <value>wucButtons_cmdAddEnabled</value>
   </data>
 </root>

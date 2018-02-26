@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MMSG.Automation;
+using MMSG.Automation.DataTransferObjects;
 using MMSG.Pages.UI_Pages.Comet;
 using System;
 using TechTalk.SpecFlow;
@@ -31,19 +32,19 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
         /// </summary>
         /// <param name="clickOption">Button Name</param>
         [When(@"I click on ""(.*)"" in Amendment page")]
-        public void WhenIClickOnInAmendmentPage(string clickOption)
+        public void ClickingOnTheAmendmentOption(string clickOption)
         {
-            Logger.LogMethodEntry("AmendmentsDefinition", "VerifyAmendmentPage",
+            Logger.LogMethodEntry("AmendmentsDefinition", "ClickingOnTheAmendmentOption",
                base.IsTakeScreenShotDuringEntryExit);
             new AmendmentPage().ClickOnOption(clickOption);
-            Logger.LogMethodExit("AmendmentsDefinition", "ValidatePageName",
+            Logger.LogMethodExit("AmendmentsDefinition", "ClickingOnTheAmendmentOption",
               base.IsTakeScreenShotDuringEntryExit);
         }
 
         /// <summary>
         /// Verify the apge landed on the Amendment Benefit page
         /// </summary>
-        /// <param name="p0"></param>
+        /// <param name="pageName"> Page Name</param>
         [Then(@"I should be display ""(.*)"" in Amendments_NewBenefits Page")]
         public void VerifyThePageLandedOnAmendmentBenefit(string pageName)
         {
@@ -59,13 +60,13 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
         /// Selecting the benefit from the dropdown 
         /// </summary>
         /// <param name="benefitType">Benenfit type</param>
-        [When(@"I select ""(.*)"" Benefit in Amendments_NewBenefits Page")]
-        public void SelctingTheBenefitDropdown(string benefitType)
+        [When(@"I select Benefit for ""(.*)""")]
+        public void SelctingTheBenefitDropdown(Benefit.BenefitTypeEnum benifitType)
         {
-            Logger.LogMethodEntry("AmendmentsDefinition", "VerifyAmendmentPage",
+            Logger.LogMethodEntry("AmendmentsDefinition", "SelctingTheBenefitDropdown",
                 base.IsTakeScreenShotDuringEntryExit);
-            new Amendment_BenefitPage().SelectTheBenefitDropDown(benefitType);
-            Logger.LogMethodExit("AmendmentsDefinition", "ValidatePageName",
+            new Amendment_BenefitPage().SelectTheBenefitDropDown(benifitType);
+            Logger.LogMethodExit("AmendmentsDefinition", "SelctingTheBenefitDropdown",
             base.IsTakeScreenShotDuringEntryExit);
         }
 
@@ -75,10 +76,10 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
         [When(@"I enter Effective date in Amendments_NewBenefits Page")]
         public void EnteringTheEffectiveDate()
         {
-            Logger.LogMethodEntry("AmendmentsDefinition", "VerifyAmendmentPage",
+            Logger.LogMethodEntry("AmendmentsDefinition", "EnteringTheEffectiveDate",
                  base.IsTakeScreenShotDuringEntryExit);
             new Amendment_BenefitPage().EffectiveDate();
-            Logger.LogMethodExit("AmendmentsDefinition", "ValidatePageName",
+            Logger.LogMethodExit("AmendmentsDefinition", "EnteringTheEffectiveDate",
            base.IsTakeScreenShotDuringEntryExit);
         }
 
@@ -88,10 +89,10 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
         [When(@"I selelct Next Paydate for change")]
         public void SelelctingTheNextPayDate()
         {
-            Logger.LogMethodEntry("AmendmentsDefinition", "VerifyAmendmentPage",
+            Logger.LogMethodEntry("AmendmentsDefinition", "SelelctingTheNextPayDate",
                 base.IsTakeScreenShotDuringEntryExit);
             new Amendment_BenefitPage().NextPayDate();
-            Logger.LogMethodExit("AmendmentsDefinition", "ValidatePageName",
+            Logger.LogMethodExit("AmendmentsDefinition", "SelelctingTheNextPayDate",
            base.IsTakeScreenShotDuringEntryExit);
         }
 
@@ -99,14 +100,13 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
         /// Selecting the Budget calcution method type
         /// </summary>
         /// <param name="calculationMethodType">Budget Method type</param>
-
-        [When(@"I select Budget Calculation Method As ""(.*)""")]
-        public void SelelctingTheCalculationMethodType(string calculationMethodType)
+        [When(@"I select Budget Calculation Method of ""(.*)""")]
+        public void SelelctingTheCalculationMethodType(Benefit.BenefitTypeEnum benefitType)
         {
-            Logger.LogMethodEntry("AmendmentsDefinition", "VerifyAmendmentPage",
+            Logger.LogMethodEntry("AmendmentsDefinition", "SelelctingTheCalculationMethodType",
                 base.IsTakeScreenShotDuringEntryExit);
-            new Amendment_BenefitPage().BudgetCalculationMethod(calculationMethodType);
-            Logger.LogMethodExit("AmendmentsDefinition", "ValidatePageName",
+            new Amendment_BenefitPage().BudgetCalculationMethod(benefitType);
+            Logger.LogMethodExit("AmendmentsDefinition", "SelelctingTheCalculationMethodType",
            base.IsTakeScreenShotDuringEntryExit);
         }
 
@@ -115,13 +115,13 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
         /// </summary>
         /// <param name="budgetAmount">Budget Amount</param>
 
-        [When(@"I enter the Budget Amount as ""(.*)""")]
-        public void EnteringTheBudgetAmount(string budgetAmount)
+        [When(@"I enter the Budget Amount of ""(.*)""")]
+        public void EnteringTheBudgetAmount(Benefit.BenefitTypeEnum benefitType)
         {
-            Logger.LogMethodEntry("AmendmentsDefinition", "VerifyAmendmentPage",
+            Logger.LogMethodEntry("AmendmentsDefinition", "EnteringTheBudgetAmount",
                 base.IsTakeScreenShotDuringEntryExit);
-            new Amendment_BenefitPage().BudgetAmount(budgetAmount);
-            Logger.LogMethodExit("AmendmentsDefinition", "ValidatePageName",
+            new Amendment_BenefitPage().BudgetAmount(benefitType);
+            Logger.LogMethodExit("AmendmentsDefinition", "EnteringTheBudgetAmount",
            base.IsTakeScreenShotDuringEntryExit);
         }
 
@@ -132,10 +132,10 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
         [When(@"I enter save Button in Amendments_NewBenefits Page")]
         public void ClickingOnTheaSaveButton()
         {
-            Logger.LogMethodEntry("AmendmentsDefinition", "VerifyAmendmentPage",
+            Logger.LogMethodEntry("AmendmentsDefinition", "ClickingOnTheaSaveButton",
                 base.IsTakeScreenShotDuringEntryExit);
             new Amendment_BenefitPage().ClickOnSaveButton();
-            Logger.LogMethodExit("AmendmentsDefinition", "ValidatePageName",
+            Logger.LogMethodExit("AmendmentsDefinition", "ClickingOnTheaSaveButton",
            base.IsTakeScreenShotDuringEntryExit);
         }
 
@@ -143,15 +143,16 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
         /// Checking the Benefit is added and displayed in the amendment Page
         /// </summary>
         /// <param name="benefitname">Benefit Name which needto be added </param>
-        [Then(@"I should see the New benefit Name ""(.*)"" in Benefit details of Amendment page")]
-        public void VerifyingTheBenefitIsBeenAdded(string benefitName)
+        [Then(@"I should see the New benefit Name of ""(.*)""")]
+        public void VerifyingTheBenefitIsBeenAdded(Benefit.BenefitTypeEnum benefitType)
         {
-            Logger.LogMethodEntry("AmendmentsDefinition", "VerifyAmendmentPage",
+            Logger.LogMethodEntry("AmendmentsDefinition", "VerifyingTheBenefitIsBeenAdded",
                  base.IsTakeScreenShotDuringEntryExit);
             Logger.LogAssertion("ValidateTheUserDetails", ScenarioContext.Current.ScenarioInfo.Title, () =>
-            Assert.IsTrue(new AmendmentPage().BenefitIsAdded(benefitName)));
-            Logger.LogMethodExit("AmendmentsDefinition", "ValidatePageName",
+            Assert.IsTrue(new AmendmentPage().BenefitIsAdded(benefitType)));
+            Logger.LogMethodExit("AmendmentsDefinition", "VerifyingTheBenefitIsBeenAdded",
            base.IsTakeScreenShotDuringEntryExit);
         }
+
     }
 }

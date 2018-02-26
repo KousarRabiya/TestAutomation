@@ -1,6 +1,11 @@
 ﻿Feature: YourAccountFeature	
-
+			User View the the Transaction in thye account tab
 @mytag
+
+#Purpose:Checking the transaction by using the filter
+#Testcase ID:
+#Product:Comet
+#UserStory:	
 Scenario: MOL User View the transaction 
 	Given I access application URL as "MOLUser"
 	When I login as user "MOLUser"

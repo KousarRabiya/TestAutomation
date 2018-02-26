@@ -19,7 +19,6 @@ namespace MMSG.Pages.UI_Pages.Comet
         /// </summary>
         private static readonly Logger Logger =
             Logger.GetInstance(typeof(CallCentreEnquiryPage));
-
         /// <summary>
         /// Get the application logo existance status
         /// </summary>
@@ -32,7 +31,8 @@ namespace MMSG.Pages.UI_Pages.Comet
             try
             {
                 base.WaitUntilPopUpLoads(base.GetPageTitle);
-                getApplicationLogoExistance = base.IsElementPresent(By.Id("imgBanner"), 10);
+                getApplicationLogoExistance = base.IsElementPresent(By.Id(CallCentreEnquiryResource.
+                    CallCentreEnquiry_ApplictionLogo_Id_Locator), 10);
             }
             catch (Exception e)
             {
@@ -90,17 +90,21 @@ namespace MMSG.Pages.UI_Pages.Comet
             switch (optionName)
             {
                 case "EmployeeNumber":
-                    base.WaitForElement(By.Id("CCEmployeeSearch_txtEmployeeNumber"));
+                    base.WaitForElement(By.Id(CallCentreEnquiryResource.
+                        CallCentreEnquiry_EmployeeNumberTextBox_Id_Locator));
                     base.FillTextBoxById("CCEmployeeSearch_txtEmployeeNumber", employeeNumber);
                     break;
 
                 case "EmployerCode":
-                    base.WaitForElement(By.Id("CCEmployeeSearch_txtEmployerCode"));
-                    base.FillTextBoxById("CCEmployeeSearch_txtEmployerCode", employerCode);
+                    base.WaitForElement(By.Id(CallCentreEnquiryResource.
+                        CallCentreEnquiry_EmployerCodeTextBox_Id_Locator));
+                    base.FillTextBoxById(CallCentreEnquiryResource.
+                        CallCentreEnquiry_EmployerCodeTextBox_Id_Locator, employerCode);
                     break;
 
                 case "Surname":
-                    base.WaitForElement(By.Id("CCEmployeeSearch_txtSurname"));
+                    base.WaitForElement(By.Id(CallCentreEnquiryResource.
+                        CallCentreEnquiry_SurnametextBox_Id_Locator));
                     break;
             }
         }
@@ -115,9 +119,10 @@ namespace MMSG.Pages.UI_Pages.Comet
                 // Wait untill popup loads
                 base.WaitUntilPopUpLoads(base.GetPageTitle);
                 // Wait for search button to load
-                base.WaitForElement(By.Id("CCEmployeeSearch_cmdSearch"));
+                base.WaitForElement(By.Id(CallCentreEnquiryResource.CallCentreEnquiry_SearchButton_Id_Locator));
                 // Click button by ID
-                IWebElement getSearchButton = base.GetWebElementPropertiesById("CCEmployeeSearch_cmdSearch");
+                IWebElement getSearchButton = base.GetWebElementPropertiesById(CallCentreEnquiryResource.
+                    CallCentreEnquiry_SearchButton_Id_Locator);
                 base.ClickByJavaScriptExecutor(getSearchButton);
             }
             catch (Exception e)
@@ -145,10 +150,14 @@ namespace MMSG.Pages.UI_Pages.Comet
                 string email = user.Email.ToString();
 
                 // Get user details from application
-                string getEmployeeNo = base.GetInnerTextAttributeValueById("wucPackageSummary_tdEmployeeNo");
-                string getEmployeeName = base.GetInnerTextAttributeValueById("wucPackageSummary_tdEmployeeName");
-                string getGender = base.GetInnerTextAttributeValueById("wucPackageSummary_tdGender");
-                string getEmail = base.GetInnerTextAttributeValueById("wucPackageSummary_tdEmail");
+                string getEmployeeNo = base.GetInnerTextAttributeValueById(CallCentreEnquiryResource.
+                    CallCentreEnquiry_EmployeeNumber_Id_Locator);
+                string getEmployeeName = base.GetInnerTextAttributeValueById(CallCentreEnquiryResource.
+                    CallCentreEnquiry_EmployeeName_Id_Locator);
+                string getGender = base.GetInnerTextAttributeValueById(CallCentreEnquiryResource.
+                    CallCentreEnquiry_EmployeeGender_Id_Locator);
+                string getEmail = base.GetInnerTextAttributeValueById(CallCentreEnquiryResource.
+                    CallCentreEnquiry_EmployeeEmail_Id_Locator);
 
                 if (getEmployeeNo.Equals(employeeNo) &&
                     getEmployeeName.Contains(employeeName) && getGender.Equals(gender) && getEmail.Equals(email))
@@ -212,7 +221,7 @@ namespace MMSG.Pages.UI_Pages.Comet
             try
             {
                 IWebElement processMenuProp = base.GetWebElementProperties(By.Id("LeftMenuTreet3"));
-                base.ClickButtonById("LeftMenuTreet3");
+                base.ClickButtonById(CallCentreEnquiryResource.CallCentreEnquiry_ProcessMenu_Id_Locator);
                 base.SwitchToPopup();
 
             }
@@ -233,7 +242,8 @@ namespace MMSG.Pages.UI_Pages.Comet
               base.IsTakeScreenShotDuringEntryExit);
             try
             {
-                base.ClickButtonByLinkText("Benefits");
+                base.ClickButtonByLinkText(CallCentreEnquiryResource.
+                    CallCentreEnquiry_Benifit_LinkText_Locator);
             }
             catch (Exception e)
             {
@@ -253,7 +263,8 @@ namespace MMSG.Pages.UI_Pages.Comet
             {
                 base.WaitUntilPopUpLoads(pageName);
                 base.WaitForElement(By.Id("CCEmployeeSearch_cmdNew"));
-                IWebElement getNewButton = base.GetWebElementProperties(By.Id("CCEmployeeSearch_cmdNew"));
+                IWebElement getNewButton = base.GetWebElementProperties(By.Id(CallCentreEnquiryResource.
+                    CallCentreEnquiry_NewButton_Id_Locator));
                 base.ClickByJavaScriptExecutor(getNewButton);
             }
             catch (Exception e)
@@ -275,9 +286,11 @@ namespace MMSG.Pages.UI_Pages.Comet
                 base.SwitchToDefaultWindow();
                 base.WaitUntilPopUpLoads(pageName);
                 base.SelectWindow(pageName);
-                bool ewe = base.IsElementPresent(By.LinkText("Create New Package"), 10);
-                base.WaitForElement(By.LinkText("Create New Package"));
-                IWebElement getNewButton = base.GetWebElementProperties(By.LinkText("Create New Package"));
+                // Waiting for the New button and Cliking on the button using the java  script executor                
+                base.WaitForElement(By.LinkText(CallCentreEnquiryResource.
+                    CallCentreEnquiry_CreatePackage_LinkText_Locator));
+                IWebElement getNewButton = base.GetWebElementProperties(By.LinkText(CallCentreEnquiryResource.
+                    CallCentreEnquiry_CreatePackage_LinkText_Locator));
                 base.ClickByJavaScriptExecutor(getNewButton);
                 Thread.Sleep(1000);
             }
@@ -302,7 +315,8 @@ namespace MMSG.Pages.UI_Pages.Comet
             bool packageIsPresent = false;
             try
             {
-                base.WaitForElement(By.Id("wucPackageSummary_tdEmployeeNo"));
+                base.WaitForElement(By.Id(CallCentreEnquiryResource.
+                    CallCentreEnquiry_EmployeeNumber_Id_Locator));
                 // Employee Number from screen
                 string employeeNo = base.GetElementInnerTextById("wucPackageSummary_tdEmployeeNo");
                 this.StoreUserDetails(userType, employeeNo);
@@ -311,7 +325,8 @@ namespace MMSG.Pages.UI_Pages.Comet
                 string getEmployerCode = package.EmployerCode.ToString();
                 string toBeCompared = getEmployerCode + " " + "(" + employeeNo;
                 //Package name and employee name 
-                string employeeNumebrWithPackage = base.GetElementInnerTextById("LeftMenuTreet2");
+                string employeeNumebrWithPackage = base.GetElementInnerTextById(CallCentreEnquiryResource.
+                    CallCentreEnquiry_PackageNameWithEmployeeNumber_Id_Locator);
                 string text= employeeNumebrWithPackage.Remove(employeeNumebrWithPackage.Length - 7);
                 // compare the value with trhye screen value
                 if (text== toBeCompared)
@@ -339,7 +354,8 @@ namespace MMSG.Pages.UI_Pages.Comet
             try
             {
                 base.WaitForElement(By.LinkText("Amendments"));
-                IWebElement amendmentProperty = base.GetWebElementProperties(By.LinkText("Amendments"));
+                IWebElement amendmentProperty = base.GetWebElementProperties(By.LinkText(CallCentreEnquiryResource.
+                    CallCentreEnquiry_Amendment_LinkText_Locator));
                 base.ClickByJavaScriptExecutor(amendmentProperty);
             }
             catch (Exception e)
@@ -425,17 +441,19 @@ namespace MMSG.Pages.UI_Pages.Comet
                 {
                     case "Admin Fees":
                         base.SwitchToPopup();
-                        IWebElement adminProperties = base.GetWebElementPropertiesById("PopUpMenu_cmdMenu10");
+                        IWebElement adminProperties = base.GetWebElementPropertiesById(CallCentreEnquiryResource.
+                            CallCentreEnquiry_ProcessMenuPopUp_AdminFrees_Id_Locator);
                         base.ClickByJavaScriptExecutor(adminProperties);
                         break;
                     case "Edit":
                         base.SwitchToPopup();
-                        IWebElement editProperties = base.GetWebElementPropertiesById("PopUpMenu_cmdMenu2");
+                        IWebElement editProperties = base.GetWebElementPropertiesById(CallCentreEnquiryResource.
+                            CallCentreEnquiry_ProcessMenuPopUp_Edit_Id_Locator);
                         base.ClickByJavaScriptExecutor(editProperties);
                         break;
                     case "Review And Activate":
                         base.SwitchToPopup();
-                        IWebElement reviewAndActivateProperties = base.GetWebElementPropertiesById("PopUpMenu_cmdMenu5");
+                        IWebElement reviewAndActivateProperties = base.GetWebElementPropertiesById(CallCentreEnquiryResource.CallCentreEnquiry_ProcessMenuPopUp_ReviewAndActivate_Locator1);
                         base.ClickByJavaScriptExecutor(reviewAndActivateProperties);
                         break;
                 }
@@ -485,10 +503,14 @@ namespace MMSG.Pages.UI_Pages.Comet
 
             try
             {
-                base.WaitForElement(By.Id("CCEmployeeSearch_txtEmployeeNumber"));
-                base.FillTextBoxById("CCEmployeeSearch_txtEmployeeNumber", employeeNumner);
-                base.WaitForElement(By.Id("CCEmployeeSearch_cmdSearch"));
-                // Click button by ID
+                base.WaitForElement(By.Id(CallCentreEnquiryResource.
+                    CallCentreEnquiry_PackageNameWithEmployeeNumber_Id_Locator));
+                base.FillTextBoxById(CallCentreEnquiryResource.
+                    CallCentreEnquiry_PackageNameWithEmployeeNumber_Id_Locator, employeeNumner);
+
+                // Click button by Search 
+                base.WaitForElement(By.Id(CallCentreEnquiryResource.
+                    CallCentreEnquiry_SearchButton_Id_Locator));               
                 IWebElement getSearchButton = base.GetWebElementPropertiesById("CCEmployeeSearch_cmdSearch");
                 base.ClickByJavaScriptExecutor(getSearchButton);
             }
@@ -510,7 +532,8 @@ namespace MMSG.Pages.UI_Pages.Comet
                          base.IsTakeScreenShotDuringEntryExit);
             try
             {               
-                string employeeNumebrWithPackage = base.GetElementInnerTextById("LeftMenuTreet2");
+                string employeeNumebrWithPackage = base.GetElementInnerTextById(CallCentreEnquiryResource.
+                    CallCentreEnquiry_PackageNameWithEmployeeNumber_Id_Locator);
                 var result = employeeNumebrWithPackage.Substring(employeeNumebrWithPackage.Length - 3);
                 string text = employeeNumebrWithPackage.Remove(employeeNumebrWithPackage.Length - 7);
                 // compare the value with screen value is status is active

@@ -44,7 +44,7 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestFeatures
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(null, 0);
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "PaymentInstructionFeatures", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "PaymentInstructionFeatures", "\t\tPayment instruction is be created to the Benifit by adding the Payee type ", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -90,25 +90,25 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestFeatures
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create Payment Instruction to the benefit", new string[] {
                         "mytag"});
-#line 5
-this.ScenarioSetup(scenarioInfo);
-#line 6
-testRunner.Given("I access application URL as \"COMETUser\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 7
-testRunner.Then("I should be displayed with Comet logo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 8
-testRunner.And("I should be on the \"CCEnquiry\" page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 9
-testRunner.When("I enter \"EmployeeNumber\" of \"COMETUser\" in the search textbox from \"XML\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+this.ScenarioSetup(scenarioInfo);
 #line 10
-testRunner.And("I click on Search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.Given("I access application URL as \"COMETUser\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 11
-testRunner.When("I click on \"Benefit\" in \"CCEnquiry\" page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.Then("I should be displayed with Comet logo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 12
-testRunner.Then("I should be display with the Benefit Grid", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+testRunner.And("I should be on the \"CCEnquiry\" page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 13
-testRunner.When("I click on the Benefit in benefit grid", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+testRunner.When("I enter \"EmployeeNumber\" of \"COMETUser\" in the search textbox from \"XML\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 14
+testRunner.And("I click on Search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 15
+testRunner.When("I click on \"Benefit\" in \"CCEnquiry\" page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 16
+testRunner.Then("I should be display with the Benefit Grid", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 17
+testRunner.When("I click on the Benefit in benefit grid", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 18
 testRunner.Then("I should be display with \"PROCESSES\" Pop up in Call Centre Enqiury screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

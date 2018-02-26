@@ -80,8 +80,10 @@ namespace MMSG.Pages.UI_Pages.Comet
             this.NewEmployeeCreationFirstStep(userType);
 
             // Click next button
-            base.WaitForElement(By.XPath("//tr[@class='BodyColor']/td[3]/input[3]"));
-            IWebElement getNextButton = base.GetWebElementPropertiesByXPath("//tr[@class='BodyColor']/td[3]/input[3]");
+            base.WaitForElement(By.XPath(Employee_personaldetailsResource.
+                EmployeepersonaldetailsPage_NextButton1_Xpath));
+            IWebElement getNextButton = base.GetWebElementPropertiesByXPath(Employee_personaldetailsResource.
+                EmployeepersonaldetailsPage_NextButton1_Xpath);
             base.ClickByJavaScriptExecutor(getNextButton);
             User user = User.Get(userType);
             string sName = user.Surname.ToString();
@@ -93,7 +95,7 @@ namespace MMSG.Pages.UI_Pages.Comet
             // Click next button
             IWebElement getButtonXpath = base.GetWebElementPropertiesByXPath(
                 
-                Employee_personaldetailsResource.EmployeepersonaldetailsPage_Title_NextButton_Xpath);
+                Employee_personaldetailsResource.EmployeepersonaldetailsPage__NextButton2_Xpath);
             base.ClickByJavaScriptExecutor(getButtonXpath);
             Thread.Sleep(2000);
 
@@ -102,7 +104,7 @@ namespace MMSG.Pages.UI_Pages.Comet
 
             // Click next button
             getButtonXpath = base.GetWebElementPropertiesByXPath(
-                Employee_personaldetailsResource.EmployeepersonaldetailsPage_Title_NextButton_Xpath);
+                Employee_personaldetailsResource.EmployeepersonaldetailsPage__NextButton2_Xpath);
             base.ClickByJavaScriptExecutor(getButtonXpath);
             Thread.Sleep(2000);
 
@@ -132,9 +134,9 @@ namespace MMSG.Pages.UI_Pages.Comet
 
             // Wait for Title dropdown and select the value
             base.WaitForElement(By.Id(Employee_personaldetailsResource.
-                EmployeepersonaldetailsPage_Title_Dropdown_ID_Locator));
+                EmployeepersonaldetailsPage_Dropdown_ID_Locator));
             base.SelectDropDownValueThroughIndexById(Employee_personaldetailsResource.
-                EmployeepersonaldetailsPage_Title_Dropdown_ID_Locator, 6);
+                EmployeepersonaldetailsPage_Dropdown_ID_Locator, 6);
 
             // Fill Given Name textbox
             base.WaitForElement(By.Id(Employee_personaldetailsResource.
@@ -333,9 +335,9 @@ namespace MMSG.Pages.UI_Pages.Comet
             try
             {
                 base.WaitForElement(By.XPath(Employee_personaldetailsResource.
-                    EmployeepersonaldetailsPage_Title_EffectiveDate_Xpath));
+                    EmployeepersonaldetailsPage__EffectiveDate_Xpath));
                 string getDateText = base.GetInnerTextAttributeValueByXPath(Employee_personaldetailsResource.
-                    EmployeepersonaldetailsPage_Title_EffectiveDate_Xpath);
+                    EmployeepersonaldetailsPage__EffectiveDate_Xpath);
                 string getDate = getDateText.Substring(17);
                 string effectiveDateText = getDate.Replace(")", "").Trim();
 
@@ -372,12 +374,18 @@ namespace MMSG.Pages.UI_Pages.Comet
                     Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_BSBNumberText_Textbox_Text);
 
-                base.WaitForElement(By.Id("EFTRemittanceMethodCombo"));
-                base.SelectDropDownValueThroughIndexById("EFTRemittanceMethodCombo", 5);
+                base.WaitForElement(By.Id(Employee_personaldetailsResource.
+                    EmployeepersonaldetailsPage_RemittanceDropDown_ID_Locator));
+                base.SelectDropDownValueThroughIndexById(Employee_personaldetailsResource.
+                    EmployeepersonaldetailsPage_RemittanceDropDown_ID_Locator, 5);
 
-                base.WaitForElement(By.Id("IQueueNumberText"));
-                base.ClearTextById("IQueueNumberText");
-                base.FillTextBoxById("IQueueNumberText","123456");
+                base.WaitForElement(By.Id(Employee_personaldetailsResource.
+                    EmployeepersonaldetailsPage_IQueueNumberText_Textbox_ID));
+                base.ClearTextById(Employee_personaldetailsResource.
+                    EmployeepersonaldetailsPage_IQueueNumberText_Textbox_ID);
+                base.FillTextBoxById(Employee_personaldetailsResource.
+                    EmployeepersonaldetailsPage_IQueueNumberText_Textbox_ID, Employee_personaldetailsResource.
+                    EmployeepersonaldetailsPage_IQueueNumberText_Textbox_Value);
             }
             catch (Exception e)
             {
@@ -591,9 +599,12 @@ namespace MMSG.Pages.UI_Pages.Comet
             {
                 base.WaitUntilPopUpLoads(popupName);
                 base.MaximizeWindow();
-                base.SwitchToIFrameByName("frmMain");
-                base.WaitForElement(By.Name("cancel"));
-                IWebElement getCancelButton = base.GetWebElementProperties(By.Name("cancel"));
+                base.SwitchToIFrameByName(Employee_personaldetailsResource.
+                    EmployeepersonaldetailsPage_EAMS_Frame_Locator);
+                base.WaitForElement(By.Name(Employee_personaldetailsResource.
+                    EmployeepersonaldetailsPage_EAMS_CancelButton_Name_Locator));
+                IWebElement getCancelButton = base.GetWebElementProperties(By.Name(Employee_personaldetailsResource.
+                    EmployeepersonaldetailsPage_EAMS_CancelButton_Name_Locator));
                 base.ClickByJavaScriptExecutor(getCancelButton);
             }
             catch (Exception e)

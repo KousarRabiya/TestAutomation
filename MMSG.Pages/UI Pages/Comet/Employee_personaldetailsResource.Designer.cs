@@ -61,6 +61,24 @@ namespace MMSG.Pages.UI_Pages.Comet {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to html/body/form/table/tbody/tr[1]/td/table/tbody/tr[1]/td[2]/font.
+        /// </summary>
+        internal static string EmployeepersonaldetailsPage__EffectiveDate_Xpath {
+            get {
+                return ResourceManager.GetString("EmployeepersonaldetailsPage__EffectiveDate_Xpath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to //tr[@class=&apos;BodyColor&apos;]/td[3]/input[4].
+        /// </summary>
+        internal static string EmployeepersonaldetailsPage__NextButton2_Xpath {
+            get {
+                return ResourceManager.GetString("EmployeepersonaldetailsPage__NextButton2_Xpath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to BankAccountNumberText.
         /// </summary>
         internal static string EmployeepersonaldetailsPage_BankAccountNumberText_Textbox_ID_Locator {
@@ -120,6 +138,42 @@ namespace MMSG.Pages.UI_Pages.Comet {
         internal static string EmployeepersonaldetailsPage_DateOfBirthText_Textbox_ID_Locator {
             get {
                 return ResourceManager.GetString("EmployeepersonaldetailsPage_DateOfBirthText_Textbox_ID_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TitleCombo.
+        /// </summary>
+        internal static string EmployeepersonaldetailsPage_Dropdown_ID_Locator {
+            get {
+                return ResourceManager.GetString("EmployeepersonaldetailsPage_Dropdown_ID_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mr.
+        /// </summary>
+        internal static string EmployeepersonaldetailsPage_Dropdown_OptionName {
+            get {
+                return ResourceManager.GetString("EmployeepersonaldetailsPage_Dropdown_OptionName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to cancel.
+        /// </summary>
+        internal static string EmployeepersonaldetailsPage_EAMS_CancelButton_Name_Locator {
+            get {
+                return ResourceManager.GetString("EmployeepersonaldetailsPage_EAMS_CancelButton_Name_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to frmMain.
+        /// </summary>
+        internal static string EmployeepersonaldetailsPage_EAMS_Frame_Locator {
+            get {
+                return ResourceManager.GetString("EmployeepersonaldetailsPage_EAMS_Frame_Locator", resourceCulture);
             }
         }
         
@@ -268,7 +322,7 @@ namespace MMSG.Pages.UI_Pages.Comet {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 0.
+        ///   Looks up a localized string similar to 123456.
         /// </summary>
         internal static string EmployeepersonaldetailsPage_IQueueNumberText_Textbox_Value {
             get {
@@ -282,6 +336,15 @@ namespace MMSG.Pages.UI_Pages.Comet {
         internal static string EmployeepersonaldetailsPage_NextButton_ID_Locator {
             get {
                 return ResourceManager.GetString("EmployeepersonaldetailsPage_NextButton_ID_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to //tr[@class=&apos;BodyColor&apos;]/td[3]/input[3].
+        /// </summary>
+        internal static string EmployeepersonaldetailsPage_NextButton1_Xpath {
+            get {
+                return ResourceManager.GetString("EmployeepersonaldetailsPage_NextButton1_Xpath", resourceCulture);
             }
         }
         
@@ -395,6 +458,15 @@ namespace MMSG.Pages.UI_Pages.Comet {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to EFTRemittanceMethodCombo.
+        /// </summary>
+        internal static string EmployeepersonaldetailsPage_RemittanceDropDown_ID_Locator {
+            get {
+                return ResourceManager.GetString("EmployeepersonaldetailsPage_RemittanceDropDown_ID_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to CommandButtons_cmdSaveEnabled.
         /// </summary>
         internal static string EmployeepersonaldetailsPage_SaveButton_ID_Locator {
@@ -418,42 +490,6 @@ namespace MMSG.Pages.UI_Pages.Comet {
         internal static string EmployeepersonaldetailsPage_SurnameText_Textbox_ID_Locator {
             get {
                 return ResourceManager.GetString("EmployeepersonaldetailsPage_SurnameText_Textbox_ID_Locator", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to TitleCombo.
-        /// </summary>
-        internal static string EmployeepersonaldetailsPage_Title_Dropdown_ID_Locator {
-            get {
-                return ResourceManager.GetString("EmployeepersonaldetailsPage_Title_Dropdown_ID_Locator", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Mr.
-        /// </summary>
-        internal static string EmployeepersonaldetailsPage_Title_Dropdown_OptionName {
-            get {
-                return ResourceManager.GetString("EmployeepersonaldetailsPage_Title_Dropdown_OptionName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to html/body/form/table/tbody/tr[1]/td/table/tbody/tr[1]/td[2]/font.
-        /// </summary>
-        internal static string EmployeepersonaldetailsPage_Title_EffectiveDate_Xpath {
-            get {
-                return ResourceManager.GetString("EmployeepersonaldetailsPage_Title_EffectiveDate_Xpath", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to //tr[@class=&apos;BodyColor&apos;]/td[3]/input[4].
-        /// </summary>
-        internal static string EmployeepersonaldetailsPage_Title_NextButton_Xpath {
-            get {
-                return ResourceManager.GetString("EmployeepersonaldetailsPage_Title_NextButton_Xpath", resourceCulture);
             }
         }
     }

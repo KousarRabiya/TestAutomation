@@ -115,6 +115,15 @@ namespace MMSG.Pages.UI_Pages.Comet {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to //tr[@class=&apos;BodyColor&apos;]/td[3]/input[3].
+        /// </summary>
+        internal static string Package_basedetailsPage_NewPackage_NextButton_Xpath {
+            get {
+                return ResourceManager.GetString("Package_basedetailsPage_NewPackage_NextButton_Xpath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to ddmEmployerOfferingID_txtDisplay.
         /// </summary>
         internal static string Package_basedetailsPage_NewPackage_OfferingTextbox_ID {
@@ -129,6 +138,33 @@ namespace MMSG.Pages.UI_Pages.Comet {
         internal static string Package_basedetailsPage_NewPackage_OfferingTextbox_Text {
             get {
                 return ResourceManager.GetString("Package_basedetailsPage_NewPackage_OfferingTextbox_Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to tr#ddmEmployerOfferingID_trMain &gt; td &gt; input.
+        /// </summary>
+        internal static string Package_basedetailsPage_NewPackage_OffreingImage_Dropdown_CssSelelctor {
+            get {
+                return ResourceManager.GetString("Package_basedetailsPage_NewPackage_OffreingImage_Dropdown_CssSelelctor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .//*[@id=&apos;ddmEmployerOfferingID_trMain&apos;]/td[2]/img.
+        /// </summary>
+        internal static string Package_basedetailsPage_NewPackage_OffreingImage_Dropdown_XPath {
+            get {
+                return ResourceManager.GetString("Package_basedetailsPage_NewPackage_OffreingImage_Dropdown_XPath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .//*[@id=&apos;divMenuddmEmployerOfferingID&apos;]/table/tbody/tr[2]/td[1].
+        /// </summary>
+        internal static string Package_basedetailsPage_NewPackage_OffreingTable_Dropdown_XPath {
+            get {
+                return ResourceManager.GetString("Package_basedetailsPage_NewPackage_OffreingTable_Dropdown_XPath", resourceCulture);
             }
         }
         

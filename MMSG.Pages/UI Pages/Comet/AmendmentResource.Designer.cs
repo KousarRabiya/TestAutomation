@@ -70,11 +70,29 @@ namespace MMSG.Pages.UI_Pages.Comet {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to input#wucBenefitDetailsCancelNSave_cmdCancelEnabled.
+        /// </summary>
+        internal static string AmendmentPage_CancelButton_CssSelelctor_Locator {
+            get {
+                return ResourceManager.GetString("AmendmentPage_CancelButton_CssSelelctor_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to wucBenefitDetailsCancelNSave_cmdCancelEnabled.
         /// </summary>
         internal static string AmendmentPage_CancelButton_ID_Locator {
             get {
                 return ResourceManager.GetString("AmendmentPage_CancelButton_ID_Locator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to input#btnNew.
+        /// </summary>
+        internal static string AmendmentPage_NewButton_CsSelelctor_Locator {
+            get {
+                return ResourceManager.GetString("AmendmentPage_NewButton_CsSelelctor_Locator", resourceCulture);
             }
         }
         

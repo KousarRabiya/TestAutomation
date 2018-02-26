@@ -1,16 +1,13 @@
 ﻿using MMSG.Automation;
+using MMSG.Automation.DataTransferObjects;
 using MMSG.Automation.Exceptions;
 using OpenQA.Selenium;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace MMSG.Pages.UI_Pages.Comet
 {
-   public class AmendmentPage : BasePage
+    public class AmendmentPage : BasePage
     {
         /// <summary>
         /// The static instance of the logger for the class.
@@ -22,30 +19,36 @@ namespace MMSG.Pages.UI_Pages.Comet
         /// Verify the page landed on the Amendment Screen
         /// </summary>
         /// <returns></returns>
-       public  bool VerifyThepageLandedOnAmendment()
+        public bool VerifyThepageLandedOnAmendment()
         {
             Logger.LogMethodEntry("AmendmentPage", "VerifyThepageLndedOnAmendment",
                 base.IsTakeScreenShotDuringEntryExit);
             bool pageLandedOnAmendment = false;
             try
             {
+                base.SwitchToPopup();
                 base.WaitForElement(By.XPath(AmendmentResource.AmendmentPage_Title_Value_Xpath_Locator));
                 //geting the amendment Page heading
-                string amendmentPage = base.GetElementInnerTextByXPath(AmendmentResource.AmendmentPage_Title_Value_Xpath_Locator);
-                if (amendmentPage== AmendmentResource.AmendmentPage_Title_Value)
+                string amendmentPage = base.GetElementInnerTextByXPath(AmendmentResource.
+                    AmendmentPage_Title_Value_Xpath_Locator);
+                if (amendmentPage == AmendmentResource.AmendmentPage_Title_Value)
                 {
                     return true;
                 }
-            }           
-             catch (Exception e)
+            }
+            catch (Exception e)
             {
-                    ExceptionHandler.HandleException(e);
-             }
-                Logger.LogMethodEntry("AmendmentPage", "VerifyThepageLandedOnAmendment",
-                    base.IsTakeScreenShotDuringEntryExit);
+                ExceptionHandler.HandleException(e);
+            }
+            Logger.LogMethodEntry("AmendmentPage", "VerifyThepageLandedOnAmendment",
+                base.IsTakeScreenShotDuringEntryExit);
             return pageLandedOnAmendment;
-            } 
+        }
 
+        /// <summary>
+        /// Clicking on the button in Amendment screen 
+        /// </summary>
+        /// <param name="optionName">option name which we need to be clicked </param>
         public void ClickOnOption(string optionName)
         {
 
@@ -57,14 +60,14 @@ namespace MMSG.Pages.UI_Pages.Comet
                 switch (optionName)
                 {
                     case "New":
-                        base.WaitForElement(By.CssSelector("input#btnNew"));
-                        IWebElement newButtonProperty = base.GetWebElementProperties(By.CssSelector("input#btnNew"));
+                        base.WaitForElement(By.CssSelector(AmendmentResource.AmendmentPage_NewButton_CsSelelctor_Locator));
+                        IWebElement newButtonProperty = base.GetWebElementProperties(By.CssSelector(AmendmentResource.
+                            AmendmentPage_NewButton_CsSelelctor_Locator));
                         base.PerformMouseClickAction(newButtonProperty);
                         break;
                     case "Cancel":
-                        bool a = base.IsElementPresent(By.CssSelector("input#wucBenefitDetailsCancelNSave_cmdCancelEnabled"),10);
-                        base.WaitForElement(By.CssSelector("input#wucBenefitDetailsCancelNSave_cmdCancelEnabled"),10);
-                        IWebElement newSaveProperty = base.GetWebElementProperties(By.CssSelector("input#wucBenefitDetailsCancelNSave_cmdCancelEnabled"));                                       
+                        base.WaitForElement(By.CssSelector(AmendmentResource.AmendmentPage_CancelButton_CssSelelctor_Locator), 10);
+                        IWebElement newSaveProperty = base.GetWebElementProperties(By.CssSelector(AmendmentResource.AmendmentPage_CancelButton_CssSelelctor_Locator));
                         base.PerformMouseClickAction(newSaveProperty);
                         break;
                 }
@@ -80,17 +83,22 @@ namespace MMSG.Pages.UI_Pages.Comet
         /// <summary>
         /// Checking the Benefit is been added 
         /// </summary>
-        /// <param name="benefitName"></param>
+        /// <param name="benefitType">sending the benefit type to the method</param>
         /// <returns></returns>
-        public bool BenefitIsAdded(string benefitName)
+        public bool BenefitIsAdded(Benefit.BenefitTypeEnum benefitType)
         {
             Logger.LogMethodEntry("AmendmentPage", "BenefitIsAdded",
               base.IsTakeScreenShotDuringEntryExit);
             bool benefitIsPresent = false;
             try
             {
-                int numberOfBenefit = base.GetElementCountByXPath(AmendmentResource.AmendmentPage_BenefitDetailsTableRow_Xpath_Locator);
-                string textFromBenefit = base.GetInnerTextAttributeValueByXPath(AmendmentResource.AmendmentPage_BenefitDetailsTableRow_Xpath_Locator + "[" + numberOfBenefit + "]/td[3]");
+                //geting the benefit from the memory
+                Benefit benefit = Benefit.Get(benefitType);
+                string benefitName = benefit.Benefit1.ToString();
+                int numberOfBenefit = base.GetElementCountByXPath(AmendmentResource.
+                    AmendmentPage_BenefitDetailsTableRow_Xpath_Locator);
+                string textFromBenefit = base.GetInnerTextAttributeValueByXPath(AmendmentResource.
+                    AmendmentPage_BenefitDetailsTableRow_Xpath_Locator + "[" + numberOfBenefit + "]/td[3]");
                 if (benefitName == textFromBenefit)
                 {
                     return true;

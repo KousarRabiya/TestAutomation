@@ -1,14 +1,21 @@
 ﻿Feature: Package_basedetailsFeature
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
+		Creating the package to the newly created employee and package related test cases are handled. 
 
 @mytag
+#Purpose:Creating the Package to new employee
+#Testcase ID:86023
+#Product:Comet
+#UserStory: Add a package to the employee
 Scenario: Create new package for COMET user
 	When I click on "Create New Package" in "CCEnquiry" page
 	And I enter new "NewPHCNPackage" package details
 	Then I should be displayed with "NewPHCNPackage" for "NewCOMETUser"
 
+
+#Purpose:Creating the Package to new employee
+#Testcase ID:86038
+#Product:Comet
+#UserStory: Add a package to the employee
 Scenario: Navigate to the Pacakage Edit page and Save the details
 When I click on "Process Menu" in "CCEnquiry" page
 Then I should be display with "PROCESSES" Pop up in Call Centre Enqiury screen
