@@ -1,5 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<Queries>
-  <Query caption="Fetch Employee Number">SELECT TOP 1  CONCAT(iEmployeeExtIDBase , iEmployeeExtIDCheckDigit) as EmployeeNo FROM [tbl_Employee] ORDER BY NEWID()</Query>
-  <Query caption="Fetch Employer Code">SELECT TOP 1 sCode FROM [tbl_Employer] ORDER BY NEWID()</Query>
-</Queries>
