@@ -55,7 +55,7 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestDefinition
             Logger.LogMethodEntry("ActivateEmployeeDefinition", "VerifyThePageHeader",
              base.IsTakeScreenShotDuringEntryExit);
             Logger.LogAssertion("VerifyThePageHeader", ScenarioContext.Current.ScenarioInfo.Title, () =>
-            Assert.AreEqual(pageTitle, new AdminFeesForPackagePage().VerifyPageLandedOnAdminFeesForPackagePackage()));
+            Assert.AreEqual(pageTitle, new AdminFeesForPackagePage().VerifyPageLandedOnAdminFees()));
             Logger.LogMethodExit("AmendmentsDefinition", "VerifyThePageHeader",
            base.IsTakeScreenShotDuringEntryExit);
         }

@@ -26,9 +26,12 @@ namespace MMSG.Pages.UI_Pages.Comet
                 base.IsTakeScreenShotDuringEntryExit);
             try
             {
+                // Get package details
                 Package package = Package.Get(packageType);
                 string getEntertainmentCap = package.EntertainmentCap.ToString();
                 string getLivingExpenseCap = package.LivingExpenseCap.ToString();
+
+                Thread.Sleep(1000);
 
                 // Fill Living Expense Cap textbox
                 base.WaitForElement(By.Id(Package_packageadmindetailsResource.

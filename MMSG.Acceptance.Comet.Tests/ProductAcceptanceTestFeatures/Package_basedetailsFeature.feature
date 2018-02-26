@@ -22,7 +22,7 @@ Then I should be display with "PROCESSES" Pop up in Call Centre Enqiury screen
 When I click on "Edit" option in Pop up
 Then I should display "Edit Package" Page
 When I change "Email" with  "testAutomation@mmsg.com.au" in Edit package Page
-When I click on the Next button
-When I click on the Next button
-When I click on the Save Button 
+And I click on the Next button
+And I click on the Next button
+And I click on the Save Button 
 Then I should be on the "CCEnquiry" page

@@ -4,11 +4,7 @@ using MMSG.Automation.DataTransferObjects;
 using MMSG.Automation.Exceptions;
 using OpenQA.Selenium;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace MMSG.Pages.UI_Pages.Comet
 {
@@ -83,10 +79,19 @@ namespace MMSG.Pages.UI_Pages.Comet
         }
 
 
+        /// <summary>
+        /// Search comet user based on the search option type.
+        /// </summary>
+        /// <param name="optionName">This is option name.</param>
+        /// <param name="employeeNumber">This is employee number.</param>
+        /// <param name="surName">This is sur name.</param>
+        /// <param name="givenName">This is given name.</param>
+        /// <param name="employerCode">This is employer code.</param>
         private void SearchComentUser(string optionName, string employeeNumber, string surName,
             string givenName, string employerCode)
         {
             base.WaitUntilPopUpLoads(base.GetPageTitle);
+           // Search based on option
             switch (optionName)
             {
                 case "EmployeeNumber":
@@ -200,7 +205,6 @@ namespace MMSG.Pages.UI_Pages.Comet
                     case "Benefit":
                         ClickOnBenefit();
                         break;
-
                 }
             }
             catch (Exception e)
@@ -220,10 +224,15 @@ namespace MMSG.Pages.UI_Pages.Comet
                base.IsTakeScreenShotDuringEntryExit);
             try
             {
-                IWebElement processMenuProp = base.GetWebElementProperties(By.Id("LeftMenuTreet3"));
-                base.ClickButtonById(CallCentreEnquiryResource.CallCentreEnquiry_ProcessMenu_Id_Locator);
-                base.SwitchToPopup();
-
+                // Wait and click on process link
+                //base.WaitForElement(By.Id(
+                //    CallCentreEnquiryResource.CallCentreEnquiry_ProcessMenu_Id_Locator));
+                base.WaitForElement(By.CssSelector("#LeftMenuTreet3"));
+                bool sad = base.IsElementPresent(By.CssSelector("#LeftMenuTreet3"),10);
+                IWebElement getProcessLink = base.GetWebElementProperties(
+                    By.CssSelector("#LeftMenuTreet3"));
+                base.ClickByJavaScriptExecutor(getProcessLink);
+               // base.ClickButtonById(CallCentreEnquiryResource.CallCentreEnquiry_ProcessMenu_Id_Locator);
             }
             catch (Exception e)
             {
@@ -453,7 +462,8 @@ namespace MMSG.Pages.UI_Pages.Comet
                         break;
                     case "Review And Activate":
                         base.SwitchToPopup();
-                        IWebElement reviewAndActivateProperties = base.GetWebElementPropertiesById(CallCentreEnquiryResource.CallCentreEnquiry_ProcessMenuPopUp_ReviewAndActivate_Locator1);
+                        IWebElement reviewAndActivateProperties = base.GetWebElementPropertiesById(
+                            CallCentreEnquiryResource.CallCentreEnquiry_ProcessMenuPopUp_ReviewAndActivate_Locator1);
                         base.ClickByJavaScriptExecutor(reviewAndActivateProperties);
                         break;
                 }
@@ -477,9 +487,10 @@ namespace MMSG.Pages.UI_Pages.Comet
             string titleOfPage = "";
             try
             {
-                Thread.Sleep(1000);                
-                base.WaitUntilPopUpLoads("PROCESSES");
-                base.SwitchToPopup();
+                Thread.Sleep(1000);
+                base.SwitchToDefaultWindow();
+                base.SwitchToLastOpenedWindow();
+                // Get page title during runtime
                 titleOfPage = base.GetPageTitle;
                 Thread.Sleep(1000);
             }
