@@ -83,15 +83,33 @@ namespace MMSG.Acceptance.Comet.Tests.ProductAcceptanceTestFeatures
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Add two numbers")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Add a benefit - Process Menu")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "AddBenefitFeature")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("mytag")]
-        public virtual void AddTwoNumbers()
+        public virtual void AddABenefit_ProcessMenu()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add two numbers", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add a benefit - Process Menu", new string[] {
                         "mytag"});
 #line 4
 this.ScenarioSetup(scenarioInfo);
+#line 5
+ testRunner.When("I click on \"Process Menu\" in \"CCEnquiry\" page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 6
+ testRunner.Then("I should be display with \"PROCESSES\" Pop up in Call Centre Enqiury screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 7
+ testRunner.When("I click on \"New Benefit\" option in Pop up", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 8
+ testRunner.Then("I will land on New Benefit page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 9
+ testRunner.Then("I select \"Insurance Life\" in \"Benefit\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 10
+ testRunner.Then("I click on \"Next\" Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 11
+ testRunner.Then("I select \"Per Annum\" in \"Budget Calculation Method\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 12
+ testRunner.Then("I enter Budget Amount", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 13
+ testRunner.Then("I click on \"Save\" Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
