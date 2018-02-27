@@ -151,9 +151,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\MMSG.Automation\MMSG.Automation.csproj">
       <Project>{61a28c3b-47ee-4f4b-a293-69d714d41e0b}</Project>
       <Name>MMSG.Automation</Name>

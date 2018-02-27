@@ -105,7 +105,7 @@ namespace MMSG.Pages.UI_Pages.Comet
             // Click next button
             getButtonXpath = base.GetWebElementPropertiesByXPath(
                 Employee_personaldetailsResource.EmployeepersonaldetailsPage__NextButton2_Xpath);
-            base.ClickByJavaScriptExecutor(getButtonXpath);
+             base.ClickByJavaScriptExecutor(getButtonXpath);
             Thread.Sleep(2000);
 
             getButtonXpath = base.GetWebElementPropertiesByXPath(
@@ -349,12 +349,13 @@ namespace MMSG.Pages.UI_Pages.Comet
                 base.FillTextBoxById(Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_EffectiveDateText_Textbox_ID_Locator, effectiveDateText);
 
+                // Select payment method from dropdow
                 base.WaitForElement(By.Id(Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_PaymentMethodCombo_Dropdown_ID_Locator));
                 base.SelectDropDownValueThroughIndexById(Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_PaymentMethodCombo_Dropdown_ID_Locator, 1);
 
-
+                // Fill bank account number details
                 base.WaitForElement(By.Id(Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_BankAccountNumberText_Textbox_ID_Locator));
                 base.ClearTextById(Employee_personaldetailsResource.
@@ -364,7 +365,7 @@ namespace MMSG.Pages.UI_Pages.Comet
                     Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_BankAccountNumberText_Textbox_Text);
 
-
+                // Fill BSN number
                 base.WaitForElement(By.Id(Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_BSBNumberText_Textbox_ID_Locator));
                 base.ClearTextById(Employee_personaldetailsResource.
@@ -373,12 +374,14 @@ namespace MMSG.Pages.UI_Pages.Comet
                     EmployeepersonaldetailsPage_BSBNumberText_Textbox_ID_Locator,
                     Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_BSBNumberText_Textbox_Text);
-
+                
+                //Select renittance from drop down
                 base.WaitForElement(By.Id(Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_RemittanceDropDown_ID_Locator));
                 base.SelectDropDownValueThroughIndexById(Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_RemittanceDropDown_ID_Locator, 5);
 
+                // Fill IQ number text
                 base.WaitForElement(By.Id(Employee_personaldetailsResource.
                     EmployeepersonaldetailsPage_IQueueNumberText_Textbox_ID));
                 base.ClearTextById(Employee_personaldetailsResource.

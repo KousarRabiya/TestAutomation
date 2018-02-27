@@ -225,14 +225,10 @@ namespace MMSG.Pages.UI_Pages.Comet
             try
             {
                 // Wait and click on process link
-                //base.WaitForElement(By.Id(
-                //    CallCentreEnquiryResource.CallCentreEnquiry_ProcessMenu_Id_Locator));
-                base.WaitForElement(By.CssSelector("#LeftMenuTreet3"));
-                bool sad = base.IsElementPresent(By.CssSelector("#LeftMenuTreet3"),10);
-                IWebElement getProcessLink = base.GetWebElementProperties(
-                    By.CssSelector("#LeftMenuTreet3"));
-                base.ClickByJavaScriptExecutor(getProcessLink);
-               // base.ClickButtonById(CallCentreEnquiryResource.CallCentreEnquiry_ProcessMenu_Id_Locator);
+                Thread.Sleep(1000);
+                base.WaitForElement(By.XPath(
+                    "//td[@class='LeftMenuTree_1 LeftMenuTree_4']/a[@id='LeftMenuTreet3']"));
+                base.ClickLinkByXPath("//td[@class='LeftMenuTree_1 LeftMenuTree_4']/a[@id='LeftMenuTreet3']");
             }
             catch (Exception e)
             {

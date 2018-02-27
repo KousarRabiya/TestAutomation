@@ -14,15 +14,15 @@ namespace MMSG.Automation.Settings
         public const string PageLoadTimeout = "PageLoadTimeout";
         public const string ElementLoadTimeout = "ElementLoadTimeout";
 
-      public static void AppSetting()
+        public static void AppSetting()
         {
             string driv = ObjectRepository.DriverName;
             string ScreenShotStatus = ConfigurationManager.AppSettings["ScreenShot"];
             ObjectRepository.ScreenShot = ScreenShotStatus;
             switch (driv)
             {
-                case "Chrome" :
-                    IWebDriver driver=BaseClass.GetChromeDriver();
+                case "Chrome":
+                    IWebDriver driver = BaseClass.GetChromeDriver();
                     ObjectRepository.Driver = driver;
                     break;
 

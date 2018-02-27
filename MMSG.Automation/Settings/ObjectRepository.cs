@@ -7,12 +7,12 @@ namespace MMSG.Automation.Settings
     {
         public static IConfig Config { get; set; }
 
-        public static string ProjectName { get; set;}
+        public static string ProjectName { get; set; }
 
         public static string Testcasename { get; set; }
 
-        public static string DriverName { get;  set;}
-             
+        public static string DriverName { get; set; }
+
         public static IWebDriver Driver { get; set; }
 
         public static string ScreenShot { get; set; }
@@ -29,7 +29,7 @@ namespace MMSG.Automation.Settings
         public static string User { get; set; }
         public static string ServerName { get; set; }
         public static string DataBaseName { get; set; }
-        
+
         // page objects
 
         // public static HomePage hPage;

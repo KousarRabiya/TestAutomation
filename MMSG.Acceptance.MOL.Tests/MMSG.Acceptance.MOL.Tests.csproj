@@ -93,36 +93,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CommonAcceptanceTestFeatures.feature</DependentUpon>
     </Compile>
-    <Compile Include="FeatureFiles\MOL.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MOL.feature</DependentUpon>
-    </Compile>
     <Compile Include="ProductAcceptanceTestDefinition\TransactionDefination.cs" />
     <Compile Include="ProductAcceptanceTestFeatures\TransactionFeature.feature.cs">
       <DependentUpon>TransactionFeature.feature</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Page Object\DashboardResource.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DashboardResource.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Page Object\DashBoardPage.cs" />
-    <Compile Include="Page Object\LoginPage.cs" />
-    <Compile Include="Hooks\SpecHooks.cs" />
-    <Compile Include="Page Object\LoginResource.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LoginResource.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Page Object\TransactionResource.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TransactionResource.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Page Object\TranscationPage.cs" />
     <Compile Include="ProductAcceptanceTestDefinition\DashBoardDefinition.cs" />
     <Compile Include="ProductAcceptanceTestDefinition\YourAccountDefinition.cs" />
     <Compile Include="ProductAcceptanceTestFeatures\DashBoardFeature.feature.cs">
@@ -136,7 +112,6 @@
       <DependentUpon>YourAccountFeature.feature</DependentUpon>
     </Compile>
     <Compile Include="PropertiesFile\Properties.cs" />
-    <Compile Include="StepDefinition\ViewBenefitsAndTransactionInMOLApplication_Steps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -146,10 +121,6 @@
     <None Include="CommonAcceptanceTestFeatures\CommonAcceptanceTestFeatures.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>CommonAcceptanceTestFeatures.feature.cs</LastGenOutput>
-    </None>
-    <None Include="FeatureFiles\MOL.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>MOL.feature.cs</LastGenOutput>
     </None>
     <None Include="ProductAcceptanceTestFeatures\TransactionFeature.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
@@ -173,20 +144,6 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>YourAccountFeature.feature.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Page Object\DashboardResource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>DashboardResource.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Page Object\LoginResource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>LoginResource.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Page Object\TransactionResource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>TransactionResource.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MMSG.Automation\MMSG.Automation.csproj">

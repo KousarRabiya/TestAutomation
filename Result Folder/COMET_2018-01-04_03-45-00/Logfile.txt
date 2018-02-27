@@ -1,3 +1,0 @@
-4/01/2018 3:45:00 PM  ***************
-1/4/2018 3:45:02 PM  Scenario :TC4-Adding the Package to the Employee
-1/4/2018 3:45:02 PM  User opens the browser and launch Comet application

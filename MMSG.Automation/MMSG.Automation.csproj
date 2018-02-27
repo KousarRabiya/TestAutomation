@@ -127,19 +127,6 @@
     <Compile Include="BatchProcess\BatchProcessTest.cs" />
     <Compile Include="BrowserProcessFactory.cs" />
     <Compile Include="AutomationConfigurationManager.cs" />
-    <Compile Include="ComponentHelper\BrowserNavigationHelper.cs" />
-    <Compile Include="ComponentHelper\ButtonHelper.cs" />
-    <Compile Include="ComponentHelper\CheckBoxHelper.cs" />
-    <Compile Include="ComponentHelper\ComboBoxHelper.cs" />
-    <Compile Include="ComponentHelper\GenericHelper.cs" />
-    <Compile Include="ComponentHelper\JavascriptExecutor.cs" />
-    <Compile Include="ComponentHelper\JavascriptPopupHelper.cs" />
-    <Compile Include="ComponentHelper\LinkHelper.cs" />
-    <Compile Include="ComponentHelper\Log4NetHelper.cs" />
-    <Compile Include="ComponentHelper\Navigationelper.cs" />
-    <Compile Include="ComponentHelper\RadioButtonHelper.cs" />
-    <Compile Include="ComponentHelper\TextBoxHelper.cs" />
-    <Compile Include="ComponentHelper\WindowHelper.cs" />
     <Compile Include="Configuration\BrowserType.cs" />
     <Compile Include="CustomException\NoSuchKeywordFoundException.cs" />
     <Compile Include="CustomException\NoSuitableDriverFound.cs" />
@@ -163,7 +150,6 @@
     <Compile Include="InMemoryDatabaseSingleton.cs" />
     <Compile Include="Interfaces\IConfig.cs" />
     <Compile Include="Logger.cs" />
-    <Compile Include="Reports\LogReport.cs" />
     <Compile Include="ScreenShotRemoteWebDriver.cs" />
     <Compile Include="Settings\AppConfigKeys.cs" />
     <Compile Include="Settings\ObjectRepository.cs" />
@@ -180,9 +166,7 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="TestScripts\LoginModule\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="InMemoryTestData\TestDataCOMETDEV.xml" />
     <Content Include="InMemoryTestData\TestDataCOMETTST05.xml" />

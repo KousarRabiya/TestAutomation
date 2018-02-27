@@ -1,9 +1,0 @@
-4/01/2018 3:45:55 PM  ***************
-1/4/2018 3:45:58 PM  Scenario :TC4-Adding the Package to the Employee
-1/4/2018 3:45:58 PM  User opens the browser and launch Comet application
-1/4/2018 3:46:05 PM  User enters the valid Employee number in text box
-1/4/2018 3:46:06 PM  User clicks on the search button
-1/4/2018 3:46:08 PM  Employee Details are shown
-1/4/2018 3:46:08 PM  Click on the Create new package
-1/4/2018 3:46:10 PM  User enters all the details for creating the package and Click on the save button
-1/4/2018 3:46:32 PM  Verify the Package is created
