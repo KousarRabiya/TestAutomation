@@ -462,6 +462,11 @@ namespace MMSG.Pages.UI_Pages.Comet
                             CallCentreEnquiryResource.CallCentreEnquiry_ProcessMenuPopUp_ReviewAndActivate_Locator1);
                         base.ClickByJavaScriptExecutor(reviewAndActivateProperties);
                         break;
+                    case "New Benefit":
+                        base.SwitchToPopup();
+                        IWebElement newBenefitProperties = base.GetWebElementPropertiesById("PopUpMenu_cmdMenu6");
+                        base.ClickByJavaScriptExecutor(newBenefitProperties);
+                        break;
                 }
             }
             catch (Exception e)

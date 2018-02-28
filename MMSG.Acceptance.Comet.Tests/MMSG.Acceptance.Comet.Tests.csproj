@@ -85,6 +85,7 @@
       <DependentUpon>CommonAcceptanceTestFeatures.feature</DependentUpon>
     </Compile>
     <Compile Include="ProductAcceptanceTestDefinition\ActivateEmployeeDefinition.cs" />
+    <Compile Include="ProductAcceptanceTestDefinition\AddBenefitDefination.cs" />
     <Compile Include="ProductAcceptanceTestDefinition\AmendmentsDefinition.cs" />
     <Compile Include="ProductAcceptanceTestDefinition\CallCentreEnquiryDefinition.cs" />
     <Compile Include="ProductAcceptanceTestDefinition\Employee_personaldetailsDefinition.cs" />
