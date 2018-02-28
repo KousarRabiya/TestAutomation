@@ -45,5 +45,16 @@ namespace MMSG.Acceptance.Comet.Tests.CommonAcceptanceTestDefinitions
             Logger.LogMethodExit("CommonDefinition", "ValidateDisplayCometLogo", base.IsTakeScreenShotDuringEntryExit);
         }
 
+        /// <summary>
+        /// Logout as Comet user
+        /// </summary>
+        [When(@"I logout of Comet application")]
+        public void LogoutOfCometApplication()
+        {
+            Logger.LogMethodEntry("CommonDefinition", "LogoutOfCometApplication", base.IsTakeScreenShotDuringEntryExit);
+            new ApplicationLoginPage().LogoutAsCometUser();
+            Logger.LogMethodExit("CommonDefinition", "LogoutOfCometApplication", base.IsTakeScreenShotDuringEntryExit);
+        }
+
     }
 }

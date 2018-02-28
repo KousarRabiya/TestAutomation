@@ -2,7 +2,6 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Support.PageObjects;
-using MMSG.Automation.ComponentHelper;
 using TechTalk.SpecFlow;
 using WebServiceTestProject.PageObjects;
 

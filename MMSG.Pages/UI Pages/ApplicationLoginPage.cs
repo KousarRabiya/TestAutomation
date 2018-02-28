@@ -449,5 +449,23 @@ namespace MMSG.Pages.UI_Pages
                 ExceptionHandler.HandleException(e);
             }
         }
+
+        /// <summary>
+        /// Logout as Comet user
+        /// </summary>
+        public void LogoutAsCometUser()
+        {
+            Logger.LogMethodEntry("ApplicationLoginPage", "LogoutAsCometUser",base.IsTakeScreenShotDuringEntryExit);
+            try
+            {
+                // Close browser
+                base.CloseBrowserWindow();
+            }
+            catch(Exception e)
+            {
+                ExceptionHandler.HandleException(e);
+            }
+            Logger.LogMethodExit("ApplicationLoginPage", "LogoutAsCometUser", base.IsTakeScreenShotDuringEntryExit);
+        }
     }
 }

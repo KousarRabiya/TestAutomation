@@ -483,12 +483,11 @@ namespace MMSG.Pages.UI_Pages.Comet
             string titleOfPage = "";
             try
             {
-                Thread.Sleep(1000);
+                Thread.Sleep(2000);
                 base.SwitchToDefaultWindow();
                 base.SwitchToLastOpenedWindow();
                 // Get page title during runtime
                 titleOfPage = base.GetPageTitle;
-                Thread.Sleep(1000);
             }
             catch (Exception e)
             {
